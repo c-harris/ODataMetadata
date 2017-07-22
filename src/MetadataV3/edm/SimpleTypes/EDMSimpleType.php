@@ -23,6 +23,5 @@ class EDMSimpleType extends EDMSimpleTypeBase
         $this->addEnumeration('GeometricMultiLineString');
         $this->addEnumeration('GeometricMultiPolygon');
         $this->addEnumeration('GeometryCollection');
-
     }
 }
