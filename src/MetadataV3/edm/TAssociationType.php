@@ -33,21 +33,21 @@ class TAssociationType extends IsOK
     private $name = null;
 
     /**
-     * Documentation (zero or one elements allowed)
+     * Documentation (zero or one elements allowed).
      *
      * @property \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      */
     private $documentation = null;
 
     /**
-     * End (exactly 2 elements)
+     * End (exactly 2 elements).
      *
      * @property \AlgoWeb\ODataMetadata\MetadataV3\edm\TAssociationEndType[] $end
      */
     private $end = [];
 
     /**
-     * ReferentialConstraint (zero or one element)
+     * ReferentialConstraint (zero or one element).
      *
      * @property \AlgoWeb\ODataMetadata\MetadataV3\edm\TConstraintType $referentialConstraint
      */
@@ -227,7 +227,7 @@ class TAssociationType extends IsOK
         return true;
     }
 }
-/**
+/*
  * Example
  * The following example shows an Association element that defines the CustomerOrders association when foreign keys have
  * not been exposed on the Customer and Order entity types. The Multiplicity values for each End of the association
