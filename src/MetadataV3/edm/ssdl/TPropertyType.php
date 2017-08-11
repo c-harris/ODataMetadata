@@ -184,7 +184,7 @@ class TPropertyType extends IsOK
     /**
      * Gets as maxLength.
      *
-     * @return integer|double|string
+     * @return int|float|string
      */
     public function getMaxLength()
     {
@@ -194,7 +194,7 @@ class TPropertyType extends IsOK
     /**
      * Sets a new maxLength.
      *
-     * @param  integer|double|string $maxLength
+     * @param  int|float|string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -260,7 +260,7 @@ class TPropertyType extends IsOK
     /**
      * Gets as scale.
      *
-     * @return integer|double|string
+     * @return int|float|string
      */
     public function getScale()
     {
@@ -270,7 +270,7 @@ class TPropertyType extends IsOK
     /**
      * Sets a new scale.
      *
-     * @param  integer|double|string  $scale
+     * @param  int|float|string $scale
      * @return self
      */
     public function setScale($scale)
