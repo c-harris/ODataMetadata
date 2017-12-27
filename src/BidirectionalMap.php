@@ -35,7 +35,7 @@ class BidirectionalMap
 
     /**
      * Retrieve key matching supplied value.
-     * @param  mixed    $value
+     * @param  mixed      $value
      * @return mixed|null
      */
     public function getKey($value)
@@ -48,7 +48,7 @@ class BidirectionalMap
 
     /**
      * Retrieve value matching supplied key.
-     * @param  mixed    $key
+     * @param  mixed      $key
      * @return mixed|null
      */
     public function getValue($key)
@@ -96,7 +96,7 @@ class BidirectionalMap
 
     /**
      * Remove supplied key from map and return matching value.
-     * @param  mixed    $key
+     * @param  mixed      $key
      * @return mixed|null
      */
     public function removeKey($key)
@@ -112,7 +112,7 @@ class BidirectionalMap
 
     /**
      * Remove supplied value from map and return matching key.
-     * @param  mixed    $value
+     * @param  mixed      $value
      * @return mixed|null
      */
     public function removeValue($value)
