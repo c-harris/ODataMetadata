@@ -14,7 +14,7 @@ class BidirectionalMap
     }
 
     /**
-     * Check if supplied key exists
+     * Check if supplied key exists.
      * @param $key
      * @return bool
      */
@@ -24,7 +24,7 @@ class BidirectionalMap
     }
 
     /**
-     * Check if supplied key exists
+     * Check if supplied key exists.
      * @param $value
      * @return bool
      */
@@ -34,8 +34,8 @@ class BidirectionalMap
     }
 
     /**
-     * Retrieve key matching supplied value
-     * @param mixed $value
+     * Retrieve key matching supplied value.
+     * @param  mixed      $value
      * @return mixed|null
      */
     public function getKey($value)
@@ -47,8 +47,8 @@ class BidirectionalMap
     }
 
     /**
-     * Retrieve value matching supplied key
-     * @param mixed $key
+     * Retrieve value matching supplied key.
+     * @param  mixed      $key
      * @return mixed|null
      */
     public function getValue($key)
@@ -95,8 +95,8 @@ class BidirectionalMap
     }
 
     /**
-     * Remove supplied key from map and return matching value
-     * @param mixed $key
+     * Remove supplied key from map and return matching value.
+     * @param  mixed      $key
      * @return mixed|null
      */
     public function removeKey($key)
@@ -111,8 +111,8 @@ class BidirectionalMap
     }
 
     /**
-     * Remove supplied value from map and return matching key
-     * @param mixed $value
+     * Remove supplied value from map and return matching key.
+     * @param  mixed      $value
      * @return mixed|null
      */
     public function removeValue($value)
