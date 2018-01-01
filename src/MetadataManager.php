@@ -475,7 +475,7 @@ class MetadataManager
 
     public function __wakeup()
     {
-        self::$typeNameToSetName = unserialize($this->serializer );
+        self::$typeNameToSetName = unserialize($this->serializer);
         $this->initSerialiser();
     }
 
