@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TEntityContainerMappingType
+ * Class representing TEntityContainerMappingType.
  *
  *
  * XSD Type: TEntityContainerMapping
@@ -22,7 +22,7 @@ class TEntityContainerMappingType
     private $storageEntityContainer = null;
 
     /**
-     * @property boolean $generateUpdateViews
+     * @property bool $generateUpdateViews
      */
     private $generateUpdateViews = null;
 
@@ -50,7 +50,7 @@ class TEntityContainerMappingType
     );
 
     /**
-     * Gets as cdmEntityContainer
+     * Gets as cdmEntityContainer.
      *
      * @return string
      */
@@ -60,9 +60,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Sets a new cdmEntityContainer
+     * Sets a new cdmEntityContainer.
      *
-     * @param string $cdmEntityContainer
+     * @param  string $cdmEntityContainer
      * @return self
      */
     public function setCdmEntityContainer($cdmEntityContainer)
@@ -72,7 +72,7 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Gets as storageEntityContainer
+     * Gets as storageEntityContainer.
      *
      * @return string
      */
@@ -82,9 +82,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Sets a new storageEntityContainer
+     * Sets a new storageEntityContainer.
      *
-     * @param string $storageEntityContainer
+     * @param  string $storageEntityContainer
      * @return self
      */
     public function setStorageEntityContainer($storageEntityContainer)
@@ -94,9 +94,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Gets as generateUpdateViews
+     * Gets as generateUpdateViews.
      *
-     * @return boolean
+     * @return bool
      */
     public function getGenerateUpdateViews()
     {
@@ -104,9 +104,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Sets a new generateUpdateViews
+     * Sets a new generateUpdateViews.
      *
-     * @param boolean $generateUpdateViews
+     * @param  bool $generateUpdateViews
      * @return self
      */
     public function setGenerateUpdateViews($generateUpdateViews)
@@ -116,10 +116,10 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Adds as entitySetMapping
+     * Adds as entitySetMapping.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEntitySetMappingType $entitySetMapping
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEntitySetMappingType $entitySetMapping
      */
     public function addToEntitySetMapping(TEntitySetMappingType $entitySetMapping)
     {
@@ -128,10 +128,10 @@ class TEntityContainerMappingType
     }
 
     /**
-     * isset entitySetMapping
+     * isset entitySetMapping.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntitySetMapping($index)
     {
@@ -139,9 +139,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * unset entitySetMapping
+     * unset entitySetMapping.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntitySetMapping($index)
@@ -150,7 +150,7 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Gets as entitySetMapping
+     * Gets as entitySetMapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEntitySetMappingType[]
      */
@@ -160,9 +160,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Sets a new entitySetMapping
+     * Sets a new entitySetMapping.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEntitySetMappingType[] $entitySetMapping
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEntitySetMappingType[] $entitySetMapping
      * @return self
      */
     public function setEntitySetMapping(array $entitySetMapping)
@@ -172,10 +172,10 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Adds as associationSetMapping
+     * Adds as associationSetMapping.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAssociationSetMappingType $associationSetMapping
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAssociationSetMappingType $associationSetMapping
      */
     public function addToAssociationSetMapping(TAssociationSetMappingType $associationSetMapping)
     {
@@ -184,10 +184,10 @@ class TEntityContainerMappingType
     }
 
     /**
-     * isset associationSetMapping
+     * isset associationSetMapping.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAssociationSetMapping($index)
     {
@@ -195,9 +195,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * unset associationSetMapping
+     * unset associationSetMapping.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAssociationSetMapping($index)
@@ -206,7 +206,7 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Gets as associationSetMapping
+     * Gets as associationSetMapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAssociationSetMappingType[]
      */
@@ -216,7 +216,7 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Sets a new associationSetMapping
+     * Sets a new associationSetMapping.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAssociationSetMappingType[]
      * $associationSetMapping
@@ -229,10 +229,10 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Adds as functionImportMapping
+     * Adds as functionImportMapping.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TFunctionImportMappingType $functionImportMapping
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TFunctionImportMappingType $functionImportMapping
      */
     public function addToFunctionImportMapping(TFunctionImportMappingType $functionImportMapping)
     {
@@ -241,10 +241,10 @@ class TEntityContainerMappingType
     }
 
     /**
-     * isset functionImportMapping
+     * isset functionImportMapping.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFunctionImportMapping($index)
     {
@@ -252,9 +252,9 @@ class TEntityContainerMappingType
     }
 
     /**
-     * unset functionImportMapping
+     * unset functionImportMapping.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFunctionImportMapping($index)
@@ -263,7 +263,7 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Gets as functionImportMapping
+     * Gets as functionImportMapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TFunctionImportMappingType[]
      */
@@ -273,7 +273,7 @@ class TEntityContainerMappingType
     }
 
     /**
-     * Sets a new functionImportMapping
+     * Sets a new functionImportMapping.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TFunctionImportMappingType[]
      * $functionImportMapping

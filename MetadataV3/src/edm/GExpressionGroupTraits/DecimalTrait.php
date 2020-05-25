@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Decimal Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Decimal Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -17,10 +17,10 @@ trait DecimalTrait
     );
     
     /**
-     * Adds as decimal
+     * Adds as decimal.
      *
+     * @param  float $decimal
      * @return self
-     * @param float $decimal
      */
     public function addToDecimal($decimal)
     {
@@ -29,10 +29,10 @@ trait DecimalTrait
     }
 
     /**
-     * isset decimal
+     * isset decimal.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDecimal($index)
     {
@@ -40,9 +40,9 @@ trait DecimalTrait
     }
 
     /**
-     * unset decimal
+     * unset decimal.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDecimal($index)
@@ -51,7 +51,7 @@ trait DecimalTrait
     }
 
     /**
-     * Gets as decimal
+     * Gets as decimal.
      *
      * @return float[]
      */
@@ -61,9 +61,9 @@ trait DecimalTrait
     }
 
     /**
-     * Sets a new decimal
+     * Sets a new decimal.
      *
-     * @param float $decimal
+     * @param  float $decimal
      * @return self
      */
     public function setDecimal(array $decimal)

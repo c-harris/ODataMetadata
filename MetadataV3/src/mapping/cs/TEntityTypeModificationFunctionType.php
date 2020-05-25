@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TEntityTypeModificationFunctionType
+ * Class representing TEntityTypeModificationFunctionType.
  *
  *
  * XSD Type: TEntityTypeModificationFunction
@@ -40,7 +40,7 @@ class TEntityTypeModificationFunctionType
     private $complexProperty = null;
 
     /**
-     * Gets as functionName
+     * Gets as functionName.
      *
      * @return string
      */
@@ -50,9 +50,9 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new functionName
+     * Sets a new functionName.
      *
-     * @param string $functionName
+     * @param  string $functionName
      * @return self
      */
     public function setFunctionName($functionName)
@@ -62,7 +62,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as rowsAffectedParameter
+     * Gets as rowsAffectedParameter.
      *
      * @return string
      */
@@ -72,9 +72,9 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new rowsAffectedParameter
+     * Sets a new rowsAffectedParameter.
      *
-     * @param string $rowsAffectedParameter
+     * @param  string $rowsAffectedParameter
      * @return self
      */
     public function setRowsAffectedParameter($rowsAffectedParameter)
@@ -84,7 +84,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingScalarPropertyType
      */
@@ -94,7 +94,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingScalarPropertyType
      * $scalarProperty
@@ -107,7 +107,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as associationEnd
+     * Gets as associationEnd.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingAssociationEndType
      */
@@ -117,7 +117,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new associationEnd
+     * Sets a new associationEnd.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingAssociationEndType
      * $associationEnd
@@ -130,7 +130,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as complexProperty
+     * Gets as complexProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingComplexPropertyType
      */
@@ -140,7 +140,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new complexProperty
+     * Sets a new complexProperty.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingComplexPropertyType
      * $complexProperty

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TComplexTypeType
+ * Class representing TComplexTypeType.
  *
  *
  * XSD Type: TComplexType
@@ -22,12 +22,12 @@ class TComplexTypeType
     private $baseType = null;
 
     /**
-     * @property boolean $abstract
+     * @property bool $abstract
      */
     private $abstract = null;
 
     /**
-     * @property boolean $openType
+     * @property bool $openType
      */
     private $openType = null;
 
@@ -53,7 +53,7 @@ class TComplexTypeType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -63,9 +63,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -75,7 +75,7 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as baseType
+     * Gets as baseType.
      *
      * @return string
      */
@@ -85,9 +85,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new baseType
+     * Sets a new baseType.
      *
-     * @param string $baseType
+     * @param  string $baseType
      * @return self
      */
     public function setBaseType($baseType)
@@ -97,9 +97,9 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as abstract
+     * Gets as abstract.
      *
-     * @return boolean
+     * @return bool
      */
     public function getAbstract()
     {
@@ -107,9 +107,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new abstract
+     * Sets a new abstract.
      *
-     * @param boolean $abstract
+     * @param  bool $abstract
      * @return self
      */
     public function setAbstract($abstract)
@@ -119,9 +119,9 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as openType
+     * Gets as openType.
      *
-     * @return boolean
+     * @return bool
      */
     public function getOpenType()
     {
@@ -129,9 +129,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new openType
+     * Sets a new openType.
      *
-     * @param boolean $openType
+     * @param  bool $openType
      * @return self
      */
     public function setOpenType($openType)
@@ -141,10 +141,10 @@ class TComplexTypeType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyType $property
      */
     public function addToProperty(TPropertyType $property)
     {
@@ -153,10 +153,10 @@ class TComplexTypeType
     }
 
     /**
-     * isset property
+     * isset property.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetProperty($index)
     {
@@ -164,9 +164,9 @@ class TComplexTypeType
     }
 
     /**
-     * unset property
+     * unset property.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetProperty($index)
@@ -175,7 +175,7 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as property
+     * Gets as property.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyType[]
      */
@@ -185,9 +185,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new property
+     * Sets a new property.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyType[] $property
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyType[] $property
      * @return self
      */
     public function setProperty(array $property)
@@ -197,10 +197,10 @@ class TComplexTypeType
     }
 
     /**
-     * Adds as navigationProperty
+     * Adds as navigationProperty.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyType $navigationProperty
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyType $navigationProperty
      */
     public function addToNavigationProperty(TNavigationPropertyType $navigationProperty)
     {
@@ -209,10 +209,10 @@ class TComplexTypeType
     }
 
     /**
-     * isset navigationProperty
+     * isset navigationProperty.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNavigationProperty($index)
     {
@@ -220,9 +220,9 @@ class TComplexTypeType
     }
 
     /**
-     * unset navigationProperty
+     * unset navigationProperty.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNavigationProperty($index)
@@ -231,7 +231,7 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as navigationProperty
+     * Gets as navigationProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyType[]
      */
@@ -241,9 +241,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new navigationProperty
+     * Sets a new navigationProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyType[] $navigationProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyType[] $navigationProperty
      * @return self
      */
     public function setNavigationProperty(array $navigationProperty)
@@ -253,10 +253,10 @@ class TComplexTypeType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -265,10 +265,10 @@ class TComplexTypeType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -276,9 +276,9 @@ class TComplexTypeType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -287,7 +287,7 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -297,9 +297,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

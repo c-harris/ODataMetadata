@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV4\edmx;
 use AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation;
 
 /**
- * Class representing TReferenceType
+ * Class representing TReferenceType.
  *
  *
  * XSD Type: TReference
@@ -40,7 +40,7 @@ class TReferenceType
     );
 
     /**
-     * Gets as uri
+     * Gets as uri.
      *
      * @return string
      */
@@ -50,9 +50,9 @@ class TReferenceType
     }
 
     /**
-     * Sets a new uri
+     * Sets a new uri.
      *
-     * @param string $uri
+     * @param  string $uri
      * @return self
      */
     public function setUri($uri)
@@ -62,10 +62,10 @@ class TReferenceType
     }
 
     /**
-     * Adds as include
+     * Adds as include.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeType $include
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeType $include
      */
     public function addToInclude(TIncludeType $include)
     {
@@ -74,10 +74,10 @@ class TReferenceType
     }
 
     /**
-     * isset include
+     * isset include.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetInclude($index)
     {
@@ -85,9 +85,9 @@ class TReferenceType
     }
 
     /**
-     * unset include
+     * unset include.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetInclude($index)
@@ -96,7 +96,7 @@ class TReferenceType
     }
 
     /**
-     * Gets as include
+     * Gets as include.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeType[]
      */
@@ -106,9 +106,9 @@ class TReferenceType
     }
 
     /**
-     * Sets a new include
+     * Sets a new include.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeType[] $include
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeType[] $include
      * @return self
      */
     public function setInclude(array $include)
@@ -118,10 +118,10 @@ class TReferenceType
     }
 
     /**
-     * Adds as includeAnnotations
+     * Adds as includeAnnotations.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeAnnotationsType $includeAnnotations
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeAnnotationsType $includeAnnotations
      */
     public function addToIncludeAnnotations(TIncludeAnnotationsType $includeAnnotations)
     {
@@ -130,10 +130,10 @@ class TReferenceType
     }
 
     /**
-     * isset includeAnnotations
+     * isset includeAnnotations.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetIncludeAnnotations($index)
     {
@@ -141,9 +141,9 @@ class TReferenceType
     }
 
     /**
-     * unset includeAnnotations
+     * unset includeAnnotations.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetIncludeAnnotations($index)
@@ -152,7 +152,7 @@ class TReferenceType
     }
 
     /**
-     * Gets as includeAnnotations
+     * Gets as includeAnnotations.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeAnnotationsType[]
      */
@@ -162,9 +162,9 @@ class TReferenceType
     }
 
     /**
-     * Sets a new includeAnnotations
+     * Sets a new includeAnnotations.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeAnnotationsType[] $includeAnnotations
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edmx\TIncludeAnnotationsType[] $includeAnnotations
      * @return self
      */
     public function setIncludeAnnotations(array $includeAnnotations)
@@ -174,10 +174,10 @@ class TReferenceType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -186,10 +186,10 @@ class TReferenceType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -197,9 +197,9 @@ class TReferenceType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -208,7 +208,7 @@ class TReferenceType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -218,9 +218,9 @@ class TReferenceType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

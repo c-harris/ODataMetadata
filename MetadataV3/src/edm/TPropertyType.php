@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TPropertyType
+ * Class representing TPropertyType.
  *
  *
  * XSD Type: TProperty
@@ -22,7 +22,7 @@ class TPropertyType
     private $type = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -37,22 +37,22 @@ class TPropertyType
     private $maxLength = null;
 
     /**
-     * @property boolean $fixedLength
+     * @property bool $fixedLength
      */
     private $fixedLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
     /**
-     * @property integer $scale
+     * @property int $scale
      */
     private $scale = null;
 
     /**
-     * @property boolean $unicode
+     * @property bool $unicode
      */
     private $unicode = null;
 
@@ -82,7 +82,7 @@ class TPropertyType
     private $rowType = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -92,9 +92,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -104,7 +104,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -114,9 +114,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -126,9 +126,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -136,9 +136,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -148,7 +148,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as defaultValue
+     * Gets as defaultValue.
      *
      * @return string
      */
@@ -158,9 +158,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new defaultValue
+     * Sets a new defaultValue.
      *
-     * @param string $defaultValue
+     * @param  string $defaultValue
      * @return self
      */
     public function setDefaultValue($defaultValue)
@@ -170,7 +170,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -180,9 +180,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -192,9 +192,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as fixedLength
+     * Gets as fixedLength.
      *
-     * @return boolean
+     * @return bool
      */
     public function getFixedLength()
     {
@@ -202,9 +202,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new fixedLength
+     * Sets a new fixedLength.
      *
-     * @param boolean $fixedLength
+     * @param  bool $fixedLength
      * @return self
      */
     public function setFixedLength($fixedLength)
@@ -214,9 +214,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -224,9 +224,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -236,9 +236,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
-     * @return integer
+     * @return int
      */
     public function getScale()
     {
@@ -246,9 +246,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param integer $scale
+     * @param  int  $scale
      * @return self
      */
     public function setScale($scale)
@@ -258,9 +258,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as unicode
+     * Gets as unicode.
      *
-     * @return boolean
+     * @return bool
      */
     public function getUnicode()
     {
@@ -268,9 +268,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new unicode
+     * Sets a new unicode.
      *
-     * @param boolean $unicode
+     * @param  bool $unicode
      * @return self
      */
     public function setUnicode($unicode)
@@ -280,7 +280,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as collation
+     * Gets as collation.
      *
      * @return string
      */
@@ -290,9 +290,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new collation
+     * Sets a new collation.
      *
-     * @param string $collation
+     * @param  string $collation
      * @return self
      */
     public function setCollation($collation)
@@ -302,7 +302,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -312,9 +312,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)
@@ -324,7 +324,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as collectionType
+     * Gets as collectionType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType
      */
@@ -334,9 +334,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new collectionType
+     * Sets a new collectionType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType $collectionType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType $collectionType
      * @return self
      */
     public function setCollectionType(TCollectionTypeType $collectionType)
@@ -346,7 +346,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as referenceType
+     * Gets as referenceType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType
      */
@@ -356,9 +356,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new referenceType
+     * Sets a new referenceType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType $referenceType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType $referenceType
      * @return self
      */
     public function setReferenceType(TReferenceTypeType $referenceType)
@@ -368,10 +368,10 @@ class TPropertyType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType $property
      */
     public function addToRowType(TPropertyType $property)
     {
@@ -380,10 +380,10 @@ class TPropertyType
     }
 
     /**
-     * isset rowType
+     * isset rowType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRowType($index)
     {
@@ -391,9 +391,9 @@ class TPropertyType
     }
 
     /**
-     * unset rowType
+     * unset rowType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRowType($index)
@@ -402,7 +402,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as rowType
+     * Gets as rowType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[]
      */
@@ -412,9 +412,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new rowType
+     * Sets a new rowType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[] $rowType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[] $rowType
      * @return self
      */
     public function setRowType(array $rowType)

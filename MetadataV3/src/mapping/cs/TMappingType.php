@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TMappingType
+ * Class representing TMappingType.
  *
  *
  * XSD Type: TMapping
@@ -30,7 +30,7 @@ class TMappingType
     private $entityContainerMapping = null;
 
     /**
-     * Gets as space
+     * Gets as space.
      *
      * @return string
      */
@@ -40,9 +40,9 @@ class TMappingType
     }
 
     /**
-     * Sets a new space
+     * Sets a new space.
      *
-     * @param string $space
+     * @param  string $space
      * @return self
      */
     public function setSpace($space)
@@ -52,10 +52,10 @@ class TMappingType
     }
 
     /**
-     * Adds as alias
+     * Adds as alias.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAliasType $alias
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAliasType $alias
      */
     public function addToAlias(TAliasType $alias)
     {
@@ -64,10 +64,10 @@ class TMappingType
     }
 
     /**
-     * isset alias
+     * isset alias.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAlias($index)
     {
@@ -75,9 +75,9 @@ class TMappingType
     }
 
     /**
-     * unset alias
+     * unset alias.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAlias($index)
@@ -86,7 +86,7 @@ class TMappingType
     }
 
     /**
-     * Gets as alias
+     * Gets as alias.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAliasType[]
      */
@@ -96,9 +96,9 @@ class TMappingType
     }
 
     /**
-     * Sets a new alias
+     * Sets a new alias.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAliasType[] $alias
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAliasType[] $alias
      * @return self
      */
     public function setAlias(array $alias)
@@ -108,7 +108,7 @@ class TMappingType
     }
 
     /**
-     * Gets as entityContainerMapping
+     * Gets as entityContainerMapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEntityContainerMappingType
      */
@@ -118,7 +118,7 @@ class TMappingType
     }
 
     /**
-     * Sets a new entityContainerMapping
+     * Sets a new entityContainerMapping.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEntityContainerMappingType
      * $entityContainerMapping

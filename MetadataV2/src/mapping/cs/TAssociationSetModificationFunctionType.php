@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\mapping\cs;
 
 /**
- * Class representing TAssociationSetModificationFunctionType
+ * Class representing TAssociationSetModificationFunctionType.
  *
  *
  * XSD Type: TAssociationSetModificationFunction
@@ -27,7 +27,7 @@ class TAssociationSetModificationFunctionType
     private $endProperty = null;
 
     /**
-     * Gets as functionName
+     * Gets as functionName.
      *
      * @return string
      */
@@ -37,9 +37,9 @@ class TAssociationSetModificationFunctionType
     }
 
     /**
-     * Sets a new functionName
+     * Sets a new functionName.
      *
-     * @param string $functionName
+     * @param  string $functionName
      * @return self
      */
     public function setFunctionName($functionName)
@@ -49,7 +49,7 @@ class TAssociationSetModificationFunctionType
     }
 
     /**
-     * Gets as rowsAffectedParameter
+     * Gets as rowsAffectedParameter.
      *
      * @return string
      */
@@ -59,9 +59,9 @@ class TAssociationSetModificationFunctionType
     }
 
     /**
-     * Sets a new rowsAffectedParameter
+     * Sets a new rowsAffectedParameter.
      *
-     * @param string $rowsAffectedParameter
+     * @param  string $rowsAffectedParameter
      * @return self
      */
     public function setRowsAffectedParameter($rowsAffectedParameter)
@@ -71,7 +71,7 @@ class TAssociationSetModificationFunctionType
     }
 
     /**
-     * Gets as endProperty
+     * Gets as endProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingEndPropertyType
      */
@@ -81,9 +81,9 @@ class TAssociationSetModificationFunctionType
     }
 
     /**
-     * Sets a new endProperty
+     * Sets a new endProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingEndPropertyType $endProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingEndPropertyType $endProperty
      * @return self
      */
     public function setEndProperty(TFunctionMappingEndPropertyType $endProperty)

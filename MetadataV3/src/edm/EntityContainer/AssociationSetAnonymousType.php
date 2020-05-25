@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer;
 use AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\AssociationSetAnonymousType\EndAnonymousType;
 
 /**
- * Class representing AssociationSetAnonymousType
+ * Class representing AssociationSetAnonymousType.
  */
 class AssociationSetAnonymousType
 {
@@ -35,7 +35,7 @@ class AssociationSetAnonymousType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -45,9 +45,9 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -57,7 +57,7 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Gets as association
+     * Gets as association.
      *
      * @return string
      */
@@ -67,9 +67,9 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Sets a new association
+     * Sets a new association.
      *
-     * @param string $association
+     * @param  string $association
      * @return self
      */
     public function setAssociation($association)
@@ -79,7 +79,7 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -89,9 +89,9 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -101,12 +101,12 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Adds as end
+     * Adds as end.
      *
-     * @return self
      * @param
      * \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\AssociationSetAnonymousType\EndAnonymousType
      * $end
+     * @return self
      */
     public function addToEnd(EndAnonymousType $end)
     {
@@ -115,10 +115,10 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * isset end
+     * isset end.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEnd($index)
     {
@@ -126,9 +126,9 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * unset end
+     * unset end.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEnd($index)
@@ -137,7 +137,7 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Gets as end
+     * Gets as end.
      *
      * @return
      * \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\AssociationSetAnonymousType\EndAnonymousType[]
@@ -148,7 +148,7 @@ class AssociationSetAnonymousType
     }
 
     /**
-     * Sets a new end
+     * Sets a new end.
      *
      * @param
      * \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\AssociationSetAnonymousType\EndAnonymousType[]

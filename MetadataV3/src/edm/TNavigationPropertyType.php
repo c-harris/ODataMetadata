@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TNavigationPropertyType
+ * Class representing TNavigationPropertyType.
  *
  *
  * XSD Type: TNavigationProperty
@@ -47,7 +47,7 @@ class TNavigationPropertyType
     private $documentation = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -57,9 +57,9 @@ class TNavigationPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -69,7 +69,7 @@ class TNavigationPropertyType
     }
 
     /**
-     * Gets as relationship
+     * Gets as relationship.
      *
      * @return string
      */
@@ -79,9 +79,9 @@ class TNavigationPropertyType
     }
 
     /**
-     * Sets a new relationship
+     * Sets a new relationship.
      *
-     * @param string $relationship
+     * @param  string $relationship
      * @return self
      */
     public function setRelationship($relationship)
@@ -91,7 +91,7 @@ class TNavigationPropertyType
     }
 
     /**
-     * Gets as toRole
+     * Gets as toRole.
      *
      * @return string
      */
@@ -101,9 +101,9 @@ class TNavigationPropertyType
     }
 
     /**
-     * Sets a new toRole
+     * Sets a new toRole.
      *
-     * @param string $toRole
+     * @param  string $toRole
      * @return self
      */
     public function setToRole($toRole)
@@ -113,7 +113,7 @@ class TNavigationPropertyType
     }
 
     /**
-     * Gets as fromRole
+     * Gets as fromRole.
      *
      * @return string
      */
@@ -123,9 +123,9 @@ class TNavigationPropertyType
     }
 
     /**
-     * Sets a new fromRole
+     * Sets a new fromRole.
      *
-     * @param string $fromRole
+     * @param  string $fromRole
      * @return self
      */
     public function setFromRole($fromRole)
@@ -135,7 +135,7 @@ class TNavigationPropertyType
     }
 
     /**
-     * Gets as getterAccess
+     * Gets as getterAccess.
      *
      * @return string
      */
@@ -145,9 +145,9 @@ class TNavigationPropertyType
     }
 
     /**
-     * Sets a new getterAccess
+     * Sets a new getterAccess.
      *
-     * @param string $getterAccess
+     * @param  string $getterAccess
      * @return self
      */
     public function setGetterAccess($getterAccess)
@@ -157,7 +157,7 @@ class TNavigationPropertyType
     }
 
     /**
-     * Gets as setterAccess
+     * Gets as setterAccess.
      *
      * @return string
      */
@@ -167,9 +167,9 @@ class TNavigationPropertyType
     }
 
     /**
-     * Sets a new setterAccess
+     * Sets a new setterAccess.
      *
-     * @param string $setterAccess
+     * @param  string $setterAccess
      * @return self
      */
     public function setSetterAccess($setterAccess)
@@ -179,7 +179,7 @@ class TNavigationPropertyType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -189,9 +189,9 @@ class TNavigationPropertyType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

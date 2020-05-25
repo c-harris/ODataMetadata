@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TApplyExpressionType
+ * Class representing TApplyExpressionType.
  *
  *
  * XSD Type: TApplyExpression
@@ -31,7 +31,7 @@ class TApplyExpressionType
     );
 
     /**
-     * @property boolean[] $bool
+     * @property bool[] $bool
      */
     private $bool = array(
         
@@ -85,7 +85,7 @@ class TApplyExpressionType
     );
 
     /**
-     * @property integer[] $int
+     * @property int[] $int
      */
     private $int = array(
         
@@ -265,7 +265,7 @@ class TApplyExpressionType
     );
 
     /**
-     * Gets as function
+     * Gets as function.
      *
      * @return string
      */
@@ -275,9 +275,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new function
+     * Sets a new function.
      *
-     * @param string $function
+     * @param  string $function
      * @return self
      */
     public function setFunction($function)
@@ -287,10 +287,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -299,10 +299,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -310,9 +310,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -321,7 +321,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -331,9 +331,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)
@@ -343,10 +343,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as binary
+     * Adds as binary.
      *
+     * @param  string $binary
      * @return self
-     * @param string $binary
      */
     public function addToBinary($binary)
     {
@@ -355,10 +355,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset binary
+     * isset binary.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetBinary($index)
     {
@@ -366,9 +366,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset binary
+     * unset binary.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetBinary($index)
@@ -377,7 +377,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as binary
+     * Gets as binary.
      *
      * @return string[]
      */
@@ -387,9 +387,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new binary
+     * Sets a new binary.
      *
-     * @param string $binary
+     * @param  string $binary
      * @return self
      */
     public function setBinary(array $binary)
@@ -399,10 +399,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as bool
+     * Adds as bool.
      *
+     * @param  bool $bool
      * @return self
-     * @param boolean $bool
      */
     public function addToBool($bool)
     {
@@ -411,10 +411,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset bool
+     * isset bool.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetBool($index)
     {
@@ -422,9 +422,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset bool
+     * unset bool.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetBool($index)
@@ -433,9 +433,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as bool
+     * Gets as bool.
      *
-     * @return boolean[]
+     * @return bool[]
      */
     public function getBool()
     {
@@ -443,9 +443,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new bool
+     * Sets a new bool.
      *
-     * @param boolean $bool
+     * @param  bool $bool
      * @return self
      */
     public function setBool(array $bool)
@@ -455,10 +455,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as date
+     * Adds as date.
      *
+     * @param  \DateTime $date
      * @return self
-     * @param \DateTime $date
      */
     public function addToDate(\DateTime $date)
     {
@@ -467,10 +467,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset date
+     * isset date.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDate($index)
     {
@@ -478,9 +478,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset date
+     * unset date.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDate($index)
@@ -489,7 +489,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as date
+     * Gets as date.
      *
      * @return \DateTime[]
      */
@@ -499,9 +499,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new date
+     * Sets a new date.
      *
-     * @param \DateTime $date
+     * @param  \DateTime $date
      * @return self
      */
     public function setDate(array $date)
@@ -511,10 +511,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as dateTimeOffset
+     * Adds as dateTimeOffset.
      *
+     * @param  \DateTime $dateTimeOffset
      * @return self
-     * @param \DateTime $dateTimeOffset
      */
     public function addToDateTimeOffset(\DateTime $dateTimeOffset)
     {
@@ -523,10 +523,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset dateTimeOffset
+     * isset dateTimeOffset.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDateTimeOffset($index)
     {
@@ -534,9 +534,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset dateTimeOffset
+     * unset dateTimeOffset.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDateTimeOffset($index)
@@ -545,7 +545,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as dateTimeOffset
+     * Gets as dateTimeOffset.
      *
      * @return \DateTime[]
      */
@@ -555,9 +555,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new dateTimeOffset
+     * Sets a new dateTimeOffset.
      *
-     * @param \DateTime $dateTimeOffset
+     * @param  \DateTime $dateTimeOffset
      * @return self
      */
     public function setDateTimeOffset(array $dateTimeOffset)
@@ -567,10 +567,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as decimal
+     * Adds as decimal.
      *
+     * @param  float $decimal
      * @return self
-     * @param float $decimal
      */
     public function addToDecimal($decimal)
     {
@@ -579,10 +579,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset decimal
+     * isset decimal.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDecimal($index)
     {
@@ -590,9 +590,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset decimal
+     * unset decimal.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDecimal($index)
@@ -601,7 +601,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as decimal
+     * Gets as decimal.
      *
      * @return float[]
      */
@@ -611,9 +611,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new decimal
+     * Sets a new decimal.
      *
-     * @param float $decimal
+     * @param  float $decimal
      * @return self
      */
     public function setDecimal(array $decimal)
@@ -623,10 +623,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as duration
+     * Adds as duration.
      *
+     * @param  \DateInterval $duration
      * @return self
-     * @param \DateInterval $duration
      */
     public function addToDuration(\DateInterval $duration)
     {
@@ -635,10 +635,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset duration
+     * isset duration.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDuration($index)
     {
@@ -646,9 +646,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset duration
+     * unset duration.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDuration($index)
@@ -657,7 +657,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as duration
+     * Gets as duration.
      *
      * @return \DateInterval[]
      */
@@ -667,9 +667,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new duration
+     * Sets a new duration.
      *
-     * @param \DateInterval $duration
+     * @param  \DateInterval $duration
      * @return self
      */
     public function setDuration(array $duration)
@@ -679,10 +679,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as enumMember
+     * Adds as enumMember.
      *
+     * @param  string $enumMember
      * @return self
-     * @param string $enumMember
      */
     public function addToEnumMember($enumMember)
     {
@@ -691,10 +691,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset enumMember
+     * isset enumMember.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEnumMember($index)
     {
@@ -702,9 +702,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset enumMember
+     * unset enumMember.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEnumMember($index)
@@ -713,7 +713,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as enumMember
+     * Gets as enumMember.
      *
      * @return string[]
      */
@@ -723,9 +723,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new enumMember
+     * Sets a new enumMember.
      *
-     * @param string $enumMember
+     * @param  string $enumMember
      * @return self
      */
     public function setEnumMember(array $enumMember)
@@ -735,10 +735,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as float
+     * Adds as float.
      *
+     * @param  float $float
      * @return self
-     * @param float $float
      */
     public function addToFloat($float)
     {
@@ -747,10 +747,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset float
+     * isset float.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFloat($index)
     {
@@ -758,9 +758,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset float
+     * unset float.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFloat($index)
@@ -769,7 +769,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as float
+     * Gets as float.
      *
      * @return float[]
      */
@@ -779,9 +779,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new float
+     * Sets a new float.
      *
-     * @param float $float
+     * @param  float $float
      * @return self
      */
     public function setFloat(array $float)
@@ -791,10 +791,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as guid
+     * Adds as guid.
      *
+     * @param  string $guid
      * @return self
-     * @param string $guid
      */
     public function addToGuid($guid)
     {
@@ -803,10 +803,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset guid
+     * isset guid.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetGuid($index)
     {
@@ -814,9 +814,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset guid
+     * unset guid.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetGuid($index)
@@ -825,7 +825,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as guid
+     * Gets as guid.
      *
      * @return string[]
      */
@@ -835,9 +835,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new guid
+     * Sets a new guid.
      *
-     * @param string $guid
+     * @param  string $guid
      * @return self
      */
     public function setGuid(array $guid)
@@ -847,10 +847,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as int
+     * Adds as int.
      *
+     * @param  int  $int
      * @return self
-     * @param integer $int
      */
     public function addToInt($int)
     {
@@ -859,10 +859,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset int
+     * isset int.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetInt($index)
     {
@@ -870,9 +870,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset int
+     * unset int.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetInt($index)
@@ -881,9 +881,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as int
+     * Gets as int.
      *
-     * @return integer[]
+     * @return int[]
      */
     public function getInt()
     {
@@ -891,9 +891,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new int
+     * Sets a new int.
      *
-     * @param integer $int
+     * @param  int  $int
      * @return self
      */
     public function setInt(array $int)
@@ -903,10 +903,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as string
+     * Adds as string.
      *
+     * @param  string $string
      * @return self
-     * @param string $string
      */
     public function addToString($string)
     {
@@ -915,10 +915,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset string
+     * isset string.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetString($index)
     {
@@ -926,9 +926,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset string
+     * unset string.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetString($index)
@@ -937,7 +937,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as string
+     * Gets as string.
      *
      * @return string[]
      */
@@ -947,9 +947,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new string
+     * Sets a new string.
      *
-     * @param string $string
+     * @param  string $string
      * @return self
      */
     public function setString(array $string)
@@ -959,10 +959,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as timeOfDay
+     * Adds as timeOfDay.
      *
+     * @param  \DateTime $timeOfDay
      * @return self
-     * @param \DateTime $timeOfDay
      */
     public function addToTimeOfDay(\DateTime $timeOfDay)
     {
@@ -971,10 +971,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset timeOfDay
+     * isset timeOfDay.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetTimeOfDay($index)
     {
@@ -982,9 +982,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset timeOfDay
+     * unset timeOfDay.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetTimeOfDay($index)
@@ -993,7 +993,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as timeOfDay
+     * Gets as timeOfDay.
      *
      * @return \DateTime[]
      */
@@ -1003,9 +1003,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new timeOfDay
+     * Sets a new timeOfDay.
      *
-     * @param \DateTime $timeOfDay
+     * @param  \DateTime $timeOfDay
      * @return self
      */
     public function setTimeOfDay(array $timeOfDay)
@@ -1015,10 +1015,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as annotationPath
+     * Adds as annotationPath.
      *
+     * @param  string $annotationPath
      * @return self
-     * @param string $annotationPath
      */
     public function addToAnnotationPath($annotationPath)
     {
@@ -1027,10 +1027,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset annotationPath
+     * isset annotationPath.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotationPath($index)
     {
@@ -1038,9 +1038,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset annotationPath
+     * unset annotationPath.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotationPath($index)
@@ -1049,7 +1049,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as annotationPath
+     * Gets as annotationPath.
      *
      * @return string[]
      */
@@ -1059,9 +1059,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new annotationPath
+     * Sets a new annotationPath.
      *
-     * @param string $annotationPath
+     * @param  string $annotationPath
      * @return self
      */
     public function setAnnotationPath(array $annotationPath)
@@ -1071,10 +1071,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as apply
+     * Adds as apply.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType $apply
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType $apply
      */
     public function addToApply(TApplyExpressionType $apply)
     {
@@ -1083,10 +1083,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset apply
+     * isset apply.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetApply($index)
     {
@@ -1094,9 +1094,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset apply
+     * unset apply.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetApply($index)
@@ -1105,7 +1105,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as apply
+     * Gets as apply.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType[]
      */
@@ -1115,9 +1115,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new apply
+     * Sets a new apply.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType[] $apply
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType[] $apply
      * @return self
      */
     public function setApply(array $apply)
@@ -1127,10 +1127,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as cast
+     * Adds as cast.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $cast
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $cast
      */
     public function addToCast(TCastOrIsOfExpressionType $cast)
     {
@@ -1139,10 +1139,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset cast
+     * isset cast.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCast($index)
     {
@@ -1150,9 +1150,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset cast
+     * unset cast.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCast($index)
@@ -1161,7 +1161,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as cast
+     * Gets as cast.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[]
      */
@@ -1171,9 +1171,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new cast
+     * Sets a new cast.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $cast
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $cast
      * @return self
      */
     public function setCast(array $cast)
@@ -1183,10 +1183,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as collection
+     * Adds as collection.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType $collection
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType $collection
      */
     public function addToCollection(TCollectionExpressionType $collection)
     {
@@ -1195,10 +1195,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset collection
+     * isset collection.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCollection($index)
     {
@@ -1206,9 +1206,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset collection
+     * unset collection.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCollection($index)
@@ -1217,7 +1217,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as collection
+     * Gets as collection.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType[]
      */
@@ -1227,9 +1227,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new collection
+     * Sets a new collection.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType[] $collection
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType[] $collection
      * @return self
      */
     public function setCollection(array $collection)
@@ -1239,10 +1239,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as if
+     * Adds as if.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType $if
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType $if
      */
     public function addToIf(TIfExpressionType $if)
     {
@@ -1251,10 +1251,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset if
+     * isset if.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetIf($index)
     {
@@ -1262,9 +1262,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset if
+     * unset if.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetIf($index)
@@ -1273,7 +1273,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as if
+     * Gets as if.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType[]
      */
@@ -1283,9 +1283,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new if
+     * Sets a new if.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType[] $if
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType[] $if
      * @return self
      */
     public function setIf(array $if)
@@ -1295,10 +1295,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as eq
+     * Adds as eq.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $eq
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $eq
      */
     public function addToEq(TTwoChildrenExpressionType $eq)
     {
@@ -1307,10 +1307,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset eq
+     * isset eq.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEq($index)
     {
@@ -1318,9 +1318,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset eq
+     * unset eq.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEq($index)
@@ -1329,7 +1329,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as eq
+     * Gets as eq.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1339,9 +1339,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new eq
+     * Sets a new eq.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $eq
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $eq
      * @return self
      */
     public function setEq(array $eq)
@@ -1351,10 +1351,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as ne
+     * Adds as ne.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ne
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ne
      */
     public function addToNe(TTwoChildrenExpressionType $ne)
     {
@@ -1363,10 +1363,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset ne
+     * isset ne.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNe($index)
     {
@@ -1374,9 +1374,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset ne
+     * unset ne.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNe($index)
@@ -1385,7 +1385,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as ne
+     * Gets as ne.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1395,9 +1395,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new ne
+     * Sets a new ne.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ne
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ne
      * @return self
      */
     public function setNe(array $ne)
@@ -1407,10 +1407,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as ge
+     * Adds as ge.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ge
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ge
      */
     public function addToGe(TTwoChildrenExpressionType $ge)
     {
@@ -1419,10 +1419,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset ge
+     * isset ge.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetGe($index)
     {
@@ -1430,9 +1430,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset ge
+     * unset ge.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetGe($index)
@@ -1441,7 +1441,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as ge
+     * Gets as ge.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1451,9 +1451,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new ge
+     * Sets a new ge.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ge
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ge
      * @return self
      */
     public function setGe(array $ge)
@@ -1463,10 +1463,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as gt
+     * Adds as gt.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $gt
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $gt
      */
     public function addToGt(TTwoChildrenExpressionType $gt)
     {
@@ -1475,10 +1475,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset gt
+     * isset gt.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetGt($index)
     {
@@ -1486,9 +1486,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset gt
+     * unset gt.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetGt($index)
@@ -1497,7 +1497,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as gt
+     * Gets as gt.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1507,9 +1507,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new gt
+     * Sets a new gt.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $gt
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $gt
      * @return self
      */
     public function setGt(array $gt)
@@ -1519,10 +1519,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as le
+     * Adds as le.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $le
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $le
      */
     public function addToLe(TTwoChildrenExpressionType $le)
     {
@@ -1531,10 +1531,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset le
+     * isset le.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLe($index)
     {
@@ -1542,9 +1542,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset le
+     * unset le.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLe($index)
@@ -1553,7 +1553,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as le
+     * Gets as le.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1563,9 +1563,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new le
+     * Sets a new le.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $le
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $le
      * @return self
      */
     public function setLe(array $le)
@@ -1575,10 +1575,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as lt
+     * Adds as lt.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $lt
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $lt
      */
     public function addToLt(TTwoChildrenExpressionType $lt)
     {
@@ -1587,10 +1587,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset lt
+     * isset lt.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLt($index)
     {
@@ -1598,9 +1598,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset lt
+     * unset lt.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLt($index)
@@ -1609,7 +1609,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as lt
+     * Gets as lt.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1619,9 +1619,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new lt
+     * Sets a new lt.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $lt
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $lt
      * @return self
      */
     public function setLt(array $lt)
@@ -1631,10 +1631,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as and
+     * Adds as and.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $and
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $and
      */
     public function addToAnd(TTwoChildrenExpressionType $and)
     {
@@ -1643,10 +1643,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset and
+     * isset and.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnd($index)
     {
@@ -1654,9 +1654,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset and
+     * unset and.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnd($index)
@@ -1665,7 +1665,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as and
+     * Gets as and.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1675,9 +1675,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new and
+     * Sets a new and.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $and
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $and
      * @return self
      */
     public function setAnd(array $and)
@@ -1687,10 +1687,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as or
+     * Adds as or.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $or
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $or
      */
     public function addToOr(TTwoChildrenExpressionType $or)
     {
@@ -1699,10 +1699,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset or
+     * isset or.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetOr($index)
     {
@@ -1710,9 +1710,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset or
+     * unset or.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetOr($index)
@@ -1721,7 +1721,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as or
+     * Gets as or.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1731,9 +1731,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new or
+     * Sets a new or.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $or
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $or
      * @return self
      */
     public function setOr(array $or)
@@ -1743,10 +1743,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as not
+     * Adds as not.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $not
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $not
      */
     public function addToNot(TOneChildExpressionType $not)
     {
@@ -1755,10 +1755,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset not
+     * isset not.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNot($index)
     {
@@ -1766,9 +1766,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset not
+     * unset not.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNot($index)
@@ -1777,7 +1777,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as not
+     * Gets as not.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[]
      */
@@ -1787,9 +1787,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new not
+     * Sets a new not.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $not
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $not
      * @return self
      */
     public function setNot(array $not)
@@ -1799,10 +1799,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as isOf
+     * Adds as isOf.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $isOf
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $isOf
      */
     public function addToIsOf(TCastOrIsOfExpressionType $isOf)
     {
@@ -1811,10 +1811,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset isOf
+     * isset isOf.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetIsOf($index)
     {
@@ -1822,9 +1822,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset isOf
+     * unset isOf.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetIsOf($index)
@@ -1833,7 +1833,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as isOf
+     * Gets as isOf.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[]
      */
@@ -1843,9 +1843,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new isOf
+     * Sets a new isOf.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $isOf
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $isOf
      * @return self
      */
     public function setIsOf(array $isOf)
@@ -1855,10 +1855,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as labeledElement
+     * Adds as labeledElement.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType $labeledElement
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType $labeledElement
      */
     public function addToLabeledElement(TLabeledElementExpressionType $labeledElement)
     {
@@ -1867,10 +1867,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset labeledElement
+     * isset labeledElement.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLabeledElement($index)
     {
@@ -1878,9 +1878,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset labeledElement
+     * unset labeledElement.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLabeledElement($index)
@@ -1889,7 +1889,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as labeledElement
+     * Gets as labeledElement.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType[]
      */
@@ -1899,9 +1899,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new labeledElement
+     * Sets a new labeledElement.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType[] $labeledElement
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType[] $labeledElement
      * @return self
      */
     public function setLabeledElement(array $labeledElement)
@@ -1911,10 +1911,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as labeledElementReference
+     * Adds as labeledElementReference.
      *
+     * @param  string $labeledElementReference
      * @return self
-     * @param string $labeledElementReference
      */
     public function addToLabeledElementReference($labeledElementReference)
     {
@@ -1923,10 +1923,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset labeledElementReference
+     * isset labeledElementReference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLabeledElementReference($index)
     {
@@ -1934,9 +1934,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset labeledElementReference
+     * unset labeledElementReference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLabeledElementReference($index)
@@ -1945,7 +1945,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as labeledElementReference
+     * Gets as labeledElementReference.
      *
      * @return string[]
      */
@@ -1955,9 +1955,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new labeledElementReference
+     * Sets a new labeledElementReference.
      *
-     * @param string $labeledElementReference
+     * @param  string $labeledElementReference
      * @return self
      */
     public function setLabeledElementReference(array $labeledElementReference)
@@ -1967,10 +1967,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToNull(Annotation $annotation)
     {
@@ -1979,10 +1979,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset null
+     * isset null.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNull($index)
     {
@@ -1990,9 +1990,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset null
+     * unset null.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNull($index)
@@ -2001,7 +2001,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as null
+     * Gets as null.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -2011,9 +2011,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new null
+     * Sets a new null.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $null
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $null
      * @return self
      */
     public function setNull(array $null)
@@ -2023,10 +2023,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as navigationPropertyPath
+     * Adds as navigationPropertyPath.
      *
+     * @param  string $navigationPropertyPath
      * @return self
-     * @param string $navigationPropertyPath
      */
     public function addToNavigationPropertyPath($navigationPropertyPath)
     {
@@ -2035,10 +2035,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset navigationPropertyPath
+     * isset navigationPropertyPath.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNavigationPropertyPath($index)
     {
@@ -2046,9 +2046,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset navigationPropertyPath
+     * unset navigationPropertyPath.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNavigationPropertyPath($index)
@@ -2057,7 +2057,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as navigationPropertyPath
+     * Gets as navigationPropertyPath.
      *
      * @return string[]
      */
@@ -2067,9 +2067,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new navigationPropertyPath
+     * Sets a new navigationPropertyPath.
      *
-     * @param string $navigationPropertyPath
+     * @param  string $navigationPropertyPath
      * @return self
      */
     public function setNavigationPropertyPath(array $navigationPropertyPath)
@@ -2079,10 +2079,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as path
+     * Adds as path.
      *
+     * @param  string $path
      * @return self
-     * @param string $path
      */
     public function addToPath($path)
     {
@@ -2091,10 +2091,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset path
+     * isset path.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPath($index)
     {
@@ -2102,9 +2102,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset path
+     * unset path.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPath($index)
@@ -2113,7 +2113,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as path
+     * Gets as path.
      *
      * @return string[]
      */
@@ -2123,9 +2123,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new path
+     * Sets a new path.
      *
-     * @param string $path
+     * @param  string $path
      * @return self
      */
     public function setPath(array $path)
@@ -2135,10 +2135,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as propertyPath
+     * Adds as propertyPath.
      *
+     * @param  string $propertyPath
      * @return self
-     * @param string $propertyPath
      */
     public function addToPropertyPath($propertyPath)
     {
@@ -2147,10 +2147,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset propertyPath
+     * isset propertyPath.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPropertyPath($index)
     {
@@ -2158,9 +2158,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset propertyPath
+     * unset propertyPath.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPropertyPath($index)
@@ -2169,7 +2169,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as propertyPath
+     * Gets as propertyPath.
      *
      * @return string[]
      */
@@ -2179,9 +2179,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new propertyPath
+     * Sets a new propertyPath.
      *
-     * @param string $propertyPath
+     * @param  string $propertyPath
      * @return self
      */
     public function setPropertyPath(array $propertyPath)
@@ -2191,10 +2191,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as record
+     * Adds as record.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType $record
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType $record
      */
     public function addToRecord(TRecordExpressionType $record)
     {
@@ -2203,10 +2203,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset record
+     * isset record.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRecord($index)
     {
@@ -2214,9 +2214,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset record
+     * unset record.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRecord($index)
@@ -2225,7 +2225,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as record
+     * Gets as record.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType[]
      */
@@ -2235,9 +2235,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new record
+     * Sets a new record.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType[] $record
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType[] $record
      * @return self
      */
     public function setRecord(array $record)
@@ -2247,10 +2247,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as urlRef
+     * Adds as urlRef.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $urlRef
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $urlRef
      */
     public function addToUrlRef(TOneChildExpressionType $urlRef)
     {
@@ -2259,10 +2259,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset urlRef
+     * isset urlRef.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetUrlRef($index)
     {
@@ -2270,9 +2270,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset urlRef
+     * unset urlRef.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetUrlRef($index)
@@ -2281,7 +2281,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as urlRef
+     * Gets as urlRef.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[]
      */
@@ -2291,9 +2291,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new urlRef
+     * Sets a new urlRef.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $urlRef
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $urlRef
      * @return self
      */
     public function setUrlRef(array $urlRef)

@@ -6,7 +6,7 @@ use AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\AssociationSetAnon
 use AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\EntitySetAnonymousType;
 
 /**
- * Class representing EntityContainer
+ * Class representing EntityContainer.
  */
 class EntityContainer
 {
@@ -38,7 +38,7 @@ class EntityContainer
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -48,9 +48,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -60,7 +60,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType
      */
@@ -70,9 +70,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -82,10 +82,10 @@ class EntityContainer
     }
 
     /**
-     * Adds as entitySet
+     * Adds as entitySet.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\EntitySetAnonymousType $entitySet
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\EntitySetAnonymousType $entitySet
      */
     public function addToEntitySet(EntitySetAnonymousType $entitySet)
     {
@@ -94,10 +94,10 @@ class EntityContainer
     }
 
     /**
-     * isset entitySet
+     * isset entitySet.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntitySet($index)
     {
@@ -105,9 +105,9 @@ class EntityContainer
     }
 
     /**
-     * unset entitySet
+     * unset entitySet.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntitySet($index)
@@ -116,7 +116,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\EntitySetAnonymousType[]
      */
@@ -126,9 +126,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\EntitySetAnonymousType[] $entitySet
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\EntitySetAnonymousType[] $entitySet
      * @return self
      */
     public function setEntitySet(array $entitySet)
@@ -138,11 +138,11 @@ class EntityContainer
     }
 
     /**
-     * Adds as associationSet
+     * Adds as associationSet.
      *
-     * @return self
      * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\AssociationSetAnonymousType
      * $associationSet
+     * @return self
      */
     public function addToAssociationSet(AssociationSetAnonymousType $associationSet)
     {
@@ -151,10 +151,10 @@ class EntityContainer
     }
 
     /**
-     * isset associationSet
+     * isset associationSet.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAssociationSet($index)
     {
@@ -162,9 +162,9 @@ class EntityContainer
     }
 
     /**
-     * unset associationSet
+     * unset associationSet.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAssociationSet($index)
@@ -173,7 +173,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as associationSet
+     * Gets as associationSet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\AssociationSetAnonymousType[]
      */
@@ -183,7 +183,7 @@ class EntityContainer
     }
 
     /**
-     * Sets a new associationSet
+     * Sets a new associationSet.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer\AssociationSetAnonymousType[]
      * $associationSet

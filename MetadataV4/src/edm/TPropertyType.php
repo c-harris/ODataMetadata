@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TPropertyType
+ * Class representing TPropertyType.
  *
  *
  * XSD Type: TProperty
@@ -22,7 +22,7 @@ class TPropertyType
     private $type = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -37,7 +37,7 @@ class TPropertyType
     private $maxLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
@@ -52,7 +52,7 @@ class TPropertyType
     private $sRID = null;
 
     /**
-     * @property boolean $unicode
+     * @property bool $unicode
      */
     private $unicode = null;
 
@@ -64,7 +64,7 @@ class TPropertyType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -74,9 +74,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -86,7 +86,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -96,9 +96,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -108,9 +108,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -118,9 +118,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -130,7 +130,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as defaultValue
+     * Gets as defaultValue.
      *
      * @return string
      */
@@ -140,9 +140,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new defaultValue
+     * Sets a new defaultValue.
      *
-     * @param string $defaultValue
+     * @param  string $defaultValue
      * @return self
      */
     public function setDefaultValue($defaultValue)
@@ -152,7 +152,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -162,9 +162,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -174,9 +174,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -184,9 +184,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -196,7 +196,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
      * @return string
      */
@@ -206,9 +206,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param string $scale
+     * @param  string $scale
      * @return self
      */
     public function setScale($scale)
@@ -218,7 +218,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -228,9 +228,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)
@@ -240,9 +240,9 @@ class TPropertyType
     }
 
     /**
-     * Gets as unicode
+     * Gets as unicode.
      *
-     * @return boolean
+     * @return bool
      */
     public function getUnicode()
     {
@@ -250,9 +250,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new unicode
+     * Sets a new unicode.
      *
-     * @param boolean $unicode
+     * @param  bool $unicode
      * @return self
      */
     public function setUnicode($unicode)
@@ -262,10 +262,10 @@ class TPropertyType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -274,10 +274,10 @@ class TPropertyType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -285,9 +285,9 @@ class TPropertyType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -296,7 +296,7 @@ class TPropertyType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -306,9 +306,9 @@ class TPropertyType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV1\edmx;
 use AlgoWeb\ODataMetadata\MetadataV1\edm\Schema;
 
 /**
- * Class representing TEdmxType
+ * Class representing TEdmxType.
  *
  *
  * XSD Type: TEdmx
@@ -34,7 +34,7 @@ class TEdmxType
     private $dataServices = null;
 
     /**
-     * Gets as version
+     * Gets as version.
      *
      * @return string
      */
@@ -44,9 +44,9 @@ class TEdmxType
     }
 
     /**
-     * Sets a new version
+     * Sets a new version.
      *
-     * @param string $version
+     * @param  string $version
      * @return self
      */
     public function setVersion($version)
@@ -56,7 +56,7 @@ class TEdmxType
     }
 
     /**
-     * Gets as designer
+     * Gets as designer.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edmx\TDesignerType
      */
@@ -66,9 +66,9 @@ class TEdmxType
     }
 
     /**
-     * Sets a new designer
+     * Sets a new designer.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edmx\TDesignerType $designer
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edmx\TDesignerType $designer
      * @return self
      */
     public function setDesigner(TDesignerType $designer)
@@ -78,7 +78,7 @@ class TEdmxType
     }
 
     /**
-     * Gets as runtime
+     * Gets as runtime.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edmx\TRuntimeType
      */
@@ -88,9 +88,9 @@ class TEdmxType
     }
 
     /**
-     * Sets a new runtime
+     * Sets a new runtime.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edmx\TRuntimeType $runtime
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edmx\TRuntimeType $runtime
      * @return self
      */
     public function setRuntime(TRuntimeType $runtime)
@@ -100,10 +100,10 @@ class TEdmxType
     }
 
     /**
-     * Adds as schema
+     * Adds as schema.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\Schema $schema
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\Schema $schema
      */
     public function addToDataServices(Schema $schema)
     {
@@ -112,10 +112,10 @@ class TEdmxType
     }
 
     /**
-     * isset dataServices
+     * isset dataServices.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDataServices($index)
     {
@@ -123,9 +123,9 @@ class TEdmxType
     }
 
     /**
-     * unset dataServices
+     * unset dataServices.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDataServices($index)
@@ -134,7 +134,7 @@ class TEdmxType
     }
 
     /**
-     * Gets as dataServices
+     * Gets as dataServices.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\Schema[]
      */
@@ -144,9 +144,9 @@ class TEdmxType
     }
 
     /**
-     * Sets a new dataServices
+     * Sets a new dataServices.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\Schema[] $dataServices
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\Schema[] $dataServices
      * @return self
      */
     public function setDataServices(array $dataServices)

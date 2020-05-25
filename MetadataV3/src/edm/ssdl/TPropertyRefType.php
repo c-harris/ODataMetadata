@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl;
 
 /**
- * Class representing TPropertyRefType
+ * Class representing TPropertyRefType.
  *
  *
  * XSD Type: TPropertyRef
@@ -22,7 +22,7 @@ class TPropertyRefType
     private $documentation = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TPropertyRefType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -44,7 +44,7 @@ class TPropertyRefType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType
      */
@@ -54,9 +54,9 @@ class TPropertyRefType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

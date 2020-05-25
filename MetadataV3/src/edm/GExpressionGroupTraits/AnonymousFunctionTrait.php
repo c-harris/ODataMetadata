@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the AnonymousFunction Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the AnonymousFunction Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -20,10 +20,10 @@ trait AnonymousFunctionTrait
 
     
     /**
-     * Adds as anonymousFunction
+     * Adds as anonymousFunction.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType $anonymousFunction
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType $anonymousFunction
      */
     public function addToAnonymousFunction(TAnonymousFunctionExpressionType $anonymousFunction)
     {
@@ -32,10 +32,10 @@ trait AnonymousFunctionTrait
     }
 
     /**
-     * isset anonymousFunction
+     * isset anonymousFunction.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnonymousFunction($index)
     {
@@ -43,9 +43,9 @@ trait AnonymousFunctionTrait
     }
 
     /**
-     * unset anonymousFunction
+     * unset anonymousFunction.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnonymousFunction($index)
@@ -54,7 +54,7 @@ trait AnonymousFunctionTrait
     }
 
     /**
-     * Gets as anonymousFunction
+     * Gets as anonymousFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType[]
      */
@@ -64,9 +64,9 @@ trait AnonymousFunctionTrait
     }
 
     /**
-     * Sets a new anonymousFunction
+     * Sets a new anonymousFunction.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType[] $anonymousFunction
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType[] $anonymousFunction
      * @return self
      */
     public function setAnonymousFunction(array $anonymousFunction)

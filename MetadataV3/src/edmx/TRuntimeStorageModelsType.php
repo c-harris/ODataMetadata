@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edmx;
 
 /**
- * Class representing TRuntimeStorageModelsType
+ * Class representing TRuntimeStorageModelsType.
  *
  *
  * XSD Type: TRuntimeStorageModels
@@ -17,7 +17,7 @@ class TRuntimeStorageModelsType
     private $schema = null;
 
     /**
-     * Gets as schema
+     * Gets as schema.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\Schema
      */
@@ -27,9 +27,9 @@ class TRuntimeStorageModelsType
     }
 
     /**
-     * Sets a new schema
+     * Sets a new schema.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\Schema $schema
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\Schema $schema
      * @return self
      */
     public function setSchema(Ssdl\Schema $schema)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TEntityContainerType
+ * Class representing TEntityContainerType.
  *
  *
  * XSD Type: TEntityContainer
@@ -57,7 +57,7 @@ class TEntityContainerType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -67,9 +67,9 @@ class TEntityContainerType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -79,7 +79,7 @@ class TEntityContainerType
     }
 
     /**
-     * Gets as extends
+     * Gets as extends.
      *
      * @return string
      */
@@ -89,9 +89,9 @@ class TEntityContainerType
     }
 
     /**
-     * Sets a new extends
+     * Sets a new extends.
      *
-     * @param string $extends
+     * @param  string $extends
      * @return self
      */
     public function setExtends($extends)
@@ -101,10 +101,10 @@ class TEntityContainerType
     }
 
     /**
-     * Adds as entitySet
+     * Adds as entitySet.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TEntitySetType $entitySet
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TEntitySetType $entitySet
      */
     public function addToEntitySet(TEntitySetType $entitySet)
     {
@@ -113,10 +113,10 @@ class TEntityContainerType
     }
 
     /**
-     * isset entitySet
+     * isset entitySet.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntitySet($index)
     {
@@ -124,9 +124,9 @@ class TEntityContainerType
     }
 
     /**
-     * unset entitySet
+     * unset entitySet.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntitySet($index)
@@ -135,7 +135,7 @@ class TEntityContainerType
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TEntitySetType[]
      */
@@ -145,9 +145,9 @@ class TEntityContainerType
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TEntitySetType[] $entitySet
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TEntitySetType[] $entitySet
      * @return self
      */
     public function setEntitySet(array $entitySet)
@@ -157,10 +157,10 @@ class TEntityContainerType
     }
 
     /**
-     * Adds as actionImport
+     * Adds as actionImport.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TActionImportType $actionImport
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TActionImportType $actionImport
      */
     public function addToActionImport(TActionImportType $actionImport)
     {
@@ -169,10 +169,10 @@ class TEntityContainerType
     }
 
     /**
-     * isset actionImport
+     * isset actionImport.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetActionImport($index)
     {
@@ -180,9 +180,9 @@ class TEntityContainerType
     }
 
     /**
-     * unset actionImport
+     * unset actionImport.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetActionImport($index)
@@ -191,7 +191,7 @@ class TEntityContainerType
     }
 
     /**
-     * Gets as actionImport
+     * Gets as actionImport.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TActionImportType[]
      */
@@ -201,9 +201,9 @@ class TEntityContainerType
     }
 
     /**
-     * Sets a new actionImport
+     * Sets a new actionImport.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TActionImportType[] $actionImport
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TActionImportType[] $actionImport
      * @return self
      */
     public function setActionImport(array $actionImport)
@@ -213,10 +213,10 @@ class TEntityContainerType
     }
 
     /**
-     * Adds as functionImport
+     * Adds as functionImport.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TFunctionImportType $functionImport
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TFunctionImportType $functionImport
      */
     public function addToFunctionImport(TFunctionImportType $functionImport)
     {
@@ -225,10 +225,10 @@ class TEntityContainerType
     }
 
     /**
-     * isset functionImport
+     * isset functionImport.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFunctionImport($index)
     {
@@ -236,9 +236,9 @@ class TEntityContainerType
     }
 
     /**
-     * unset functionImport
+     * unset functionImport.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFunctionImport($index)
@@ -247,7 +247,7 @@ class TEntityContainerType
     }
 
     /**
-     * Gets as functionImport
+     * Gets as functionImport.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TFunctionImportType[]
      */
@@ -257,9 +257,9 @@ class TEntityContainerType
     }
 
     /**
-     * Sets a new functionImport
+     * Sets a new functionImport.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TFunctionImportType[] $functionImport
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TFunctionImportType[] $functionImport
      * @return self
      */
     public function setFunctionImport(array $functionImport)
@@ -269,10 +269,10 @@ class TEntityContainerType
     }
 
     /**
-     * Adds as singleton
+     * Adds as singleton.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TSingletonType $singleton
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TSingletonType $singleton
      */
     public function addToSingleton(TSingletonType $singleton)
     {
@@ -281,10 +281,10 @@ class TEntityContainerType
     }
 
     /**
-     * isset singleton
+     * isset singleton.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetSingleton($index)
     {
@@ -292,9 +292,9 @@ class TEntityContainerType
     }
 
     /**
-     * unset singleton
+     * unset singleton.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetSingleton($index)
@@ -303,7 +303,7 @@ class TEntityContainerType
     }
 
     /**
-     * Gets as singleton
+     * Gets as singleton.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TSingletonType[]
      */
@@ -313,9 +313,9 @@ class TEntityContainerType
     }
 
     /**
-     * Sets a new singleton
+     * Sets a new singleton.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TSingletonType[] $singleton
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TSingletonType[] $singleton
      * @return self
      */
     public function setSingleton(array $singleton)
@@ -325,10 +325,10 @@ class TEntityContainerType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -337,10 +337,10 @@ class TEntityContainerType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -348,9 +348,9 @@ class TEntityContainerType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -359,7 +359,7 @@ class TEntityContainerType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -369,9 +369,9 @@ class TEntityContainerType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

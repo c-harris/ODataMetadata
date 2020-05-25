@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\mapping\cs;
 
 /**
- * Class representing TFunctionImportEntityTypeMappingType
+ * Class representing TFunctionImportEntityTypeMappingType.
  *
  *
  * XSD Type: TFunctionImportEntityTypeMapping
@@ -24,7 +24,7 @@ class TFunctionImportEntityTypeMappingType
     );
 
     /**
-     * Gets as typeName
+     * Gets as typeName.
      *
      * @return string
      */
@@ -34,9 +34,9 @@ class TFunctionImportEntityTypeMappingType
     }
 
     /**
-     * Sets a new typeName
+     * Sets a new typeName.
      *
-     * @param string $typeName
+     * @param  string $typeName
      * @return self
      */
     public function setTypeName($typeName)
@@ -46,10 +46,10 @@ class TFunctionImportEntityTypeMappingType
     }
 
     /**
-     * Adds as condition
+     * Adds as condition.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportConditionType $condition
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportConditionType $condition
      */
     public function addToCondition(TFunctionImportConditionType $condition)
     {
@@ -58,10 +58,10 @@ class TFunctionImportEntityTypeMappingType
     }
 
     /**
-     * isset condition
+     * isset condition.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCondition($index)
     {
@@ -69,9 +69,9 @@ class TFunctionImportEntityTypeMappingType
     }
 
     /**
-     * unset condition
+     * unset condition.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCondition($index)
@@ -80,7 +80,7 @@ class TFunctionImportEntityTypeMappingType
     }
 
     /**
-     * Gets as condition
+     * Gets as condition.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportConditionType[]
      */
@@ -90,9 +90,9 @@ class TFunctionImportEntityTypeMappingType
     }
 
     /**
-     * Sets a new condition
+     * Sets a new condition.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportConditionType[] $condition
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportConditionType[] $condition
      * @return self
      */
     public function setCondition(array $condition)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edm;
 
 /**
- * Class representing TAssociationEndType
+ * Class representing TAssociationEndType.
  *
  *
  * XSD Type: TAssociationEnd
@@ -39,7 +39,7 @@ class TAssociationEndType
     );
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -49,9 +49,9 @@ class TAssociationEndType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -61,7 +61,7 @@ class TAssociationEndType
     }
 
     /**
-     * Gets as role
+     * Gets as role.
      *
      * @return string
      */
@@ -71,9 +71,9 @@ class TAssociationEndType
     }
 
     /**
-     * Sets a new role
+     * Sets a new role.
      *
-     * @param string $role
+     * @param  string $role
      * @return self
      */
     public function setRole($role)
@@ -83,7 +83,7 @@ class TAssociationEndType
     }
 
     /**
-     * Gets as multiplicity
+     * Gets as multiplicity.
      *
      * @return string
      */
@@ -93,9 +93,9 @@ class TAssociationEndType
     }
 
     /**
-     * Sets a new multiplicity
+     * Sets a new multiplicity.
      *
-     * @param string $multiplicity
+     * @param  string $multiplicity
      * @return self
      */
     public function setMultiplicity($multiplicity)
@@ -105,7 +105,7 @@ class TAssociationEndType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType
      */
@@ -115,9 +115,9 @@ class TAssociationEndType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -127,10 +127,10 @@ class TAssociationEndType
     }
 
     /**
-     * Adds as onDelete
+     * Adds as onDelete.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TOnActionType $onDelete
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TOnActionType $onDelete
      */
     public function addToOnDelete(TOnActionType $onDelete)
     {
@@ -139,10 +139,10 @@ class TAssociationEndType
     }
 
     /**
-     * isset onDelete
+     * isset onDelete.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetOnDelete($index)
     {
@@ -150,9 +150,9 @@ class TAssociationEndType
     }
 
     /**
-     * unset onDelete
+     * unset onDelete.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetOnDelete($index)
@@ -161,7 +161,7 @@ class TAssociationEndType
     }
 
     /**
-     * Gets as onDelete
+     * Gets as onDelete.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TOnActionType[]
      */
@@ -171,9 +171,9 @@ class TAssociationEndType
     }
 
     /**
-     * Sets a new onDelete
+     * Sets a new onDelete.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TOnActionType[] $onDelete
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TOnActionType[] $onDelete
      * @return self
      */
     public function setOnDelete(array $onDelete)

@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Enum Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Enum Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -18,10 +18,10 @@ trait EnumTrait
     
 
     /**
-     * Adds as enum
+     * Adds as enum.
      *
+     * @param  string $enum
      * @return self
-     * @param string $enum
      */
     public function addToEnum($enum)
     {
@@ -30,10 +30,10 @@ trait EnumTrait
     }
 
     /**
-     * isset enum
+     * isset enum.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEnum($index)
     {
@@ -41,9 +41,9 @@ trait EnumTrait
     }
 
     /**
-     * unset enum
+     * unset enum.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEnum($index)
@@ -52,7 +52,7 @@ trait EnumTrait
     }
 
     /**
-     * Gets as enum
+     * Gets as enum.
      *
      * @return string[]
      */
@@ -62,9 +62,9 @@ trait EnumTrait
     }
 
     /**
-     * Sets a new enum
+     * Sets a new enum.
      *
-     * @param string $enum
+     * @param  string $enum
      * @return self
      */
     public function setEnum(array $enum)

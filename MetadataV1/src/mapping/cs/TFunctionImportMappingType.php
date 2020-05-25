@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\mapping\cs;
 
 /**
- * Class representing TFunctionImportMappingType
+ * Class representing TFunctionImportMappingType.
  *
  *
  * XSD Type: TFunctionImportMapping
@@ -28,7 +28,7 @@ class TFunctionImportMappingType
     private $resultMapping = null;
 
     /**
-     * Gets as functionName
+     * Gets as functionName.
      *
      * @return string
      */
@@ -38,9 +38,9 @@ class TFunctionImportMappingType
     }
 
     /**
-     * Sets a new functionName
+     * Sets a new functionName.
      *
-     * @param string $functionName
+     * @param  string $functionName
      * @return self
      */
     public function setFunctionName($functionName)
@@ -50,7 +50,7 @@ class TFunctionImportMappingType
     }
 
     /**
-     * Gets as functionImportName
+     * Gets as functionImportName.
      *
      * @return string
      */
@@ -60,9 +60,9 @@ class TFunctionImportMappingType
     }
 
     /**
-     * Sets a new functionImportName
+     * Sets a new functionImportName.
      *
-     * @param string $functionImportName
+     * @param  string $functionImportName
      * @return self
      */
     public function setFunctionImportName($functionImportName)
@@ -72,11 +72,11 @@ class TFunctionImportMappingType
     }
 
     /**
-     * Adds as entityTypeMapping
+     * Adds as entityTypeMapping.
      *
-     * @return self
      * @param \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportEntityTypeMappingType
      * $entityTypeMapping
+     * @return self
      */
     public function addToResultMapping(TFunctionImportEntityTypeMappingType $entityTypeMapping)
     {
@@ -85,10 +85,10 @@ class TFunctionImportMappingType
     }
 
     /**
-     * isset resultMapping
+     * isset resultMapping.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetResultMapping($index)
     {
@@ -96,9 +96,9 @@ class TFunctionImportMappingType
     }
 
     /**
-     * unset resultMapping
+     * unset resultMapping.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetResultMapping($index)
@@ -107,7 +107,7 @@ class TFunctionImportMappingType
     }
 
     /**
-     * Gets as resultMapping
+     * Gets as resultMapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportEntityTypeMappingType[]
      */
@@ -117,7 +117,7 @@ class TFunctionImportMappingType
     }
 
     /**
-     * Sets a new resultMapping
+     * Sets a new resultMapping.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionImportEntityTypeMappingType[]
      * $resultMapping

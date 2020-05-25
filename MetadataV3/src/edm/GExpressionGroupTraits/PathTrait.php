@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Path Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Path Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -18,10 +18,10 @@ trait PathTrait
     );
     
     /**
-     * Adds as path
+     * Adds as path.
      *
+     * @param  string $path
      * @return self
-     * @param string $path
      */
     public function addToPath($path)
     {
@@ -30,10 +30,10 @@ trait PathTrait
     }
 
     /**
-     * isset path
+     * isset path.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPath($index)
     {
@@ -41,9 +41,9 @@ trait PathTrait
     }
 
     /**
-     * unset path
+     * unset path.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPath($index)
@@ -52,7 +52,7 @@ trait PathTrait
     }
 
     /**
-     * Gets as path
+     * Gets as path.
      *
      * @return string[]
      */
@@ -62,9 +62,9 @@ trait PathTrait
     }
 
     /**
-     * Sets a new path
+     * Sets a new path.
      *
-     * @param string $path
+     * @param  string $path
      * @return self
      */
     public function setPath(array $path)

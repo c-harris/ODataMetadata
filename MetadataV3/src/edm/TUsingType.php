@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TUsingType
+ * Class representing TUsingType.
  *
  *
  * XSD Type: TUsing
@@ -32,7 +32,7 @@ class TUsingType
     private $documentation = null;
 
     /**
-     * Gets as namespace
+     * Gets as namespace.
      *
      * @return string
      */
@@ -42,9 +42,9 @@ class TUsingType
     }
 
     /**
-     * Sets a new namespace
+     * Sets a new namespace.
      *
-     * @param string $namespace
+     * @param  string $namespace
      * @return self
      */
     public function setNamespace($namespace)
@@ -54,7 +54,7 @@ class TUsingType
     }
 
     /**
-     * Gets as namespaceUri
+     * Gets as namespaceUri.
      *
      * @return string
      */
@@ -64,9 +64,9 @@ class TUsingType
     }
 
     /**
-     * Sets a new namespaceUri
+     * Sets a new namespaceUri.
      *
-     * @param string $namespaceUri
+     * @param  string $namespaceUri
      * @return self
      */
     public function setNamespaceUri($namespaceUri)
@@ -76,7 +76,7 @@ class TUsingType
     }
 
     /**
-     * Gets as alias
+     * Gets as alias.
      *
      * @return string
      */
@@ -86,9 +86,9 @@ class TUsingType
     }
 
     /**
-     * Sets a new alias
+     * Sets a new alias.
      *
-     * @param string $alias
+     * @param  string $alias
      * @return self
      */
     public function setAlias($alias)
@@ -98,7 +98,7 @@ class TUsingType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -108,9 +108,9 @@ class TUsingType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

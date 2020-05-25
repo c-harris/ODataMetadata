@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edmx;
 
 /**
- * Class representing TConnectionType
+ * Class representing TConnectionType.
  *
  *
  * XSD Type: TConnection
@@ -17,10 +17,10 @@ class TConnectionType
     private $designerInfoPropertySet = null;
 
     /**
-     * Adds as designerProperty
+     * Adds as designerProperty.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TDesignerPropertyType $designerProperty
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TDesignerPropertyType $designerProperty
      */
     public function addToDesignerInfoPropertySet(TDesignerPropertyType $designerProperty)
     {
@@ -29,10 +29,10 @@ class TConnectionType
     }
 
     /**
-     * isset designerInfoPropertySet
+     * isset designerInfoPropertySet.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDesignerInfoPropertySet($index)
     {
@@ -40,9 +40,9 @@ class TConnectionType
     }
 
     /**
-     * unset designerInfoPropertySet
+     * unset designerInfoPropertySet.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDesignerInfoPropertySet($index)
@@ -51,7 +51,7 @@ class TConnectionType
     }
 
     /**
-     * Gets as designerInfoPropertySet
+     * Gets as designerInfoPropertySet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edmx\TDesignerPropertyType[]
      */
@@ -61,9 +61,9 @@ class TConnectionType
     }
 
     /**
-     * Sets a new designerInfoPropertySet
+     * Sets a new designerInfoPropertySet.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TDesignerPropertyType[] $designerInfoPropertySet
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TDesignerPropertyType[] $designerInfoPropertySet
      * @return self
      */
     public function setDesignerInfoPropertySet(array $designerInfoPropertySet)

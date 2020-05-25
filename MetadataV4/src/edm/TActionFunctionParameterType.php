@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TActionFunctionParameterType
+ * Class representing TActionFunctionParameterType.
  *
  *
  * XSD Type: TActionFunctionParameter
@@ -22,7 +22,7 @@ class TActionFunctionParameterType
     private $type = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -32,7 +32,7 @@ class TActionFunctionParameterType
     private $maxLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
@@ -54,7 +54,7 @@ class TActionFunctionParameterType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -64,9 +64,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -76,7 +76,7 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -86,9 +86,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -98,9 +98,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -108,9 +108,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -120,7 +120,7 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -130,9 +130,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -142,9 +142,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -152,9 +152,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -164,7 +164,7 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
      * @return string
      */
@@ -174,9 +174,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param string $scale
+     * @param  string $scale
      * @return self
      */
     public function setScale($scale)
@@ -186,7 +186,7 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -196,9 +196,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)
@@ -208,10 +208,10 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -220,10 +220,10 @@ class TActionFunctionParameterType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -231,9 +231,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -242,7 +242,7 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -252,9 +252,9 @@ class TActionFunctionParameterType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

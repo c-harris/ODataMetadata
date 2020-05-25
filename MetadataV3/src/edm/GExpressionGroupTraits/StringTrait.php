@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the String Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the String Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -17,12 +17,12 @@ trait StringTrait
         
     );
 
-        /**
-         * Adds as string
-         *
-         * @return self
-         * @param string $string
-         */
+    /**
+     * Adds as string.
+     *
+     * @param  string $string
+     * @return self
+     */
     public function addToString($string)
     {
         $this->string[] = $string;
@@ -30,10 +30,10 @@ trait StringTrait
     }
 
     /**
-     * isset string
+     * isset string.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetString($index)
     {
@@ -41,9 +41,9 @@ trait StringTrait
     }
 
     /**
-     * unset string
+     * unset string.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetString($index)
@@ -52,7 +52,7 @@ trait StringTrait
     }
 
     /**
-     * Gets as string
+     * Gets as string.
      *
      * @return string[]
      */
@@ -62,9 +62,9 @@ trait StringTrait
     }
 
     /**
-     * Sets a new string
+     * Sets a new string.
      *
-     * @param string $string
+     * @param  string $string
      * @return self
      */
     public function setString(array $string)

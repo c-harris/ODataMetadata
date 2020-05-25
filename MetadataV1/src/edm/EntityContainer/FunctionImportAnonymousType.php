@@ -6,7 +6,7 @@ use AlgoWeb\ODataMetadata\MetadataV1\edm\TDocumentationType;
 use AlgoWeb\ODataMetadata\MetadataV1\edm\TFunctionImportParameterType;
 
 /**
- * Class representing FunctionImportAnonymousType
+ * Class representing FunctionImportAnonymousType.
  */
 class FunctionImportAnonymousType
 {
@@ -44,7 +44,7 @@ class FunctionImportAnonymousType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -54,9 +54,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -66,7 +66,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as returnType
+     * Gets as returnType.
      *
      * @return string
      */
@@ -76,9 +76,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new returnType
+     * Sets a new returnType.
      *
-     * @param string $returnType
+     * @param  string $returnType
      * @return self
      */
     public function setReturnType($returnType)
@@ -88,7 +88,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return string
      */
@@ -98,9 +98,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param string $entitySet
+     * @param  string $entitySet
      * @return self
      */
     public function setEntitySet($entitySet)
@@ -110,7 +110,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as methodAccess
+     * Gets as methodAccess.
      *
      * @return string
      */
@@ -120,9 +120,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new methodAccess
+     * Sets a new methodAccess.
      *
-     * @param string $methodAccess
+     * @param  string $methodAccess
      * @return self
      */
     public function setMethodAccess($methodAccess)
@@ -132,7 +132,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\TDocumentationType
      */
@@ -142,9 +142,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -154,10 +154,10 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Adds as parameter
+     * Adds as parameter.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\TFunctionImportParameterType $parameter
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\TFunctionImportParameterType $parameter
      */
     public function addToParameter(TFunctionImportParameterType $parameter)
     {
@@ -166,10 +166,10 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * isset parameter
+     * isset parameter.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetParameter($index)
     {
@@ -177,9 +177,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * unset parameter
+     * unset parameter.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetParameter($index)
@@ -188,7 +188,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as parameter
+     * Gets as parameter.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\TFunctionImportParameterType[]
      */
@@ -198,9 +198,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new parameter
+     * Sets a new parameter.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\TFunctionImportParameterType[] $parameter
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\TFunctionImportParameterType[] $parameter
      * @return self
      */
     public function setParameter(array $parameter)

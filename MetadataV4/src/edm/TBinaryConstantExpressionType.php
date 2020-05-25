@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TBinaryConstantExpressionType
+ * Class representing TBinaryConstantExpressionType.
  *
  *
  * XSD Type: TBinaryConstantExpression
@@ -17,7 +17,7 @@ class TBinaryConstantExpressionType
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
      * @param string $value
      */
@@ -27,9 +27,9 @@ class TBinaryConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param string $value
+     * @param  string $value
      * @return string
      */
     public function value()
@@ -41,7 +41,7 @@ class TBinaryConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TComplexTypePropertyType
+ * Class representing TComplexTypePropertyType.
  *
  *
  * XSD Type: TComplexTypeProperty
@@ -22,7 +22,7 @@ class TComplexTypePropertyType
     private $type = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -37,22 +37,22 @@ class TComplexTypePropertyType
     private $maxLength = null;
 
     /**
-     * @property boolean $fixedLength
+     * @property bool $fixedLength
      */
     private $fixedLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
     /**
-     * @property integer $scale
+     * @property int $scale
      */
     private $scale = null;
 
     /**
-     * @property boolean $unicode
+     * @property bool $unicode
      */
     private $unicode = null;
 
@@ -103,7 +103,7 @@ class TComplexTypePropertyType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -113,9 +113,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -125,7 +125,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -135,9 +135,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -147,9 +147,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -157,9 +157,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -169,7 +169,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as defaultValue
+     * Gets as defaultValue.
      *
      * @return string
      */
@@ -179,9 +179,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new defaultValue
+     * Sets a new defaultValue.
      *
-     * @param string $defaultValue
+     * @param  string $defaultValue
      * @return self
      */
     public function setDefaultValue($defaultValue)
@@ -191,7 +191,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -201,9 +201,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -213,9 +213,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as fixedLength
+     * Gets as fixedLength.
      *
-     * @return boolean
+     * @return bool
      */
     public function getFixedLength()
     {
@@ -223,9 +223,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new fixedLength
+     * Sets a new fixedLength.
      *
-     * @param boolean $fixedLength
+     * @param  bool $fixedLength
      * @return self
      */
     public function setFixedLength($fixedLength)
@@ -235,9 +235,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -245,9 +245,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -257,9 +257,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
-     * @return integer
+     * @return int
      */
     public function getScale()
     {
@@ -267,9 +267,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param integer $scale
+     * @param  int  $scale
      * @return self
      */
     public function setScale($scale)
@@ -279,9 +279,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as unicode
+     * Gets as unicode.
      *
-     * @return boolean
+     * @return bool
      */
     public function getUnicode()
     {
@@ -289,9 +289,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new unicode
+     * Sets a new unicode.
      *
-     * @param boolean $unicode
+     * @param  bool $unicode
      * @return self
      */
     public function setUnicode($unicode)
@@ -301,7 +301,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as collation
+     * Gets as collation.
      *
      * @return string
      */
@@ -311,9 +311,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new collation
+     * Sets a new collation.
      *
-     * @param string $collation
+     * @param  string $collation
      * @return self
      */
     public function setCollation($collation)
@@ -323,7 +323,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -333,9 +333,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)
@@ -345,7 +345,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as concurrencyMode
+     * Gets as concurrencyMode.
      *
      * @return string
      */
@@ -355,9 +355,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new concurrencyMode
+     * Sets a new concurrencyMode.
      *
-     * @param string $concurrencyMode
+     * @param  string $concurrencyMode
      * @return self
      */
     public function setConcurrencyMode($concurrencyMode)
@@ -367,7 +367,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as setterAccess
+     * Gets as setterAccess.
      *
      * @return string
      */
@@ -377,9 +377,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new setterAccess
+     * Sets a new setterAccess.
      *
-     * @param string $setterAccess
+     * @param  string $setterAccess
      * @return self
      */
     public function setSetterAccess($setterAccess)
@@ -389,7 +389,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as getterAccess
+     * Gets as getterAccess.
      *
      * @return string
      */
@@ -399,9 +399,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new getterAccess
+     * Sets a new getterAccess.
      *
-     * @param string $getterAccess
+     * @param  string $getterAccess
      * @return self
      */
     public function setGetterAccess($getterAccess)
@@ -411,10 +411,10 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Adds as documentation
+     * Adds as documentation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      */
     public function addToDocumentation(TDocumentationType $documentation)
     {
@@ -423,10 +423,10 @@ class TComplexTypePropertyType
     }
 
     /**
-     * isset documentation
+     * isset documentation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDocumentation($index)
     {
@@ -434,9 +434,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * unset documentation
+     * unset documentation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDocumentation($index)
@@ -445,7 +445,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType[]
      */
@@ -455,9 +455,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType[] $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType[] $documentation
      * @return self
      */
     public function setDocumentation(array $documentation)
@@ -467,10 +467,10 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Adds as valueAnnotation
+     * Adds as valueAnnotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType $valueAnnotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType $valueAnnotation
      */
     public function addToValueAnnotation(TValueAnnotationType $valueAnnotation)
     {
@@ -479,10 +479,10 @@ class TComplexTypePropertyType
     }
 
     /**
-     * isset valueAnnotation
+     * isset valueAnnotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetValueAnnotation($index)
     {
@@ -490,9 +490,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * unset valueAnnotation
+     * unset valueAnnotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetValueAnnotation($index)
@@ -501,7 +501,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as valueAnnotation
+     * Gets as valueAnnotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType[]
      */
@@ -511,9 +511,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new valueAnnotation
+     * Sets a new valueAnnotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType[] $valueAnnotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType[] $valueAnnotation
      * @return self
      */
     public function setValueAnnotation(array $valueAnnotation)
@@ -523,10 +523,10 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Adds as typeAnnotation
+     * Adds as typeAnnotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType $typeAnnotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType $typeAnnotation
      */
     public function addToTypeAnnotation(TTypeAnnotationType $typeAnnotation)
     {
@@ -535,10 +535,10 @@ class TComplexTypePropertyType
     }
 
     /**
-     * isset typeAnnotation
+     * isset typeAnnotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetTypeAnnotation($index)
     {
@@ -546,9 +546,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * unset typeAnnotation
+     * unset typeAnnotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetTypeAnnotation($index)
@@ -557,7 +557,7 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Gets as typeAnnotation
+     * Gets as typeAnnotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType[]
      */
@@ -567,9 +567,9 @@ class TComplexTypePropertyType
     }
 
     /**
-     * Sets a new typeAnnotation
+     * Sets a new typeAnnotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType[] $typeAnnotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType[] $typeAnnotation
      * @return self
      */
     public function setTypeAnnotation(array $typeAnnotation)

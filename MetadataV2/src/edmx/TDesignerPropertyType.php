@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edmx;
 
 /**
- * Class representing TDesignerPropertyType
+ * Class representing TDesignerPropertyType.
  *
  *
  * XSD Type: TDesignerProperty
@@ -22,7 +22,7 @@ class TDesignerPropertyType
     private $value = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TDesignerPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -44,7 +44,7 @@ class TDesignerPropertyType
     }
 
     /**
-     * Gets as value
+     * Gets as value.
      *
      * @return string
      */
@@ -54,9 +54,9 @@ class TDesignerPropertyType
     }
 
     /**
-     * Sets a new value
+     * Sets a new value.
      *
-     * @param string $value
+     * @param  string $value
      * @return self
      */
     public function setValue($value)

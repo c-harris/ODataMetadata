@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Record Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Record Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -19,10 +19,10 @@ trait RecordTrait
 
     
     /**
-     * Adds as record
+     * Adds as record.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType $record
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType $record
      */
     public function addToRecord(TRecordExpressionType $record)
     {
@@ -31,10 +31,10 @@ trait RecordTrait
     }
 
     /**
-     * isset record
+     * isset record.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRecord($index)
     {
@@ -42,9 +42,9 @@ trait RecordTrait
     }
 
     /**
-     * unset record
+     * unset record.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRecord($index)
@@ -53,7 +53,7 @@ trait RecordTrait
     }
 
     /**
-     * Gets as record
+     * Gets as record.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType[]
      */
@@ -63,9 +63,9 @@ trait RecordTrait
     }
 
     /**
-     * Sets a new record
+     * Sets a new record.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType[] $record
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType[] $record
      * @return self
      */
     public function setRecord(array $record)

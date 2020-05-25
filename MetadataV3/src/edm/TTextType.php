@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TTextType
+ * Class representing TTextType.
  *
  *
  * XSD Type: TText

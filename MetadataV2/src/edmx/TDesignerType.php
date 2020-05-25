@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edmx;
 
 /**
- * Class representing TDesignerType
+ * Class representing TDesignerType.
  *
  *
  * XSD Type: TDesigner
@@ -27,7 +27,7 @@ class TDesignerType
     private $diagrams = null;
 
     /**
-     * Gets as connection
+     * Gets as connection.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edmx\TConnectionType
      */
@@ -37,9 +37,9 @@ class TDesignerType
     }
 
     /**
-     * Sets a new connection
+     * Sets a new connection.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edmx\TConnectionType $connection
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edmx\TConnectionType $connection
      * @return self
      */
     public function setConnection(TConnectionType $connection)
@@ -49,7 +49,7 @@ class TDesignerType
     }
 
     /**
-     * Gets as options
+     * Gets as options.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edmx\TOptionsType
      */
@@ -59,9 +59,9 @@ class TDesignerType
     }
 
     /**
-     * Sets a new options
+     * Sets a new options.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edmx\TOptionsType $options
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edmx\TOptionsType $options
      * @return self
      */
     public function setOptions(TOptionsType $options)
@@ -71,10 +71,10 @@ class TDesignerType
     }
 
     /**
-     * Adds as diagram
+     * Adds as diagram.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edmx\TDiagramType $diagram
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edmx\TDiagramType $diagram
      */
     public function addToDiagrams(TDiagramType $diagram)
     {
@@ -83,10 +83,10 @@ class TDesignerType
     }
 
     /**
-     * isset diagrams
+     * isset diagrams.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDiagrams($index)
     {
@@ -94,9 +94,9 @@ class TDesignerType
     }
 
     /**
-     * unset diagrams
+     * unset diagrams.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDiagrams($index)
@@ -105,7 +105,7 @@ class TDesignerType
     }
 
     /**
-     * Gets as diagrams
+     * Gets as diagrams.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edmx\TDiagramType[]
      */
@@ -115,9 +115,9 @@ class TDesignerType
     }
 
     /**
-     * Sets a new diagrams
+     * Sets a new diagrams.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edmx\TDiagramType[] $diagrams
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edmx\TDiagramType[] $diagrams
      * @return self
      */
     public function setDiagrams(array $diagrams)

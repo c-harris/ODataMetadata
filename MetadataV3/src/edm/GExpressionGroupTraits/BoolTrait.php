@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Bool Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Bool Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -10,17 +10,17 @@ namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 trait BoolTrait
 {
     /**
-     * @property boolean[] $bool
+     * @property bool[] $bool
      */
     private $bool = array(
         
     );
     
     /**
-     * Adds as bool
+     * Adds as bool.
      *
+     * @param  bool $bool
      * @return self
-     * @param boolean $bool
      */
     public function addToBool($bool)
     {
@@ -29,10 +29,10 @@ trait BoolTrait
     }
 
     /**
-     * isset bool
+     * isset bool.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetBool($index)
     {
@@ -40,9 +40,9 @@ trait BoolTrait
     }
 
     /**
-     * unset bool
+     * unset bool.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetBool($index)
@@ -51,9 +51,9 @@ trait BoolTrait
     }
 
     /**
-     * Gets as bool
+     * Gets as bool.
      *
-     * @return boolean[]
+     * @return bool[]
      */
     public function getBool()
     {
@@ -61,9 +61,9 @@ trait BoolTrait
     }
 
     /**
-     * Sets a new bool
+     * Sets a new bool.
      *
-     * @param boolean $bool
+     * @param  bool $bool
      * @return self
      */
     public function setBool(array $bool)

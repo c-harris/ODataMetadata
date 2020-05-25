@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the FunctionReference Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the FunctionReference Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -17,10 +17,10 @@ trait FunctionReferenceTrait
     );
     
     /**
-     * Adds as functionReference
+     * Adds as functionReference.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType $functionReference
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType $functionReference
      */
     public function addToFunctionReference(TFunctionReferenceExpressionType $functionReference)
     {
@@ -29,10 +29,10 @@ trait FunctionReferenceTrait
     }
 
     /**
-     * isset functionReference
+     * isset functionReference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFunctionReference($index)
     {
@@ -40,9 +40,9 @@ trait FunctionReferenceTrait
     }
 
     /**
-     * unset functionReference
+     * unset functionReference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFunctionReference($index)
@@ -51,7 +51,7 @@ trait FunctionReferenceTrait
     }
 
     /**
-     * Gets as functionReference
+     * Gets as functionReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType[]
      */
@@ -61,9 +61,9 @@ trait FunctionReferenceTrait
     }
 
     /**
-     * Sets a new functionReference
+     * Sets a new functionReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType[] $functionReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType[] $functionReference
      * @return self
      */
     public function setFunctionReference(array $functionReference)

@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the GUID Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the GUID Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -18,10 +18,10 @@ trait GUIDTrait
     );
     
     /**
-     * Adds as guid
+     * Adds as guid.
      *
+     * @param  string $guid
      * @return self
-     * @param string $guid
      */
     public function addToGuid($guid)
     {
@@ -30,10 +30,10 @@ trait GUIDTrait
     }
 
     /**
-     * isset guid
+     * isset guid.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetGuid($index)
     {
@@ -41,9 +41,9 @@ trait GUIDTrait
     }
 
     /**
-     * unset guid
+     * unset guid.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetGuid($index)
@@ -52,7 +52,7 @@ trait GUIDTrait
     }
 
     /**
-     * Gets as guid
+     * Gets as guid.
      *
      * @return string[]
      */
@@ -62,9 +62,9 @@ trait GUIDTrait
     }
 
     /**
-     * Sets a new guid
+     * Sets a new guid.
      *
-     * @param string $guid
+     * @param  string $guid
      * @return self
      */
     public function setGuid(array $guid)

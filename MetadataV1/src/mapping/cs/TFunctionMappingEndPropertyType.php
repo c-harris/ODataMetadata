@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\mapping\cs;
 
 /**
- * Class representing TFunctionMappingEndPropertyType
+ * Class representing TFunctionMappingEndPropertyType.
  *
  *
  * XSD Type: TFunctionMappingEndProperty
@@ -23,7 +23,7 @@ class TFunctionMappingEndPropertyType
     private $scalarProperty = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -33,9 +33,9 @@ class TFunctionMappingEndPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -45,7 +45,7 @@ class TFunctionMappingEndPropertyType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionMappingScalarPropertyType
      */
@@ -55,9 +55,9 @@ class TFunctionMappingEndPropertyType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
      * @return self
      */
     public function setScalarProperty(TFunctionMappingScalarPropertyType $scalarProperty)

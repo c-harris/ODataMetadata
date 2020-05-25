@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TDateTimeConstantExpressionType
+ * Class representing TDateTimeConstantExpressionType.
  *
  *
  * XSD Type: TDateTimeConstantExpression
@@ -17,7 +17,7 @@ class TDateTimeConstantExpressionType
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
      * @param \DateTime $value
      */
@@ -27,9 +27,9 @@ class TDateTimeConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param \DateTime ...$value
+     * @param  \DateTime ...$value
      * @return \DateTime
      */
     public function value(...$value)
@@ -41,7 +41,7 @@ class TDateTimeConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

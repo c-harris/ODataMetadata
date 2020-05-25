@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TFunctionImportReturnTypeType
+ * Class representing TFunctionImportReturnTypeType.
  *
  *
  * XSD Type: TFunctionImportReturnType
@@ -22,7 +22,7 @@ class TFunctionImportReturnTypeType
     private $entitySet = null;
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TFunctionImportReturnTypeType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -44,7 +44,7 @@ class TFunctionImportReturnTypeType
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType
      */
@@ -54,9 +54,9 @@ class TFunctionImportReturnTypeType
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType $entitySet
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType $entitySet
      * @return self
      */
     public function setEntitySet(TOperandType $entitySet)

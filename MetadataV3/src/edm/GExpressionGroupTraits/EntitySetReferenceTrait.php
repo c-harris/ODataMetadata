@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the EntitySetReference Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the EntitySetReference Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -19,10 +19,10 @@ trait EntitySetReferenceTrait
 
     
     /**
-     * Adds as entitySetReference
+     * Adds as entitySetReference.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType $entitySetReference
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType $entitySetReference
      */
     public function addToEntitySetReference(TEntitySetReferenceExpressionType $entitySetReference)
     {
@@ -31,10 +31,10 @@ trait EntitySetReferenceTrait
     }
 
     /**
-     * isset entitySetReference
+     * isset entitySetReference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntitySetReference($index)
     {
@@ -42,9 +42,9 @@ trait EntitySetReferenceTrait
     }
 
     /**
-     * unset entitySetReference
+     * unset entitySetReference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntitySetReference($index)
@@ -53,7 +53,7 @@ trait EntitySetReferenceTrait
     }
 
     /**
-     * Gets as entitySetReference
+     * Gets as entitySetReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType[]
      */
@@ -63,9 +63,9 @@ trait EntitySetReferenceTrait
     }
 
     /**
-     * Sets a new entitySetReference
+     * Sets a new entitySetReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType[] $entitySetReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType[] $entitySetReference
      * @return self
      */
     public function setEntitySetReference(array $entitySetReference)

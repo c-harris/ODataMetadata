@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TAnnotationsType
+ * Class representing TAnnotationsType.
  *
  *
  * XSD Type: TAnnotations
@@ -29,7 +29,7 @@ class TAnnotationsType
     );
 
     /**
-     * Gets as target
+     * Gets as target.
      *
      * @return string
      */
@@ -39,9 +39,9 @@ class TAnnotationsType
     }
 
     /**
-     * Sets a new target
+     * Sets a new target.
      *
-     * @param string $target
+     * @param  string $target
      * @return self
      */
     public function setTarget($target)
@@ -51,7 +51,7 @@ class TAnnotationsType
     }
 
     /**
-     * Gets as qualifier
+     * Gets as qualifier.
      *
      * @return string
      */
@@ -61,9 +61,9 @@ class TAnnotationsType
     }
 
     /**
-     * Sets a new qualifier
+     * Sets a new qualifier.
      *
-     * @param string $qualifier
+     * @param  string $qualifier
      * @return self
      */
     public function setQualifier($qualifier)
@@ -73,10 +73,10 @@ class TAnnotationsType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -85,10 +85,10 @@ class TAnnotationsType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -96,9 +96,9 @@ class TAnnotationsType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -107,7 +107,7 @@ class TAnnotationsType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -117,9 +117,9 @@ class TAnnotationsType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

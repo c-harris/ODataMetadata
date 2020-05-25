@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edmx;
 
 /**
- * Class representing TEntityTypeShapeType
+ * Class representing TEntityTypeShapeType.
  *
  *
  * XSD Type: TEntityTypeShape
@@ -37,7 +37,7 @@ class TEntityTypeShapeType
     private $height = null;
 
     /**
-     * @property boolean $isExpanded
+     * @property bool $isExpanded
      */
     private $isExpanded = null;
 
@@ -47,7 +47,7 @@ class TEntityTypeShapeType
     private $fillColor = null;
 
     /**
-     * Gets as entityType
+     * Gets as entityType.
      *
      * @return string
      */
@@ -57,9 +57,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Sets a new entityType
+     * Sets a new entityType.
      *
-     * @param string $entityType
+     * @param  string $entityType
      * @return self
      */
     public function setEntityType($entityType)
@@ -69,7 +69,7 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Gets as pointX
+     * Gets as pointX.
      *
      * @return float
      */
@@ -79,9 +79,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Sets a new pointX
+     * Sets a new pointX.
      *
-     * @param float $pointX
+     * @param  float $pointX
      * @return self
      */
     public function setPointX($pointX)
@@ -91,7 +91,7 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Gets as pointY
+     * Gets as pointY.
      *
      * @return float
      */
@@ -101,9 +101,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Sets a new pointY
+     * Sets a new pointY.
      *
-     * @param float $pointY
+     * @param  float $pointY
      * @return self
      */
     public function setPointY($pointY)
@@ -113,7 +113,7 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Gets as width
+     * Gets as width.
      *
      * @return float
      */
@@ -123,9 +123,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Sets a new width
+     * Sets a new width.
      *
-     * @param float $width
+     * @param  float $width
      * @return self
      */
     public function setWidth($width)
@@ -135,7 +135,7 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Gets as height
+     * Gets as height.
      *
      * @return float
      */
@@ -145,9 +145,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Sets a new height
+     * Sets a new height.
      *
-     * @param float $height
+     * @param  float $height
      * @return self
      */
     public function setHeight($height)
@@ -157,9 +157,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Gets as isExpanded
+     * Gets as isExpanded.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsExpanded()
     {
@@ -167,9 +167,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Sets a new isExpanded
+     * Sets a new isExpanded.
      *
-     * @param boolean $isExpanded
+     * @param  bool $isExpanded
      * @return self
      */
     public function setIsExpanded($isExpanded)
@@ -179,7 +179,7 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Gets as fillColor
+     * Gets as fillColor.
      *
      * @return string
      */
@@ -189,9 +189,9 @@ class TEntityTypeShapeType
     }
 
     /**
-     * Sets a new fillColor
+     * Sets a new fillColor.
      *
-     * @param string $fillColor
+     * @param  string $fillColor
      * @return self
      */
     public function setFillColor($fillColor)

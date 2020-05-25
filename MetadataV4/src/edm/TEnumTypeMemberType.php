@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TEnumTypeMemberType
+ * Class representing TEnumTypeMemberType.
  *
  *
  * XSD Type: TEnumTypeMember
@@ -17,7 +17,7 @@ class TEnumTypeMemberType
     private $name = null;
 
     /**
-     * @property integer $value
+     * @property int $value
      */
     private $value = null;
 
@@ -29,7 +29,7 @@ class TEnumTypeMemberType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -39,9 +39,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -51,9 +51,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Gets as value
+     * Gets as value.
      *
-     * @return integer
+     * @return int
      */
     public function getValue()
     {
@@ -61,9 +61,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Sets a new value
+     * Sets a new value.
      *
-     * @param integer $value
+     * @param  int  $value
      * @return self
      */
     public function setValue($value)
@@ -73,10 +73,10 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -85,10 +85,10 @@ class TEnumTypeMemberType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -96,9 +96,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -107,7 +107,7 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -117,9 +117,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

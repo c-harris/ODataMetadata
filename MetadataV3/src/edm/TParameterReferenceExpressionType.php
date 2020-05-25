@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TParameterReferenceExpressionType
+ * Class representing TParameterReferenceExpressionType.
  *
  *
  * XSD Type: TParameterReferenceExpression
@@ -17,7 +17,7 @@ class TParameterReferenceExpressionType
     private $name = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -27,9 +27,9 @@ class TParameterReferenceExpressionType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)

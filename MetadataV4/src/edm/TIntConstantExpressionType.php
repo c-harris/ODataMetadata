@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TIntConstantExpressionType
+ * Class representing TIntConstantExpressionType.
  *
  *
  * XSD Type: TIntConstantExpression
@@ -12,14 +12,14 @@ class TIntConstantExpressionType
 {
 
     /**
-     * @property integer $__value
+     * @property int $__value
      */
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
-     * @param integer $value
+     * @param int $value
      */
     public function __construct($value)
     {
@@ -27,10 +27,10 @@ class TIntConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param integer $value
-     * @return integer
+     * @param  int $value
+     * @return int
      */
     public function value()
     {
@@ -41,7 +41,7 @@ class TIntConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

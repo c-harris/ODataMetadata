@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\mapping\cs;
 
 /**
- * Class representing TAssociationSetModificationFunctionMappingType
+ * Class representing TAssociationSetModificationFunctionMappingType.
  *
  *
  * XSD Type: TAssociationSetModificationFunctionMapping
@@ -24,7 +24,7 @@ class TAssociationSetModificationFunctionMappingType
     private $insertFunction = null;
 
     /**
-     * Gets as deleteFunction
+     * Gets as deleteFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TAssociationSetModificationFunctionType
      */
@@ -34,7 +34,7 @@ class TAssociationSetModificationFunctionMappingType
     }
 
     /**
-     * Sets a new deleteFunction
+     * Sets a new deleteFunction.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TAssociationSetModificationFunctionType
      * $deleteFunction
@@ -47,7 +47,7 @@ class TAssociationSetModificationFunctionMappingType
     }
 
     /**
-     * Gets as insertFunction
+     * Gets as insertFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TAssociationSetModificationFunctionType
      */
@@ -57,7 +57,7 @@ class TAssociationSetModificationFunctionMappingType
     }
 
     /**
-     * Sets a new insertFunction
+     * Sets a new insertFunction.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TAssociationSetModificationFunctionType
      * $insertFunction

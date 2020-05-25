@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the ParameterReference Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the ParameterReference Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -21,10 +21,10 @@ trait ParameterReferenceTrait
 
     
     /**
-     * Adds as parameterReference
+     * Adds as parameterReference.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType $parameterReference
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType $parameterReference
      */
     public function addToParameterReference(TParameterReferenceExpressionType $parameterReference)
     {
@@ -33,10 +33,10 @@ trait ParameterReferenceTrait
     }
 
     /**
-     * isset parameterReference
+     * isset parameterReference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetParameterReference($index)
     {
@@ -44,9 +44,9 @@ trait ParameterReferenceTrait
     }
 
     /**
-     * unset parameterReference
+     * unset parameterReference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetParameterReference($index)
@@ -55,7 +55,7 @@ trait ParameterReferenceTrait
     }
 
     /**
-     * Gets as parameterReference
+     * Gets as parameterReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType[]
      */
@@ -65,9 +65,9 @@ trait ParameterReferenceTrait
     }
 
     /**
-     * Sets a new parameterReference
+     * Sets a new parameterReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType[] $parameterReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType[] $parameterReference
      * @return self
      */
     public function setParameterReference(array $parameterReference)

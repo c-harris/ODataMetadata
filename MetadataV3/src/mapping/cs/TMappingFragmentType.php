@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TMappingFragmentType
+ * Class representing TMappingFragmentType.
  *
  *
  * XSD Type: TMappingFragment
@@ -17,7 +17,7 @@ class TMappingFragmentType
     private $storeEntitySet = null;
 
     /**
-     * @property boolean $makeColumnsDistinct
+     * @property bool $makeColumnsDistinct
      */
     private $makeColumnsDistinct = null;
 
@@ -37,7 +37,7 @@ class TMappingFragmentType
     private $condition = null;
 
     /**
-     * Gets as storeEntitySet
+     * Gets as storeEntitySet.
      *
      * @return string
      */
@@ -47,9 +47,9 @@ class TMappingFragmentType
     }
 
     /**
-     * Sets a new storeEntitySet
+     * Sets a new storeEntitySet.
      *
-     * @param string $storeEntitySet
+     * @param  string $storeEntitySet
      * @return self
      */
     public function setStoreEntitySet($storeEntitySet)
@@ -59,9 +59,9 @@ class TMappingFragmentType
     }
 
     /**
-     * Gets as makeColumnsDistinct
+     * Gets as makeColumnsDistinct.
      *
-     * @return boolean
+     * @return bool
      */
     public function getMakeColumnsDistinct()
     {
@@ -69,9 +69,9 @@ class TMappingFragmentType
     }
 
     /**
-     * Sets a new makeColumnsDistinct
+     * Sets a new makeColumnsDistinct.
      *
-     * @param boolean $makeColumnsDistinct
+     * @param  bool $makeColumnsDistinct
      * @return self
      */
     public function setMakeColumnsDistinct($makeColumnsDistinct)
@@ -81,7 +81,7 @@ class TMappingFragmentType
     }
 
     /**
-     * Gets as complexProperty
+     * Gets as complexProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TComplexPropertyType
      */
@@ -91,9 +91,9 @@ class TMappingFragmentType
     }
 
     /**
-     * Sets a new complexProperty
+     * Sets a new complexProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TComplexPropertyType $complexProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TComplexPropertyType $complexProperty
      * @return self
      */
     public function setComplexProperty(TComplexPropertyType $complexProperty)
@@ -103,7 +103,7 @@ class TMappingFragmentType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType
      */
@@ -113,9 +113,9 @@ class TMappingFragmentType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType $scalarProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType $scalarProperty
      * @return self
      */
     public function setScalarProperty(TScalarPropertyType $scalarProperty)
@@ -125,7 +125,7 @@ class TMappingFragmentType
     }
 
     /**
-     * Gets as condition
+     * Gets as condition.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType
      */
@@ -135,9 +135,9 @@ class TMappingFragmentType
     }
 
     /**
-     * Sets a new condition
+     * Sets a new condition.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType $condition
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType $condition
      * @return self
      */
     public function setCondition(TConditionType $condition)

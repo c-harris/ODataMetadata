@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TAssociationSetMappingType
+ * Class representing TAssociationSetMappingType.
  *
  *
  * XSD Type: TAssociationSetMapping
@@ -52,7 +52,7 @@ class TAssociationSetMappingType
     private $modificationFunctionMapping = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -62,9 +62,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -74,7 +74,7 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Gets as typeName
+     * Gets as typeName.
      *
      * @return string
      */
@@ -84,9 +84,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Sets a new typeName
+     * Sets a new typeName.
      *
-     * @param string $typeName
+     * @param  string $typeName
      * @return self
      */
     public function setTypeName($typeName)
@@ -96,7 +96,7 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Gets as storeEntitySet
+     * Gets as storeEntitySet.
      *
      * @return string
      */
@@ -106,9 +106,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Sets a new storeEntitySet
+     * Sets a new storeEntitySet.
      *
-     * @param string $storeEntitySet
+     * @param  string $storeEntitySet
      * @return self
      */
     public function setStoreEntitySet($storeEntitySet)
@@ -118,7 +118,7 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Gets as queryView
+     * Gets as queryView.
      *
      * @return string
      */
@@ -128,9 +128,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Sets a new queryView
+     * Sets a new queryView.
      *
-     * @param string $queryView
+     * @param  string $queryView
      * @return self
      */
     public function setQueryView($queryView)
@@ -140,10 +140,10 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Adds as endProperty
+     * Adds as endProperty.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEndPropertyType $endProperty
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEndPropertyType $endProperty
      */
     public function addToEndProperty(TEndPropertyType $endProperty)
     {
@@ -152,10 +152,10 @@ class TAssociationSetMappingType
     }
 
     /**
-     * isset endProperty
+     * isset endProperty.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEndProperty($index)
     {
@@ -163,9 +163,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * unset endProperty
+     * unset endProperty.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEndProperty($index)
@@ -174,7 +174,7 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Gets as endProperty
+     * Gets as endProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEndPropertyType[]
      */
@@ -184,9 +184,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Sets a new endProperty
+     * Sets a new endProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEndPropertyType[] $endProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TEndPropertyType[] $endProperty
      * @return self
      */
     public function setEndProperty(array $endProperty)
@@ -196,10 +196,10 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Adds as condition
+     * Adds as condition.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType $condition
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType $condition
      */
     public function addToCondition(TConditionType $condition)
     {
@@ -208,10 +208,10 @@ class TAssociationSetMappingType
     }
 
     /**
-     * isset condition
+     * isset condition.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCondition($index)
     {
@@ -219,9 +219,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * unset condition
+     * unset condition.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCondition($index)
@@ -230,7 +230,7 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Gets as condition
+     * Gets as condition.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType[]
      */
@@ -240,9 +240,9 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Sets a new condition
+     * Sets a new condition.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType[] $condition
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TConditionType[] $condition
      * @return self
      */
     public function setCondition(array $condition)
@@ -252,7 +252,7 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Gets as modificationFunctionMapping
+     * Gets as modificationFunctionMapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAssociationSetModificationFunctionMappingType
      */
@@ -262,7 +262,7 @@ class TAssociationSetMappingType
     }
 
     /**
-     * Sets a new modificationFunctionMapping
+     * Sets a new modificationFunctionMapping.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TAssociationSetModificationFunctionMappingType
      * $modificationFunctionMapping

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TReferentialConstraintType
+ * Class representing TReferentialConstraintType.
  *
  *
  * XSD Type: TReferentialConstraint
@@ -29,7 +29,7 @@ class TReferentialConstraintType
     );
 
     /**
-     * Gets as property
+     * Gets as property.
      *
      * @return string
      */
@@ -39,9 +39,9 @@ class TReferentialConstraintType
     }
 
     /**
-     * Sets a new property
+     * Sets a new property.
      *
-     * @param string $property
+     * @param  string $property
      * @return self
      */
     public function setProperty($property)
@@ -51,7 +51,7 @@ class TReferentialConstraintType
     }
 
     /**
-     * Gets as referencedProperty
+     * Gets as referencedProperty.
      *
      * @return string
      */
@@ -61,9 +61,9 @@ class TReferentialConstraintType
     }
 
     /**
-     * Sets a new referencedProperty
+     * Sets a new referencedProperty.
      *
-     * @param string $referencedProperty
+     * @param  string $referencedProperty
      * @return self
      */
     public function setReferencedProperty($referencedProperty)
@@ -73,10 +73,10 @@ class TReferentialConstraintType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -85,10 +85,10 @@ class TReferentialConstraintType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -96,9 +96,9 @@ class TReferentialConstraintType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -107,7 +107,7 @@ class TReferentialConstraintType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -117,9 +117,9 @@ class TReferentialConstraintType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

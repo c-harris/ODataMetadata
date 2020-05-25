@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV3\edmx;
 use AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\Mapping;
 
 /**
- * Class representing TRuntimeMappingsType
+ * Class representing TRuntimeMappingsType.
  *
  *
  * XSD Type: TRuntimeMappings
@@ -19,7 +19,7 @@ class TRuntimeMappingsType
     private $mapping = null;
 
     /**
-     * Gets as mapping
+     * Gets as mapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\Mapping
      */
@@ -29,9 +29,9 @@ class TRuntimeMappingsType
     }
 
     /**
-     * Sets a new mapping
+     * Sets a new mapping.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\Mapping $mapping
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\Mapping $mapping
      * @return self
      */
     public function setMapping(Mapping $mapping)

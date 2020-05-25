@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl;
 
 /**
- * Class representing TParameterType
+ * Class representing TParameterType.
  *
  *
  * XSD Type: TParameter
@@ -32,12 +32,12 @@ class TParameterType
     private $maxLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
     /**
-     * @property integer $scale
+     * @property int $scale
      */
     private $scale = null;
 
@@ -47,7 +47,7 @@ class TParameterType
     private $documentation = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -57,9 +57,9 @@ class TParameterType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -69,7 +69,7 @@ class TParameterType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -79,9 +79,9 @@ class TParameterType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -91,7 +91,7 @@ class TParameterType
     }
 
     /**
-     * Gets as mode
+     * Gets as mode.
      *
      * @return string
      */
@@ -101,9 +101,9 @@ class TParameterType
     }
 
     /**
-     * Sets a new mode
+     * Sets a new mode.
      *
-     * @param string $mode
+     * @param  string $mode
      * @return self
      */
     public function setMode($mode)
@@ -113,7 +113,7 @@ class TParameterType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -123,9 +123,9 @@ class TParameterType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -135,9 +135,9 @@ class TParameterType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -145,9 +145,9 @@ class TParameterType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -157,9 +157,9 @@ class TParameterType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
-     * @return integer
+     * @return int
      */
     public function getScale()
     {
@@ -167,9 +167,9 @@ class TParameterType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param integer $scale
+     * @param  int  $scale
      * @return self
      */
     public function setScale($scale)
@@ -179,7 +179,7 @@ class TParameterType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType
      */
@@ -189,9 +189,9 @@ class TParameterType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

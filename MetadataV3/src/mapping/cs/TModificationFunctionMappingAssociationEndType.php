@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TModificationFunctionMappingAssociationEndType
+ * Class representing TModificationFunctionMappingAssociationEndType.
  *
  *
  * XSD Type: TModificationFunctionMappingAssociationEnd
@@ -33,7 +33,7 @@ class TModificationFunctionMappingAssociationEndType
     private $scalarProperty = null;
 
     /**
-     * Gets as associationSet
+     * Gets as associationSet.
      *
      * @return string
      */
@@ -43,9 +43,9 @@ class TModificationFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new associationSet
+     * Sets a new associationSet.
      *
-     * @param string $associationSet
+     * @param  string $associationSet
      * @return self
      */
     public function setAssociationSet($associationSet)
@@ -55,7 +55,7 @@ class TModificationFunctionMappingAssociationEndType
     }
 
     /**
-     * Gets as from
+     * Gets as from.
      *
      * @return string
      */
@@ -65,9 +65,9 @@ class TModificationFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new from
+     * Sets a new from.
      *
-     * @param string $from
+     * @param  string $from
      * @return self
      */
     public function setFrom($from)
@@ -77,7 +77,7 @@ class TModificationFunctionMappingAssociationEndType
     }
 
     /**
-     * Gets as to
+     * Gets as to.
      *
      * @return string
      */
@@ -87,9 +87,9 @@ class TModificationFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new to
+     * Sets a new to.
      *
-     * @param string $to
+     * @param  string $to
      * @return self
      */
     public function setTo($to)
@@ -99,7 +99,7 @@ class TModificationFunctionMappingAssociationEndType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingScalarPropertyType
      */
@@ -109,7 +109,7 @@ class TModificationFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingScalarPropertyType
      * $scalarProperty

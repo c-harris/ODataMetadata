@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl;
 
 /**
- * Class representing TFunctionReturnTypeType
+ * Class representing TFunctionReturnTypeType.
  *
  *
  * XSD Type: TFunctionReturnType
@@ -17,7 +17,7 @@ class TFunctionReturnTypeType
     private $collectionType = null;
 
     /**
-     * Gets as collectionType
+     * Gets as collectionType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TCollectionTypeType
      */
@@ -27,9 +27,9 @@ class TFunctionReturnTypeType
     }
 
     /**
-     * Sets a new collectionType
+     * Sets a new collectionType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TCollectionTypeType $collectionType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TCollectionTypeType $collectionType
      * @return self
      */
     public function setCollectionType(TCollectionTypeType $collectionType)

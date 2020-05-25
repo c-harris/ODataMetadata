@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TApplyExpressionType
+ * Class representing TApplyExpressionType.
  *
  *
  * XSD Type: TApplyExpression
@@ -33,7 +33,7 @@ class TApplyExpressionType
     );
 
     /**
-     * Gets as function
+     * Gets as function.
      *
      * @return string
      */
@@ -43,9 +43,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new function
+     * Sets a new function.
      *
-     * @param string $function
+     * @param  string $function
      * @return self
      */
     public function setFunction($function)
@@ -55,11 +55,11 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as appliedFunction
+     * Adds as appliedFunction.
      *
-     * @return self
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\AppliedFunctionAnonymousType
      * $appliedFunction
+     * @return self
      */
     public function addToAppliedFunction(TApplyExpressionType\AppliedFunctionAnonymousType $appliedFunction)
     {
@@ -68,10 +68,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset appliedFunction
+     * isset appliedFunction.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAppliedFunction($index)
     {
@@ -79,9 +79,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset appliedFunction
+     * unset appliedFunction.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAppliedFunction($index)
@@ -90,7 +90,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as appliedFunction
+     * Gets as appliedFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\AppliedFunctionAnonymousType[]
      */
@@ -100,7 +100,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new appliedFunction
+     * Sets a new appliedFunction.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\AppliedFunctionAnonymousType[]
      * $appliedFunction
@@ -113,10 +113,10 @@ class TApplyExpressionType
     }
 
     /**
-     * Adds as arguments
+     * Adds as arguments.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\ArgumentsAnonymousType $arguments
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\ArgumentsAnonymousType $arguments
      */
     public function addToArguments(TApplyExpressionType\ArgumentsAnonymousType $arguments)
     {
@@ -125,10 +125,10 @@ class TApplyExpressionType
     }
 
     /**
-     * isset arguments
+     * isset arguments.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetArguments($index)
     {
@@ -136,9 +136,9 @@ class TApplyExpressionType
     }
 
     /**
-     * unset arguments
+     * unset arguments.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetArguments($index)
@@ -147,7 +147,7 @@ class TApplyExpressionType
     }
 
     /**
-     * Gets as arguments
+     * Gets as arguments.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\ArgumentsAnonymousType[]
      */
@@ -157,9 +157,9 @@ class TApplyExpressionType
     }
 
     /**
-     * Sets a new arguments
+     * Sets a new arguments.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\ArgumentsAnonymousType[] $arguments
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType\ArgumentsAnonymousType[] $arguments
      * @return self
      */
     public function setArguments(array $arguments)

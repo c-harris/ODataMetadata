@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl;
 
 /**
- * Class representing TEntityTypeType
+ * Class representing TEntityTypeType.
  *
  *
  * XSD Type: TEntityType
@@ -34,7 +34,7 @@ class TEntityTypeType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -44,9 +44,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -56,7 +56,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType
      */
@@ -66,9 +66,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -78,10 +78,10 @@ class TEntityTypeType
     }
 
     /**
-     * Adds as propertyRef
+     * Adds as propertyRef.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyRefType $propertyRef
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyRefType $propertyRef
      */
     public function addToKey(TPropertyRefType $propertyRef)
     {
@@ -90,10 +90,10 @@ class TEntityTypeType
     }
 
     /**
-     * isset key
+     * isset key.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetKey($index)
     {
@@ -101,9 +101,9 @@ class TEntityTypeType
     }
 
     /**
-     * unset key
+     * unset key.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetKey($index)
@@ -112,7 +112,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as key
+     * Gets as key.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyRefType[]
      */
@@ -122,9 +122,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new key
+     * Sets a new key.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyRefType[] $key
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyRefType[] $key
      * @return self
      */
     public function setKey(array $key)
@@ -134,10 +134,10 @@ class TEntityTypeType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityPropertyType $property
      */
     public function addToProperty(TEntityPropertyType $property)
     {
@@ -146,10 +146,10 @@ class TEntityTypeType
     }
 
     /**
-     * isset property
+     * isset property.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetProperty($index)
     {
@@ -157,9 +157,9 @@ class TEntityTypeType
     }
 
     /**
-     * unset property
+     * unset property.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetProperty($index)
@@ -168,7 +168,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as property
+     * Gets as property.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityPropertyType[]
      */
@@ -178,9 +178,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new property
+     * Sets a new property.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityPropertyType[] $property
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityPropertyType[] $property
      * @return self
      */
     public function setProperty(array $property)

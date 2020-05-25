@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\mapping\cs;
 
 /**
- * Class representing TEntityTypeMappingType
+ * Class representing TEntityTypeMappingType.
  *
  *
  * XSD Type: TEntityTypeMapping
@@ -30,7 +30,7 @@ class TEntityTypeMappingType
     private $modificationFunctionMapping = null;
 
     /**
-     * Gets as typeName
+     * Gets as typeName.
      *
      * @return string
      */
@@ -40,9 +40,9 @@ class TEntityTypeMappingType
     }
 
     /**
-     * Sets a new typeName
+     * Sets a new typeName.
      *
-     * @param string $typeName
+     * @param  string $typeName
      * @return self
      */
     public function setTypeName($typeName)
@@ -52,10 +52,10 @@ class TEntityTypeMappingType
     }
 
     /**
-     * Adds as mappingFragment
+     * Adds as mappingFragment.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TMappingFragmentType $mappingFragment
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TMappingFragmentType $mappingFragment
      */
     public function addToMappingFragment(TMappingFragmentType $mappingFragment)
     {
@@ -64,10 +64,10 @@ class TEntityTypeMappingType
     }
 
     /**
-     * isset mappingFragment
+     * isset mappingFragment.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetMappingFragment($index)
     {
@@ -75,9 +75,9 @@ class TEntityTypeMappingType
     }
 
     /**
-     * unset mappingFragment
+     * unset mappingFragment.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetMappingFragment($index)
@@ -86,7 +86,7 @@ class TEntityTypeMappingType
     }
 
     /**
-     * Gets as mappingFragment
+     * Gets as mappingFragment.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TMappingFragmentType[]
      */
@@ -96,9 +96,9 @@ class TEntityTypeMappingType
     }
 
     /**
-     * Sets a new mappingFragment
+     * Sets a new mappingFragment.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TMappingFragmentType[] $mappingFragment
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TMappingFragmentType[] $mappingFragment
      * @return self
      */
     public function setMappingFragment(array $mappingFragment)
@@ -108,7 +108,7 @@ class TEntityTypeMappingType
     }
 
     /**
-     * Gets as modificationFunctionMapping
+     * Gets as modificationFunctionMapping.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionMappingType
      */
@@ -118,7 +118,7 @@ class TEntityTypeMappingType
     }
 
     /**
-     * Sets a new modificationFunctionMapping
+     * Sets a new modificationFunctionMapping.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionMappingType
      * $modificationFunctionMapping

@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Int Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Int Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -10,7 +10,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 trait IntTrait
 {
     /**
-     * @property integer[] $int
+     * @property int[] $int
      */
     private $int = array(
         
@@ -18,10 +18,10 @@ trait IntTrait
 
     
     /**
-     * Adds as int
+     * Adds as int.
      *
+     * @param  int  $int
      * @return self
-     * @param integer $int
      */
     public function addToInt($int)
     {
@@ -30,10 +30,10 @@ trait IntTrait
     }
 
     /**
-     * isset int
+     * isset int.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetInt($index)
     {
@@ -41,9 +41,9 @@ trait IntTrait
     }
 
     /**
-     * unset int
+     * unset int.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetInt($index)
@@ -52,9 +52,9 @@ trait IntTrait
     }
 
     /**
-     * Gets as int
+     * Gets as int.
      *
-     * @return integer[]
+     * @return int[]
      */
     public function getInt()
     {
@@ -62,9 +62,9 @@ trait IntTrait
     }
 
     /**
-     * Sets a new int
+     * Sets a new int.
      *
-     * @param integer $int
+     * @param  int  $int
      * @return self
      */
     public function setInt(array $int)

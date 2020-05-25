@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edm;
 
 /**
- * Class representing TEntityTypeType
+ * Class representing TEntityTypeType.
  *
  *
  * XSD Type: TEntityType
@@ -22,7 +22,7 @@ class TEntityTypeType
     private $baseType = null;
 
     /**
-     * @property boolean $abstract
+     * @property bool $abstract
      */
     private $abstract = null;
 
@@ -56,7 +56,7 @@ class TEntityTypeType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -66,9 +66,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -78,7 +78,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as baseType
+     * Gets as baseType.
      *
      * @return string
      */
@@ -88,9 +88,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new baseType
+     * Sets a new baseType.
      *
-     * @param string $baseType
+     * @param  string $baseType
      * @return self
      */
     public function setBaseType($baseType)
@@ -100,9 +100,9 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as abstract
+     * Gets as abstract.
      *
-     * @return boolean
+     * @return bool
      */
     public function getAbstract()
     {
@@ -110,9 +110,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new abstract
+     * Sets a new abstract.
      *
-     * @param boolean $abstract
+     * @param  bool $abstract
      * @return self
      */
     public function setAbstract($abstract)
@@ -122,7 +122,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as typeAccess
+     * Gets as typeAccess.
      *
      * @return string
      */
@@ -132,9 +132,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new typeAccess
+     * Sets a new typeAccess.
      *
-     * @param string $typeAccess
+     * @param  string $typeAccess
      * @return self
      */
     public function setTypeAccess($typeAccess)
@@ -144,7 +144,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType
      */
@@ -154,9 +154,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -166,10 +166,10 @@ class TEntityTypeType
     }
 
     /**
-     * Adds as propertyRef
+     * Adds as propertyRef.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyRefType $propertyRef
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyRefType $propertyRef
      */
     public function addToKey(TPropertyRefType $propertyRef)
     {
@@ -178,10 +178,10 @@ class TEntityTypeType
     }
 
     /**
-     * isset key
+     * isset key.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetKey($index)
     {
@@ -189,9 +189,9 @@ class TEntityTypeType
     }
 
     /**
-     * unset key
+     * unset key.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetKey($index)
@@ -200,7 +200,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as key
+     * Gets as key.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyRefType[]
      */
@@ -210,9 +210,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new key
+     * Sets a new key.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyRefType[] $key
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyRefType[] $key
      * @return self
      */
     public function setKey(array $key)
@@ -222,10 +222,10 @@ class TEntityTypeType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TEntityPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TEntityPropertyType $property
      */
     public function addToProperty(TEntityPropertyType $property)
     {
@@ -234,10 +234,10 @@ class TEntityTypeType
     }
 
     /**
-     * isset property
+     * isset property.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetProperty($index)
     {
@@ -245,9 +245,9 @@ class TEntityTypeType
     }
 
     /**
-     * unset property
+     * unset property.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetProperty($index)
@@ -256,7 +256,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as property
+     * Gets as property.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TEntityPropertyType[]
      */
@@ -266,9 +266,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new property
+     * Sets a new property.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TEntityPropertyType[] $property
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TEntityPropertyType[] $property
      * @return self
      */
     public function setProperty(array $property)
@@ -278,10 +278,10 @@ class TEntityTypeType
     }
 
     /**
-     * Adds as navigationProperty
+     * Adds as navigationProperty.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TNavigationPropertyType $navigationProperty
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TNavigationPropertyType $navigationProperty
      */
     public function addToNavigationProperty(TNavigationPropertyType $navigationProperty)
     {
@@ -290,10 +290,10 @@ class TEntityTypeType
     }
 
     /**
-     * isset navigationProperty
+     * isset navigationProperty.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNavigationProperty($index)
     {
@@ -301,9 +301,9 @@ class TEntityTypeType
     }
 
     /**
-     * unset navigationProperty
+     * unset navigationProperty.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNavigationProperty($index)
@@ -312,7 +312,7 @@ class TEntityTypeType
     }
 
     /**
-     * Gets as navigationProperty
+     * Gets as navigationProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TNavigationPropertyType[]
      */
@@ -322,9 +322,9 @@ class TEntityTypeType
     }
 
     /**
-     * Sets a new navigationProperty
+     * Sets a new navigationProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TNavigationPropertyType[] $navigationProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TNavigationPropertyType[] $navigationProperty
      * @return self
      */
     public function setNavigationProperty(array $navigationProperty)

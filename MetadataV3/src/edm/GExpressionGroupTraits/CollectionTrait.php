@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Collection Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Collection Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -17,10 +17,10 @@ trait CollectionTrait
     );
     
     /**
-     * Adds as collection
+     * Adds as collection.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType $collection
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType $collection
      */
     public function addToCollection(TCollectionExpressionType $collection)
     {
@@ -29,10 +29,10 @@ trait CollectionTrait
     }
 
     /**
-     * isset collection
+     * isset collection.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCollection($index)
     {
@@ -40,9 +40,9 @@ trait CollectionTrait
     }
 
     /**
-     * unset collection
+     * unset collection.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCollection($index)
@@ -51,7 +51,7 @@ trait CollectionTrait
     }
 
     /**
-     * Gets as collection
+     * Gets as collection.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType[]
      */
@@ -61,9 +61,9 @@ trait CollectionTrait
     }
 
     /**
-     * Sets a new collection
+     * Sets a new collection.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType[] $collection
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType[] $collection
      * @return self
      */
     public function setCollection(array $collection)

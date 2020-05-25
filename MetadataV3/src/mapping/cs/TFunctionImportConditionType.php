@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TFunctionImportConditionType
+ * Class representing TFunctionImportConditionType.
  *
  *
  * XSD Type: TFunctionImportCondition
@@ -22,12 +22,12 @@ class TFunctionImportConditionType
     private $columnName = null;
 
     /**
-     * @property boolean $isNull
+     * @property bool $isNull
      */
     private $isNull = null;
 
     /**
-     * Gets as value
+     * Gets as value.
      *
      * @return string
      */
@@ -37,9 +37,9 @@ class TFunctionImportConditionType
     }
 
     /**
-     * Sets a new value
+     * Sets a new value.
      *
-     * @param string $value
+     * @param  string $value
      * @return self
      */
     public function setValue($value)
@@ -49,7 +49,7 @@ class TFunctionImportConditionType
     }
 
     /**
-     * Gets as columnName
+     * Gets as columnName.
      *
      * @return string
      */
@@ -59,9 +59,9 @@ class TFunctionImportConditionType
     }
 
     /**
-     * Sets a new columnName
+     * Sets a new columnName.
      *
-     * @param string $columnName
+     * @param  string $columnName
      * @return self
      */
     public function setColumnName($columnName)
@@ -71,9 +71,9 @@ class TFunctionImportConditionType
     }
 
     /**
-     * Gets as isNull
+     * Gets as isNull.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsNull()
     {
@@ -81,9 +81,9 @@ class TFunctionImportConditionType
     }
 
     /**
-     * Sets a new isNull
+     * Sets a new isNull.
      *
-     * @param boolean $isNull
+     * @param  bool $isNull
      * @return self
      */
     public function setIsNull($isNull)

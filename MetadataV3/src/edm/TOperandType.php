@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TOperandType
+ * Class representing TOperandType.
  *
  *
  * XSD Type: TOperand
@@ -22,7 +22,7 @@ class TOperandType
     private $binary = null;
 
     /**
-     * @property integer $int
+     * @property int $int
      */
     private $int = null;
 
@@ -42,7 +42,7 @@ class TOperandType
     private $decimal = null;
 
     /**
-     * @property boolean $bool
+     * @property bool $bool
      */
     private $bool = null;
 
@@ -127,7 +127,7 @@ class TOperandType
     private $valueTermReference = null;
 
     /**
-     * Gets as string
+     * Gets as string.
      *
      * @return string
      */
@@ -137,9 +137,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new string
+     * Sets a new string.
      *
-     * @param string $string
+     * @param  string $string
      * @return self
      */
     public function setString($string)
@@ -149,7 +149,7 @@ class TOperandType
     }
 
     /**
-     * Gets as binary
+     * Gets as binary.
      *
      * @return mixed
      */
@@ -159,9 +159,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new binary
+     * Sets a new binary.
      *
-     * @param mixed $binary
+     * @param  mixed $binary
      * @return self
      */
     public function setBinary($binary)
@@ -171,9 +171,9 @@ class TOperandType
     }
 
     /**
-     * Gets as int
+     * Gets as int.
      *
-     * @return integer
+     * @return int
      */
     public function getInt()
     {
@@ -181,9 +181,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new int
+     * Sets a new int.
      *
-     * @param integer $int
+     * @param  int  $int
      * @return self
      */
     public function setInt($int)
@@ -193,7 +193,7 @@ class TOperandType
     }
 
     /**
-     * Gets as float
+     * Gets as float.
      *
      * @return float
      */
@@ -203,9 +203,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new float
+     * Sets a new float.
      *
-     * @param float $float
+     * @param  float $float
      * @return self
      */
     public function setFloat($float)
@@ -215,7 +215,7 @@ class TOperandType
     }
 
     /**
-     * Gets as guid
+     * Gets as guid.
      *
      * @return string
      */
@@ -225,9 +225,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new guid
+     * Sets a new guid.
      *
-     * @param string $guid
+     * @param  string $guid
      * @return self
      */
     public function setGuid($guid)
@@ -237,7 +237,7 @@ class TOperandType
     }
 
     /**
-     * Gets as decimal
+     * Gets as decimal.
      *
      * @return float
      */
@@ -247,9 +247,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new decimal
+     * Sets a new decimal.
      *
-     * @param float $decimal
+     * @param  float $decimal
      * @return self
      */
     public function setDecimal($decimal)
@@ -259,9 +259,9 @@ class TOperandType
     }
 
     /**
-     * Gets as bool
+     * Gets as bool.
      *
-     * @return boolean
+     * @return bool
      */
     public function getBool()
     {
@@ -269,9 +269,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new bool
+     * Sets a new bool.
      *
-     * @param boolean $bool
+     * @param  bool $bool
      * @return self
      */
     public function setBool($bool)
@@ -281,7 +281,7 @@ class TOperandType
     }
 
     /**
-     * Gets as dateTime
+     * Gets as dateTime.
      *
      * @return \DateTime
      */
@@ -291,9 +291,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new dateTime
+     * Sets a new dateTime.
      *
-     * @param \DateTime $dateTime
+     * @param  \DateTime $dateTime
      * @return self
      */
     public function setDateTime(\DateTime $dateTime)
@@ -303,7 +303,7 @@ class TOperandType
     }
 
     /**
-     * Gets as dateTimeOffset
+     * Gets as dateTimeOffset.
      *
      * @return \DateTime
      */
@@ -313,9 +313,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new dateTimeOffset
+     * Sets a new dateTimeOffset.
      *
-     * @param \DateTime $dateTimeOffset
+     * @param  \DateTime $dateTimeOffset
      * @return self
      */
     public function setDateTimeOffset(\DateTime $dateTimeOffset)
@@ -325,7 +325,7 @@ class TOperandType
     }
 
     /**
-     * Gets as enum
+     * Gets as enum.
      *
      * @return string
      */
@@ -335,9 +335,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new enum
+     * Sets a new enum.
      *
-     * @param string $enum
+     * @param  string $enum
      * @return self
      */
     public function setEnum($enum)
@@ -347,7 +347,7 @@ class TOperandType
     }
 
     /**
-     * Gets as path
+     * Gets as path.
      *
      * @return string
      */
@@ -357,9 +357,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new path
+     * Sets a new path.
      *
-     * @param string $path
+     * @param  string $path
      * @return self
      */
     public function setPath($path)
@@ -369,7 +369,7 @@ class TOperandType
     }
 
     /**
-     * Gets as if
+     * Gets as if.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType
      */
@@ -379,9 +379,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new if
+     * Sets a new if.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType $if
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType $if
      * @return self
      */
     public function setIf(TIfExpressionType $if)
@@ -391,7 +391,7 @@ class TOperandType
     }
 
     /**
-     * Gets as record
+     * Gets as record.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType
      */
@@ -401,9 +401,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new record
+     * Sets a new record.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType $record
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TRecordExpressionType $record
      * @return self
      */
     public function setRecord(TRecordExpressionType $record)
@@ -413,7 +413,7 @@ class TOperandType
     }
 
     /**
-     * Gets as collection
+     * Gets as collection.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType
      */
@@ -423,9 +423,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new collection
+     * Sets a new collection.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType $collection
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionExpressionType $collection
      * @return self
      */
     public function setCollection(TCollectionExpressionType $collection)
@@ -435,7 +435,7 @@ class TOperandType
     }
 
     /**
-     * Gets as typeAssert
+     * Gets as typeAssert.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAssertExpressionType
      */
@@ -445,9 +445,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new typeAssert
+     * Sets a new typeAssert.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAssertExpressionType $typeAssert
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAssertExpressionType $typeAssert
      * @return self
      */
     public function setTypeAssert(TTypeAssertExpressionType $typeAssert)
@@ -457,7 +457,7 @@ class TOperandType
     }
 
     /**
-     * Gets as typeTest
+     * Gets as typeTest.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType
      */
@@ -467,9 +467,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new typeTest
+     * Sets a new typeTest.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType $typeTest
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType $typeTest
      * @return self
      */
     public function setTypeTest(TTypeTestExpressionType $typeTest)
@@ -479,7 +479,7 @@ class TOperandType
     }
 
     /**
-     * Gets as functionReference
+     * Gets as functionReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType
      */
@@ -489,9 +489,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new functionReference
+     * Sets a new functionReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType $functionReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType $functionReference
      * @return self
      */
     public function setFunctionReference(TFunctionReferenceExpressionType $functionReference)
@@ -501,7 +501,7 @@ class TOperandType
     }
 
     /**
-     * Gets as entitySetReference
+     * Gets as entitySetReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType
      */
@@ -511,9 +511,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new entitySetReference
+     * Sets a new entitySetReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType $entitySetReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TEntitySetReferenceExpressionType $entitySetReference
      * @return self
      */
     public function setEntitySetReference(TEntitySetReferenceExpressionType $entitySetReference)
@@ -523,7 +523,7 @@ class TOperandType
     }
 
     /**
-     * Gets as anonymousFunction
+     * Gets as anonymousFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType
      */
@@ -533,9 +533,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new anonymousFunction
+     * Sets a new anonymousFunction.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType $anonymousFunction
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType $anonymousFunction
      * @return self
      */
     public function setAnonymousFunction(TAnonymousFunctionExpressionType $anonymousFunction)
@@ -545,7 +545,7 @@ class TOperandType
     }
 
     /**
-     * Gets as parameterReference
+     * Gets as parameterReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType
      */
@@ -555,9 +555,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new parameterReference
+     * Sets a new parameterReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType $parameterReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TParameterReferenceExpressionType $parameterReference
      * @return self
      */
     public function setParameterReference(TParameterReferenceExpressionType $parameterReference)
@@ -567,7 +567,7 @@ class TOperandType
     }
 
     /**
-     * Gets as apply
+     * Gets as apply.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType
      */
@@ -577,9 +577,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new apply
+     * Sets a new apply.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType $apply
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType $apply
      * @return self
      */
     public function setApply(TApplyExpressionType $apply)
@@ -589,7 +589,7 @@ class TOperandType
     }
 
     /**
-     * Gets as propertyReference
+     * Gets as propertyReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType
      */
@@ -599,9 +599,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new propertyReference
+     * Sets a new propertyReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType $propertyReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType $propertyReference
      * @return self
      */
     public function setPropertyReference(TPropertyReferenceExpressionType $propertyReference)
@@ -611,7 +611,7 @@ class TOperandType
     }
 
     /**
-     * Gets as valueTermReference
+     * Gets as valueTermReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType
      */
@@ -621,9 +621,9 @@ class TOperandType
     }
 
     /**
-     * Sets a new valueTermReference
+     * Sets a new valueTermReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType $valueTermReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType $valueTermReference
      * @return self
      */
     public function setValueTermReference(TValueTermReferenceExpressionType $valueTermReference)

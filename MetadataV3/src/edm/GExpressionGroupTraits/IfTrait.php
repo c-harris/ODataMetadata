@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the If Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the If Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -17,10 +17,10 @@ trait IfTrait
     );
     
     /**
-     * Adds as if
+     * Adds as if.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType $if
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType $if
      */
     public function addToIf(TIfExpressionType $if)
     {
@@ -29,10 +29,10 @@ trait IfTrait
     }
 
     /**
-     * isset if
+     * isset if.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetIf($index)
     {
@@ -40,9 +40,9 @@ trait IfTrait
     }
 
     /**
-     * unset if
+     * unset if.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetIf($index)
@@ -51,7 +51,7 @@ trait IfTrait
     }
 
     /**
-     * Gets as if
+     * Gets as if.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType[]
      */
@@ -61,9 +61,9 @@ trait IfTrait
     }
 
     /**
-     * Sets a new if
+     * Sets a new if.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType[] $if
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TIfExpressionType[] $if
      * @return self
      */
     public function setIf(array $if)

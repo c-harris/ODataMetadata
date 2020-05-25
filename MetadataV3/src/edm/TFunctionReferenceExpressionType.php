@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TFunctionReferenceExpressionType
+ * Class representing TFunctionReferenceExpressionType.
  *
  *
  * XSD Type: TFunctionReferenceExpression
@@ -26,7 +26,7 @@ class TFunctionReferenceExpressionType
     );
 
     /**
-     * Gets as function
+     * Gets as function.
      *
      * @return string
      */
@@ -36,9 +36,9 @@ class TFunctionReferenceExpressionType
     }
 
     /**
-     * Sets a new function
+     * Sets a new function.
      *
-     * @param string $function
+     * @param  string $function
      * @return self
      */
     public function setFunction($function)
@@ -48,11 +48,11 @@ class TFunctionReferenceExpressionType
     }
 
     /**
-     * Adds as parameter
+     * Adds as parameter.
      *
-     * @return self
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType\ParameterAnonymousType
      * $parameter
+     * @return self
      */
     public function addToParameter(TFunctionReferenceExpressionType\ParameterAnonymousType $parameter)
     {
@@ -61,10 +61,10 @@ class TFunctionReferenceExpressionType
     }
 
     /**
-     * isset parameter
+     * isset parameter.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetParameter($index)
     {
@@ -72,9 +72,9 @@ class TFunctionReferenceExpressionType
     }
 
     /**
-     * unset parameter
+     * unset parameter.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetParameter($index)
@@ -83,7 +83,7 @@ class TFunctionReferenceExpressionType
     }
 
     /**
-     * Gets as parameter
+     * Gets as parameter.
      *
      * @return
      * \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType\ParameterAnonymousType[]
@@ -94,7 +94,7 @@ class TFunctionReferenceExpressionType
     }
 
     /**
-     * Sets a new parameter
+     * Sets a new parameter.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType\ParameterAnonymousType[]
      * $parameter

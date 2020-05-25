@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TFloatConstantExpressionType
+ * Class representing TFloatConstantExpressionType.
  *
  *
  * XSD Type: TFloatConstantExpression
@@ -17,7 +17,7 @@ class TFloatConstantExpressionType
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
      * @param float $value
      */
@@ -27,9 +27,9 @@ class TFloatConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param float $value
+     * @param  float $value
      * @return float
      */
     public function value(...$value)
@@ -41,7 +41,7 @@ class TFloatConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TTwoChildrenExpressionType
+ * Class representing TTwoChildrenExpressionType.
  *
  *
  * XSD Type: TTwoChildrenExpression
@@ -26,7 +26,7 @@ class TTwoChildrenExpressionType
     );
 
     /**
-     * @property boolean[] $bool
+     * @property bool[] $bool
      */
     private $bool = array(
         
@@ -80,7 +80,7 @@ class TTwoChildrenExpressionType
     );
 
     /**
-     * @property integer[] $int
+     * @property int[] $int
      */
     private $int = array(
         
@@ -260,10 +260,10 @@ class TTwoChildrenExpressionType
     );
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -272,10 +272,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -283,9 +283,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -294,7 +294,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -304,9 +304,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)
@@ -316,10 +316,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as binary
+     * Adds as binary.
      *
+     * @param  string $binary
      * @return self
-     * @param string $binary
      */
     public function addToBinary($binary)
     {
@@ -328,10 +328,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset binary
+     * isset binary.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetBinary($index)
     {
@@ -339,9 +339,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset binary
+     * unset binary.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetBinary($index)
@@ -350,7 +350,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as binary
+     * Gets as binary.
      *
      * @return string[]
      */
@@ -360,9 +360,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new binary
+     * Sets a new binary.
      *
-     * @param string $binary
+     * @param  string $binary
      * @return self
      */
     public function setBinary(array $binary)
@@ -372,10 +372,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as bool
+     * Adds as bool.
      *
+     * @param  bool $bool
      * @return self
-     * @param boolean $bool
      */
     public function addToBool($bool)
     {
@@ -384,10 +384,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset bool
+     * isset bool.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetBool($index)
     {
@@ -395,9 +395,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset bool
+     * unset bool.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetBool($index)
@@ -406,9 +406,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as bool
+     * Gets as bool.
      *
-     * @return boolean[]
+     * @return bool[]
      */
     public function getBool()
     {
@@ -416,9 +416,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new bool
+     * Sets a new bool.
      *
-     * @param boolean $bool
+     * @param  bool $bool
      * @return self
      */
     public function setBool(array $bool)
@@ -428,10 +428,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as date
+     * Adds as date.
      *
+     * @param  \DateTime $date
      * @return self
-     * @param \DateTime $date
      */
     public function addToDate(\DateTime $date)
     {
@@ -440,10 +440,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset date
+     * isset date.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDate($index)
     {
@@ -451,9 +451,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset date
+     * unset date.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDate($index)
@@ -462,7 +462,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as date
+     * Gets as date.
      *
      * @return \DateTime[]
      */
@@ -472,9 +472,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new date
+     * Sets a new date.
      *
-     * @param \DateTime $date
+     * @param  \DateTime $date
      * @return self
      */
     public function setDate(array $date)
@@ -484,10 +484,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as dateTimeOffset
+     * Adds as dateTimeOffset.
      *
+     * @param  \DateTime $dateTimeOffset
      * @return self
-     * @param \DateTime $dateTimeOffset
      */
     public function addToDateTimeOffset(\DateTime $dateTimeOffset)
     {
@@ -496,10 +496,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset dateTimeOffset
+     * isset dateTimeOffset.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDateTimeOffset($index)
     {
@@ -507,9 +507,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset dateTimeOffset
+     * unset dateTimeOffset.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDateTimeOffset($index)
@@ -518,7 +518,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as dateTimeOffset
+     * Gets as dateTimeOffset.
      *
      * @return \DateTime[]
      */
@@ -528,9 +528,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new dateTimeOffset
+     * Sets a new dateTimeOffset.
      *
-     * @param \DateTime $dateTimeOffset
+     * @param  \DateTime $dateTimeOffset
      * @return self
      */
     public function setDateTimeOffset(array $dateTimeOffset)
@@ -540,10 +540,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as decimal
+     * Adds as decimal.
      *
+     * @param  float $decimal
      * @return self
-     * @param float $decimal
      */
     public function addToDecimal($decimal)
     {
@@ -552,10 +552,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset decimal
+     * isset decimal.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDecimal($index)
     {
@@ -563,9 +563,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset decimal
+     * unset decimal.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDecimal($index)
@@ -574,7 +574,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as decimal
+     * Gets as decimal.
      *
      * @return float[]
      */
@@ -584,9 +584,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new decimal
+     * Sets a new decimal.
      *
-     * @param float $decimal
+     * @param  float $decimal
      * @return self
      */
     public function setDecimal(array $decimal)
@@ -596,10 +596,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as duration
+     * Adds as duration.
      *
+     * @param  \DateInterval $duration
      * @return self
-     * @param \DateInterval $duration
      */
     public function addToDuration(\DateInterval $duration)
     {
@@ -608,10 +608,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset duration
+     * isset duration.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDuration($index)
     {
@@ -619,9 +619,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset duration
+     * unset duration.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDuration($index)
@@ -630,7 +630,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as duration
+     * Gets as duration.
      *
      * @return \DateInterval[]
      */
@@ -640,9 +640,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new duration
+     * Sets a new duration.
      *
-     * @param \DateInterval $duration
+     * @param  \DateInterval $duration
      * @return self
      */
     public function setDuration(array $duration)
@@ -652,10 +652,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as enumMember
+     * Adds as enumMember.
      *
+     * @param  string $enumMember
      * @return self
-     * @param string $enumMember
      */
     public function addToEnumMember($enumMember)
     {
@@ -664,10 +664,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset enumMember
+     * isset enumMember.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEnumMember($index)
     {
@@ -675,9 +675,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset enumMember
+     * unset enumMember.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEnumMember($index)
@@ -686,7 +686,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as enumMember
+     * Gets as enumMember.
      *
      * @return string[]
      */
@@ -696,9 +696,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new enumMember
+     * Sets a new enumMember.
      *
-     * @param string $enumMember
+     * @param  string $enumMember
      * @return self
      */
     public function setEnumMember(array $enumMember)
@@ -708,10 +708,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as float
+     * Adds as float.
      *
+     * @param  float $float
      * @return self
-     * @param float $float
      */
     public function addToFloat($float)
     {
@@ -720,10 +720,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset float
+     * isset float.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFloat($index)
     {
@@ -731,9 +731,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset float
+     * unset float.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFloat($index)
@@ -742,7 +742,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as float
+     * Gets as float.
      *
      * @return float[]
      */
@@ -752,9 +752,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new float
+     * Sets a new float.
      *
-     * @param float $float
+     * @param  float $float
      * @return self
      */
     public function setFloat(array $float)
@@ -764,10 +764,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as guid
+     * Adds as guid.
      *
+     * @param  string $guid
      * @return self
-     * @param string $guid
      */
     public function addToGuid($guid)
     {
@@ -776,10 +776,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset guid
+     * isset guid.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetGuid($index)
     {
@@ -787,9 +787,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset guid
+     * unset guid.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetGuid($index)
@@ -798,7 +798,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as guid
+     * Gets as guid.
      *
      * @return string[]
      */
@@ -808,9 +808,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new guid
+     * Sets a new guid.
      *
-     * @param string $guid
+     * @param  string $guid
      * @return self
      */
     public function setGuid(array $guid)
@@ -820,10 +820,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as int
+     * Adds as int.
      *
+     * @param  int  $int
      * @return self
-     * @param integer $int
      */
     public function addToInt($int)
     {
@@ -832,10 +832,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset int
+     * isset int.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetInt($index)
     {
@@ -843,9 +843,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset int
+     * unset int.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetInt($index)
@@ -854,9 +854,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as int
+     * Gets as int.
      *
-     * @return integer[]
+     * @return int[]
      */
     public function getInt()
     {
@@ -864,9 +864,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new int
+     * Sets a new int.
      *
-     * @param integer $int
+     * @param  int  $int
      * @return self
      */
     public function setInt(array $int)
@@ -876,10 +876,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as string
+     * Adds as string.
      *
+     * @param  string $string
      * @return self
-     * @param string $string
      */
     public function addToString($string)
     {
@@ -888,10 +888,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset string
+     * isset string.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetString($index)
     {
@@ -899,9 +899,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset string
+     * unset string.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetString($index)
@@ -910,7 +910,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as string
+     * Gets as string.
      *
      * @return string[]
      */
@@ -920,9 +920,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new string
+     * Sets a new string.
      *
-     * @param string $string
+     * @param  string $string
      * @return self
      */
     public function setString(array $string)
@@ -932,10 +932,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as timeOfDay
+     * Adds as timeOfDay.
      *
+     * @param  \DateTime $timeOfDay
      * @return self
-     * @param \DateTime $timeOfDay
      */
     public function addToTimeOfDay(\DateTime $timeOfDay)
     {
@@ -944,10 +944,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset timeOfDay
+     * isset timeOfDay.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetTimeOfDay($index)
     {
@@ -955,9 +955,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset timeOfDay
+     * unset timeOfDay.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetTimeOfDay($index)
@@ -966,7 +966,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as timeOfDay
+     * Gets as timeOfDay.
      *
      * @return \DateTime[]
      */
@@ -976,9 +976,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new timeOfDay
+     * Sets a new timeOfDay.
      *
-     * @param \DateTime $timeOfDay
+     * @param  \DateTime $timeOfDay
      * @return self
      */
     public function setTimeOfDay(array $timeOfDay)
@@ -988,10 +988,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as annotationPath
+     * Adds as annotationPath.
      *
+     * @param  string $annotationPath
      * @return self
-     * @param string $annotationPath
      */
     public function addToAnnotationPath($annotationPath)
     {
@@ -1000,10 +1000,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset annotationPath
+     * isset annotationPath.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotationPath($index)
     {
@@ -1011,9 +1011,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset annotationPath
+     * unset annotationPath.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotationPath($index)
@@ -1022,7 +1022,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as annotationPath
+     * Gets as annotationPath.
      *
      * @return string[]
      */
@@ -1032,9 +1032,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new annotationPath
+     * Sets a new annotationPath.
      *
-     * @param string $annotationPath
+     * @param  string $annotationPath
      * @return self
      */
     public function setAnnotationPath(array $annotationPath)
@@ -1044,10 +1044,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as apply
+     * Adds as apply.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType $apply
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType $apply
      */
     public function addToApply(TApplyExpressionType $apply)
     {
@@ -1056,10 +1056,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset apply
+     * isset apply.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetApply($index)
     {
@@ -1067,9 +1067,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset apply
+     * unset apply.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetApply($index)
@@ -1078,7 +1078,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as apply
+     * Gets as apply.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType[]
      */
@@ -1088,9 +1088,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new apply
+     * Sets a new apply.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType[] $apply
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TApplyExpressionType[] $apply
      * @return self
      */
     public function setApply(array $apply)
@@ -1100,10 +1100,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as cast
+     * Adds as cast.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $cast
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $cast
      */
     public function addToCast(TCastOrIsOfExpressionType $cast)
     {
@@ -1112,10 +1112,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset cast
+     * isset cast.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCast($index)
     {
@@ -1123,9 +1123,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset cast
+     * unset cast.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCast($index)
@@ -1134,7 +1134,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as cast
+     * Gets as cast.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[]
      */
@@ -1144,9 +1144,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new cast
+     * Sets a new cast.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $cast
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $cast
      * @return self
      */
     public function setCast(array $cast)
@@ -1156,10 +1156,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as collection
+     * Adds as collection.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType $collection
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType $collection
      */
     public function addToCollection(TCollectionExpressionType $collection)
     {
@@ -1168,10 +1168,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset collection
+     * isset collection.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCollection($index)
     {
@@ -1179,9 +1179,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset collection
+     * unset collection.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCollection($index)
@@ -1190,7 +1190,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as collection
+     * Gets as collection.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType[]
      */
@@ -1200,9 +1200,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new collection
+     * Sets a new collection.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType[] $collection
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCollectionExpressionType[] $collection
      * @return self
      */
     public function setCollection(array $collection)
@@ -1212,10 +1212,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as if
+     * Adds as if.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType $if
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType $if
      */
     public function addToIf(TIfExpressionType $if)
     {
@@ -1224,10 +1224,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset if
+     * isset if.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetIf($index)
     {
@@ -1235,9 +1235,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset if
+     * unset if.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetIf($index)
@@ -1246,7 +1246,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as if
+     * Gets as if.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType[]
      */
@@ -1256,9 +1256,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new if
+     * Sets a new if.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType[] $if
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TIfExpressionType[] $if
      * @return self
      */
     public function setIf(array $if)
@@ -1268,10 +1268,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as eq
+     * Adds as eq.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $eq
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $eq
      */
     public function addToEq(TTwoChildrenExpressionType $eq)
     {
@@ -1280,10 +1280,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset eq
+     * isset eq.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEq($index)
     {
@@ -1291,9 +1291,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset eq
+     * unset eq.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEq($index)
@@ -1302,7 +1302,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as eq
+     * Gets as eq.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1312,9 +1312,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new eq
+     * Sets a new eq.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $eq
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $eq
      * @return self
      */
     public function setEq(array $eq)
@@ -1324,10 +1324,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as ne
+     * Adds as ne.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ne
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ne
      */
     public function addToNe(TTwoChildrenExpressionType $ne)
     {
@@ -1336,10 +1336,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset ne
+     * isset ne.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNe($index)
     {
@@ -1347,9 +1347,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset ne
+     * unset ne.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNe($index)
@@ -1358,7 +1358,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as ne
+     * Gets as ne.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1368,9 +1368,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new ne
+     * Sets a new ne.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ne
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ne
      * @return self
      */
     public function setNe(array $ne)
@@ -1380,10 +1380,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as ge
+     * Adds as ge.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ge
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $ge
      */
     public function addToGe(TTwoChildrenExpressionType $ge)
     {
@@ -1392,10 +1392,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset ge
+     * isset ge.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetGe($index)
     {
@@ -1403,9 +1403,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset ge
+     * unset ge.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetGe($index)
@@ -1414,7 +1414,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as ge
+     * Gets as ge.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1424,9 +1424,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new ge
+     * Sets a new ge.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ge
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $ge
      * @return self
      */
     public function setGe(array $ge)
@@ -1436,10 +1436,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as gt
+     * Adds as gt.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $gt
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $gt
      */
     public function addToGt(TTwoChildrenExpressionType $gt)
     {
@@ -1448,10 +1448,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset gt
+     * isset gt.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetGt($index)
     {
@@ -1459,9 +1459,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset gt
+     * unset gt.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetGt($index)
@@ -1470,7 +1470,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as gt
+     * Gets as gt.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1480,9 +1480,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new gt
+     * Sets a new gt.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $gt
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $gt
      * @return self
      */
     public function setGt(array $gt)
@@ -1492,10 +1492,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as le
+     * Adds as le.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $le
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $le
      */
     public function addToLe(TTwoChildrenExpressionType $le)
     {
@@ -1504,10 +1504,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset le
+     * isset le.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLe($index)
     {
@@ -1515,9 +1515,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset le
+     * unset le.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLe($index)
@@ -1526,7 +1526,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as le
+     * Gets as le.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1536,9 +1536,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new le
+     * Sets a new le.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $le
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $le
      * @return self
      */
     public function setLe(array $le)
@@ -1548,10 +1548,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as lt
+     * Adds as lt.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $lt
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $lt
      */
     public function addToLt(TTwoChildrenExpressionType $lt)
     {
@@ -1560,10 +1560,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset lt
+     * isset lt.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLt($index)
     {
@@ -1571,9 +1571,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset lt
+     * unset lt.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLt($index)
@@ -1582,7 +1582,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as lt
+     * Gets as lt.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1592,9 +1592,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new lt
+     * Sets a new lt.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $lt
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $lt
      * @return self
      */
     public function setLt(array $lt)
@@ -1604,10 +1604,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as and
+     * Adds as and.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $and
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $and
      */
     public function addToAnd(TTwoChildrenExpressionType $and)
     {
@@ -1616,10 +1616,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset and
+     * isset and.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnd($index)
     {
@@ -1627,9 +1627,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset and
+     * unset and.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnd($index)
@@ -1638,7 +1638,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as and
+     * Gets as and.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1648,9 +1648,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new and
+     * Sets a new and.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $and
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $and
      * @return self
      */
     public function setAnd(array $and)
@@ -1660,10 +1660,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as or
+     * Adds as or.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $or
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType $or
      */
     public function addToOr(TTwoChildrenExpressionType $or)
     {
@@ -1672,10 +1672,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset or
+     * isset or.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetOr($index)
     {
@@ -1683,9 +1683,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset or
+     * unset or.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetOr($index)
@@ -1694,7 +1694,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as or
+     * Gets as or.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[]
      */
@@ -1704,9 +1704,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new or
+     * Sets a new or.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $or
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TTwoChildrenExpressionType[] $or
      * @return self
      */
     public function setOr(array $or)
@@ -1716,10 +1716,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as not
+     * Adds as not.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $not
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $not
      */
     public function addToNot(TOneChildExpressionType $not)
     {
@@ -1728,10 +1728,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset not
+     * isset not.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNot($index)
     {
@@ -1739,9 +1739,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset not
+     * unset not.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNot($index)
@@ -1750,7 +1750,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as not
+     * Gets as not.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[]
      */
@@ -1760,9 +1760,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new not
+     * Sets a new not.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $not
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $not
      * @return self
      */
     public function setNot(array $not)
@@ -1772,10 +1772,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as isOf
+     * Adds as isOf.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $isOf
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType $isOf
      */
     public function addToIsOf(TCastOrIsOfExpressionType $isOf)
     {
@@ -1784,10 +1784,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset isOf
+     * isset isOf.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetIsOf($index)
     {
@@ -1795,9 +1795,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset isOf
+     * unset isOf.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetIsOf($index)
@@ -1806,7 +1806,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as isOf
+     * Gets as isOf.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[]
      */
@@ -1816,9 +1816,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new isOf
+     * Sets a new isOf.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $isOf
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TCastOrIsOfExpressionType[] $isOf
      * @return self
      */
     public function setIsOf(array $isOf)
@@ -1828,10 +1828,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as labeledElement
+     * Adds as labeledElement.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType $labeledElement
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType $labeledElement
      */
     public function addToLabeledElement(TLabeledElementExpressionType $labeledElement)
     {
@@ -1840,10 +1840,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset labeledElement
+     * isset labeledElement.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLabeledElement($index)
     {
@@ -1851,9 +1851,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset labeledElement
+     * unset labeledElement.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLabeledElement($index)
@@ -1862,7 +1862,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as labeledElement
+     * Gets as labeledElement.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType[]
      */
@@ -1872,9 +1872,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new labeledElement
+     * Sets a new labeledElement.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType[] $labeledElement
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TLabeledElementExpressionType[] $labeledElement
      * @return self
      */
     public function setLabeledElement(array $labeledElement)
@@ -1884,10 +1884,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as labeledElementReference
+     * Adds as labeledElementReference.
      *
+     * @param  string $labeledElementReference
      * @return self
-     * @param string $labeledElementReference
      */
     public function addToLabeledElementReference($labeledElementReference)
     {
@@ -1896,10 +1896,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset labeledElementReference
+     * isset labeledElementReference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetLabeledElementReference($index)
     {
@@ -1907,9 +1907,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset labeledElementReference
+     * unset labeledElementReference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetLabeledElementReference($index)
@@ -1918,7 +1918,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as labeledElementReference
+     * Gets as labeledElementReference.
      *
      * @return string[]
      */
@@ -1928,9 +1928,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new labeledElementReference
+     * Sets a new labeledElementReference.
      *
-     * @param string $labeledElementReference
+     * @param  string $labeledElementReference
      * @return self
      */
     public function setLabeledElementReference(array $labeledElementReference)
@@ -1940,10 +1940,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToNull(Annotation $annotation)
     {
@@ -1952,10 +1952,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset null
+     * isset null.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNull($index)
     {
@@ -1963,9 +1963,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset null
+     * unset null.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNull($index)
@@ -1974,7 +1974,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as null
+     * Gets as null.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -1984,9 +1984,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new null
+     * Sets a new null.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $null
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $null
      * @return self
      */
     public function setNull(array $null)
@@ -1996,10 +1996,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as navigationPropertyPath
+     * Adds as navigationPropertyPath.
      *
+     * @param  string $navigationPropertyPath
      * @return self
-     * @param string $navigationPropertyPath
      */
     public function addToNavigationPropertyPath($navigationPropertyPath)
     {
@@ -2008,10 +2008,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset navigationPropertyPath
+     * isset navigationPropertyPath.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNavigationPropertyPath($index)
     {
@@ -2019,9 +2019,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset navigationPropertyPath
+     * unset navigationPropertyPath.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNavigationPropertyPath($index)
@@ -2030,7 +2030,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as navigationPropertyPath
+     * Gets as navigationPropertyPath.
      *
      * @return string[]
      */
@@ -2040,9 +2040,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new navigationPropertyPath
+     * Sets a new navigationPropertyPath.
      *
-     * @param string $navigationPropertyPath
+     * @param  string $navigationPropertyPath
      * @return self
      */
     public function setNavigationPropertyPath(array $navigationPropertyPath)
@@ -2052,10 +2052,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as path
+     * Adds as path.
      *
+     * @param  string $path
      * @return self
-     * @param string $path
      */
     public function addToPath($path)
     {
@@ -2064,10 +2064,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset path
+     * isset path.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPath($index)
     {
@@ -2075,9 +2075,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset path
+     * unset path.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPath($index)
@@ -2086,7 +2086,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as path
+     * Gets as path.
      *
      * @return string[]
      */
@@ -2096,9 +2096,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new path
+     * Sets a new path.
      *
-     * @param string $path
+     * @param  string $path
      * @return self
      */
     public function setPath(array $path)
@@ -2108,10 +2108,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as propertyPath
+     * Adds as propertyPath.
      *
+     * @param  string $propertyPath
      * @return self
-     * @param string $propertyPath
      */
     public function addToPropertyPath($propertyPath)
     {
@@ -2120,10 +2120,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset propertyPath
+     * isset propertyPath.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPropertyPath($index)
     {
@@ -2131,9 +2131,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset propertyPath
+     * unset propertyPath.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPropertyPath($index)
@@ -2142,7 +2142,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as propertyPath
+     * Gets as propertyPath.
      *
      * @return string[]
      */
@@ -2152,9 +2152,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new propertyPath
+     * Sets a new propertyPath.
      *
-     * @param string $propertyPath
+     * @param  string $propertyPath
      * @return self
      */
     public function setPropertyPath(array $propertyPath)
@@ -2164,10 +2164,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as record
+     * Adds as record.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType $record
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType $record
      */
     public function addToRecord(TRecordExpressionType $record)
     {
@@ -2176,10 +2176,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset record
+     * isset record.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRecord($index)
     {
@@ -2187,9 +2187,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset record
+     * unset record.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRecord($index)
@@ -2198,7 +2198,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as record
+     * Gets as record.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType[]
      */
@@ -2208,9 +2208,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new record
+     * Sets a new record.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType[] $record
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TRecordExpressionType[] $record
      * @return self
      */
     public function setRecord(array $record)
@@ -2220,10 +2220,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Adds as urlRef
+     * Adds as urlRef.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $urlRef
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType $urlRef
      */
     public function addToUrlRef(TOneChildExpressionType $urlRef)
     {
@@ -2232,10 +2232,10 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * isset urlRef
+     * isset urlRef.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetUrlRef($index)
     {
@@ -2243,9 +2243,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * unset urlRef
+     * unset urlRef.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetUrlRef($index)
@@ -2254,7 +2254,7 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Gets as urlRef
+     * Gets as urlRef.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[]
      */
@@ -2264,9 +2264,9 @@ class TTwoChildrenExpressionType
     }
 
     /**
-     * Sets a new urlRef
+     * Sets a new urlRef.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $urlRef
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TOneChildExpressionType[] $urlRef
      * @return self
      */
     public function setUrlRef(array $urlRef)

@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV4\edmx;
 use AlgoWeb\ODataMetadata\MetadataV4\edm\Schema;
 
 /**
- * Class representing TEdmxType
+ * Class representing TEdmxType.
  *
  *
  * XSD Type: TEdmx
@@ -31,7 +31,7 @@ class TEdmxType
     private $dataServices = null;
 
     /**
-     * Gets as version
+     * Gets as version.
      *
      * @return float
      */
@@ -41,9 +41,9 @@ class TEdmxType
     }
 
     /**
-     * Sets a new version
+     * Sets a new version.
      *
-     * @param float $version
+     * @param  float $version
      * @return self
      */
     public function setVersion($version)
@@ -53,10 +53,10 @@ class TEdmxType
     }
 
     /**
-     * Adds as reference
+     * Adds as reference.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edmx\TReferenceType $reference
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edmx\TReferenceType $reference
      */
     public function addToReference(TReferenceType $reference)
     {
@@ -65,10 +65,10 @@ class TEdmxType
     }
 
     /**
-     * isset reference
+     * isset reference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetReference($index)
     {
@@ -76,9 +76,9 @@ class TEdmxType
     }
 
     /**
-     * unset reference
+     * unset reference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetReference($index)
@@ -87,7 +87,7 @@ class TEdmxType
     }
 
     /**
-     * Gets as reference
+     * Gets as reference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edmx\TReferenceType[]
      */
@@ -97,9 +97,9 @@ class TEdmxType
     }
 
     /**
-     * Sets a new reference
+     * Sets a new reference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edmx\TReferenceType[] $reference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edmx\TReferenceType[] $reference
      * @return self
      */
     public function setReference(array $reference)
@@ -109,10 +109,10 @@ class TEdmxType
     }
 
     /**
-     * Adds as schema
+     * Adds as schema.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Schema $schema
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Schema $schema
      */
     public function addToDataServices(Schema $schema)
     {
@@ -121,10 +121,10 @@ class TEdmxType
     }
 
     /**
-     * isset dataServices
+     * isset dataServices.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDataServices($index)
     {
@@ -132,9 +132,9 @@ class TEdmxType
     }
 
     /**
-     * unset dataServices
+     * unset dataServices.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDataServices($index)
@@ -143,7 +143,7 @@ class TEdmxType
     }
 
     /**
-     * Gets as dataServices
+     * Gets as dataServices.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Schema[]
      */
@@ -153,9 +153,9 @@ class TEdmxType
     }
 
     /**
-     * Sets a new dataServices
+     * Sets a new dataServices.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Schema[] $dataServices
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Schema[] $dataServices
      * @return self
      */
     public function setDataServices(array $dataServices)

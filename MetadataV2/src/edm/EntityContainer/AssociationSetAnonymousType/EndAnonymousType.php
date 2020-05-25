@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV2\edm\EntityContainer\AssociationSetAno
 use AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType;
 
 /**
- * Class representing EndAnonymousType
+ * Class representing EndAnonymousType.
  */
 class EndAnonymousType
 {
@@ -26,7 +26,7 @@ class EndAnonymousType
     private $documentation = null;
 
     /**
-     * Gets as role
+     * Gets as role.
      *
      * @return string
      */
@@ -36,9 +36,9 @@ class EndAnonymousType
     }
 
     /**
-     * Sets a new role
+     * Sets a new role.
      *
-     * @param string $role
+     * @param  string $role
      * @return self
      */
     public function setRole($role)
@@ -48,7 +48,7 @@ class EndAnonymousType
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return string
      */
@@ -58,9 +58,9 @@ class EndAnonymousType
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param string $entitySet
+     * @param  string $entitySet
      * @return self
      */
     public function setEntitySet($entitySet)
@@ -70,7 +70,7 @@ class EndAnonymousType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType
      */
@@ -80,9 +80,9 @@ class EndAnonymousType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

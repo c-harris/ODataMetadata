@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl;
 
 /**
- * Class representing TCollectionTypeType
+ * Class representing TCollectionTypeType.
  *
  *
  * XSD Type: TCollectionType
@@ -17,10 +17,10 @@ class TCollectionTypeType
     private $rowType = null;
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyType $property
      */
     public function addToRowType(TPropertyType $property)
     {
@@ -29,10 +29,10 @@ class TCollectionTypeType
     }
 
     /**
-     * isset rowType
+     * isset rowType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRowType($index)
     {
@@ -40,9 +40,9 @@ class TCollectionTypeType
     }
 
     /**
-     * unset rowType
+     * unset rowType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRowType($index)
@@ -51,7 +51,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as rowType
+     * Gets as rowType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyType[]
      */
@@ -61,9 +61,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new rowType
+     * Sets a new rowType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyType[] $rowType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TPropertyType[] $rowType
      * @return self
      */
     public function setRowType(array $rowType)

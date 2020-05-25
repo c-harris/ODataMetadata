@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Type Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Type Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -18,10 +18,10 @@ trait TypeTestTrait
 
     
     /**
-     * Adds as typeTest
+     * Adds as typeTest.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType $typeTest
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType $typeTest
      */
     public function addToTypeTest(TTypeTestExpressionType $typeTest)
     {
@@ -30,10 +30,10 @@ trait TypeTestTrait
     }
 
     /**
-     * isset typeTest
+     * isset typeTest.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetTypeTest($index)
     {
@@ -41,9 +41,9 @@ trait TypeTestTrait
     }
 
     /**
-     * unset typeTest
+     * unset typeTest.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetTypeTest($index)
@@ -52,7 +52,7 @@ trait TypeTestTrait
     }
 
     /**
-     * Gets as typeTest
+     * Gets as typeTest.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType[]
      */
@@ -62,9 +62,9 @@ trait TypeTestTrait
     }
 
     /**
-     * Sets a new typeTest
+     * Sets a new typeTest.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType[] $typeTest
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeTestExpressionType[] $typeTest
      * @return self
      */
     public function setTypeTest(array $typeTest)

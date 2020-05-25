@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer;
 
 /**
- * Class representing FunctionImportAnonymousType
+ * Class representing FunctionImportAnonymousType.
  */
 class FunctionImportAnonymousType
 {
@@ -26,17 +26,17 @@ class FunctionImportAnonymousType
     private $entitySet = null;
 
     /**
-     * @property boolean $isComposable
+     * @property bool $isComposable
      */
     private $isComposable = null;
 
     /**
-     * @property boolean $isSideEffecting
+     * @property bool $isSideEffecting
      */
     private $isSideEffecting = null;
 
     /**
-     * @property boolean $isBindable
+     * @property bool $isBindable
      */
     private $isBindable = null;
 
@@ -58,7 +58,7 @@ class FunctionImportAnonymousType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -68,9 +68,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -80,10 +80,10 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Adds as returnType
+     * Adds as returnType.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportReturnTypeType $returnType
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportReturnTypeType $returnType
      */
     public function addToReturnType(TFunctionImportReturnTypeType $returnType)
     {
@@ -92,10 +92,10 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * isset returnType
+     * isset returnType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetReturnType($index)
     {
@@ -103,9 +103,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * unset returnType
+     * unset returnType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetReturnType($index)
@@ -114,7 +114,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as returnType
+     * Gets as returnType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportReturnTypeType[]
      */
@@ -124,9 +124,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new returnType
+     * Sets a new returnType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportReturnTypeType[] $returnType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportReturnTypeType[] $returnType
      * @return self
      */
     public function setReturnType(array $returnType)
@@ -136,7 +136,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType
      */
@@ -146,9 +146,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType $entitySet
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType $entitySet
      * @return self
      */
     public function setEntitySet(TOperandType $entitySet)
@@ -158,9 +158,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as isComposable
+     * Gets as isComposable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsComposable()
     {
@@ -168,9 +168,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new isComposable
+     * Sets a new isComposable.
      *
-     * @param boolean $isComposable
+     * @param  bool $isComposable
      * @return self
      */
     public function setIsComposable($isComposable)
@@ -180,9 +180,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as isSideEffecting
+     * Gets as isSideEffecting.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsSideEffecting()
     {
@@ -190,9 +190,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new isSideEffecting
+     * Sets a new isSideEffecting.
      *
-     * @param boolean $isSideEffecting
+     * @param  bool $isSideEffecting
      * @return self
      */
     public function setIsSideEffecting($isSideEffecting)
@@ -202,9 +202,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as isBindable
+     * Gets as isBindable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsBindable()
     {
@@ -212,9 +212,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new isBindable
+     * Sets a new isBindable.
      *
-     * @param boolean $isBindable
+     * @param  bool $isBindable
      * @return self
      */
     public function setIsBindable($isBindable)
@@ -224,7 +224,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as methodAccess
+     * Gets as methodAccess.
      *
      * @return string
      */
@@ -234,9 +234,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new methodAccess
+     * Sets a new methodAccess.
      *
-     * @param string $methodAccess
+     * @param  string $methodAccess
      * @return self
      */
     public function setMethodAccess($methodAccess)
@@ -246,7 +246,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -256,9 +256,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -268,10 +268,10 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Adds as parameter
+     * Adds as parameter.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportParameterType $parameter
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportParameterType $parameter
      */
     public function addToParameter(TFunctionImportParameterType $parameter)
     {
@@ -280,10 +280,10 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * isset parameter
+     * isset parameter.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetParameter($index)
     {
@@ -291,9 +291,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * unset parameter
+     * unset parameter.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetParameter($index)
@@ -302,7 +302,7 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Gets as parameter
+     * Gets as parameter.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportParameterType[]
      */
@@ -312,9 +312,9 @@ class FunctionImportAnonymousType
     }
 
     /**
-     * Sets a new parameter
+     * Sets a new parameter.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportParameterType[] $parameter
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionImportParameterType[] $parameter
      * @return self
      */
     public function setParameter(array $parameter)

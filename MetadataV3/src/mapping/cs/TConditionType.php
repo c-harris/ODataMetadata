@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TConditionType
+ * Class representing TConditionType.
  *
  *
  * XSD Type: TCondition
@@ -27,12 +27,12 @@ class TConditionType
     private $columnName = null;
 
     /**
-     * @property boolean $isNull
+     * @property bool $isNull
      */
     private $isNull = null;
 
     /**
-     * Gets as value
+     * Gets as value.
      *
      * @return string
      */
@@ -42,9 +42,9 @@ class TConditionType
     }
 
     /**
-     * Sets a new value
+     * Sets a new value.
      *
-     * @param string $value
+     * @param  string $value
      * @return self
      */
     public function setValue($value)
@@ -54,7 +54,7 @@ class TConditionType
     }
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -64,9 +64,9 @@ class TConditionType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -76,7 +76,7 @@ class TConditionType
     }
 
     /**
-     * Gets as columnName
+     * Gets as columnName.
      *
      * @return string
      */
@@ -86,9 +86,9 @@ class TConditionType
     }
 
     /**
-     * Sets a new columnName
+     * Sets a new columnName.
      *
-     * @param string $columnName
+     * @param  string $columnName
      * @return self
      */
     public function setColumnName($columnName)
@@ -98,9 +98,9 @@ class TConditionType
     }
 
     /**
-     * Gets as isNull
+     * Gets as isNull.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsNull()
     {
@@ -108,9 +108,9 @@ class TConditionType
     }
 
     /**
-     * Sets a new isNull
+     * Sets a new isNull.
      *
-     * @param boolean $isNull
+     * @param  bool $isNull
      * @return self
      */
     public function setIsNull($isNull)

@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the ValueTermReference Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the ValueTermReference Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -19,10 +19,10 @@ trait ValueTermReferenceTrait
 
     
     /**
-     * Adds as valueTermReference
+     * Adds as valueTermReference.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType $valueTermReference
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType $valueTermReference
      */
     public function addToValueTermReference(TValueTermReferenceExpressionType $valueTermReference)
     {
@@ -31,10 +31,10 @@ trait ValueTermReferenceTrait
     }
 
     /**
-     * isset valueTermReference
+     * isset valueTermReference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetValueTermReference($index)
     {
@@ -42,9 +42,9 @@ trait ValueTermReferenceTrait
     }
 
     /**
-     * unset valueTermReference
+     * unset valueTermReference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetValueTermReference($index)
@@ -53,7 +53,7 @@ trait ValueTermReferenceTrait
     }
 
     /**
-     * Gets as valueTermReference
+     * Gets as valueTermReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType[]
      */
@@ -63,9 +63,9 @@ trait ValueTermReferenceTrait
     }
 
     /**
-     * Sets a new valueTermReference
+     * Sets a new valueTermReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType[] $valueTermReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueTermReferenceExpressionType[] $valueTermReference
      * @return self
      */
     public function setValueTermReference(array $valueTermReference)

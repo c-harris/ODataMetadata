@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer;
 
 /**
- * Class representing EntitySetAnonymousType
+ * Class representing EntitySetAnonymousType.
  */
 class EntitySetAnonymousType
 {
@@ -45,7 +45,7 @@ class EntitySetAnonymousType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -55,9 +55,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -67,7 +67,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as entityType
+     * Gets as entityType.
      *
      * @return string
      */
@@ -77,9 +77,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new entityType
+     * Sets a new entityType.
      *
-     * @param string $entityType
+     * @param  string $entityType
      * @return self
      */
     public function setEntityType($entityType)
@@ -89,7 +89,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as getterAccess
+     * Gets as getterAccess.
      *
      * @return string
      */
@@ -99,9 +99,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new getterAccess
+     * Sets a new getterAccess.
      *
-     * @param string $getterAccess
+     * @param  string $getterAccess
      * @return self
      */
     public function setGetterAccess($getterAccess)
@@ -111,10 +111,10 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Adds as documentation
+     * Adds as documentation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      */
     public function addToDocumentation(TDocumentationType $documentation)
     {
@@ -123,10 +123,10 @@ class EntitySetAnonymousType
     }
 
     /**
-     * isset documentation
+     * isset documentation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDocumentation($index)
     {
@@ -134,9 +134,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * unset documentation
+     * unset documentation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDocumentation($index)
@@ -145,7 +145,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType[]
      */
@@ -155,9 +155,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType[] $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType[] $documentation
      * @return self
      */
     public function setDocumentation(array $documentation)
@@ -167,10 +167,10 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Adds as valueAnnotation
+     * Adds as valueAnnotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType $valueAnnotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType $valueAnnotation
      */
     public function addToValueAnnotation(TValueAnnotationType $valueAnnotation)
     {
@@ -179,10 +179,10 @@ class EntitySetAnonymousType
     }
 
     /**
-     * isset valueAnnotation
+     * isset valueAnnotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetValueAnnotation($index)
     {
@@ -190,9 +190,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * unset valueAnnotation
+     * unset valueAnnotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetValueAnnotation($index)
@@ -201,7 +201,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as valueAnnotation
+     * Gets as valueAnnotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType[]
      */
@@ -211,9 +211,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new valueAnnotation
+     * Sets a new valueAnnotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType[] $valueAnnotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TValueAnnotationType[] $valueAnnotation
      * @return self
      */
     public function setValueAnnotation(array $valueAnnotation)
@@ -223,10 +223,10 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Adds as typeAnnotation
+     * Adds as typeAnnotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType $typeAnnotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType $typeAnnotation
      */
     public function addToTypeAnnotation(TTypeAnnotationType $typeAnnotation)
     {
@@ -235,10 +235,10 @@ class EntitySetAnonymousType
     }
 
     /**
-     * isset typeAnnotation
+     * isset typeAnnotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetTypeAnnotation($index)
     {
@@ -246,9 +246,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * unset typeAnnotation
+     * unset typeAnnotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetTypeAnnotation($index)
@@ -257,7 +257,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as typeAnnotation
+     * Gets as typeAnnotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType[]
      */
@@ -267,9 +267,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new typeAnnotation
+     * Sets a new typeAnnotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType[] $typeAnnotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTypeAnnotationType[] $typeAnnotation
      * @return self
      */
     public function setTypeAnnotation(array $typeAnnotation)

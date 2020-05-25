@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TActionFunctionReturnTypeType
+ * Class representing TActionFunctionReturnTypeType.
  *
  *
  * XSD Type: TActionFunctionReturnType
@@ -17,7 +17,7 @@ class TActionFunctionReturnTypeType
     private $type = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -27,7 +27,7 @@ class TActionFunctionReturnTypeType
     private $maxLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
@@ -42,7 +42,7 @@ class TActionFunctionReturnTypeType
     private $sRID = null;
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -52,9 +52,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -64,9 +64,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -74,9 +74,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -86,7 +86,7 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -96,9 +96,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -108,9 +108,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -118,9 +118,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -130,7 +130,7 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
      * @return string
      */
@@ -140,9 +140,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param string $scale
+     * @param  string $scale
      * @return self
      */
     public function setScale($scale)
@@ -152,7 +152,7 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -162,9 +162,9 @@ class TActionFunctionReturnTypeType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)

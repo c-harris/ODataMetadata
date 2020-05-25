@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TCollectionExpressionType
+ * Class representing TCollectionExpressionType.
  *
  *
  * XSD Type: TCollectionExpression

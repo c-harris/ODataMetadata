@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edmx;
 
 /**
- * Class representing TIncludeAnnotationsType
+ * Class representing TIncludeAnnotationsType.
  *
  *
  * XSD Type: TIncludeAnnotations
@@ -27,7 +27,7 @@ class TIncludeAnnotationsType
     private $targetNamespace = null;
 
     /**
-     * Gets as termNamespace
+     * Gets as termNamespace.
      *
      * @return string
      */
@@ -37,9 +37,9 @@ class TIncludeAnnotationsType
     }
 
     /**
-     * Sets a new termNamespace
+     * Sets a new termNamespace.
      *
-     * @param string $termNamespace
+     * @param  string $termNamespace
      * @return self
      */
     public function setTermNamespace($termNamespace)
@@ -49,7 +49,7 @@ class TIncludeAnnotationsType
     }
 
     /**
-     * Gets as qualifier
+     * Gets as qualifier.
      *
      * @return string
      */
@@ -59,9 +59,9 @@ class TIncludeAnnotationsType
     }
 
     /**
-     * Sets a new qualifier
+     * Sets a new qualifier.
      *
-     * @param string $qualifier
+     * @param  string $qualifier
      * @return self
      */
     public function setQualifier($qualifier)
@@ -71,7 +71,7 @@ class TIncludeAnnotationsType
     }
 
     /**
-     * Gets as targetNamespace
+     * Gets as targetNamespace.
      *
      * @return string
      */
@@ -81,9 +81,9 @@ class TIncludeAnnotationsType
     }
 
     /**
-     * Sets a new targetNamespace
+     * Sets a new targetNamespace.
      *
-     * @param string $targetNamespace
+     * @param  string $targetNamespace
      * @return self
      */
     public function setTargetNamespace($targetNamespace)

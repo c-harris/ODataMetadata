@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV2\edm\EntityContainer;
 use AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType;
 
 /**
- * Class representing EntitySetAnonymousType
+ * Class representing EntitySetAnonymousType.
  */
 class EntitySetAnonymousType
 {
@@ -31,7 +31,7 @@ class EntitySetAnonymousType
     private $documentation = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -41,9 +41,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -53,7 +53,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as entityType
+     * Gets as entityType.
      *
      * @return string
      */
@@ -63,9 +63,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new entityType
+     * Sets a new entityType.
      *
-     * @param string $entityType
+     * @param  string $entityType
      * @return self
      */
     public function setEntityType($entityType)
@@ -75,7 +75,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as getterAccess
+     * Gets as getterAccess.
      *
      * @return string
      */
@@ -85,9 +85,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new getterAccess
+     * Sets a new getterAccess.
      *
-     * @param string $getterAccess
+     * @param  string $getterAccess
      * @return self
      */
     public function setGetterAccess($getterAccess)
@@ -97,7 +97,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType
      */
@@ -107,9 +107,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

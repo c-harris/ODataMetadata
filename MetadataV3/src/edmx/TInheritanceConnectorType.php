@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edmx;
 
 /**
- * Class representing TInheritanceConnectorType
+ * Class representing TInheritanceConnectorType.
  *
  *
  * XSD Type: TInheritanceConnector
@@ -17,7 +17,7 @@ class TInheritanceConnectorType
     private $entityType = null;
 
     /**
-     * @property boolean $manuallyRouted
+     * @property bool $manuallyRouted
      */
     private $manuallyRouted = null;
 
@@ -29,7 +29,7 @@ class TInheritanceConnectorType
     );
 
     /**
-     * Gets as entityType
+     * Gets as entityType.
      *
      * @return string
      */
@@ -39,9 +39,9 @@ class TInheritanceConnectorType
     }
 
     /**
-     * Sets a new entityType
+     * Sets a new entityType.
      *
-     * @param string $entityType
+     * @param  string $entityType
      * @return self
      */
     public function setEntityType($entityType)
@@ -51,9 +51,9 @@ class TInheritanceConnectorType
     }
 
     /**
-     * Gets as manuallyRouted
+     * Gets as manuallyRouted.
      *
-     * @return boolean
+     * @return bool
      */
     public function getManuallyRouted()
     {
@@ -61,9 +61,9 @@ class TInheritanceConnectorType
     }
 
     /**
-     * Sets a new manuallyRouted
+     * Sets a new manuallyRouted.
      *
-     * @param boolean $manuallyRouted
+     * @param  bool $manuallyRouted
      * @return self
      */
     public function setManuallyRouted($manuallyRouted)
@@ -73,10 +73,10 @@ class TInheritanceConnectorType
     }
 
     /**
-     * Adds as connectorPoint
+     * Adds as connectorPoint.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TConnectorPointType $connectorPoint
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TConnectorPointType $connectorPoint
      */
     public function addToConnectorPoint(TConnectorPointType $connectorPoint)
     {
@@ -85,10 +85,10 @@ class TInheritanceConnectorType
     }
 
     /**
-     * isset connectorPoint
+     * isset connectorPoint.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetConnectorPoint($index)
     {
@@ -96,9 +96,9 @@ class TInheritanceConnectorType
     }
 
     /**
-     * unset connectorPoint
+     * unset connectorPoint.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetConnectorPoint($index)
@@ -107,7 +107,7 @@ class TInheritanceConnectorType
     }
 
     /**
-     * Gets as connectorPoint
+     * Gets as connectorPoint.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edmx\TConnectorPointType[]
      */
@@ -117,9 +117,9 @@ class TInheritanceConnectorType
     }
 
     /**
-     * Sets a new connectorPoint
+     * Sets a new connectorPoint.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TConnectorPointType[] $connectorPoint
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TConnectorPointType[] $connectorPoint
      * @return self
      */
     public function setConnectorPoint(array $connectorPoint)

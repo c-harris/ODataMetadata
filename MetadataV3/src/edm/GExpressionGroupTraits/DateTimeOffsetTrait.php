@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the DateTimeOffset Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the DateTimeOffset Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -19,10 +19,10 @@ trait DateTimeOffsetTrait
     
 
     /**
-     * Adds as dateTimeOffset
+     * Adds as dateTimeOffset.
      *
+     * @param  \DateTime $dateTimeOffset
      * @return self
-     * @param \DateTime $dateTimeOffset
      */
     public function addToDateTimeOffset(\DateTime $dateTimeOffset)
     {
@@ -31,10 +31,10 @@ trait DateTimeOffsetTrait
     }
 
     /**
-     * isset dateTimeOffset
+     * isset dateTimeOffset.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDateTimeOffset($index)
     {
@@ -42,9 +42,9 @@ trait DateTimeOffsetTrait
     }
 
     /**
-     * unset dateTimeOffset
+     * unset dateTimeOffset.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDateTimeOffset($index)
@@ -53,7 +53,7 @@ trait DateTimeOffsetTrait
     }
 
     /**
-     * Gets as dateTimeOffset
+     * Gets as dateTimeOffset.
      *
      * @return \DateTime[]
      */
@@ -63,9 +63,9 @@ trait DateTimeOffsetTrait
     }
 
     /**
-     * Sets a new dateTimeOffset
+     * Sets a new dateTimeOffset.
      *
-     * @param \DateTime $dateTimeOffset
+     * @param  \DateTime $dateTimeOffset
      * @return self
      */
     public function setDateTimeOffset(array $dateTimeOffset)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\edm;
 
 /**
- * Class representing TComplexTypeType
+ * Class representing TComplexTypeType.
  *
  *
  * XSD Type: TComplexType
@@ -34,7 +34,7 @@ class TComplexTypeType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -44,9 +44,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -56,7 +56,7 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as typeAccess
+     * Gets as typeAccess.
      *
      * @return string
      */
@@ -66,9 +66,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new typeAccess
+     * Sets a new typeAccess.
      *
-     * @param string $typeAccess
+     * @param  string $typeAccess
      * @return self
      */
     public function setTypeAccess($typeAccess)
@@ -78,7 +78,7 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\TDocumentationType
      */
@@ -88,9 +88,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -100,10 +100,10 @@ class TComplexTypeType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\TComplexTypePropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\TComplexTypePropertyType $property
      */
     public function addToProperty(TComplexTypePropertyType $property)
     {
@@ -112,10 +112,10 @@ class TComplexTypeType
     }
 
     /**
-     * isset property
+     * isset property.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetProperty($index)
     {
@@ -123,9 +123,9 @@ class TComplexTypeType
     }
 
     /**
-     * unset property
+     * unset property.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetProperty($index)
@@ -134,7 +134,7 @@ class TComplexTypeType
     }
 
     /**
-     * Gets as property
+     * Gets as property.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\TComplexTypePropertyType[]
      */
@@ -144,9 +144,9 @@ class TComplexTypeType
     }
 
     /**
-     * Sets a new property
+     * Sets a new property.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\TComplexTypePropertyType[] $property
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\TComplexTypePropertyType[] $property
      * @return self
      */
     public function setProperty(array $property)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edmx;
 
 /**
- * Class representing TRuntimeConceptualModelsType
+ * Class representing TRuntimeConceptualModelsType.
  *
  *
  * XSD Type: TRuntimeConceptualModels
@@ -17,7 +17,7 @@ class TRuntimeConceptualModelsType
     private $schema = null;
 
     /**
-     * Gets as schema
+     * Gets as schema.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\Schema
      */
@@ -27,9 +27,9 @@ class TRuntimeConceptualModelsType
     }
 
     /**
-     * Sets a new schema
+     * Sets a new schema.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\Schema $schema
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\Schema $schema
      * @return self
      */
     public function setSchema(MetadataV2\edm\Schema $schema)

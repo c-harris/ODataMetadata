@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TRecordExpressionType
+ * Class representing TRecordExpressionType.
  *
  *
  * XSD Type: TRecordExpression
@@ -31,7 +31,7 @@ class TRecordExpressionType
     );
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -41,9 +41,9 @@ class TRecordExpressionType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -53,10 +53,10 @@ class TRecordExpressionType
     }
 
     /**
-     * Adds as propertyValue
+     * Adds as propertyValue.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyValueType $propertyValue
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyValueType $propertyValue
      */
     public function addToPropertyValue(TPropertyValueType $propertyValue)
     {
@@ -65,10 +65,10 @@ class TRecordExpressionType
     }
 
     /**
-     * isset propertyValue
+     * isset propertyValue.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPropertyValue($index)
     {
@@ -76,9 +76,9 @@ class TRecordExpressionType
     }
 
     /**
-     * unset propertyValue
+     * unset propertyValue.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPropertyValue($index)
@@ -87,7 +87,7 @@ class TRecordExpressionType
     }
 
     /**
-     * Gets as propertyValue
+     * Gets as propertyValue.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyValueType[]
      */
@@ -97,9 +97,9 @@ class TRecordExpressionType
     }
 
     /**
-     * Sets a new propertyValue
+     * Sets a new propertyValue.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyValueType[] $propertyValue
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TPropertyValueType[] $propertyValue
      * @return self
      */
     public function setPropertyValue(array $propertyValue)
@@ -109,10 +109,10 @@ class TRecordExpressionType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -121,10 +121,10 @@ class TRecordExpressionType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -132,9 +132,9 @@ class TRecordExpressionType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -143,7 +143,7 @@ class TRecordExpressionType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -153,9 +153,9 @@ class TRecordExpressionType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TEntitySetReferenceExpressionType
+ * Class representing TEntitySetReferenceExpressionType.
  *
  *
  * XSD Type: TEntitySetReferenceExpression
@@ -17,7 +17,7 @@ class TEntitySetReferenceExpressionType
     private $entitySet = null;
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return string
      */
@@ -27,9 +27,9 @@ class TEntitySetReferenceExpressionType
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param string $entitySet
+     * @param  string $entitySet
      * @return self
      */
     public function setEntitySet($entitySet)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TAssociationType
+ * Class representing TAssociationType.
  *
  *
  * XSD Type: TAssociation
@@ -34,7 +34,7 @@ class TAssociationType
     private $referentialConstraint = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -44,9 +44,9 @@ class TAssociationType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -56,7 +56,7 @@ class TAssociationType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -66,9 +66,9 @@ class TAssociationType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -78,10 +78,10 @@ class TAssociationType
     }
 
     /**
-     * Adds as end
+     * Adds as end.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TAssociationEndType $end
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TAssociationEndType $end
      */
     public function addToEnd(TAssociationEndType $end)
     {
@@ -90,10 +90,10 @@ class TAssociationType
     }
 
     /**
-     * isset end
+     * isset end.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEnd($index)
     {
@@ -101,9 +101,9 @@ class TAssociationType
     }
 
     /**
-     * unset end
+     * unset end.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEnd($index)
@@ -112,7 +112,7 @@ class TAssociationType
     }
 
     /**
-     * Gets as end
+     * Gets as end.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TAssociationEndType[]
      */
@@ -122,9 +122,9 @@ class TAssociationType
     }
 
     /**
-     * Sets a new end
+     * Sets a new end.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TAssociationEndType[] $end
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TAssociationEndType[] $end
      * @return self
      */
     public function setEnd(array $end)
@@ -134,7 +134,7 @@ class TAssociationType
     }
 
     /**
-     * Gets as referentialConstraint
+     * Gets as referentialConstraint.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TConstraintType
      */
@@ -144,9 +144,9 @@ class TAssociationType
     }
 
     /**
-     * Sets a new referentialConstraint
+     * Sets a new referentialConstraint.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TConstraintType $referentialConstraint
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TConstraintType $referentialConstraint
      * @return self
      */
     public function setReferentialConstraint(TConstraintType $referentialConstraint)

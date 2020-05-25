@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\mapping\cs;
 
 /**
- * Class representing TFunctionMappingComplexPropertyType
+ * Class representing TFunctionMappingComplexPropertyType.
  *
  *
  * XSD Type: TFunctionMappingComplexProperty
@@ -34,7 +34,7 @@ class TFunctionMappingComplexPropertyType
     private $complexProperty = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -44,9 +44,9 @@ class TFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -56,7 +56,7 @@ class TFunctionMappingComplexPropertyType
     }
 
     /**
-     * Gets as typeName
+     * Gets as typeName.
      *
      * @return string
      */
@@ -66,9 +66,9 @@ class TFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new typeName
+     * Sets a new typeName.
      *
-     * @param string $typeName
+     * @param  string $typeName
      * @return self
      */
     public function setTypeName($typeName)
@@ -78,7 +78,7 @@ class TFunctionMappingComplexPropertyType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType
      */
@@ -88,9 +88,9 @@ class TFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
      * @return self
      */
     public function setScalarProperty(TFunctionMappingScalarPropertyType $scalarProperty)
@@ -100,7 +100,7 @@ class TFunctionMappingComplexPropertyType
     }
 
     /**
-     * Gets as complexProperty
+     * Gets as complexProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingComplexPropertyType
      */
@@ -110,7 +110,7 @@ class TFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new complexProperty
+     * Sets a new complexProperty.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingComplexPropertyType
      * $complexProperty

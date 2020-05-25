@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TFunctionImportType
+ * Class representing TFunctionImportType.
  *
  *
  * XSD Type: TFunctionImport
@@ -27,7 +27,7 @@ class TFunctionImportType
     private $entitySet = null;
 
     /**
-     * @property boolean $includeInServiceDocument
+     * @property bool $includeInServiceDocument
      */
     private $includeInServiceDocument = null;
 
@@ -39,7 +39,7 @@ class TFunctionImportType
     );
 
     /**
-     * Gets as function
+     * Gets as function.
      *
      * @return string
      */
@@ -49,9 +49,9 @@ class TFunctionImportType
     }
 
     /**
-     * Sets a new function
+     * Sets a new function.
      *
-     * @param string $function
+     * @param  string $function
      * @return self
      */
     public function setFunction($function)
@@ -61,7 +61,7 @@ class TFunctionImportType
     }
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -71,9 +71,9 @@ class TFunctionImportType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -83,7 +83,7 @@ class TFunctionImportType
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return string
      */
@@ -93,9 +93,9 @@ class TFunctionImportType
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param string $entitySet
+     * @param  string $entitySet
      * @return self
      */
     public function setEntitySet($entitySet)
@@ -105,9 +105,9 @@ class TFunctionImportType
     }
 
     /**
-     * Gets as includeInServiceDocument
+     * Gets as includeInServiceDocument.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIncludeInServiceDocument()
     {
@@ -115,9 +115,9 @@ class TFunctionImportType
     }
 
     /**
-     * Sets a new includeInServiceDocument
+     * Sets a new includeInServiceDocument.
      *
-     * @param boolean $includeInServiceDocument
+     * @param  bool $includeInServiceDocument
      * @return self
      */
     public function setIncludeInServiceDocument($includeInServiceDocument)
@@ -127,10 +127,10 @@ class TFunctionImportType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -139,10 +139,10 @@ class TFunctionImportType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -150,9 +150,9 @@ class TFunctionImportType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -161,7 +161,7 @@ class TFunctionImportType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -171,9 +171,9 @@ class TFunctionImportType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

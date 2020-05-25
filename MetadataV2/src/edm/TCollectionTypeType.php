@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edm;
 
 /**
- * Class representing TCollectionTypeType
+ * Class representing TCollectionTypeType.
  *
  *
  * XSD Type: TCollectionType
@@ -17,7 +17,7 @@ class TCollectionTypeType
     private $elementType = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -32,22 +32,22 @@ class TCollectionTypeType
     private $maxLength = null;
 
     /**
-     * @property boolean $fixedLength
+     * @property bool $fixedLength
      */
     private $fixedLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
     /**
-     * @property integer $scale
+     * @property int $scale
      */
     private $scale = null;
 
     /**
-     * @property boolean $unicode
+     * @property bool $unicode
      */
     private $unicode = null;
 
@@ -77,7 +77,7 @@ class TCollectionTypeType
     private $typeRef = null;
 
     /**
-     * Gets as elementType
+     * Gets as elementType.
      *
      * @return string
      */
@@ -87,9 +87,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new elementType
+     * Sets a new elementType.
      *
-     * @param string $elementType
+     * @param  string $elementType
      * @return self
      */
     public function setElementType($elementType)
@@ -99,9 +99,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -109,9 +109,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -121,7 +121,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as defaultValue
+     * Gets as defaultValue.
      *
      * @return string
      */
@@ -131,9 +131,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new defaultValue
+     * Sets a new defaultValue.
      *
-     * @param string $defaultValue
+     * @param  string $defaultValue
      * @return self
      */
     public function setDefaultValue($defaultValue)
@@ -143,7 +143,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -153,9 +153,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -165,9 +165,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as fixedLength
+     * Gets as fixedLength.
      *
-     * @return boolean
+     * @return bool
      */
     public function getFixedLength()
     {
@@ -175,9 +175,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new fixedLength
+     * Sets a new fixedLength.
      *
-     * @param boolean $fixedLength
+     * @param  bool $fixedLength
      * @return self
      */
     public function setFixedLength($fixedLength)
@@ -187,9 +187,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -197,9 +197,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -209,9 +209,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
-     * @return integer
+     * @return int
      */
     public function getScale()
     {
@@ -219,9 +219,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param integer $scale
+     * @param  int  $scale
      * @return self
      */
     public function setScale($scale)
@@ -231,9 +231,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as unicode
+     * Gets as unicode.
      *
-     * @return boolean
+     * @return bool
      */
     public function getUnicode()
     {
@@ -241,9 +241,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new unicode
+     * Sets a new unicode.
      *
-     * @param boolean $unicode
+     * @param  bool $unicode
      * @return self
      */
     public function setUnicode($unicode)
@@ -253,7 +253,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as collation
+     * Gets as collation.
      *
      * @return string
      */
@@ -263,9 +263,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new collation
+     * Sets a new collation.
      *
-     * @param string $collation
+     * @param  string $collation
      * @return self
      */
     public function setCollation($collation)
@@ -275,7 +275,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as collectionType
+     * Gets as collectionType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TCollectionTypeType
      */
@@ -285,9 +285,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new collectionType
+     * Sets a new collectionType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TCollectionTypeType $collectionType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TCollectionTypeType $collectionType
      * @return self
      */
     public function setCollectionType(TCollectionTypeType $collectionType)
@@ -297,7 +297,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as referenceType
+     * Gets as referenceType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TReferenceTypeType
      */
@@ -307,9 +307,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new referenceType
+     * Sets a new referenceType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TReferenceTypeType $referenceType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TReferenceTypeType $referenceType
      * @return self
      */
     public function setReferenceType(TReferenceTypeType $referenceType)
@@ -319,10 +319,10 @@ class TCollectionTypeType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyType $property
      */
     public function addToRowType(TPropertyType $property)
     {
@@ -331,10 +331,10 @@ class TCollectionTypeType
     }
 
     /**
-     * isset rowType
+     * isset rowType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRowType($index)
     {
@@ -342,9 +342,9 @@ class TCollectionTypeType
     }
 
     /**
-     * unset rowType
+     * unset rowType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRowType($index)
@@ -353,7 +353,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as rowType
+     * Gets as rowType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyType[]
      */
@@ -363,9 +363,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new rowType
+     * Sets a new rowType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyType[] $rowType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TPropertyType[] $rowType
      * @return self
      */
     public function setRowType(array $rowType)
@@ -375,7 +375,7 @@ class TCollectionTypeType
     }
 
     /**
-     * Gets as typeRef
+     * Gets as typeRef.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\TTypeRefType
      */
@@ -385,9 +385,9 @@ class TCollectionTypeType
     }
 
     /**
-     * Sets a new typeRef
+     * Sets a new typeRef.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\TTypeRefType $typeRef
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\TTypeRefType $typeRef
      * @return self
      */
     public function setTypeRef(TTypeRefType $typeRef)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TDurationConstantExpressionType
+ * Class representing TDurationConstantExpressionType.
  *
  *
  * XSD Type: TDurationConstantExpression
@@ -17,7 +17,7 @@ class TDurationConstantExpressionType
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
      * @param \DateInterval $value
      */
@@ -27,9 +27,9 @@ class TDurationConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param \DateInterval $value
+     * @param  \DateInterval $value
      * @return \DateInterval
      */
     public function value()
@@ -41,7 +41,7 @@ class TDurationConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

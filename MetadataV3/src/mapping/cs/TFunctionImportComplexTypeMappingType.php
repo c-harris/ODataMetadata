@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TFunctionImportComplexTypeMappingType
+ * Class representing TFunctionImportComplexTypeMappingType.
  *
  *
  * XSD Type: TFunctionImportComplexTypeMapping
@@ -24,7 +24,7 @@ class TFunctionImportComplexTypeMappingType
     );
 
     /**
-     * Gets as typeName
+     * Gets as typeName.
      *
      * @return string
      */
@@ -34,9 +34,9 @@ class TFunctionImportComplexTypeMappingType
     }
 
     /**
-     * Sets a new typeName
+     * Sets a new typeName.
      *
-     * @param string $typeName
+     * @param  string $typeName
      * @return self
      */
     public function setTypeName($typeName)
@@ -46,10 +46,10 @@ class TFunctionImportComplexTypeMappingType
     }
 
     /**
-     * Adds as scalarProperty
+     * Adds as scalarProperty.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType $scalarProperty
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType $scalarProperty
      */
     public function addToScalarProperty(TScalarPropertyType $scalarProperty)
     {
@@ -58,10 +58,10 @@ class TFunctionImportComplexTypeMappingType
     }
 
     /**
-     * isset scalarProperty
+     * isset scalarProperty.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetScalarProperty($index)
     {
@@ -69,9 +69,9 @@ class TFunctionImportComplexTypeMappingType
     }
 
     /**
-     * unset scalarProperty
+     * unset scalarProperty.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetScalarProperty($index)
@@ -80,7 +80,7 @@ class TFunctionImportComplexTypeMappingType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType[]
      */
@@ -90,9 +90,9 @@ class TFunctionImportComplexTypeMappingType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType[] $scalarProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TScalarPropertyType[] $scalarProperty
      * @return self
      */
     public function setScalarProperty(array $scalarProperty)

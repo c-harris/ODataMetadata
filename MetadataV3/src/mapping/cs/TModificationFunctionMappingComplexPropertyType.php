@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\mapping\cs;
 
 /**
- * Class representing TModificationFunctionMappingComplexPropertyType
+ * Class representing TModificationFunctionMappingComplexPropertyType.
  *
  *
  * XSD Type: TModificationFunctionMappingComplexProperty
@@ -34,7 +34,7 @@ class TModificationFunctionMappingComplexPropertyType
     private $complexProperty = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -44,9 +44,9 @@ class TModificationFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -56,7 +56,7 @@ class TModificationFunctionMappingComplexPropertyType
     }
 
     /**
-     * Gets as typeName
+     * Gets as typeName.
      *
      * @return string
      */
@@ -66,9 +66,9 @@ class TModificationFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new typeName
+     * Sets a new typeName.
      *
-     * @param string $typeName
+     * @param  string $typeName
      * @return self
      */
     public function setTypeName($typeName)
@@ -78,7 +78,7 @@ class TModificationFunctionMappingComplexPropertyType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingScalarPropertyType
      */
@@ -88,7 +88,7 @@ class TModificationFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingScalarPropertyType
      * $scalarProperty
@@ -101,7 +101,7 @@ class TModificationFunctionMappingComplexPropertyType
     }
 
     /**
-     * Gets as complexProperty
+     * Gets as complexProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingComplexPropertyType
      */
@@ -111,7 +111,7 @@ class TModificationFunctionMappingComplexPropertyType
     }
 
     /**
-     * Sets a new complexProperty
+     * Sets a new complexProperty.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\mapping\cs\TModificationFunctionMappingComplexPropertyType
      * $complexProperty

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edm\ssdl;
 
 /**
- * Class representing TOnActionType
+ * Class representing TOnActionType.
  *
  *
  * XSD Type: TOnAction
@@ -22,7 +22,7 @@ class TOnActionType
     private $documentation = null;
 
     /**
-     * Gets as action
+     * Gets as action.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TOnActionType
     }
 
     /**
-     * Sets a new action
+     * Sets a new action.
      *
-     * @param string $action
+     * @param  string $action
      * @return self
      */
     public function setAction($action)
@@ -44,7 +44,7 @@ class TOnActionType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edm\ssdl\TDocumentationType
      */
@@ -54,9 +54,9 @@ class TOnActionType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edm\ssdl\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edm\ssdl\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

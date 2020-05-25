@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TTypeAssertExpressionType
+ * Class representing TTypeAssertExpressionType.
  *
  *
  * XSD Type: TTypeAssertExpression
@@ -17,7 +17,7 @@ class TTypeAssertExpressionType
     private $type = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -32,22 +32,22 @@ class TTypeAssertExpressionType
     private $maxLength = null;
 
     /**
-     * @property boolean $fixedLength
+     * @property bool $fixedLength
      */
     private $fixedLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
     /**
-     * @property integer $scale
+     * @property int $scale
      */
     private $scale = null;
 
     /**
-     * @property boolean $unicode
+     * @property bool $unicode
      */
     private $unicode = null;
 
@@ -88,7 +88,7 @@ class TTypeAssertExpressionType
     private $rowType = null;
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -98,9 +98,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -110,9 +110,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -120,9 +120,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -132,7 +132,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as defaultValue
+     * Gets as defaultValue.
      *
      * @return string
      */
@@ -142,9 +142,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new defaultValue
+     * Sets a new defaultValue.
      *
-     * @param string $defaultValue
+     * @param  string $defaultValue
      * @return self
      */
     public function setDefaultValue($defaultValue)
@@ -154,7 +154,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -164,9 +164,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -176,9 +176,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as fixedLength
+     * Gets as fixedLength.
      *
-     * @return boolean
+     * @return bool
      */
     public function getFixedLength()
     {
@@ -186,9 +186,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new fixedLength
+     * Sets a new fixedLength.
      *
-     * @param boolean $fixedLength
+     * @param  bool $fixedLength
      * @return self
      */
     public function setFixedLength($fixedLength)
@@ -198,9 +198,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -208,9 +208,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -220,9 +220,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
-     * @return integer
+     * @return int
      */
     public function getScale()
     {
@@ -230,9 +230,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param integer $scale
+     * @param  int  $scale
      * @return self
      */
     public function setScale($scale)
@@ -242,9 +242,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as unicode
+     * Gets as unicode.
      *
-     * @return boolean
+     * @return bool
      */
     public function getUnicode()
     {
@@ -252,9 +252,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new unicode
+     * Sets a new unicode.
      *
-     * @param boolean $unicode
+     * @param  bool $unicode
      * @return self
      */
     public function setUnicode($unicode)
@@ -264,7 +264,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as collation
+     * Gets as collation.
      *
      * @return string
      */
@@ -274,9 +274,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new collation
+     * Sets a new collation.
      *
-     * @param string $collation
+     * @param  string $collation
      * @return self
      */
     public function setCollation($collation)
@@ -286,7 +286,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -296,9 +296,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)
@@ -308,10 +308,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Adds as operand
+     * Adds as operand.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType $operand
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType $operand
      */
     public function addToOperand(TOperandType $operand)
     {
@@ -320,10 +320,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * isset operand
+     * isset operand.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetOperand($index)
     {
@@ -331,9 +331,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * unset operand
+     * unset operand.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetOperand($index)
@@ -342,7 +342,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as operand
+     * Gets as operand.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType[]
      */
@@ -352,9 +352,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new operand
+     * Sets a new operand.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType[] $operand
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TOperandType[] $operand
      * @return self
      */
     public function setOperand(array $operand)
@@ -364,10 +364,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Adds as collectionType
+     * Adds as collectionType.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType $collectionType
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType $collectionType
      */
     public function addToCollectionType(TCollectionTypeType $collectionType)
     {
@@ -376,10 +376,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * isset collectionType
+     * isset collectionType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCollectionType($index)
     {
@@ -387,9 +387,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * unset collectionType
+     * unset collectionType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCollectionType($index)
@@ -398,7 +398,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as collectionType
+     * Gets as collectionType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType[]
      */
@@ -408,9 +408,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new collectionType
+     * Sets a new collectionType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType[] $collectionType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType[] $collectionType
      * @return self
      */
     public function setCollectionType(array $collectionType)
@@ -420,10 +420,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Adds as referenceType
+     * Adds as referenceType.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType $referenceType
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType $referenceType
      */
     public function addToReferenceType(TReferenceTypeType $referenceType)
     {
@@ -432,10 +432,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * isset referenceType
+     * isset referenceType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetReferenceType($index)
     {
@@ -443,9 +443,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * unset referenceType
+     * unset referenceType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetReferenceType($index)
@@ -454,7 +454,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as referenceType
+     * Gets as referenceType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType[]
      */
@@ -464,9 +464,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new referenceType
+     * Sets a new referenceType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType[] $referenceType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType[] $referenceType
      * @return self
      */
     public function setReferenceType(array $referenceType)
@@ -476,10 +476,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType $property
      */
     public function addToRowType(TPropertyType $property)
     {
@@ -488,10 +488,10 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * isset rowType
+     * isset rowType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRowType($index)
     {
@@ -499,9 +499,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * unset rowType
+     * unset rowType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRowType($index)
@@ -510,7 +510,7 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Gets as rowType
+     * Gets as rowType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[]
      */
@@ -520,9 +520,9 @@ class TTypeAssertExpressionType
     }
 
     /**
-     * Sets a new rowType
+     * Sets a new rowType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[] $rowType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[] $rowType
      * @return self
      */
     public function setRowType(array $rowType)

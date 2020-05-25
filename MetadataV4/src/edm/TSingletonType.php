@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TSingletonType
+ * Class representing TSingletonType.
  *
  *
  * XSD Type: TSingleton
@@ -37,7 +37,7 @@ class TSingletonType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -47,9 +47,9 @@ class TSingletonType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -59,7 +59,7 @@ class TSingletonType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -69,9 +69,9 @@ class TSingletonType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -81,10 +81,10 @@ class TSingletonType
     }
 
     /**
-     * Adds as navigationPropertyBinding
+     * Adds as navigationPropertyBinding.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType $navigationPropertyBinding
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType $navigationPropertyBinding
      */
     public function addToNavigationPropertyBinding(TNavigationPropertyBindingType $navigationPropertyBinding)
     {
@@ -93,10 +93,10 @@ class TSingletonType
     }
 
     /**
-     * isset navigationPropertyBinding
+     * isset navigationPropertyBinding.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNavigationPropertyBinding($index)
     {
@@ -104,9 +104,9 @@ class TSingletonType
     }
 
     /**
-     * unset navigationPropertyBinding
+     * unset navigationPropertyBinding.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNavigationPropertyBinding($index)
@@ -115,7 +115,7 @@ class TSingletonType
     }
 
     /**
-     * Gets as navigationPropertyBinding
+     * Gets as navigationPropertyBinding.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType[]
      */
@@ -125,7 +125,7 @@ class TSingletonType
     }
 
     /**
-     * Sets a new navigationPropertyBinding
+     * Sets a new navigationPropertyBinding.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType[]
      * $navigationPropertyBinding
@@ -138,10 +138,10 @@ class TSingletonType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -150,10 +150,10 @@ class TSingletonType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -161,9 +161,9 @@ class TSingletonType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -172,7 +172,7 @@ class TSingletonType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -182,9 +182,9 @@ class TSingletonType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

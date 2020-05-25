@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV3\edm\TAnonymousFunctionExpressionType;
 use AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionParameterType;
 
 /**
- * Class representing ParametersAnonymousType
+ * Class representing ParametersAnonymousType.
  */
 class ParametersAnonymousType
 {
@@ -18,10 +18,10 @@ class ParametersAnonymousType
     );
 
     /**
-     * Adds as parameter
+     * Adds as parameter.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionParameterType $parameter
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionParameterType $parameter
      */
     public function addToParameter(TFunctionParameterType $parameter)
     {
@@ -30,10 +30,10 @@ class ParametersAnonymousType
     }
 
     /**
-     * isset parameter
+     * isset parameter.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetParameter($index)
     {
@@ -41,9 +41,9 @@ class ParametersAnonymousType
     }
 
     /**
-     * unset parameter
+     * unset parameter.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetParameter($index)
@@ -52,7 +52,7 @@ class ParametersAnonymousType
     }
 
     /**
-     * Gets as parameter
+     * Gets as parameter.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionParameterType[]
      */
@@ -62,9 +62,9 @@ class ParametersAnonymousType
     }
 
     /**
-     * Sets a new parameter
+     * Sets a new parameter.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionParameterType[] $parameter
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionParameterType[] $parameter
      * @return self
      */
     public function setParameter(array $parameter)

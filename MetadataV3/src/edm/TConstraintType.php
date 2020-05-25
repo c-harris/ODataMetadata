@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TConstraintType
+ * Class representing TConstraintType.
  *
  *
  * XSD Type: TConstraint
@@ -27,7 +27,7 @@ class TConstraintType
     private $dependent = null;
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -37,9 +37,9 @@ class TConstraintType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -49,7 +49,7 @@ class TConstraintType
     }
 
     /**
-     * Gets as principal
+     * Gets as principal.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferentialConstraintRoleElementType
      */
@@ -59,9 +59,9 @@ class TConstraintType
     }
 
     /**
-     * Sets a new principal
+     * Sets a new principal.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferentialConstraintRoleElementType $principal
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferentialConstraintRoleElementType $principal
      * @return self
      */
     public function setPrincipal(TReferentialConstraintRoleElementType $principal)
@@ -71,7 +71,7 @@ class TConstraintType
     }
 
     /**
-     * Gets as dependent
+     * Gets as dependent.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferentialConstraintRoleElementType
      */
@@ -81,9 +81,9 @@ class TConstraintType
     }
 
     /**
-     * Sets a new dependent
+     * Sets a new dependent.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferentialConstraintRoleElementType $dependent
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferentialConstraintRoleElementType $dependent
      * @return self
      */
     public function setDependent(TReferentialConstraintRoleElementType $dependent)

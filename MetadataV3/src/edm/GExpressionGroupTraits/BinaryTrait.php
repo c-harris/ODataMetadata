@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the binary Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the binary Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -19,10 +19,10 @@ trait BinaryTrait
     
 
     /**
-     * Adds as binary
+     * Adds as binary.
      *
+     * @param  mixed $binary
      * @return self
-     * @param mixed $binary
      */
     public function addToBinary($binary)
     {
@@ -31,10 +31,10 @@ trait BinaryTrait
     }
 
     /**
-     * isset binary
+     * isset binary.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetBinary($index)
     {
@@ -42,9 +42,9 @@ trait BinaryTrait
     }
 
     /**
-     * unset binary
+     * unset binary.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetBinary($index)
@@ -53,7 +53,7 @@ trait BinaryTrait
     }
 
     /**
-     * Gets as binary
+     * Gets as binary.
      *
      * @return mixed[]
      */
@@ -63,9 +63,9 @@ trait BinaryTrait
     }
 
     /**
-     * Sets a new binary
+     * Sets a new binary.
      *
-     * @param mixed $binary
+     * @param  mixed $binary
      * @return self
      */
     public function setBinary(array $binary)

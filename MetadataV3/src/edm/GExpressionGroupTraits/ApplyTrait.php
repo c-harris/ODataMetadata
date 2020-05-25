@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Apply Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Apply Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -17,10 +17,10 @@ trait ApplyTrait
     );
 
     /**
-     * Adds as apply
+     * Adds as apply.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType $apply
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType $apply
      */
     public function addToApply(TApplyExpressionType $apply)
     {
@@ -29,10 +29,10 @@ trait ApplyTrait
     }
 
     /**
-     * isset apply
+     * isset apply.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetApply($index)
     {
@@ -40,9 +40,9 @@ trait ApplyTrait
     }
 
     /**
-     * unset apply
+     * unset apply.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetApply($index)
@@ -51,7 +51,7 @@ trait ApplyTrait
     }
 
     /**
-     * Gets as apply
+     * Gets as apply.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType[]
      */
@@ -61,9 +61,9 @@ trait ApplyTrait
     }
 
     /**
-     * Sets a new apply
+     * Sets a new apply.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType[] $apply
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType[] $apply
      * @return self
      */
     public function setApply(array $apply)

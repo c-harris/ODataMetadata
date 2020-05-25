@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\TApplyExpressionType;
 
 /**
- * Class representing ArgumentsAnonymousType
+ * Class representing ArgumentsAnonymousType.
  */
 class ArgumentsAnonymousType
 {

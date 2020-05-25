@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TPropertyRefType
+ * Class representing TPropertyRefType.
  *
  *
  * XSD Type: TPropertyRef
@@ -22,7 +22,7 @@ class TPropertyRefType
     private $alias = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TPropertyRefType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -44,7 +44,7 @@ class TPropertyRefType
     }
 
     /**
-     * Gets as alias
+     * Gets as alias.
      *
      * @return string
      */
@@ -54,9 +54,9 @@ class TPropertyRefType
     }
 
     /**
-     * Sets a new alias
+     * Sets a new alias.
      *
-     * @param string $alias
+     * @param  string $alias
      * @return self
      */
     public function setAlias($alias)

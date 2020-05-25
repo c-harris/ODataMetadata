@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TTermType
+ * Class representing TTermType.
  *
  *
  * XSD Type: TTerm
@@ -27,7 +27,7 @@ class TTermType
     private $baseTerm = null;
 
     /**
-     * @property boolean $nullable
+     * @property bool $nullable
      */
     private $nullable = null;
 
@@ -47,7 +47,7 @@ class TTermType
     private $maxLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
@@ -69,7 +69,7 @@ class TTermType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -79,9 +79,9 @@ class TTermType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -91,7 +91,7 @@ class TTermType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -101,9 +101,9 @@ class TTermType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -113,7 +113,7 @@ class TTermType
     }
 
     /**
-     * Gets as baseTerm
+     * Gets as baseTerm.
      *
      * @return string
      */
@@ -123,9 +123,9 @@ class TTermType
     }
 
     /**
-     * Sets a new baseTerm
+     * Sets a new baseTerm.
      *
-     * @param string $baseTerm
+     * @param  string $baseTerm
      * @return self
      */
     public function setBaseTerm($baseTerm)
@@ -135,9 +135,9 @@ class TTermType
     }
 
     /**
-     * Gets as nullable
+     * Gets as nullable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNullable()
     {
@@ -145,9 +145,9 @@ class TTermType
     }
 
     /**
-     * Sets a new nullable
+     * Sets a new nullable.
      *
-     * @param boolean $nullable
+     * @param  bool $nullable
      * @return self
      */
     public function setNullable($nullable)
@@ -157,7 +157,7 @@ class TTermType
     }
 
     /**
-     * Gets as defaultValue
+     * Gets as defaultValue.
      *
      * @return string
      */
@@ -167,9 +167,9 @@ class TTermType
     }
 
     /**
-     * Sets a new defaultValue
+     * Sets a new defaultValue.
      *
-     * @param string $defaultValue
+     * @param  string $defaultValue
      * @return self
      */
     public function setDefaultValue($defaultValue)
@@ -179,10 +179,10 @@ class TTermType
     }
 
     /**
-     * Adds as appliesTo
+     * Adds as appliesTo.
      *
+     * @param  string $appliesTo
      * @return self
-     * @param string $appliesTo
      */
     public function addToAppliesTo($appliesTo)
     {
@@ -191,10 +191,10 @@ class TTermType
     }
 
     /**
-     * isset appliesTo
+     * isset appliesTo.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAppliesTo($index)
     {
@@ -202,9 +202,9 @@ class TTermType
     }
 
     /**
-     * unset appliesTo
+     * unset appliesTo.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAppliesTo($index)
@@ -213,7 +213,7 @@ class TTermType
     }
 
     /**
-     * Gets as appliesTo
+     * Gets as appliesTo.
      *
      * @return string[]
      */
@@ -223,9 +223,9 @@ class TTermType
     }
 
     /**
-     * Sets a new appliesTo
+     * Sets a new appliesTo.
      *
-     * @param string $appliesTo
+     * @param  string $appliesTo
      * @return self
      */
     public function setAppliesTo(array $appliesTo)
@@ -235,7 +235,7 @@ class TTermType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -245,9 +245,9 @@ class TTermType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -257,9 +257,9 @@ class TTermType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -267,9 +267,9 @@ class TTermType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -279,7 +279,7 @@ class TTermType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
      * @return string
      */
@@ -289,9 +289,9 @@ class TTermType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param string $scale
+     * @param  string $scale
      * @return self
      */
     public function setScale($scale)
@@ -301,7 +301,7 @@ class TTermType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -311,9 +311,9 @@ class TTermType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)
@@ -323,10 +323,10 @@ class TTermType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -335,10 +335,10 @@ class TTermType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -346,9 +346,9 @@ class TTermType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -357,7 +357,7 @@ class TTermType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -367,9 +367,9 @@ class TTermType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

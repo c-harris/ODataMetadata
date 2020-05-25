@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TDecimalConstantExpressionType
+ * Class representing TDecimalConstantExpressionType.
  *
  *
  * XSD Type: TDecimalConstantExpression
@@ -17,7 +17,7 @@ class TDecimalConstantExpressionType
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
      * @param float $value
      */
@@ -27,9 +27,9 @@ class TDecimalConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param float $value
+     * @param  float $value
      * @return float
      */
     public function value()
@@ -41,7 +41,7 @@ class TDecimalConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

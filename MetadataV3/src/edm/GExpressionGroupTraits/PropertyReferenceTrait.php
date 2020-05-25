@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the PropertyReference Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the PropertyReference Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -20,10 +20,10 @@ trait PropertyReferenceTrait
 
     
     /**
-     * Adds as propertyReference
+     * Adds as propertyReference.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType $propertyReference
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType $propertyReference
      */
     public function addToPropertyReference(TPropertyReferenceExpressionType $propertyReference)
     {
@@ -32,10 +32,10 @@ trait PropertyReferenceTrait
     }
 
     /**
-     * isset propertyReference
+     * isset propertyReference.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPropertyReference($index)
     {
@@ -43,9 +43,9 @@ trait PropertyReferenceTrait
     }
 
     /**
-     * unset propertyReference
+     * unset propertyReference.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPropertyReference($index)
@@ -54,7 +54,7 @@ trait PropertyReferenceTrait
     }
 
     /**
-     * Gets as propertyReference
+     * Gets as propertyReference.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType[]
      */
@@ -64,9 +64,9 @@ trait PropertyReferenceTrait
     }
 
     /**
-     * Sets a new propertyReference
+     * Sets a new propertyReference.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType[] $propertyReference
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyReferenceExpressionType[] $propertyReference
      * @return self
      */
     public function setPropertyReference(array $propertyReference)

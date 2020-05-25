@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the Float Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the Float Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -18,10 +18,10 @@ trait FloatTrait
 
     
     /**
-     * Adds as float
+     * Adds as float.
      *
+     * @param  float $float
      * @return self
-     * @param float $float
      */
     public function addToFloat($float)
     {
@@ -30,10 +30,10 @@ trait FloatTrait
     }
 
     /**
-     * isset float
+     * isset float.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFloat($index)
     {
@@ -41,9 +41,9 @@ trait FloatTrait
     }
 
     /**
-     * unset float
+     * unset float.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFloat($index)
@@ -52,7 +52,7 @@ trait FloatTrait
     }
 
     /**
-     * Gets as float
+     * Gets as float.
      *
      * @return float[]
      */
@@ -62,9 +62,9 @@ trait FloatTrait
     }
 
     /**
-     * Sets a new float
+     * Sets a new float.
      *
-     * @param float $float
+     * @param  float $float
      * @return self
      */
     public function setFloat(array $float)

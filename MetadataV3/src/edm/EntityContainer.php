@@ -7,7 +7,7 @@ use AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\EntitySetAnonymousType;
 use AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\FunctionImportAnonymousType;
 
 /**
- * Class representing EntityContainer
+ * Class representing EntityContainer.
  */
 class EntityContainer
 {
@@ -28,7 +28,7 @@ class EntityContainer
     private $typeAccess = null;
 
     /**
-     * @property boolean $lazyLoadingEnabled
+     * @property bool $lazyLoadingEnabled
      */
     private $lazyLoadingEnabled = null;
 
@@ -61,7 +61,7 @@ class EntityContainer
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -71,9 +71,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -83,7 +83,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as extends
+     * Gets as extends.
      *
      * @return string
      */
@@ -93,9 +93,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new extends
+     * Sets a new extends.
      *
-     * @param string $extends
+     * @param  string $extends
      * @return self
      */
     public function setExtends($extends)
@@ -105,7 +105,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as typeAccess
+     * Gets as typeAccess.
      *
      * @return string
      */
@@ -115,9 +115,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new typeAccess
+     * Sets a new typeAccess.
      *
-     * @param string $typeAccess
+     * @param  string $typeAccess
      * @return self
      */
     public function setTypeAccess($typeAccess)
@@ -127,9 +127,9 @@ class EntityContainer
     }
 
     /**
-     * Gets as lazyLoadingEnabled
+     * Gets as lazyLoadingEnabled.
      *
-     * @return boolean
+     * @return bool
      */
     public function getLazyLoadingEnabled()
     {
@@ -137,9 +137,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new lazyLoadingEnabled
+     * Sets a new lazyLoadingEnabled.
      *
-     * @param boolean $lazyLoadingEnabled
+     * @param  bool $lazyLoadingEnabled
      * @return self
      */
     public function setLazyLoadingEnabled($lazyLoadingEnabled)
@@ -149,7 +149,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -159,9 +159,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -171,11 +171,11 @@ class EntityContainer
     }
 
     /**
-     * Adds as functionImport
+     * Adds as functionImport.
      *
-     * @return self
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\FunctionImportAnonymousType
      * $functionImport
+     * @return self
      */
     public function addToFunctionImport(FunctionImportAnonymousType $functionImport)
     {
@@ -184,10 +184,10 @@ class EntityContainer
     }
 
     /**
-     * isset functionImport
+     * isset functionImport.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFunctionImport($index)
     {
@@ -195,9 +195,9 @@ class EntityContainer
     }
 
     /**
-     * unset functionImport
+     * unset functionImport.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFunctionImport($index)
@@ -206,7 +206,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as functionImport
+     * Gets as functionImport.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\FunctionImportAnonymousType[]
      */
@@ -216,7 +216,7 @@ class EntityContainer
     }
 
     /**
-     * Sets a new functionImport
+     * Sets a new functionImport.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\FunctionImportAnonymousType[]
      * $functionImport
@@ -229,10 +229,10 @@ class EntityContainer
     }
 
     /**
-     * Adds as entitySet
+     * Adds as entitySet.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\EntitySetAnonymousType $entitySet
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\EntitySetAnonymousType $entitySet
      */
     public function addToEntitySet(EntitySetAnonymousType $entitySet)
     {
@@ -241,10 +241,10 @@ class EntityContainer
     }
 
     /**
-     * isset entitySet
+     * isset entitySet.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntitySet($index)
     {
@@ -252,9 +252,9 @@ class EntityContainer
     }
 
     /**
-     * unset entitySet
+     * unset entitySet.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntitySet($index)
@@ -263,7 +263,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as entitySet
+     * Gets as entitySet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\EntitySetAnonymousType[]
      */
@@ -273,9 +273,9 @@ class EntityContainer
     }
 
     /**
-     * Sets a new entitySet
+     * Sets a new entitySet.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\EntitySetAnonymousType[] $entitySet
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\EntitySetAnonymousType[] $entitySet
      * @return self
      */
     public function setEntitySet(array $entitySet)
@@ -285,11 +285,11 @@ class EntityContainer
     }
 
     /**
-     * Adds as associationSet
+     * Adds as associationSet.
      *
-     * @return self
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\AssociationSetAnonymousType
      * $associationSet
+     * @return self
      */
     public function addToAssociationSet(AssociationSetAnonymousType $associationSet)
     {
@@ -298,10 +298,10 @@ class EntityContainer
     }
 
     /**
-     * isset associationSet
+     * isset associationSet.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAssociationSet($index)
     {
@@ -309,9 +309,9 @@ class EntityContainer
     }
 
     /**
-     * unset associationSet
+     * unset associationSet.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAssociationSet($index)
@@ -320,7 +320,7 @@ class EntityContainer
     }
 
     /**
-     * Gets as associationSet
+     * Gets as associationSet.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\AssociationSetAnonymousType[]
      */
@@ -330,7 +330,7 @@ class EntityContainer
     }
 
     /**
-     * Sets a new associationSet
+     * Sets a new associationSet.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\EntityContainer\AssociationSetAnonymousType[]
      * $associationSet

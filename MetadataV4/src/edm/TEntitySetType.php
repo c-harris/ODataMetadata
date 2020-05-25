@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TEntitySetType
+ * Class representing TEntitySetType.
  *
  *
  * XSD Type: TEntitySet
@@ -22,7 +22,7 @@ class TEntitySetType
     private $entityType = null;
 
     /**
-     * @property boolean $includeInServiceDocument
+     * @property bool $includeInServiceDocument
      */
     private $includeInServiceDocument = null;
 
@@ -42,7 +42,7 @@ class TEntitySetType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -52,9 +52,9 @@ class TEntitySetType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -64,7 +64,7 @@ class TEntitySetType
     }
 
     /**
-     * Gets as entityType
+     * Gets as entityType.
      *
      * @return string
      */
@@ -74,9 +74,9 @@ class TEntitySetType
     }
 
     /**
-     * Sets a new entityType
+     * Sets a new entityType.
      *
-     * @param string $entityType
+     * @param  string $entityType
      * @return self
      */
     public function setEntityType($entityType)
@@ -86,9 +86,9 @@ class TEntitySetType
     }
 
     /**
-     * Gets as includeInServiceDocument
+     * Gets as includeInServiceDocument.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIncludeInServiceDocument()
     {
@@ -96,9 +96,9 @@ class TEntitySetType
     }
 
     /**
-     * Sets a new includeInServiceDocument
+     * Sets a new includeInServiceDocument.
      *
-     * @param boolean $includeInServiceDocument
+     * @param  bool $includeInServiceDocument
      * @return self
      */
     public function setIncludeInServiceDocument($includeInServiceDocument)
@@ -108,10 +108,10 @@ class TEntitySetType
     }
 
     /**
-     * Adds as navigationPropertyBinding
+     * Adds as navigationPropertyBinding.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType $navigationPropertyBinding
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType $navigationPropertyBinding
      */
     public function addToNavigationPropertyBinding(TNavigationPropertyBindingType $navigationPropertyBinding)
     {
@@ -120,10 +120,10 @@ class TEntitySetType
     }
 
     /**
-     * isset navigationPropertyBinding
+     * isset navigationPropertyBinding.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetNavigationPropertyBinding($index)
     {
@@ -131,9 +131,9 @@ class TEntitySetType
     }
 
     /**
-     * unset navigationPropertyBinding
+     * unset navigationPropertyBinding.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetNavigationPropertyBinding($index)
@@ -142,7 +142,7 @@ class TEntitySetType
     }
 
     /**
-     * Gets as navigationPropertyBinding
+     * Gets as navigationPropertyBinding.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType[]
      */
@@ -152,7 +152,7 @@ class TEntitySetType
     }
 
     /**
-     * Sets a new navigationPropertyBinding
+     * Sets a new navigationPropertyBinding.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\TNavigationPropertyBindingType[]
      * $navigationPropertyBinding
@@ -165,10 +165,10 @@ class TEntitySetType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -177,10 +177,10 @@ class TEntitySetType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -188,9 +188,9 @@ class TEntitySetType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -199,7 +199,7 @@ class TEntitySetType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -209,9 +209,9 @@ class TEntitySetType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

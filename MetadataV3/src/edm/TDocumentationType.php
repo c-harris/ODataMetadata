@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TDocumentationType
+ * Class representing TDocumentationType.
  *
  * The Documentation element is used to provide documentation of comments on the
  * contents of the XML file. It is valid under Schema, Type, Index and Relationship
@@ -24,7 +24,7 @@ class TDocumentationType
     private $longDescription = null;
 
     /**
-     * Gets as summary
+     * Gets as summary.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TTextType
      */
@@ -34,9 +34,9 @@ class TDocumentationType
     }
 
     /**
-     * Sets a new summary
+     * Sets a new summary.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTextType $summary
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTextType $summary
      * @return self
      */
     public function setSummary(TTextType $summary)
@@ -46,7 +46,7 @@ class TDocumentationType
     }
 
     /**
-     * Gets as longDescription
+     * Gets as longDescription.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TTextType
      */
@@ -56,9 +56,9 @@ class TDocumentationType
     }
 
     /**
-     * Sets a new longDescription
+     * Sets a new longDescription.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TTextType $longDescription
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TTextType $longDescription
      * @return self
      */
     public function setLongDescription(TTextType $longDescription)

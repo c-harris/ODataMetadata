@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl;
 
 /**
- * Class representing TSchemaType
+ * Class representing TSchemaType.
  *
  *
  * XSD Type: TSchema
@@ -60,7 +60,7 @@ class TSchemaType
     );
 
     /**
-     * Gets as namespace
+     * Gets as namespace.
      *
      * @return string
      */
@@ -70,9 +70,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new namespace
+     * Sets a new namespace.
      *
-     * @param string $namespace
+     * @param  string $namespace
      * @return self
      */
     public function setNamespace($namespace)
@@ -82,7 +82,7 @@ class TSchemaType
     }
 
     /**
-     * Gets as alias
+     * Gets as alias.
      *
      * @return string
      */
@@ -92,9 +92,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new alias
+     * Sets a new alias.
      *
-     * @param string $alias
+     * @param  string $alias
      * @return self
      */
     public function setAlias($alias)
@@ -104,7 +104,7 @@ class TSchemaType
     }
 
     /**
-     * Gets as provider
+     * Gets as provider.
      *
      * @return string
      */
@@ -114,9 +114,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new provider
+     * Sets a new provider.
      *
-     * @param string $provider
+     * @param  string $provider
      * @return self
      */
     public function setProvider($provider)
@@ -126,7 +126,7 @@ class TSchemaType
     }
 
     /**
-     * Gets as providerManifestToken
+     * Gets as providerManifestToken.
      *
      * @return string
      */
@@ -136,9 +136,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new providerManifestToken
+     * Sets a new providerManifestToken.
      *
-     * @param string $providerManifestToken
+     * @param  string $providerManifestToken
      * @return self
      */
     public function setProviderManifestToken($providerManifestToken)
@@ -148,10 +148,10 @@ class TSchemaType
     }
 
     /**
-     * Adds as association
+     * Adds as association.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TAssociationType $association
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TAssociationType $association
      */
     public function addToAssociation(TAssociationType $association)
     {
@@ -160,10 +160,10 @@ class TSchemaType
     }
 
     /**
-     * isset association
+     * isset association.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAssociation($index)
     {
@@ -171,9 +171,9 @@ class TSchemaType
     }
 
     /**
-     * unset association
+     * unset association.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAssociation($index)
@@ -182,7 +182,7 @@ class TSchemaType
     }
 
     /**
-     * Gets as association
+     * Gets as association.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TAssociationType[]
      */
@@ -192,9 +192,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new association
+     * Sets a new association.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TAssociationType[] $association
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TAssociationType[] $association
      * @return self
      */
     public function setAssociation(array $association)
@@ -204,10 +204,10 @@ class TSchemaType
     }
 
     /**
-     * Adds as entityType
+     * Adds as entityType.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityTypeType $entityType
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityTypeType $entityType
      */
     public function addToEntityType(TEntityTypeType $entityType)
     {
@@ -216,10 +216,10 @@ class TSchemaType
     }
 
     /**
-     * isset entityType
+     * isset entityType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntityType($index)
     {
@@ -227,9 +227,9 @@ class TSchemaType
     }
 
     /**
-     * unset entityType
+     * unset entityType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntityType($index)
@@ -238,7 +238,7 @@ class TSchemaType
     }
 
     /**
-     * Gets as entityType
+     * Gets as entityType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityTypeType[]
      */
@@ -248,9 +248,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new entityType
+     * Sets a new entityType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityTypeType[] $entityType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TEntityTypeType[] $entityType
      * @return self
      */
     public function setEntityType(array $entityType)
@@ -260,10 +260,10 @@ class TSchemaType
     }
 
     /**
-     * Adds as entityContainer
+     * Adds as entityContainer.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\EntityContainer $entityContainer
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\EntityContainer $entityContainer
      */
     public function addToEntityContainer(EntityContainer $entityContainer)
     {
@@ -272,10 +272,10 @@ class TSchemaType
     }
 
     /**
-     * isset entityContainer
+     * isset entityContainer.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntityContainer($index)
     {
@@ -283,9 +283,9 @@ class TSchemaType
     }
 
     /**
-     * unset entityContainer
+     * unset entityContainer.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntityContainer($index)
@@ -294,7 +294,7 @@ class TSchemaType
     }
 
     /**
-     * Gets as entityContainer
+     * Gets as entityContainer.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\EntityContainer[]
      */
@@ -304,9 +304,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new entityContainer
+     * Sets a new entityContainer.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\EntityContainer[] $entityContainer
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\EntityContainer[] $entityContainer
      * @return self
      */
     public function setEntityContainer(array $entityContainer)
@@ -316,10 +316,10 @@ class TSchemaType
     }
 
     /**
-     * Adds as function
+     * Adds as function.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionType $function
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionType $function
      */
     public function addToFunction(TFunctionType $function)
     {
@@ -328,10 +328,10 @@ class TSchemaType
     }
 
     /**
-     * isset function
+     * isset function.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetFunction($index)
     {
@@ -339,9 +339,9 @@ class TSchemaType
     }
 
     /**
-     * unset function
+     * unset function.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetFunction($index)
@@ -350,7 +350,7 @@ class TSchemaType
     }
 
     /**
-     * Gets as function
+     * Gets as function.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionType[]
      */
@@ -360,9 +360,9 @@ class TSchemaType
     }
 
     /**
-     * Sets a new function
+     * Sets a new function.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionType[] $function
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionType[] $function
      * @return self
      */
     public function setFunction(array $function)

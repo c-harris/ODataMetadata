@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TRecordExpressionType
+ * Class representing TRecordExpressionType.
  *
  *
  * XSD Type: TRecordExpression
@@ -24,7 +24,7 @@ class TRecordExpressionType
     );
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -34,9 +34,9 @@ class TRecordExpressionType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -46,10 +46,10 @@ class TRecordExpressionType
     }
 
     /**
-     * Adds as propertyValue
+     * Adds as propertyValue.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType $propertyValue
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType $propertyValue
      */
     public function addToPropertyValue(TPropertyValueType $propertyValue)
     {
@@ -58,10 +58,10 @@ class TRecordExpressionType
     }
 
     /**
-     * isset propertyValue
+     * isset propertyValue.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPropertyValue($index)
     {
@@ -69,9 +69,9 @@ class TRecordExpressionType
     }
 
     /**
-     * unset propertyValue
+     * unset propertyValue.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPropertyValue($index)
@@ -80,7 +80,7 @@ class TRecordExpressionType
     }
 
     /**
-     * Gets as propertyValue
+     * Gets as propertyValue.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType[]
      */
@@ -90,9 +90,9 @@ class TRecordExpressionType
     }
 
     /**
-     * Sets a new propertyValue
+     * Sets a new propertyValue.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType[] $propertyValue
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType[] $propertyValue
      * @return self
      */
     public function setPropertyValue(array $propertyValue)

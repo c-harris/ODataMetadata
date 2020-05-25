@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TEnumConstantExpressionType
+ * Class representing TEnumConstantExpressionType.
  *
  *
  * XSD Type: TEnumConstantExpression
@@ -17,7 +17,7 @@ class TEnumConstantExpressionType
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
      * @param string $value
      */
@@ -27,9 +27,9 @@ class TEnumConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param string ...$value
+     * @param  string ...$value
      * @return string
      */
     public function value(...$value)
@@ -41,7 +41,7 @@ class TEnumConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

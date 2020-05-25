@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\mapping\cs;
 
 /**
- * Class representing TEntityTypeModificationFunctionType
+ * Class representing TEntityTypeModificationFunctionType.
  *
  *
  * XSD Type: TEntityTypeModificationFunction
@@ -40,7 +40,7 @@ class TEntityTypeModificationFunctionType
     private $complexProperty = null;
 
     /**
-     * Gets as functionName
+     * Gets as functionName.
      *
      * @return string
      */
@@ -50,9 +50,9 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new functionName
+     * Sets a new functionName.
      *
-     * @param string $functionName
+     * @param  string $functionName
      * @return self
      */
     public function setFunctionName($functionName)
@@ -62,7 +62,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as rowsAffectedParameter
+     * Gets as rowsAffectedParameter.
      *
      * @return string
      */
@@ -72,9 +72,9 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new rowsAffectedParameter
+     * Sets a new rowsAffectedParameter.
      *
-     * @param string $rowsAffectedParameter
+     * @param  string $rowsAffectedParameter
      * @return self
      */
     public function setRowsAffectedParameter($rowsAffectedParameter)
@@ -84,7 +84,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType
      */
@@ -94,9 +94,9 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
      * @return self
      */
     public function setScalarProperty(TFunctionMappingScalarPropertyType $scalarProperty)
@@ -106,7 +106,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as associationEnd
+     * Gets as associationEnd.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingAssociationEndType
      */
@@ -116,9 +116,9 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new associationEnd
+     * Sets a new associationEnd.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingAssociationEndType $associationEnd
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingAssociationEndType $associationEnd
      * @return self
      */
     public function setAssociationEnd(TFunctionMappingAssociationEndType $associationEnd)
@@ -128,7 +128,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Gets as complexProperty
+     * Gets as complexProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingComplexPropertyType
      */
@@ -138,7 +138,7 @@ class TEntityTypeModificationFunctionType
     }
 
     /**
-     * Sets a new complexProperty
+     * Sets a new complexProperty.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingComplexPropertyType
      * $complexProperty

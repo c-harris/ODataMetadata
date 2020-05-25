@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\mapping\cs;
 
 /**
- * Class representing TFunctionMappingAssociationEndType
+ * Class representing TFunctionMappingAssociationEndType.
  *
  *
  * XSD Type: TFunctionMappingAssociationEnd
@@ -33,7 +33,7 @@ class TFunctionMappingAssociationEndType
     private $scalarProperty = null;
 
     /**
-     * Gets as associationSet
+     * Gets as associationSet.
      *
      * @return string
      */
@@ -43,9 +43,9 @@ class TFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new associationSet
+     * Sets a new associationSet.
      *
-     * @param string $associationSet
+     * @param  string $associationSet
      * @return self
      */
     public function setAssociationSet($associationSet)
@@ -55,7 +55,7 @@ class TFunctionMappingAssociationEndType
     }
 
     /**
-     * Gets as from
+     * Gets as from.
      *
      * @return string
      */
@@ -65,9 +65,9 @@ class TFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new from
+     * Sets a new from.
      *
-     * @param string $from
+     * @param  string $from
      * @return self
      */
     public function setFrom($from)
@@ -77,7 +77,7 @@ class TFunctionMappingAssociationEndType
     }
 
     /**
-     * Gets as to
+     * Gets as to.
      *
      * @return string
      */
@@ -87,9 +87,9 @@ class TFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new to
+     * Sets a new to.
      *
-     * @param string $to
+     * @param  string $to
      * @return self
      */
     public function setTo($to)
@@ -99,7 +99,7 @@ class TFunctionMappingAssociationEndType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType
      */
@@ -109,9 +109,9 @@ class TFunctionMappingAssociationEndType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TFunctionMappingScalarPropertyType $scalarProperty
      * @return self
      */
     public function setScalarProperty(TFunctionMappingScalarPropertyType $scalarProperty)

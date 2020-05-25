@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edmx;
 
 /**
- * Class representing TDiagramType
+ * Class representing TDiagramType.
  *
  *
  * XSD Type: TDiagram
@@ -22,22 +22,22 @@ class TDiagramType
     private $diagramId = null;
 
     /**
-     * @property integer $zoomLevel
+     * @property int $zoomLevel
      */
     private $zoomLevel = null;
 
     /**
-     * @property boolean $showGrid
+     * @property bool $showGrid
      */
     private $showGrid = null;
 
     /**
-     * @property boolean $snapToGrid
+     * @property bool $snapToGrid
      */
     private $snapToGrid = null;
 
     /**
-     * @property boolean $displayType
+     * @property bool $displayType
      */
     private $displayType = null;
 
@@ -63,7 +63,7 @@ class TDiagramType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -73,9 +73,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -85,7 +85,7 @@ class TDiagramType
     }
 
     /**
-     * Gets as diagramId
+     * Gets as diagramId.
      *
      * @return string
      */
@@ -95,9 +95,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new diagramId
+     * Sets a new diagramId.
      *
-     * @param string $diagramId
+     * @param  string $diagramId
      * @return self
      */
     public function setDiagramId($diagramId)
@@ -107,9 +107,9 @@ class TDiagramType
     }
 
     /**
-     * Gets as zoomLevel
+     * Gets as zoomLevel.
      *
-     * @return integer
+     * @return int
      */
     public function getZoomLevel()
     {
@@ -117,9 +117,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new zoomLevel
+     * Sets a new zoomLevel.
      *
-     * @param integer $zoomLevel
+     * @param  int  $zoomLevel
      * @return self
      */
     public function setZoomLevel($zoomLevel)
@@ -129,9 +129,9 @@ class TDiagramType
     }
 
     /**
-     * Gets as showGrid
+     * Gets as showGrid.
      *
-     * @return boolean
+     * @return bool
      */
     public function getShowGrid()
     {
@@ -139,9 +139,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new showGrid
+     * Sets a new showGrid.
      *
-     * @param boolean $showGrid
+     * @param  bool $showGrid
      * @return self
      */
     public function setShowGrid($showGrid)
@@ -151,9 +151,9 @@ class TDiagramType
     }
 
     /**
-     * Gets as snapToGrid
+     * Gets as snapToGrid.
      *
-     * @return boolean
+     * @return bool
      */
     public function getSnapToGrid()
     {
@@ -161,9 +161,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new snapToGrid
+     * Sets a new snapToGrid.
      *
-     * @param boolean $snapToGrid
+     * @param  bool $snapToGrid
      * @return self
      */
     public function setSnapToGrid($snapToGrid)
@@ -173,9 +173,9 @@ class TDiagramType
     }
 
     /**
-     * Gets as displayType
+     * Gets as displayType.
      *
-     * @return boolean
+     * @return bool
      */
     public function getDisplayType()
     {
@@ -183,9 +183,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new displayType
+     * Sets a new displayType.
      *
-     * @param boolean $displayType
+     * @param  bool $displayType
      * @return self
      */
     public function setDisplayType($displayType)
@@ -195,10 +195,10 @@ class TDiagramType
     }
 
     /**
-     * Adds as entityTypeShape
+     * Adds as entityTypeShape.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TEntityTypeShapeType $entityTypeShape
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TEntityTypeShapeType $entityTypeShape
      */
     public function addToEntityTypeShape(TEntityTypeShapeType $entityTypeShape)
     {
@@ -207,10 +207,10 @@ class TDiagramType
     }
 
     /**
-     * isset entityTypeShape
+     * isset entityTypeShape.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetEntityTypeShape($index)
     {
@@ -218,9 +218,9 @@ class TDiagramType
     }
 
     /**
-     * unset entityTypeShape
+     * unset entityTypeShape.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetEntityTypeShape($index)
@@ -229,7 +229,7 @@ class TDiagramType
     }
 
     /**
-     * Gets as entityTypeShape
+     * Gets as entityTypeShape.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edmx\TEntityTypeShapeType[]
      */
@@ -239,9 +239,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new entityTypeShape
+     * Sets a new entityTypeShape.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TEntityTypeShapeType[] $entityTypeShape
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TEntityTypeShapeType[] $entityTypeShape
      * @return self
      */
     public function setEntityTypeShape(array $entityTypeShape)
@@ -251,10 +251,10 @@ class TDiagramType
     }
 
     /**
-     * Adds as associationConnector
+     * Adds as associationConnector.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TAssociationConnectorType $associationConnector
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TAssociationConnectorType $associationConnector
      */
     public function addToAssociationConnector(TAssociationConnectorType $associationConnector)
     {
@@ -263,10 +263,10 @@ class TDiagramType
     }
 
     /**
-     * isset associationConnector
+     * isset associationConnector.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAssociationConnector($index)
     {
@@ -274,9 +274,9 @@ class TDiagramType
     }
 
     /**
-     * unset associationConnector
+     * unset associationConnector.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAssociationConnector($index)
@@ -285,7 +285,7 @@ class TDiagramType
     }
 
     /**
-     * Gets as associationConnector
+     * Gets as associationConnector.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edmx\TAssociationConnectorType[]
      */
@@ -295,9 +295,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new associationConnector
+     * Sets a new associationConnector.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TAssociationConnectorType[] $associationConnector
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TAssociationConnectorType[] $associationConnector
      * @return self
      */
     public function setAssociationConnector(array $associationConnector)
@@ -307,10 +307,10 @@ class TDiagramType
     }
 
     /**
-     * Adds as inheritanceConnector
+     * Adds as inheritanceConnector.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TInheritanceConnectorType $inheritanceConnector
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TInheritanceConnectorType $inheritanceConnector
      */
     public function addToInheritanceConnector(TInheritanceConnectorType $inheritanceConnector)
     {
@@ -319,10 +319,10 @@ class TDiagramType
     }
 
     /**
-     * isset inheritanceConnector
+     * isset inheritanceConnector.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetInheritanceConnector($index)
     {
@@ -330,9 +330,9 @@ class TDiagramType
     }
 
     /**
-     * unset inheritanceConnector
+     * unset inheritanceConnector.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetInheritanceConnector($index)
@@ -341,7 +341,7 @@ class TDiagramType
     }
 
     /**
-     * Gets as inheritanceConnector
+     * Gets as inheritanceConnector.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edmx\TInheritanceConnectorType[]
      */
@@ -351,9 +351,9 @@ class TDiagramType
     }
 
     /**
-     * Sets a new inheritanceConnector
+     * Sets a new inheritanceConnector.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edmx\TInheritanceConnectorType[] $inheritanceConnector
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edmx\TInheritanceConnectorType[] $inheritanceConnector
      * @return self
      */
     public function setInheritanceConnector(array $inheritanceConnector)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\mapping\cs;
 
 /**
- * Class representing TResultBindingType
+ * Class representing TResultBindingType.
  *
  *
  * XSD Type: TResultBinding
@@ -22,7 +22,7 @@ class TResultBindingType
     private $name = null;
 
     /**
-     * Gets as columnName
+     * Gets as columnName.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TResultBindingType
     }
 
     /**
-     * Sets a new columnName
+     * Sets a new columnName.
      *
-     * @param string $columnName
+     * @param  string $columnName
      * @return self
      */
     public function setColumnName($columnName)
@@ -44,7 +44,7 @@ class TResultBindingType
     }
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -54,9 +54,9 @@ class TResultBindingType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)

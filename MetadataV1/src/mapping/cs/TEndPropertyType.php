@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\mapping\cs;
 
 /**
- * Class representing TEndPropertyType
+ * Class representing TEndPropertyType.
  *
  *
  * XSD Type: TEndProperty
@@ -24,7 +24,7 @@ class TEndPropertyType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -34,9 +34,9 @@ class TEndPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -46,10 +46,10 @@ class TEndPropertyType
     }
 
     /**
-     * Adds as scalarProperty
+     * Adds as scalarProperty.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TScalarPropertyType $scalarProperty
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TScalarPropertyType $scalarProperty
      */
     public function addToScalarProperty(TScalarPropertyType $scalarProperty)
     {
@@ -58,10 +58,10 @@ class TEndPropertyType
     }
 
     /**
-     * isset scalarProperty
+     * isset scalarProperty.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetScalarProperty($index)
     {
@@ -69,9 +69,9 @@ class TEndPropertyType
     }
 
     /**
-     * unset scalarProperty
+     * unset scalarProperty.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetScalarProperty($index)
@@ -80,7 +80,7 @@ class TEndPropertyType
     }
 
     /**
-     * Gets as scalarProperty
+     * Gets as scalarProperty.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TScalarPropertyType[]
      */
@@ -90,9 +90,9 @@ class TEndPropertyType
     }
 
     /**
-     * Sets a new scalarProperty
+     * Sets a new scalarProperty.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TScalarPropertyType[] $scalarProperty
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\mapping\cs\TScalarPropertyType[] $scalarProperty
      * @return self
      */
     public function setScalarProperty(array $scalarProperty)

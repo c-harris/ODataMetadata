@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edmx;
 
 /**
- * Class representing TIncludeType
+ * Class representing TIncludeType.
  *
  *
  * XSD Type: TInclude
@@ -22,7 +22,7 @@ class TIncludeType
     private $alias = null;
 
     /**
-     * Gets as namespace
+     * Gets as namespace.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TIncludeType
     }
 
     /**
-     * Sets a new namespace
+     * Sets a new namespace.
      *
-     * @param string $namespace
+     * @param  string $namespace
      * @return self
      */
     public function setNamespace($namespace)
@@ -44,7 +44,7 @@ class TIncludeType
     }
 
     /**
-     * Gets as alias
+     * Gets as alias.
      *
      * @return string
      */
@@ -54,9 +54,9 @@ class TIncludeType
     }
 
     /**
-     * Sets a new alias
+     * Sets a new alias.
      *
-     * @param string $alias
+     * @param  string $alias
      * @return self
      */
     public function setAlias($alias)

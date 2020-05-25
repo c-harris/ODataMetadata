@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV4\edm;
 
 /**
- * Class representing TTypeDefinitionType
+ * Class representing TTypeDefinitionType.
  *
  *
  * XSD Type: TTypeDefinition
@@ -27,7 +27,7 @@ class TTypeDefinitionType
     private $maxLength = null;
 
     /**
-     * @property integer $precision
+     * @property int $precision
      */
     private $precision = null;
 
@@ -42,7 +42,7 @@ class TTypeDefinitionType
     private $sRID = null;
 
     /**
-     * @property boolean $unicode
+     * @property bool $unicode
      */
     private $unicode = null;
 
@@ -54,7 +54,7 @@ class TTypeDefinitionType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -64,9 +64,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -76,7 +76,7 @@ class TTypeDefinitionType
     }
 
     /**
-     * Gets as underlyingType
+     * Gets as underlyingType.
      *
      * @return string
      */
@@ -86,9 +86,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new underlyingType
+     * Sets a new underlyingType.
      *
-     * @param string $underlyingType
+     * @param  string $underlyingType
      * @return self
      */
     public function setUnderlyingType($underlyingType)
@@ -98,7 +98,7 @@ class TTypeDefinitionType
     }
 
     /**
-     * Gets as maxLength
+     * Gets as maxLength.
      *
      * @return string
      */
@@ -108,9 +108,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new maxLength
+     * Sets a new maxLength.
      *
-     * @param string $maxLength
+     * @param  string $maxLength
      * @return self
      */
     public function setMaxLength($maxLength)
@@ -120,9 +120,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Gets as precision
+     * Gets as precision.
      *
-     * @return integer
+     * @return int
      */
     public function getPrecision()
     {
@@ -130,9 +130,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new precision
+     * Sets a new precision.
      *
-     * @param integer $precision
+     * @param  int  $precision
      * @return self
      */
     public function setPrecision($precision)
@@ -142,7 +142,7 @@ class TTypeDefinitionType
     }
 
     /**
-     * Gets as scale
+     * Gets as scale.
      *
      * @return string
      */
@@ -152,9 +152,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new scale
+     * Sets a new scale.
      *
-     * @param string $scale
+     * @param  string $scale
      * @return self
      */
     public function setScale($scale)
@@ -164,7 +164,7 @@ class TTypeDefinitionType
     }
 
     /**
-     * Gets as sRID
+     * Gets as sRID.
      *
      * @return string
      */
@@ -174,9 +174,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new sRID
+     * Sets a new sRID.
      *
-     * @param string $sRID
+     * @param  string $sRID
      * @return self
      */
     public function setSRID($sRID)
@@ -186,9 +186,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Gets as unicode
+     * Gets as unicode.
      *
-     * @return boolean
+     * @return bool
      */
     public function getUnicode()
     {
@@ -196,9 +196,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new unicode
+     * Sets a new unicode.
      *
-     * @param boolean $unicode
+     * @param  bool $unicode
      * @return self
      */
     public function setUnicode($unicode)
@@ -208,10 +208,10 @@ class TTypeDefinitionType
     }
 
     /**
-     * Adds as annotation
+     * Adds as annotation.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation $annotation
      */
     public function addToAnnotation(Annotation $annotation)
     {
@@ -220,10 +220,10 @@ class TTypeDefinitionType
     }
 
     /**
-     * isset annotation
+     * isset annotation.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetAnnotation($index)
     {
@@ -231,9 +231,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * unset annotation
+     * unset annotation.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetAnnotation($index)
@@ -242,7 +242,7 @@ class TTypeDefinitionType
     }
 
     /**
-     * Gets as annotation
+     * Gets as annotation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[]
      */
@@ -252,9 +252,9 @@ class TTypeDefinitionType
     }
 
     /**
-     * Sets a new annotation
+     * Sets a new annotation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV4\edm\Annotation[] $annotation
      * @return self
      */
     public function setAnnotation(array $annotation)

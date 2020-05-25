@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TBoolConstantExpressionType
+ * Class representing TBoolConstantExpressionType.
  *
  *
  * XSD Type: TBoolConstantExpression
@@ -12,14 +12,14 @@ class TBoolConstantExpressionType
 {
 
     /**
-     * @property boolean $__value
+     * @property bool $__value
      */
     private $__value = null;
 
     /**
-     * Construct
+     * Construct.
      *
-     * @param boolean $value
+     * @param bool $value
      */
     public function __construct($value)
     {
@@ -27,10 +27,10 @@ class TBoolConstantExpressionType
     }
 
     /**
-     * Gets or sets the inner value
+     * Gets or sets the inner value.
      *
-     * @param boolean ...$value
-     * @return boolean
+     * @param  bool ...$value
+     * @return bool
      */
     public function value(...$value)
     {
@@ -41,7 +41,7 @@ class TBoolConstantExpressionType
     }
 
     /**
-     * Gets a string value
+     * Gets a string value.
      *
      * @return string
      */

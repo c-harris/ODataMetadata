@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\mapping\cs;
 
 /**
- * Class representing TEntityTypeModificationFunctionMappingType
+ * Class representing TEntityTypeModificationFunctionMappingType.
  *
  *
  * XSD Type: TEntityTypeModificationFunctionMapping
@@ -30,7 +30,7 @@ class TEntityTypeModificationFunctionMappingType
     private $updateFunction = null;
 
     /**
-     * Gets as deleteFunction
+     * Gets as deleteFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionType
      */
@@ -40,7 +40,7 @@ class TEntityTypeModificationFunctionMappingType
     }
 
     /**
-     * Sets a new deleteFunction
+     * Sets a new deleteFunction.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionType
      * $deleteFunction
@@ -53,7 +53,7 @@ class TEntityTypeModificationFunctionMappingType
     }
 
     /**
-     * Gets as insertFunction
+     * Gets as insertFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionWithResultType
      */
@@ -63,7 +63,7 @@ class TEntityTypeModificationFunctionMappingType
     }
 
     /**
-     * Sets a new insertFunction
+     * Sets a new insertFunction.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionWithResultType
      * $insertFunction
@@ -76,7 +76,7 @@ class TEntityTypeModificationFunctionMappingType
     }
 
     /**
-     * Gets as updateFunction
+     * Gets as updateFunction.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionWithResultType
      */
@@ -86,7 +86,7 @@ class TEntityTypeModificationFunctionMappingType
     }
 
     /**
-     * Sets a new updateFunction
+     * Sets a new updateFunction.
      *
      * @param \AlgoWeb\ODataMetadata\MetadataV2\mapping\cs\TEntityTypeModificationFunctionWithResultType
      * $updateFunction

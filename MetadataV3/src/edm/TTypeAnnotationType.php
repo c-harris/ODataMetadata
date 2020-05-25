@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TTypeAnnotationType
+ * Class representing TTypeAnnotationType.
  *
  *
  * XSD Type: TTypeAnnotation
@@ -32,7 +32,7 @@ class TTypeAnnotationType
     private $binary = null;
 
     /**
-     * @property integer $int
+     * @property int $int
      */
     private $int = null;
 
@@ -52,7 +52,7 @@ class TTypeAnnotationType
     private $decimal = null;
 
     /**
-     * @property boolean $bool
+     * @property bool $bool
      */
     private $bool = null;
 
@@ -84,7 +84,7 @@ class TTypeAnnotationType
     );
 
     /**
-     * Gets as term
+     * Gets as term.
      *
      * @return string
      */
@@ -94,9 +94,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new term
+     * Sets a new term.
      *
-     * @param string $term
+     * @param  string $term
      * @return self
      */
     public function setTerm($term)
@@ -106,7 +106,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as qualifier
+     * Gets as qualifier.
      *
      * @return string
      */
@@ -116,9 +116,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new qualifier
+     * Sets a new qualifier.
      *
-     * @param string $qualifier
+     * @param  string $qualifier
      * @return self
      */
     public function setQualifier($qualifier)
@@ -128,7 +128,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as string
+     * Gets as string.
      *
      * @return string
      */
@@ -138,9 +138,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new string
+     * Sets a new string.
      *
-     * @param string $string
+     * @param  string $string
      * @return self
      */
     public function setString($string)
@@ -150,7 +150,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as binary
+     * Gets as binary.
      *
      * @return mixed
      */
@@ -160,9 +160,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new binary
+     * Sets a new binary.
      *
-     * @param mixed $binary
+     * @param  mixed $binary
      * @return self
      */
     public function setBinary($binary)
@@ -172,9 +172,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as int
+     * Gets as int.
      *
-     * @return integer
+     * @return int
      */
     public function getInt()
     {
@@ -182,9 +182,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new int
+     * Sets a new int.
      *
-     * @param integer $int
+     * @param  int  $int
      * @return self
      */
     public function setInt($int)
@@ -194,7 +194,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as float
+     * Gets as float.
      *
      * @return float
      */
@@ -204,9 +204,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new float
+     * Sets a new float.
      *
-     * @param float $float
+     * @param  float $float
      * @return self
      */
     public function setFloat($float)
@@ -216,7 +216,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as guid
+     * Gets as guid.
      *
      * @return string
      */
@@ -226,9 +226,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new guid
+     * Sets a new guid.
      *
-     * @param string $guid
+     * @param  string $guid
      * @return self
      */
     public function setGuid($guid)
@@ -238,7 +238,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as decimal
+     * Gets as decimal.
      *
      * @return float
      */
@@ -248,9 +248,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new decimal
+     * Sets a new decimal.
      *
-     * @param float $decimal
+     * @param  float $decimal
      * @return self
      */
     public function setDecimal($decimal)
@@ -260,9 +260,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as bool
+     * Gets as bool.
      *
-     * @return boolean
+     * @return bool
      */
     public function getBool()
     {
@@ -270,9 +270,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new bool
+     * Sets a new bool.
      *
-     * @param boolean $bool
+     * @param  bool $bool
      * @return self
      */
     public function setBool($bool)
@@ -282,7 +282,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as dateTime
+     * Gets as dateTime.
      *
      * @return \DateTime
      */
@@ -292,9 +292,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new dateTime
+     * Sets a new dateTime.
      *
-     * @param \DateTime $dateTime
+     * @param  \DateTime $dateTime
      * @return self
      */
     public function setDateTime(\DateTime $dateTime)
@@ -304,7 +304,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as dateTimeOffset
+     * Gets as dateTimeOffset.
      *
      * @return \DateTime
      */
@@ -314,9 +314,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new dateTimeOffset
+     * Sets a new dateTimeOffset.
      *
-     * @param \DateTime $dateTimeOffset
+     * @param  \DateTime $dateTimeOffset
      * @return self
      */
     public function setDateTimeOffset(\DateTime $dateTimeOffset)
@@ -326,7 +326,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as enum
+     * Gets as enum.
      *
      * @return string
      */
@@ -336,9 +336,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new enum
+     * Sets a new enum.
      *
-     * @param string $enum
+     * @param  string $enum
      * @return self
      */
     public function setEnum($enum)
@@ -348,7 +348,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as path
+     * Gets as path.
      *
      * @return string
      */
@@ -358,9 +358,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new path
+     * Sets a new path.
      *
-     * @param string $path
+     * @param  string $path
      * @return self
      */
     public function setPath($path)
@@ -370,10 +370,10 @@ class TTypeAnnotationType
     }
 
     /**
-     * Adds as propertyValue
+     * Adds as propertyValue.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType $propertyValue
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType $propertyValue
      */
     public function addToPropertyValue(TPropertyValueType $propertyValue)
     {
@@ -382,10 +382,10 @@ class TTypeAnnotationType
     }
 
     /**
-     * isset propertyValue
+     * isset propertyValue.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetPropertyValue($index)
     {
@@ -393,9 +393,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * unset propertyValue
+     * unset propertyValue.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetPropertyValue($index)
@@ -404,7 +404,7 @@ class TTypeAnnotationType
     }
 
     /**
-     * Gets as propertyValue
+     * Gets as propertyValue.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType[]
      */
@@ -414,9 +414,9 @@ class TTypeAnnotationType
     }
 
     /**
-     * Sets a new propertyValue
+     * Sets a new propertyValue.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType[] $propertyValue
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyValueType[] $propertyValue
      * @return self
      */
     public function setPropertyValue(array $propertyValue)

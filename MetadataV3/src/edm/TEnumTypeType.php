@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TEnumTypeType
+ * Class representing TEnumTypeType.
  *
  *
  * XSD Type: TEnumType
@@ -17,7 +17,7 @@ class TEnumTypeType
     private $name = null;
 
     /**
-     * @property boolean $isFlags
+     * @property bool $isFlags
      */
     private $isFlags = null;
 
@@ -44,7 +44,7 @@ class TEnumTypeType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -54,9 +54,9 @@ class TEnumTypeType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -66,9 +66,9 @@ class TEnumTypeType
     }
 
     /**
-     * Gets as isFlags
+     * Gets as isFlags.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsFlags()
     {
@@ -76,9 +76,9 @@ class TEnumTypeType
     }
 
     /**
-     * Sets a new isFlags
+     * Sets a new isFlags.
      *
-     * @param boolean $isFlags
+     * @param  bool $isFlags
      * @return self
      */
     public function setIsFlags($isFlags)
@@ -88,7 +88,7 @@ class TEnumTypeType
     }
 
     /**
-     * Gets as underlyingType
+     * Gets as underlyingType.
      *
      * @return string
      */
@@ -98,9 +98,9 @@ class TEnumTypeType
     }
 
     /**
-     * Sets a new underlyingType
+     * Sets a new underlyingType.
      *
-     * @param string $underlyingType
+     * @param  string $underlyingType
      * @return self
      */
     public function setUnderlyingType($underlyingType)
@@ -110,7 +110,7 @@ class TEnumTypeType
     }
 
     /**
-     * Gets as typeAccess
+     * Gets as typeAccess.
      *
      * @return string
      */
@@ -120,9 +120,9 @@ class TEnumTypeType
     }
 
     /**
-     * Sets a new typeAccess
+     * Sets a new typeAccess.
      *
-     * @param string $typeAccess
+     * @param  string $typeAccess
      * @return self
      */
     public function setTypeAccess($typeAccess)
@@ -132,7 +132,7 @@ class TEnumTypeType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -142,9 +142,9 @@ class TEnumTypeType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -154,10 +154,10 @@ class TEnumTypeType
     }
 
     /**
-     * Adds as member
+     * Adds as member.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TEnumTypeMemberType $member
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TEnumTypeMemberType $member
      */
     public function addToMember(TEnumTypeMemberType $member)
     {
@@ -166,10 +166,10 @@ class TEnumTypeType
     }
 
     /**
-     * isset member
+     * isset member.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetMember($index)
     {
@@ -177,9 +177,9 @@ class TEnumTypeType
     }
 
     /**
-     * unset member
+     * unset member.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetMember($index)
@@ -188,7 +188,7 @@ class TEnumTypeType
     }
 
     /**
-     * Gets as member
+     * Gets as member.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TEnumTypeMemberType[]
      */
@@ -198,9 +198,9 @@ class TEnumTypeType
     }
 
     /**
-     * Sets a new member
+     * Sets a new member.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TEnumTypeMemberType[] $member
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TEnumTypeMemberType[] $member
      * @return self
      */
     public function setMember(array $member)

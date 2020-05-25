@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\TFunctionReferenceExpressionType;
 
 /**
- * Class representing ParameterAnonymousType
+ * Class representing ParameterAnonymousType.
  */
 class ParameterAnonymousType
 {
@@ -33,7 +33,7 @@ class ParameterAnonymousType
     private $rowType = null;
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -43,9 +43,9 @@ class ParameterAnonymousType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -55,10 +55,10 @@ class ParameterAnonymousType
     }
 
     /**
-     * Adds as collectionType
+     * Adds as collectionType.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType $collectionType
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType $collectionType
      */
     public function addToCollectionType(TCollectionTypeType $collectionType)
     {
@@ -67,10 +67,10 @@ class ParameterAnonymousType
     }
 
     /**
-     * isset collectionType
+     * isset collectionType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCollectionType($index)
     {
@@ -78,9 +78,9 @@ class ParameterAnonymousType
     }
 
     /**
-     * unset collectionType
+     * unset collectionType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCollectionType($index)
@@ -89,7 +89,7 @@ class ParameterAnonymousType
     }
 
     /**
-     * Gets as collectionType
+     * Gets as collectionType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType[]
      */
@@ -99,9 +99,9 @@ class ParameterAnonymousType
     }
 
     /**
-     * Sets a new collectionType
+     * Sets a new collectionType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType[] $collectionType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TCollectionTypeType[] $collectionType
      * @return self
      */
     public function setCollectionType(array $collectionType)
@@ -111,10 +111,10 @@ class ParameterAnonymousType
     }
 
     /**
-     * Adds as referenceType
+     * Adds as referenceType.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType $referenceType
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType $referenceType
      */
     public function addToReferenceType(TReferenceTypeType $referenceType)
     {
@@ -123,10 +123,10 @@ class ParameterAnonymousType
     }
 
     /**
-     * isset referenceType
+     * isset referenceType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetReferenceType($index)
     {
@@ -134,9 +134,9 @@ class ParameterAnonymousType
     }
 
     /**
-     * unset referenceType
+     * unset referenceType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetReferenceType($index)
@@ -145,7 +145,7 @@ class ParameterAnonymousType
     }
 
     /**
-     * Gets as referenceType
+     * Gets as referenceType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType[]
      */
@@ -155,9 +155,9 @@ class ParameterAnonymousType
     }
 
     /**
-     * Sets a new referenceType
+     * Sets a new referenceType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType[] $referenceType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TReferenceTypeType[] $referenceType
      * @return self
      */
     public function setReferenceType(array $referenceType)
@@ -167,10 +167,10 @@ class ParameterAnonymousType
     }
 
     /**
-     * Adds as property
+     * Adds as property.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType $property
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType $property
      */
     public function addToRowType(TPropertyType $property)
     {
@@ -179,10 +179,10 @@ class ParameterAnonymousType
     }
 
     /**
-     * isset rowType
+     * isset rowType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetRowType($index)
     {
@@ -190,9 +190,9 @@ class ParameterAnonymousType
     }
 
     /**
-     * unset rowType
+     * unset rowType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetRowType($index)
@@ -201,7 +201,7 @@ class ParameterAnonymousType
     }
 
     /**
-     * Gets as rowType
+     * Gets as rowType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[]
      */
@@ -211,9 +211,9 @@ class ParameterAnonymousType
     }
 
     /**
-     * Sets a new rowType
+     * Sets a new rowType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[] $rowType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TPropertyType[] $rowType
      * @return self
      */
     public function setRowType(array $rowType)

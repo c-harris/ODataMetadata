@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV1\mapping\cs;
 
 /**
- * Class representing TScalarPropertyType
+ * Class representing TScalarPropertyType.
  *
  *
  * XSD Type: TScalarProperty
@@ -22,7 +22,7 @@ class TScalarPropertyType
     private $columnName = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -32,9 +32,9 @@ class TScalarPropertyType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -44,7 +44,7 @@ class TScalarPropertyType
     }
 
     /**
-     * Gets as columnName
+     * Gets as columnName.
      *
      * @return string
      */
@@ -54,9 +54,9 @@ class TScalarPropertyType
     }
 
     /**
-     * Sets a new columnName
+     * Sets a new columnName.
      *
-     * @param string $columnName
+     * @param  string $columnName
      * @return self
      */
     public function setColumnName($columnName)

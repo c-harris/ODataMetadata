@@ -2,7 +2,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\GExpressionGroupTraits;
 
 /**
- * Trait representing the DateTime Component of  MetadataV3\edm\TCollectionExpressionType
+ * Trait representing the DateTime Component of  MetadataV3\edm\TCollectionExpressionType.
  *
  *
  * XSD Type: GExpression
@@ -17,10 +17,10 @@ trait DateTimeTrait
     );
     
     /**
-     * Adds as dateTime
+     * Adds as dateTime.
      *
+     * @param  \DateTime $dateTime
      * @return self
-     * @param \DateTime $dateTime
      */
     public function addToDateTime(\DateTime $dateTime)
     {
@@ -29,10 +29,10 @@ trait DateTimeTrait
     }
 
     /**
-     * isset dateTime
+     * isset dateTime.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetDateTime($index)
     {
@@ -40,9 +40,9 @@ trait DateTimeTrait
     }
 
     /**
-     * unset dateTime
+     * unset dateTime.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetDateTime($index)
@@ -51,7 +51,7 @@ trait DateTimeTrait
     }
 
     /**
-     * Gets as dateTime
+     * Gets as dateTime.
      *
      * @return \DateTime[]
      */
@@ -61,9 +61,9 @@ trait DateTimeTrait
     }
 
     /**
-     * Sets a new dateTime
+     * Sets a new dateTime.
      *
-     * @param \DateTime $dateTime
+     * @param  \DateTime $dateTime
      * @return self
      */
     public function setDateTime(array $dateTime)

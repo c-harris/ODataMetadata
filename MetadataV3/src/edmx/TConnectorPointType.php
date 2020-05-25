@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edmx;
 
 /**
- * Class representing TConnectorPointType
+ * Class representing TConnectorPointType.
  *
  *
  * XSD Type: TConnectorPoint
@@ -22,7 +22,7 @@ class TConnectorPointType
     private $pointY = null;
 
     /**
-     * Gets as pointX
+     * Gets as pointX.
      *
      * @return float
      */
@@ -32,9 +32,9 @@ class TConnectorPointType
     }
 
     /**
-     * Sets a new pointX
+     * Sets a new pointX.
      *
-     * @param float $pointX
+     * @param  float $pointX
      * @return self
      */
     public function setPointX($pointX)
@@ -44,7 +44,7 @@ class TConnectorPointType
     }
 
     /**
-     * Gets as pointY
+     * Gets as pointY.
      *
      * @return float
      */
@@ -54,9 +54,9 @@ class TConnectorPointType
     }
 
     /**
-     * Sets a new pointY
+     * Sets a new pointY.
      *
-     * @param float $pointY
+     * @param  float $pointY
      * @return self
      */
     public function setPointY($pointY)

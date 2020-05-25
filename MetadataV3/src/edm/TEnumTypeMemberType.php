@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TEnumTypeMemberType
+ * Class representing TEnumTypeMemberType.
  *
  *
  * XSD Type: TEnumTypeMember
@@ -17,7 +17,7 @@ class TEnumTypeMemberType
     private $name = null;
 
     /**
-     * @property integer $value
+     * @property int $value
      */
     private $value = null;
 
@@ -27,7 +27,7 @@ class TEnumTypeMemberType
     private $documentation = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -37,9 +37,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -49,9 +49,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Gets as value
+     * Gets as value.
      *
-     * @return integer
+     * @return int
      */
     public function getValue()
     {
@@ -59,9 +59,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Sets a new value
+     * Sets a new value.
      *
-     * @param integer $value
+     * @param  int  $value
      * @return self
      */
     public function setValue($value)
@@ -71,7 +71,7 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType
      */
@@ -81,9 +81,9 @@ class TEnumTypeMemberType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)

@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV2\edmx;
 
 /**
- * Class representing TRuntimeType
+ * Class representing TRuntimeType.
  *
  *
  * XSD Type: TRuntime
@@ -27,7 +27,7 @@ class TRuntimeType
     private $mappings = null;
 
     /**
-     * Gets as storageModels
+     * Gets as storageModels.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeStorageModelsType
      */
@@ -37,9 +37,9 @@ class TRuntimeType
     }
 
     /**
-     * Sets a new storageModels
+     * Sets a new storageModels.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeStorageModelsType $storageModels
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeStorageModelsType $storageModels
      * @return self
      */
     public function setStorageModels(TRuntimeStorageModelsType $storageModels)
@@ -49,7 +49,7 @@ class TRuntimeType
     }
 
     /**
-     * Gets as conceptualModels
+     * Gets as conceptualModels.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeConceptualModelsType
      */
@@ -59,9 +59,9 @@ class TRuntimeType
     }
 
     /**
-     * Sets a new conceptualModels
+     * Sets a new conceptualModels.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeConceptualModelsType $conceptualModels
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeConceptualModelsType $conceptualModels
      * @return self
      */
     public function setConceptualModels(TRuntimeConceptualModelsType $conceptualModels)
@@ -71,7 +71,7 @@ class TRuntimeType
     }
 
     /**
-     * Gets as mappings
+     * Gets as mappings.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeMappingsType
      */
@@ -81,9 +81,9 @@ class TRuntimeType
     }
 
     /**
-     * Sets a new mappings
+     * Sets a new mappings.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeMappingsType $mappings
+     * @param  \AlgoWeb\ODataMetadata\MetadataV2\edmx\TRuntimeMappingsType $mappings
      * @return self
      */
     public function setMappings(TRuntimeMappingsType $mappings)

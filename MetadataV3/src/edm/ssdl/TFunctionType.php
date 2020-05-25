@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl;
 
 /**
- * Class representing TFunctionType
+ * Class representing TFunctionType.
  *
  *
  * XSD Type: TFunction
@@ -24,12 +24,12 @@ class TFunctionType
     );
 
     /**
-     * @property boolean $aggregate
+     * @property bool $aggregate
      */
     private $aggregate = null;
 
     /**
-     * @property boolean $builtIn
+     * @property bool $builtIn
      */
     private $builtIn = null;
 
@@ -39,12 +39,12 @@ class TFunctionType
     private $storeFunctionName = null;
 
     /**
-     * @property boolean $niladicFunction
+     * @property bool $niladicFunction
      */
     private $niladicFunction = null;
 
     /**
-     * @property boolean $isComposable
+     * @property bool $isComposable
      */
     private $isComposable = null;
 
@@ -78,7 +78,7 @@ class TFunctionType
     );
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -88,9 +88,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -100,10 +100,10 @@ class TFunctionType
     }
 
     /**
-     * Adds as returnType
+     * Adds as returnType.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionReturnTypeType $returnType
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionReturnTypeType $returnType
      */
     public function addToReturnType(TFunctionReturnTypeType $returnType)
     {
@@ -112,10 +112,10 @@ class TFunctionType
     }
 
     /**
-     * isset returnType
+     * isset returnType.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetReturnType($index)
     {
@@ -123,9 +123,9 @@ class TFunctionType
     }
 
     /**
-     * unset returnType
+     * unset returnType.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetReturnType($index)
@@ -134,7 +134,7 @@ class TFunctionType
     }
 
     /**
-     * Gets as returnType
+     * Gets as returnType.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionReturnTypeType[]
      */
@@ -144,9 +144,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new returnType
+     * Sets a new returnType.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionReturnTypeType[] $returnType
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TFunctionReturnTypeType[] $returnType
      * @return self
      */
     public function setReturnType(array $returnType)
@@ -156,9 +156,9 @@ class TFunctionType
     }
 
     /**
-     * Gets as aggregate
+     * Gets as aggregate.
      *
-     * @return boolean
+     * @return bool
      */
     public function getAggregate()
     {
@@ -166,9 +166,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new aggregate
+     * Sets a new aggregate.
      *
-     * @param boolean $aggregate
+     * @param  bool $aggregate
      * @return self
      */
     public function setAggregate($aggregate)
@@ -178,9 +178,9 @@ class TFunctionType
     }
 
     /**
-     * Gets as builtIn
+     * Gets as builtIn.
      *
-     * @return boolean
+     * @return bool
      */
     public function getBuiltIn()
     {
@@ -188,9 +188,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new builtIn
+     * Sets a new builtIn.
      *
-     * @param boolean $builtIn
+     * @param  bool $builtIn
      * @return self
      */
     public function setBuiltIn($builtIn)
@@ -200,7 +200,7 @@ class TFunctionType
     }
 
     /**
-     * Gets as storeFunctionName
+     * Gets as storeFunctionName.
      *
      * @return string
      */
@@ -210,9 +210,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new storeFunctionName
+     * Sets a new storeFunctionName.
      *
-     * @param string $storeFunctionName
+     * @param  string $storeFunctionName
      * @return self
      */
     public function setStoreFunctionName($storeFunctionName)
@@ -222,9 +222,9 @@ class TFunctionType
     }
 
     /**
-     * Gets as niladicFunction
+     * Gets as niladicFunction.
      *
-     * @return boolean
+     * @return bool
      */
     public function getNiladicFunction()
     {
@@ -232,9 +232,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new niladicFunction
+     * Sets a new niladicFunction.
      *
-     * @param boolean $niladicFunction
+     * @param  bool $niladicFunction
      * @return self
      */
     public function setNiladicFunction($niladicFunction)
@@ -244,9 +244,9 @@ class TFunctionType
     }
 
     /**
-     * Gets as isComposable
+     * Gets as isComposable.
      *
-     * @return boolean
+     * @return bool
      */
     public function getIsComposable()
     {
@@ -254,9 +254,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new isComposable
+     * Sets a new isComposable.
      *
-     * @param boolean $isComposable
+     * @param  bool $isComposable
      * @return self
      */
     public function setIsComposable($isComposable)
@@ -266,7 +266,7 @@ class TFunctionType
     }
 
     /**
-     * Gets as parameterTypeSemantics
+     * Gets as parameterTypeSemantics.
      *
      * @return string
      */
@@ -276,9 +276,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new parameterTypeSemantics
+     * Sets a new parameterTypeSemantics.
      *
-     * @param string $parameterTypeSemantics
+     * @param  string $parameterTypeSemantics
      * @return self
      */
     public function setParameterTypeSemantics($parameterTypeSemantics)
@@ -288,7 +288,7 @@ class TFunctionType
     }
 
     /**
-     * Gets as schema
+     * Gets as schema.
      *
      * @return string
      */
@@ -298,9 +298,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new schema
+     * Sets a new schema.
      *
-     * @param string $schema
+     * @param  string $schema
      * @return self
      */
     public function setSchema($schema)
@@ -310,7 +310,7 @@ class TFunctionType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType
      */
@@ -320,9 +320,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -332,10 +332,10 @@ class TFunctionType
     }
 
     /**
-     * Adds as parameter
+     * Adds as parameter.
      *
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TParameterType $parameter
      * @return self
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TParameterType $parameter
      */
     public function addToParameter(TParameterType $parameter)
     {
@@ -344,10 +344,10 @@ class TFunctionType
     }
 
     /**
-     * isset parameter
+     * isset parameter.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetParameter($index)
     {
@@ -355,9 +355,9 @@ class TFunctionType
     }
 
     /**
-     * unset parameter
+     * unset parameter.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetParameter($index)
@@ -366,7 +366,7 @@ class TFunctionType
     }
 
     /**
-     * Gets as parameter
+     * Gets as parameter.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TParameterType[]
      */
@@ -376,9 +376,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new parameter
+     * Sets a new parameter.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TParameterType[] $parameter
+     * @param  \AlgoWeb\ODataMetadata\MetadataV3\edm\ssdl\TParameterType[] $parameter
      * @return self
      */
     public function setParameter(array $parameter)
@@ -388,10 +388,10 @@ class TFunctionType
     }
 
     /**
-     * Adds as commandText
+     * Adds as commandText.
      *
+     * @param  string $commandText
      * @return self
-     * @param string $commandText
      */
     public function addToCommandText($commandText)
     {
@@ -400,10 +400,10 @@ class TFunctionType
     }
 
     /**
-     * isset commandText
+     * isset commandText.
      *
-     * @param scalar $index
-     * @return boolean
+     * @param  scalar $index
+     * @return bool
      */
     public function issetCommandText($index)
     {
@@ -411,9 +411,9 @@ class TFunctionType
     }
 
     /**
-     * unset commandText
+     * unset commandText.
      *
-     * @param scalar $index
+     * @param  scalar $index
      * @return void
      */
     public function unsetCommandText($index)
@@ -422,7 +422,7 @@ class TFunctionType
     }
 
     /**
-     * Gets as commandText
+     * Gets as commandText.
      *
      * @return string[]
      */
@@ -432,9 +432,9 @@ class TFunctionType
     }
 
     /**
-     * Sets a new commandText
+     * Sets a new commandText.
      *
-     * @param string $commandText
+     * @param  string $commandText
      * @return self
      */
     public function setCommandText(array $commandText)

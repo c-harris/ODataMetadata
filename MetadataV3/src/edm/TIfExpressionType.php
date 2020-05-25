@@ -3,7 +3,7 @@
 namespace AlgoWeb\ODataMetadata\MetadataV3\edm;
 
 /**
- * Class representing TIfExpressionType
+ * Class representing TIfExpressionType.
  *
  *
  * XSD Type: TIfExpression

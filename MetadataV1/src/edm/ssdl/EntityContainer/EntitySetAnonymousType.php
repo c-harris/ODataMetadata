@@ -5,7 +5,7 @@ namespace AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\EntityContainer;
 use AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType;
 
 /**
- * Class representing EntitySetAnonymousType
+ * Class representing EntitySetAnonymousType.
  */
 class EntitySetAnonymousType
 {
@@ -46,7 +46,7 @@ class EntitySetAnonymousType
     private $definingQuery = null;
 
     /**
-     * Gets as name
+     * Gets as name.
      *
      * @return string
      */
@@ -56,9 +56,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new name
+     * Sets a new name.
      *
-     * @param string $name
+     * @param  string $name
      * @return self
      */
     public function setName($name)
@@ -68,7 +68,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as entityType
+     * Gets as entityType.
      *
      * @return string
      */
@@ -78,9 +78,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new entityType
+     * Sets a new entityType.
      *
-     * @param string $entityType
+     * @param  string $entityType
      * @return self
      */
     public function setEntityType($entityType)
@@ -90,7 +90,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as schema
+     * Gets as schema.
      *
      * @return string
      */
@@ -100,9 +100,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new schema
+     * Sets a new schema.
      *
-     * @param string $schema
+     * @param  string $schema
      * @return self
      */
     public function setSchema($schema)
@@ -112,7 +112,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as table
+     * Gets as table.
      *
      * @return string
      */
@@ -122,9 +122,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new table
+     * Sets a new table.
      *
-     * @param string $table
+     * @param  string $table
      * @return self
      */
     public function setTable($table)
@@ -134,7 +134,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as type
+     * Gets as type.
      *
      * @return string
      */
@@ -144,9 +144,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new type
+     * Sets a new type.
      *
-     * @param string $type
+     * @param  string $type
      * @return self
      */
     public function setType($type)
@@ -156,7 +156,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as documentation
+     * Gets as documentation.
      *
      * @return \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType
      */
@@ -166,9 +166,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new documentation
+     * Sets a new documentation.
      *
-     * @param \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType $documentation
+     * @param  \AlgoWeb\ODataMetadata\MetadataV1\edm\ssdl\TDocumentationType $documentation
      * @return self
      */
     public function setDocumentation(TDocumentationType $documentation)
@@ -178,7 +178,7 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Gets as definingQuery
+     * Gets as definingQuery.
      *
      * @return string
      */
@@ -188,9 +188,9 @@ class EntitySetAnonymousType
     }
 
     /**
-     * Sets a new definingQuery
+     * Sets a new definingQuery.
      *
-     * @param string $definingQuery
+     * @param  string $definingQuery
      * @return self
      */
     public function setDefiningQuery($definingQuery)
