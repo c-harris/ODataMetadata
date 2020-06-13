@@ -7,5 +7,4 @@ namespace AlgoWeb\ODataMetadata\Tests;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {
-
 }
