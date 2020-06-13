@@ -74,7 +74,7 @@ checks:
     newline_at_end_of_file: true
     naming_conventions:
       local_variable: '^[a-z][a-zA-Z0-9]*$'
-      abstract_class_name: ^Abstract|Factory$
+      abstract_class_name: ^Abstract|Factory$|Base$
       utility_class_name: 'Utils?$'
       constant_name: '^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$'
       property_name: '^[a-z][a-zA-Z0-9]*$'
@@ -162,7 +162,25 @@ coding_style:
         general: lower
       constants:
         true_false_null: lower
+filter:
+  paths:
+    - src/
 
+  dependency_paths:
+    - vednor/
+
+  excluded_paths:
+    - src/MetadataV3/Edm/Concerns/Expression/HasValueTermReferenceExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasAnonymousFunctionExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasApplyExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasCollectionExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasFunctionReference.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasIfExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasParameterReferenceExpression.php
+    - src/Edm/Concerns/Expression/HasPropertyReferenceExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasRecordExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasTypeAssertExpression.php
+    - src/MetadataV3/Edm/Concerns/Expression/HasTypeTestExpression.php
 tools:
   php_cs_fixer:
     config:
@@ -179,3 +197,10 @@ tools:
 build_failure_conditions:
   - 'elements.rating(<= D).new.exists'
   - 'issues.severity(>= CRITICAL).new.exists'
+
+build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          - php-scrutinizer-run
