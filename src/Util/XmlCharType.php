@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 
 namespace AlgoWeb\ODataMetadata\Util;
-
 
 class XmlCharType
 {
@@ -13,14 +14,14 @@ class XmlCharType
     // NCName characters -- Section 2.3 [4]          (Name characters without ':')
     // Character data characters -- Section 2.2 [2]
     // PubidChar ::=  #x20 | #xD | #xA | [a-zA-Z0-9] | [-'()+,./:=?;!*#@$_%] Section 2.3 of spec
-    protected const  fWhitespace = 1;
-    protected const  fLetter = 2;
+    protected const  fWhitespace    = 1;
+    protected const  fLetter        = 2;
     protected const  fNCStartNameSC = 4;
-    protected const  fNCNameSC = 8;
-    protected const  fCharData = 16;
-    protected const  fNCNameXml4e = 32;
-    protected const  fText = 64;
-    protected const  fAttrValue = 128;
+    protected const  fNCNameSC      = 8;
+    protected const  fCharData      = 16;
+    protected const  fNCNameXml4e   = 32;
+    protected const  fText          = 64;
+    protected const  fAttrValue     = 128;
 
     protected const s_Whitespace =
         "\u{0009}\u{000a}\u{000d}\u{000d}  ";
@@ -304,7 +305,7 @@ class XmlCharType
             return;
         }
 
-        $chProps = [];
+        $chProps                = [];
         self::$s_CharProperties = $chProps;
 
 
@@ -318,19 +319,17 @@ class XmlCharType
     private static function uniord($charUTF8)
     {
         $charUCS4 = mb_convert_encoding($charUTF8, 'UCS-4BE', 'UTF-8');
-        $byte1 = ord(substr($charUCS4, 0, 1));
-        $byte2 = ord(substr($charUCS4, 1, 1));
-        $byte3 = ord(substr($charUCS4, 2, 1));
-        $byte4 = ord(substr($charUCS4, 3, 1));
+        $byte1    = ord(substr($charUCS4, 0, 1));
+        $byte2    = ord(substr($charUCS4, 1, 1));
+        $byte3    = ord(substr($charUCS4, 2, 1));
+        $byte4    = ord(substr($charUCS4, 3, 1));
         return ($byte1 << 32) + ($byte2 << 16) + ($byte3 << 8) + $byte4;
     }
     private static function SetProperties(string $ranges, int $value): void
     {
-        for ($p = 0; $p < mb_strlen($ranges); $p +=2)
-        {
-            for ($i = mb_ord($ranges[$p]), $last = mb_ord($ranges[$p + 1]); $i <= $last; $i++)
-            {
-                if(!isset(self::$s_CharProperties[$i])){
+        for ($p = 0; $p < mb_strlen($ranges); $p +=2) {
+            for ($i = mb_ord($ranges[$p]), $last = mb_ord($ranges[$p + 1]); $i <= $last; $i++) {
+                if (!isset(self::$s_CharProperties[$i])) {
                     self::$s_CharProperties[$i] = 0;
                 }
                 self::$s_CharProperties[$i] |= $value;

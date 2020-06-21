@@ -44,5 +44,4 @@ trait TypeHelpers
         assert($otherType instanceof IStructuredType, 'by this point types should be structures');
         return $thisType->InheritsFrom($otherType);
     }
-
 }
