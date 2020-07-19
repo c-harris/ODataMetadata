@@ -91,7 +91,7 @@ class EdmModelSchemaSeparationSerializationVisitor extends EdmModelVisitor
         /** @var EdmSchema|null $schema */
         $schema = null;
         if (!array_key_exists($namespaceName, $this->modelSchemas)) {
-            $schema                             = new EdmSchema(/** @scrutinizer ignore-type */$namespaceName);
+            $schema                             = new EdmSchema(/* @scrutinizer ignore-type */$namespaceName);
             $this->modelSchemas[$namespaceName] = $schema;
         }
 

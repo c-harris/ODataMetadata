@@ -48,13 +48,13 @@ abstract class EdmValueWriter
                 return self::GuidAsXml($v->getValue());
             case ValueKind::Binary():
                 assert($v instanceof IBinaryValue);
-                return self::BinaryAsXml(/** @scrutinizer ignore-type */$v->getValue());
+                return self::BinaryAsXml(/* @scrutinizer ignore-type */$v->getValue());
             case ValueKind::Decimal():
                 assert($v instanceof IDecimalValue);
                 return self::DecimalAsXml($v->getValue());
             case ValueKind::String():
                 assert($v instanceof IStringValue);
-                return self::StringAsXml(/** @scrutinizer ignore-type */$v->getValue());
+                return self::StringAsXml(/* @scrutinizer ignore-type */$v->getValue());
             case ValueKind::DateTime():
                 assert($v instanceof IDateTimeValue);
                 return self::DateTimeAsXml($v->getValue());

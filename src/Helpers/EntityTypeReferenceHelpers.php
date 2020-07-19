@@ -37,7 +37,7 @@ trait EntityTypeReferenceHelpers
      */
     public function BaseEntityType(): ?IEntityType
     {
-        /** @var $this IEntityTypeReference */
+        /* @var $this IEntityTypeReference */
         return $this->EntityDefinition()->BaseEntityType();
     }
 
