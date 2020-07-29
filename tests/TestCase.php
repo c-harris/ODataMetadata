@@ -39,4 +39,9 @@ class TestCase extends \PHPUnit\Framework\TestCase
         $propertyValue = &$closure($object);
         $propertyValue = $newValue;
     }
+
+    public static function normalizeLineEndings($str)
+    {
+        return $str = preg_replace('~\r\n?~', "\n", $str);
+    }
 }
