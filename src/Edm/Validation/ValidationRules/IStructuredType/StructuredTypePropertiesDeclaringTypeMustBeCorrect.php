@@ -22,17 +22,20 @@ class StructuredTypePropertiesDeclaringTypeMustBeCorrect extends StructuredTypeR
     public function __invoke(ValidationContext $context, ?IEdmElement $structuredType)
     {
         assert($structuredType instanceof IStructuredType);
-        foreach ($structuredType->getDeclaredProperties() as $property) {
-            if ($property != null) {
-                if ($property->getDeclaringType() !== $structuredType) {
-                    EdmUtil::checkArgumentNull($property->location(), 'property->Location');
-                    $context->addError(
-                        $property->location(),
-                        EdmErrorCode::DeclaringTypeMustBeCorrect(),
-                        StringConst::EdmModel_Validator_Semantic_DeclaringTypeMustBeCorrect($property->getName())
-                    );
-                }
+        $properties = $structuredType->getDeclaredProperties();
+        $properties = array_filter(
+            $properties,
+            function ($property) use ($structuredType) {
+                return null !== $property && $property->getDeclaringType() !== $structuredType;
             }
+        );
+        foreach ($properties as $property) {
+            EdmUtil::checkArgumentNull($property->location(), 'property->Location');
+            $context->addError(
+                $property->location(),
+                EdmErrorCode::DeclaringTypeMustBeCorrect(),
+                StringConst::EdmModel_Validator_Semantic_DeclaringTypeMustBeCorrect($property->getName())
+            );
         }
     }
 }

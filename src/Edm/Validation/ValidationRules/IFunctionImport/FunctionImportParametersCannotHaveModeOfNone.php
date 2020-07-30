@@ -10,6 +10,7 @@ use AlgoWeb\ODataMetadata\Edm\Validation\ValidationContext;
 use AlgoWeb\ODataMetadata\EdmUtil;
 use AlgoWeb\ODataMetadata\Interfaces\IEdmElement;
 use AlgoWeb\ODataMetadata\Interfaces\IFunctionImport;
+use AlgoWeb\ODataMetadata\Interfaces\IFunctionParameter;
 use AlgoWeb\ODataMetadata\StringConst;
 
 /**
@@ -22,8 +23,15 @@ class FunctionImportParametersCannotHaveModeOfNone extends FunctionImportRule
     public function __invoke(ValidationContext $context, ?IEdmElement $function)
     {
         assert($function instanceof IFunctionImport);
-        foreach ($function->getParameters() as $parameter) {
-            if ($parameter->getMode()->isNone() && !$context->checkIsBad($function)) {
+        $parameters = $function->getParameters();
+        $parameters = !$parameters ? [] : array_filter(
+            $parameters,
+            function (IFunctionParameter $parameter) {
+                return $parameter->getMode()->isNone();
+            }
+        );
+        foreach ($parameters as $parameter) {
+            if (!$context->checkIsBad($function)) {
                 EdmUtil::checkArgumentNull($parameter->location(), 'parameter->Location');
                 $context->addError(
                     $parameter->location(),

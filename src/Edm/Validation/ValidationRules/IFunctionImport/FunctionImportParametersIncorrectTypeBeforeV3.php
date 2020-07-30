@@ -10,6 +10,7 @@ use AlgoWeb\ODataMetadata\Edm\Validation\ValidationContext;
 use AlgoWeb\ODataMetadata\EdmUtil;
 use AlgoWeb\ODataMetadata\Interfaces\IEdmElement;
 use AlgoWeb\ODataMetadata\Interfaces\IFunctionImport;
+use AlgoWeb\ODataMetadata\Interfaces\IFunctionParameter;
 use AlgoWeb\ODataMetadata\StringConst;
 
 /**
@@ -22,20 +23,26 @@ class FunctionImportParametersIncorrectTypeBeforeV3 extends FunctionImportRule
     public function __invoke(ValidationContext $context, ?IEdmElement $functionImport)
     {
         assert($functionImport instanceof IFunctionImport);
-        foreach ($functionImport->getParameters() as $functionParameter) {
-            $type = $functionParameter->getType();
-            if (!$type->isPrimitive() && !$type->isComplex() && !$context->checkIsBad($type->getDefinition())
-            ) {
-                EdmUtil::checkArgumentNull($functionImport->location(), 'functionImport->Location');
-                $context->addError(
-                    $functionParameter->location(),
-                    EdmErrorCode::FunctionImportParameterIncorrectType(),
-                    StringConst::EdmModel_Validator_Semantic_FunctionImportParameterIncorrectType(
-                        $type->fullName(),
-                        $functionParameter->getName()
-                    )
-                );
+        $parameters = $functionImport->getParameters();
+        $parameters = !$parameters ? [] : array_filter(
+            $parameters,
+            function (IFunctionParameter $parameter) use ($context) {
+                $type = $parameter->getType();
+                $def  = $type->getDefinition();
+                return !$type->isPrimitive() && !$type->isComplex() && (null !== $def) && !$context->checkIsBad($def);
             }
+        );
+        foreach ($parameters as $functionParameter) {
+            $type = $functionParameter->getType();
+            EdmUtil::checkArgumentNull($functionImport->location(), 'functionImport->Location');
+            $context->addError(
+                $functionParameter->location(),
+                EdmErrorCode::FunctionImportParameterIncorrectType(),
+                StringConst::EdmModel_Validator_Semantic_FunctionImportParameterIncorrectType(
+                    $type->fullName(),
+                    $functionParameter->getName()
+                )
+            );
         }
     }
 }

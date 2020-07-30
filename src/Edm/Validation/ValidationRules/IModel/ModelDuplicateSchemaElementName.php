@@ -28,7 +28,8 @@ class ModelDuplicateSchemaElementName extends ModelRule
         assert($model instanceof IModel);
         $nonFunctionNameList = new HashSetInternal();
         $functionDictionary  = [];
-        foreach ($model->getSchemaElements() as $item) {
+        $items = $model->getSchemaElements();
+        foreach ($items as $item) {
             $duplicate = false;
             $fullName  = $item->fullName();
             $function  = $item;
@@ -38,8 +39,10 @@ class ModelDuplicateSchemaElementName extends ModelRule
                     $duplicate = true;
                 } else {
                     $functionList = null;
-                    if (isset($function[$fullName])) {
-                        if (count(array_filter($function[$fullName], [EdmElementComparer::class, 'isFunctionSignatureEquivalentTo'])) !== 0) {
+                    if (isset($functionDictionary[$fullName])) {
+                        if (count(array_filter($functionDictionary[$fullName], function ($value) use ($function) {
+                            return EdmElementComparer::isFunctionSignatureEquivalentTo($function, $value);
+                        })) !== 0) {
                             $duplicate = true;
                         }
                     } else {

@@ -24,19 +24,24 @@ class StructuredTypePropertyNameAlreadyDefined extends StructuredTypeRule
     {
         assert($structuredType instanceof IStructuredType);
         $propertyNames = new HashSetInternal();
-        foreach ($structuredType->properties() as $property) {
+        $properties = $structuredType->getDeclaredProperties();
+        $properties = array_filter(
+            $properties,
+            function ($property) {
+                return null !== $property;
+            }
+        );
+        foreach ($properties as $property) {
             // We only want to report the properties that are declared in this type. Otherwise properties will get
             // reported multiple times due to inheritance.
-            if ($property != null) {
-                ValidationHelper::addMemberNameToHashSet(
-                    $property,
-                    $propertyNames,
-                    $context,
-                    EdmErrorCode::AlreadyDefined(),
-                    StringConst::EdmModel_Validator_Semantic_PropertyNameAlreadyDefined($property->getName()),
-                    !in_array($property, $structuredType->getDeclaredProperties())
-                );
-            }
+            ValidationHelper::addMemberNameToHashSet(
+                $property,
+                $propertyNames,
+                $context,
+                EdmErrorCode::AlreadyDefined(),
+                StringConst::EdmModel_Validator_Semantic_PropertyNameAlreadyDefined($property->getName()),
+                !in_array($property, $structuredType->getDeclaredProperties())
+            );
         }
     }
 }

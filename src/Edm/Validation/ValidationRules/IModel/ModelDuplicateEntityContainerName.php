@@ -25,10 +25,14 @@ class ModelDuplicateEntityContainerName extends ModelRule
     {
         assert($model instanceof IModel);
         $entityContainerNameList = new HashSetInternal();
-        foreach ($model->getSchemaElements() as $item) {
-            if (!$item instanceof IEntityContainer) {
-                continue;
+        $items = $model->getSchemaElements();
+        $items = array_filter(
+            $items,
+            function ($item) {
+                return $item instanceof IEntityContainer;
             }
+        );
+        foreach ($items as $item) {
             ValidationHelper::addMemberNameToHashSet(
                 $item,
                 $entityContainerNameList,
