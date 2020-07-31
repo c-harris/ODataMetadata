@@ -1,0 +1,9 @@
+parameters:
+	level: 3
+	paths:
+		- src
+	excludes_analyse:
+	    - src/Edm/Validation/ValidationRules/IDecimalTypeReference/DecimalTypeReferencePrecisionOutOfRange.php
+	    - src/Edm/Validation/ValidationRules/ITemporalTypeReference/TemporalTypeReferencePrecisionOutOfRange.php
+	ignoreErrors:
+	    - '#Unexpected token "EdmModel_Validator_Semantic_IntegerConstantValueOutOfRange"#'
