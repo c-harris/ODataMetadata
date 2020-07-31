@@ -23,14 +23,15 @@ trait TypeAnnotationHelpers
     public function findPropertyBinding($property): ?IPropertyValueBinding
     {
         assert(
-            $property instanceof IProperty || is_string($property),
+            $property instanceof IProperty || is_string($property), /** @phpstan-ignore-line */
             'The property to search for must either be a string representing the name or IProperty' .
             ' representing the property'
         );
+        /** @var string $nuProperty */
+        $nuProperty = $property instanceof IProperty ? $property->getName() : $property;
         foreach ($this->getPropertyValueBindings() as $propertyBinding) {
-            if (($property instanceof IProperty && $propertyBinding->getBoundProperty() === $property)
-                || (is_string($property) && $propertyBinding->getBoundProperty()->getName() == $property)
-            ) {
+            $prop = $propertyBinding->getBoundProperty();
+            if ($prop->getName() == $nuProperty) {
                 return $propertyBinding;
             }
         }
