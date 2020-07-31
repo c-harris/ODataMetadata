@@ -534,7 +534,7 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
      */
     public function getSpatial(PrimitiveTypeKind $kind, ?int $spatialReferenceIdentifier, bool $isNullable): ISpatialTypeReference
     {
-        if ($kind->IsSpatial()) {
+        if ($kind->isSpatial()) {
             return new EdmSpatialTypeReference($this->getCoreModelPrimitiveType($kind), $isNullable, $spatialReferenceIdentifier);
         }
         throw new InvalidOperationException(StringConst::EdmPrimitive_UnexpectedKind());
