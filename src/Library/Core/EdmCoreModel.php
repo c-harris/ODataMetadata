@@ -66,7 +66,7 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
      */
     private $primitiveTypeKinds = [];
     /**
-     * @var array<PrimitiveTypeKind, EdmValidCoreModelPrimitiveType>
+     * @var array<string, EdmValidCoreModelPrimitiveType>
      */
     private $primitiveTypesByKind = [];
     /**
@@ -293,8 +293,9 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
 
     private function getCoreModelPrimitiveType(PrimitiveTypeKind $kind): ?EdmValidCoreModelPrimitiveType
     {
-        return array_key_exists(strval($kind), $this->primitiveTypesByKind) ?
-            $this->primitiveTypesByKind[strval($kind)] : null;
+        $key = strval($kind);
+        return array_key_exists($key, $this->primitiveTypesByKind) ?
+            $this->primitiveTypesByKind[$key] : null;
     }
 
     /**
