@@ -17,11 +17,11 @@ trait VocabularyAnnotationHelpers
     {
         /** @var IVocabularyAnnotation $annotation */
         $annotation = $this;
-        return $annotation->getSerializationLocation($model) ==
+        return $annotation->getSerializationLocation($model) ===
                EdmVocabularyAnnotationSerializationLocation::Inline() || null === $annotation->targetString();
     }
 
-    public function targetString(): string
+    public function targetString(): ?string
     {
         /** @var IVocabularyAnnotation $annotation */
         $annotation = $this;
