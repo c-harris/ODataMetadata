@@ -201,7 +201,7 @@ trait TypeReferenceHelpers
      */
     public function isBoolean(): bool
     {
-        return $this->primitiveKind()->equals(PrimitiveTypeKind::Boolean());
+        return $this->primitiveKind()->isBoolean();
     }
 
     /**
@@ -390,8 +390,7 @@ trait TypeReferenceHelpers
      */
     public function isSpatial(): bool
     {
-        $primitiveTypeKind = $this->primitiveKind();
-        return null === $primitiveTypeKind ? false : $primitiveTypeKind->IsSpatial();
+        return $this->primitiveKind()->isSpatial();
     }
 
     // The As*** functions never return null -- if the supplied type does not have the appropriate shape, an encoding
