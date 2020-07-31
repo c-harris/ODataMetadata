@@ -13,7 +13,6 @@ class HashSetInternal implements Iterator, \Countable
     public function __construct(iterable $wrappedDictionary = null)
     {
         if (null !== $wrappedDictionary) {
-            $wrappedDictionary = [];
             foreach ($wrappedDictionary as $item) {
                 $this->wrappedDictionary[] = $item;
             }
