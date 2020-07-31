@@ -65,10 +65,10 @@ abstract class ToTraceString
                 assert($element instanceof IRowType);
                 $s = TypeKind::Row()->getKey();
                 $s .= '(';
-                foreach ($element->properties() as $prop) {
-                    if (null === $prop) {
-                        continue;
-                    }
+                $props = array_filter($element->properties(), function ($value) {
+                    return null !== $value;
+                });
+                foreach ($props as $prop) {
                     $s .= self::toTraceString($prop);
                     $s .= ', ';
                 }
