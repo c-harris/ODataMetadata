@@ -8,6 +8,7 @@ use AlgoWeb\ODataMetadata\EdmUtil;
 use AlgoWeb\ODataMetadata\Enums\ExpressionKind;
 use AlgoWeb\ODataMetadata\Interfaces\Expressions\IApplyExpression;
 use AlgoWeb\ODataMetadata\Interfaces\Expressions\IExpression;
+use AlgoWeb\ODataMetadata\Interfaces\IEdmElement;
 use AlgoWeb\ODataMetadata\Interfaces\IFunction;
 use AlgoWeb\ODataMetadata\Library\EdmElement;
 
@@ -32,12 +33,13 @@ class EdmApplyExpression extends EdmElement implements IApplyExpression
      * @param IFunction|IExpression $appliedFunction function to apply
      * @param IExpression           ...$arguments    Application arguments. Value may be null, in which case it is treated as an empty enumerable.
      */
-    public function __construct($appliedFunction, IExpression ...$arguments)
+    public function __construct(IEdmElement $appliedFunction, IExpression ...$arguments)
     {
+        /** @phpstan-ignore-next-line */
         assert($appliedFunction instanceof IFunction || $appliedFunction instanceof IExpression);
         if ($appliedFunction instanceof IFunction) {
             // TODO: Wha...?
-            $appliedFunction = new EdmFunctionReferenceExpression(EdmUtil::checkArgumentNull($appliedFunction, 'appliedFunction'));
+            $appliedFunction = new EdmFunctionReferenceExpression($appliedFunction);
         }
         assert($appliedFunction instanceof IExpression);
         EdmUtil::checkArgumentNull($appliedFunction, 'appliedFunction');
