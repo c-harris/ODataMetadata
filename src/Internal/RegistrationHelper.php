@@ -124,9 +124,9 @@ abstract class RegistrationHelper
     }
 
     /**
-     * @param IFunctionBase         $function
-     * @param string                $name
-     * @param array<string, object> $functionListDictionary
+     * @param IFunctionBase                  $function
+     * @param string                         $name
+     * @param array<string, object|object[]> $functionListDictionary
      */
     public static function addFunction(IFunctionBase $function, string $name, array &$functionListDictionary)
     {
