@@ -43,7 +43,7 @@ abstract class EdmModelBase extends EdmElement implements IModel
      */
     private $valueTermDictionary = [];
     /**
-     * @var array<string, object>
+     * @var array<string, object|object[]>
      */
     private $functionDictionary = [];
     /**
@@ -127,9 +127,7 @@ abstract class EdmModelBase extends EdmElement implements IModel
     {
         if (array_key_exists($qualifiedName, $this->functionDictionary)) {
             $element = $this->functionDictionary[$qualifiedName];
-            if ($element instanceof IFunction) {
-                return [$element];
-            } elseif (is_array($element)) {
+            if (is_array($element)) {
                 return $element;
             }
 
@@ -176,7 +174,13 @@ abstract class EdmModelBase extends EdmElement implements IModel
      */
     protected function registerElement(ISchemaElement $element): void
     {
-        RegistrationHelper::registerSchemaElement($element, $this->schemaTypeDictionary, $this->valueTermDictionary, $this->functionDictionary, $this->containersDictionary);
+        RegistrationHelper::registerSchemaElement(
+            $element,
+            $this->schemaTypeDictionary,
+            $this->valueTermDictionary,
+            $this->functionDictionary,
+            $this->containersDictionary
+        );
     }
 
     /**

@@ -40,10 +40,10 @@ abstract class RegistrationHelper
      */
     public static function registerSchemaElement(
         ISchemaElement $element,
-        array $schemaTypeDictionary,
-        array $valueTermDictionary,
-        array $functionGroupDictionary,
-        array $containerDictionary
+        array &$schemaTypeDictionary,
+        array &$valueTermDictionary,
+        array &$functionGroupDictionary,
+        array &$containerDictionary
     ) {
         $qualifiedName = $element->fullName();
         switch ($element->getSchemaElementKind()) {
