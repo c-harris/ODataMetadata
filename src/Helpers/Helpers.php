@@ -51,7 +51,7 @@ abstract class Helpers
             } elseif ('string' === $typeOf) {
                 $isSpecificAnnotation = is_string($annotation);
             } elseif ('?string' === $typeOf) {
-                $isSpecificAnnotation = (null !== $annotation) || is_string($annotation);
+                $isSpecificAnnotation = is_string($annotation);
             } else {
                 $isSpecificAnnotation = is_a($annotation, $typeOf);
             }
