@@ -14,7 +14,7 @@ use AlgoWeb\ODataMetadata\Library\Internal\Bad\BadEntityType;
 
 class AmbiguousEntitySetBinding extends AmbiguousBinding implements IEntitySet
 {
-    public function ambiguousEntitySetBinding(IEntitySet $first, IEntitySet $second)
+    public function __construct(IEntitySet $first, IEntitySet $second)
     {
         parent::__construct($first, $second);
     }
@@ -36,7 +36,7 @@ class AmbiguousEntitySetBinding extends AmbiguousBinding implements IEntitySet
      */
     public function getContainer(): ?IEntityContainer
     {
-        return 0 !== count($this->getBindings()) ? $this->getBindings()[0] : null;
+        return 0 !== count($this->getBindings()) ? $this->getBindings()[0]->getContainer() : null;
     }
 
     /**
@@ -68,5 +68,16 @@ class AmbiguousEntitySetBinding extends AmbiguousBinding implements IEntitySet
     public function findNavigationTarget(INavigationProperty $navigationProperty): ?IEntitySet
     {
         return null;
+    }
+
+    /**
+     * @return IEntitySet[]
+     */
+    public function getBindings(): array
+    {
+        /** @var IEntitySet[] $res */
+        $res = parent::getBindings();
+
+        return $res;
     }
 }
