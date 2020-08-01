@@ -23,7 +23,7 @@ trait EntityTypeReferenceHelpers
      */
     public function entityDefinition(): IEntityType
     {
-        /** @var $this IEntityTypeReference */
+        /** @var IEntityTypeReference $this */
         $def = $this->getDefinition();
         assert($def instanceof IEntityType);
         return $def;
@@ -36,7 +36,7 @@ trait EntityTypeReferenceHelpers
      */
     public function baseEntityType(): ?IEntityType
     {
-        /** @var $this IEntityTypeReference */
+        /** @var IEntityTypeReference $this */
         return $this->entityDefinition()->baseEntityType();
     }
 
