@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: alex
  * Date: 1/08/20
- * Time: 1:04 AM
+ * Time: 1:04 AM.
  */
 
 declare(strict_types=1);
@@ -39,7 +39,7 @@ class EdmCoreModelTest extends TestCase
         $kind = PrimitiveTypeKind::None();
 
         $expected = null;
-        $actual = $foo->getPrimitiveType($kind);
+        $actual   = $foo->getPrimitiveType($kind);
         $this->assertEquals($expected, $actual);
     }
 }

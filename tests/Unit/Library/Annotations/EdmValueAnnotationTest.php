@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 1/08/20
- * Time: 1:21 AM
+ * Time: 1:21 AM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Library\Annotations;
@@ -26,7 +28,7 @@ class EdmValueAnnotationTest extends TestCase
         $model = m::mock(IModel::class);
 
         $expected = true;
-        $actual = $foo->isInline($model);
+        $actual   = $foo->isInline($model);
         $this->assertEquals($expected, $actual);
     }
 
@@ -40,7 +42,7 @@ class EdmValueAnnotationTest extends TestCase
         $model = m::mock(IModel::class);
 
         $expected = true;
-        $actual = $foo->isInline($model);
+        $actual   = $foo->isInline($model);
         $this->assertEquals($expected, $actual);
     }
 
@@ -54,7 +56,7 @@ class EdmValueAnnotationTest extends TestCase
         $model = m::mock(IModel::class);
 
         $expected = false;
-        $actual = $foo->isInline($model);
+        $actual   = $foo->isInline($model);
         $this->assertEquals($expected, $actual);
     }
 }

@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 2:28 PM
+ * Time: 2:28 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -53,7 +55,7 @@ class FunctionImportParametersIncorrectTypeBeforeV3Test extends TestCase
 
     public function invokeProvider(): array
     {
-        $result = [];
+        $result   = [];
         $result[] = [true, true, null, 0];
         $result[] = [true, true, 'isPrimitive', 0];
         $result[] = [true, true, 'isComplex', 0];
@@ -73,10 +75,10 @@ class FunctionImportParametersIncorrectTypeBeforeV3Test extends TestCase
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isNull
-     * @param bool $isBad
-     * @param string|null $isTrue
-     * @param int $numErrors
+     * @param  bool                 $isNull
+     * @param  bool                 $isBad
+     * @param  string|null          $isTrue
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeWithNonNullParms(bool $isNull, bool $isBad, ?string $isTrue, int $numErrors)
@@ -122,10 +124,10 @@ class FunctionImportParametersIncorrectTypeBeforeV3Test extends TestCase
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::FunctionImportParameterIncorrectType();
             $this->assertEquals($errorCode, $error->getErrorCode());
-            $expected = 'The type \'fullName\' of parameter \'funcParm\' is invalid. A function import parameter'.
+            $expected = 'The type \'fullName\' of parameter \'funcParm\' is invalid. A function import parameter' .
                         ' must be one of the following types: A simple type or complex type.';
             $this->assertEquals($expected, $error->getErrorMessage());
         }

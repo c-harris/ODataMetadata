@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 10:51 PM
+ * Time: 10:51 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -38,9 +40,9 @@ class FunctionImportComposableFunctionImportCannotBeSideEffectingTest extends Te
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isComposable
-     * @param bool $isSideEffecting
-     * @param int $numErrors
+     * @param  bool                 $isComposable
+     * @param  bool                 $isSideEffecting
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeComposable(bool $isComposable, bool $isSideEffecting, int $numErrors)
@@ -67,7 +69,7 @@ class FunctionImportComposableFunctionImportCannotBeSideEffectingTest extends Te
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::ComposableFunctionImportCannotBeSideEffecting();
             $this->assertEquals($errorCode, $error->getErrorCode());
             $expected = 'The function import \'name\' cannot be composable and side-effecting at the same time.';

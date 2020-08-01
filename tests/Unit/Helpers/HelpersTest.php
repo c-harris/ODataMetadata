@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 1/08/20
- * Time: 2:22 AM
+ * Time: 2:22 AM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Helpers;
@@ -19,7 +21,7 @@ class HelpersTest extends TestCase
 {
     public function testAnnotationValueClassMismatch()
     {
-        $typeOf = IModel::class;
+        $typeOf   = IModel::class;
         $annotate = m::mock(EdmType::class);
 
         $this->expectException(InvalidOperationException::class);
@@ -33,7 +35,7 @@ class HelpersTest extends TestCase
         $name = 'foo.bar';
 
         $expected = 'foo_____bar';
-        $actual = Helpers::classNameToLocalName($name);
+        $actual   = Helpers::classNameToLocalName($name);
         $this->assertEquals($expected, $actual);
     }
 }
