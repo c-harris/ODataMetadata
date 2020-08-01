@@ -28,7 +28,7 @@ trait NavigationPropertyHelpers
     public function multiplicity(): Multiplicity
     {
         /** @var INavigationProperty $this */
-        $partner = $this->getPartner();
+        $partner     = $this->getPartner();
         $partnerType = $partner->getType();
         if ($partnerType->isCollection()) {
             return Multiplicity::Many();

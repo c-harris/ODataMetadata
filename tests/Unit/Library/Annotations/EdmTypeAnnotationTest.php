@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 1/08/20
- * Time: 1:38 AM
+ * Time: 1:38 AM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Library\Annotations;
@@ -20,8 +22,8 @@ class EdmTypeAnnotationTest extends TestCase
 {
     public function testFindPropertyBindingByIPropertyPresent()
     {
-        $targ = m::mock(IVocabularyAnnotatable::class);
-        $term = m::mock(ITerm::class);
+        $targ      = m::mock(IVocabularyAnnotatable::class);
+        $term      = m::mock(ITerm::class);
         $qualifier = null;
 
         $prop = m::mock(IProperty::class);
@@ -38,8 +40,8 @@ class EdmTypeAnnotationTest extends TestCase
 
     public function testFindPropertyBindingByName()
     {
-        $targ = m::mock(IVocabularyAnnotatable::class);
-        $term = m::mock(ITerm::class);
+        $targ      = m::mock(IVocabularyAnnotatable::class);
+        $term      = m::mock(ITerm::class);
         $qualifier = null;
 
         $prop = m::mock(IProperty::class);
@@ -56,8 +58,8 @@ class EdmTypeAnnotationTest extends TestCase
 
     public function testFindPropertyBindingByNameNonExtant()
     {
-        $targ = m::mock(IVocabularyAnnotatable::class);
-        $term = m::mock(ITerm::class);
+        $targ      = m::mock(IVocabularyAnnotatable::class);
+        $term      = m::mock(ITerm::class);
         $qualifier = null;
 
         $prop = m::mock(IProperty::class);

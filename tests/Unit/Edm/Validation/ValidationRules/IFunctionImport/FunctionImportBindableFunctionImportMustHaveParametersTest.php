@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 10:42 PM
+ * Time: 10:42 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -39,9 +41,9 @@ class FunctionImportBindableFunctionImportMustHaveParametersTest extends TestCas
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isBindable
-     * @param bool $isEmpty
-     * @param int $numErrors
+     * @param  bool                 $isBindable
+     * @param  bool                 $isEmpty
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeBindable(bool $isBindable, bool $isEmpty, int $numErrors)
@@ -73,7 +75,7 @@ class FunctionImportBindableFunctionImportMustHaveParametersTest extends TestCas
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::BindableFunctionImportMustHaveParameters();
             $this->assertEquals($errorCode, $error->getErrorCode());
             $expected = 'The bindable function import \'name\' must have at least one parameter.';

@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 3:06 PM
+ * Time: 3:06 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -49,7 +51,7 @@ class FunctionImportEntitySetExpressionIsInvalidTest extends TestCase
 
     public function invokeProvider(): array
     {
-        $result = [];
+        $result   = [];
         $result[] = [ExpressionKind::None(), false, false, 1];
         $result[] = [ExpressionKind::EntitySetReference(), false, false, 1];
         $result[] = [ExpressionKind::EntitySetReference(), false, true, 0];
@@ -66,10 +68,10 @@ class FunctionImportEntitySetExpressionIsInvalidTest extends TestCase
     /**
      * @dataProvider invokeProvider
      *
-     * @param ExpressionKind $kind
-     * @param bool $getStatic
-     * @param bool $getRelative
-     * @param int $numErrors
+     * @param  ExpressionKind       $kind
+     * @param  bool                 $getStatic
+     * @param  bool                 $getRelative
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeNonNullEntitySet(ExpressionKind $kind, bool $getStatic, bool $getRelative, int $numErrors)

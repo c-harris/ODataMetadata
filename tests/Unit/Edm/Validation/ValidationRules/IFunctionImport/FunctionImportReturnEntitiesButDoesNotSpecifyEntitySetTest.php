@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 7:10 PM
+ * Time: 7:10 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -40,8 +42,8 @@ class FunctionImportReturnEntitiesButDoesNotSpecifyEntitySetTest extends TestCas
     /**
      * @dataProvider nullProvider
      *
-     * @param bool $returnNull
-     * @param bool $entityNull
+     * @param  bool                 $returnNull
+     * @param  bool                 $entityNull
      * @throws \ReflectionException
      */
     public function testInvokeBypass(bool $returnNull, bool $entityNull)
@@ -94,10 +96,10 @@ class FunctionImportReturnEntitiesButDoesNotSpecifyEntitySetTest extends TestCas
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isCollection
-     * @param bool $isEntity
-     * @param bool $isBad
-     * @param int $numErrors
+     * @param  bool                 $isCollection
+     * @param  bool                 $isEntity
+     * @param  bool                 $isBad
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeNonBypass(bool $isCollection, bool $isEntity, bool $isBad, int $numErrors)
@@ -132,7 +134,7 @@ class FunctionImportReturnEntitiesButDoesNotSpecifyEntitySetTest extends TestCas
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::FunctionImportReturnsEntitiesButDoesNotSpecifyEntitySet();
             $this->assertEquals($errorCode, $error->getErrorCode());
             $expected = 'The function import \'funcImport\' returns entities but does not specify an entity set.';
