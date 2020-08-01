@@ -14,13 +14,13 @@ class VisitorOfIFunctionReferenceExpression extends VisitorOfT
     protected function visitT($expression, array &$followup, array &$references): ?iterable
     {
         assert($expression instanceof IFunctionReferenceExpression);
-        if (null !== $expression->getReferencedFunction()) {
+        $reference = $expression->getReferencedFunction();
+        if (null !== $reference) {
             assert(
-                $expression->getReferencedFunction() instanceof ISchemaElement ||
-                $expression instanceof IEntityContainerElement,
+                $reference instanceof ISchemaElement || $expression instanceof IEntityContainerElement,
                 'Return as followup if the referenced object is not a schema function or a function import.'
             );
-            $references[] = $expression->getReferencedFunction();
+            $references[] = $reference;
             return null;
         } else {
             return [ InterfaceValidator::createPropertyMustNotBeNullError($expression, 'ReferencedFunction') ];
