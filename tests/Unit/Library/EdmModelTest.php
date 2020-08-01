@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 1/08/20
- * Time: 12:18 AM
+ * Time: 12:18 AM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Library;
@@ -24,7 +26,7 @@ class EdmModelTest extends TestCase
         $name = 'func';
 
         $expected = [];
-        $actual = $foo->findDeclaredFunctions($name);
+        $actual   = $foo->findDeclaredFunctions($name);
         $this->assertEquals($expected, $actual);
     }
 
@@ -32,7 +34,7 @@ class EdmModelTest extends TestCase
     {
         $foo = new EdmModel();
 
-        $name = 'func';
+        $name    = 'func';
         $element = m::mock(ISchemaElement::class . ', ' . IFunction::class);
         $element->shouldReceive('fullName')->andReturn($name);
         $element->shouldReceive('getSchemaElementKind')->andReturn(SchemaElementKind::Function());
@@ -40,7 +42,7 @@ class EdmModelTest extends TestCase
         $foo->addElement($element);
 
         $expected = [$element];
-        $actual = $foo->findDeclaredFunctions($name);
+        $actual   = $foo->findDeclaredFunctions($name);
         $this->assertEquals($expected, $actual);
     }
 
@@ -48,7 +50,7 @@ class EdmModelTest extends TestCase
     {
         $foo = new EdmModel();
 
-        $name = 'func';
+        $name    = 'func';
         $element = m::mock(ISchemaElement::class . ', ' . IFunction::class);
         $element->shouldReceive('fullName')->andReturn($name);
         $element->shouldReceive('getSchemaElementKind')->andReturn(SchemaElementKind::Function());
@@ -57,7 +59,7 @@ class EdmModelTest extends TestCase
         $foo->addElement($element);
 
         $expected = [$element, $element];
-        $actual = $foo->findDeclaredFunctions($name);
+        $actual   = $foo->findDeclaredFunctions($name);
         $this->assertEquals($expected, $actual);
     }
 }

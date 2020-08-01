@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 10:14 PM
+ * Time: 10:14 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -38,9 +40,9 @@ class ComposableFunctionImportMustHaveReturnTypeTest extends TestCase
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isComposable
-     * @param bool $isNull
-     * @param int $numErrors
+     * @param  bool                 $isComposable
+     * @param  bool                 $isNull
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeComposable(bool $isComposable, bool $isNull, int $numErrors)
@@ -72,7 +74,7 @@ class ComposableFunctionImportMustHaveReturnTypeTest extends TestCase
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::ComposableFunctionImportMustHaveReturnType();
             $this->assertEquals($errorCode, $error->getErrorCode());
             $expected = 'The composable function import \'name\' must specify a return type.';

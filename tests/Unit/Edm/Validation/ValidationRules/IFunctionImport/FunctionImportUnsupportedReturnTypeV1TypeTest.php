@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 10:48 AM
+ * Time: 10:48 AM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -53,7 +55,7 @@ class FunctionImportUnsupportedReturnTypeV1TypeTest extends TestCase
 
     public function invokeProvider(): array
     {
-        $result = [];
+        $result   = [];
         $result[] = [true, true, null, 0];
         $result[] = [true, false, null, 1];
         $result[] = [true, true, 'isPrimitive', 0];
@@ -70,10 +72,10 @@ class FunctionImportUnsupportedReturnTypeV1TypeTest extends TestCase
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isCollection
-     * @param bool $isBad
-     * @param string $isTrue
-     * @param int $numErrors
+     * @param  bool                 $isCollection
+     * @param  bool                 $isBad
+     * @param  string               $isTrue
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeWithNonNullReturnType(bool $isCollection, bool $isBad, ?string $isTrue, int $numErrors)
@@ -115,10 +117,10 @@ class FunctionImportUnsupportedReturnTypeV1TypeTest extends TestCase
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::FunctionImportUnsupportedReturnType();
             $this->assertEquals($errorCode, $error->getErrorCode());
-            $expected = 'The return type is not valid in function import \'TNMN\'. In version 1.0 a function import'.
+            $expected = 'The return type is not valid in function import \'TNMN\'. In version 1.0 a function import' .
                         ' can have no return type or return a collection of scalar values or a collection of entities.';
             $this->assertEquals($expected, $error->getErrorMessage());
         }

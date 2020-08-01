@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 10:12 AM
+ * Time: 10:12 AM.
  */
 
 declare(strict_types=1);
@@ -55,7 +55,7 @@ class FunctionImportUnsupportedReturnTypeAfterV1Test extends TestCase
 
     public function invokeProvider(): array
     {
-        $result = [];
+        $result   = [];
         $result[] = [true, true, 'isPrimitive', 0];
         $result[] = [true, true, 'isEntity', 0];
         $result[] = [true, true, 'isComplex', 0];
@@ -83,10 +83,10 @@ class FunctionImportUnsupportedReturnTypeAfterV1Test extends TestCase
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isCollection
-     * @param bool $isBad
-     * @param string $isTrue
-     * @param int $numErrors
+     * @param  bool                 $isCollection
+     * @param  bool                 $isBad
+     * @param  string               $isTrue
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeWithNonNullReturnType(bool $isCollection, bool $isBad, string $isTrue, int $numErrors)
@@ -126,10 +126,10 @@ class FunctionImportUnsupportedReturnTypeAfterV1Test extends TestCase
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::FunctionImportUnsupportedReturnType();
             $this->assertEquals($errorCode, $error->getErrorCode());
-            $expected = 'The return type is not valid in function import \'TNMN\'. The function import can have no'.
+            $expected = 'The return type is not valid in function import \'TNMN\'. The function import can have no' .
                         ' return type or return a scalar, a complex type, an entity type or a collection of those.';
             $this->assertEquals($expected, $error->getErrorMessage());
         }

@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 6:23 PM
+ * Time: 6:23 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -48,7 +50,7 @@ class FunctionImportParametersCannotHaveModeOfNoneTest extends TestCase
 
     public function invokeProvider(): array
     {
-        $result = [];
+        $result   = [];
         $result[] = [FunctionParameterMode::None(), true, 0];
         $result[] = [FunctionParameterMode::None(), false, 1];
         $result[] = [FunctionParameterMode::In(), true, 0];
@@ -61,9 +63,9 @@ class FunctionImportParametersCannotHaveModeOfNoneTest extends TestCase
     /**
      * @dataProvider invokeProvider
      *
-     * @param FunctionParameterMode $mode
-     * @param bool $isBad
-     * @param int $numErrors
+     * @param  FunctionParameterMode $mode
+     * @param  bool                  $isBad
+     * @param  int                   $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeNonNullParameters(FunctionParameterMode $mode, bool $isBad, int $numErrors)

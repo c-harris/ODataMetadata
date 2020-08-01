@@ -1,9 +1,11 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: alex
  * Date: 31/07/20
- * Time: 11:10 PM
+ * Time: 11:10 PM.
  */
 
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Edm\Validation\ValidationRules\IFunctionImport;
@@ -36,8 +38,8 @@ class FunctionImportIsComposableNotSupportedBeforeV3Test extends TestCase
     /**
      * @dataProvider invokeProvider
      *
-     * @param bool $isComposable
-     * @param int $numErrors
+     * @param  bool                 $isComposable
+     * @param  int                  $numErrors
      * @throws \ReflectionException
      */
     public function testInvokeComposable(bool $isComposable, int $numErrors)
@@ -63,7 +65,7 @@ class FunctionImportIsComposableNotSupportedBeforeV3Test extends TestCase
         $errors = $context->getErrors();
         $this->assertEquals($numErrors, count($errors));
         if (1 === $numErrors) {
-            $error = $errors[0];
+            $error     = $errors[0];
             $errorCode = EdmErrorCode::FunctionImportComposableNotSupportedBeforeV3();
             $this->assertEquals($errorCode, $error->getErrorCode());
             $expected = 'The \'Composable\' setting of function imports is not supported before version 3.0.';
