@@ -15,12 +15,12 @@ interface IValueTermReferenceExpression extends IExpression
     /**
      * @return IExpression gets the expression for the structured value containing the referenced term property
      */
-    public function getBase(): IExpression;
+    public function getBase(): ?IExpression;
 
     /**
      * @return IValueTerm gets the referenced value term
      */
-    public function getTerm(): IValueTerm;
+    public function getTerm(): ?IValueTerm;
 
     /**
      * @return string gets the optional qualifier
