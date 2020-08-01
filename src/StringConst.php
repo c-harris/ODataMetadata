@@ -164,7 +164,7 @@ use ReflectionException;
  * @method static string EdmModel_Validator_Semantic_IncorrectNumberOfArguments(int|void $count, string $FullName, int|void $count1)
  * @method static string EdmModel_Validator_Semantic_DuplicateAnnotation(string|null $FullyQualifiedName, string $FullName, string $getQualifier)
  * @method static string RuleSet_DuplicateRulesExistInRuleSet()
- * @method static string UnknownEnumVal_ExpressionKind(bool $getKey)
+ * @method static string UnknownEnumVal_ExpressionKind(string $getKey)
  * @method static string EdmModel_Validator_Semantic_IntegerConstantValueOutOfRange()
  */
 class StringConst

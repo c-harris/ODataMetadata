@@ -405,7 +405,7 @@ trait ModelHelpers
             EdmConstants::InternalUri,
             CsdlConstants::AssociationNamespaceAnnotation
         );
-        if ($associationNamespace == null) {
+        if (null === $associationNamespace) {
             $associationNamespace = $property->getPrimary()->declaringEntityType()->getNamespace();
         }
 
@@ -430,7 +430,7 @@ trait ModelHelpers
             EdmConstants::InternalUri,
             CsdlConstants::AssociationNameAnnotation
         );
-        if ($associationName == null) {
+        if (null === $associationName) {
             $fromPrincipal = $property->getPrimary();
             $toPrincipal   = $fromPrincipal->getPartner();
 

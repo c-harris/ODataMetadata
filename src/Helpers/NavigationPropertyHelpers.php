@@ -29,14 +29,11 @@ trait NavigationPropertyHelpers
     {
         /** @var INavigationProperty $this */
         $partner = $this->getPartner();
-        if ($partner !== null) {
-            $partnerType = $partner->getType();
-            if ($partnerType->isCollection()) {
-                return Multiplicity::Many();
-            }
-            return $partnerType->getNullable() ? Multiplicity::ZeroOrOne() : Multiplicity::One();
+        $partnerType = $partner->getType();
+        if ($partnerType->isCollection()) {
+            return Multiplicity::Many();
         }
-        return Multiplicity::One();
+        return $partnerType->getNullable() ? Multiplicity::ZeroOrOne() : Multiplicity::One();
     }
 
     /**
