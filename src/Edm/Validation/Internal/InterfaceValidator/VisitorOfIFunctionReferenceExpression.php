@@ -7,6 +7,7 @@ namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Interfaces\Expressions\IFunctionReferenceExpression;
 use AlgoWeb\ODataMetadata\Interfaces\IEntityContainerElement;
+use AlgoWeb\ODataMetadata\Interfaces\IFunctionImport;
 use AlgoWeb\ODataMetadata\Interfaces\ISchemaElement;
 
 class VisitorOfIFunctionReferenceExpression extends VisitorOfT
@@ -17,7 +18,7 @@ class VisitorOfIFunctionReferenceExpression extends VisitorOfT
         $reference = $expression->getReferencedFunction();
         if (null !== $reference) {
             assert(
-                $reference instanceof ISchemaElement || $expression instanceof IEntityContainerElement,
+                $reference instanceof ISchemaElement || $reference instanceof IFunctionImport, /** @phpstan-ignore-line */
                 'Return as followup if the referenced object is not a schema function or a function import.'
             );
             $references[] = $reference;

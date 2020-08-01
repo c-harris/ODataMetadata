@@ -144,7 +144,7 @@ class ValidationRuleSet implements \IteratorAggregate
         foreach ($ruleSets as $ruleSet) {
             assert(is_iterable($ruleSet));
             foreach ($ruleSet as $rule) {
-                assert($rule instanceof ValidationRule);
+                assert($rule instanceof ValidationRule); /** @phpstan-ignore-line */
                 $this->addRule($rule);
             }
         }
