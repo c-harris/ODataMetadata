@@ -18,6 +18,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IPrimitiveTypeReference;
 class EdmBooleanConstant extends EdmValue implements IBooleanConstantExpression
 {
     use ValueHelpers;
+    /** @var bool */
     private $value;
 
     /**

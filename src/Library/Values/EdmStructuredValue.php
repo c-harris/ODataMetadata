@@ -79,6 +79,9 @@ class EdmStructuredValue extends EdmValue implements IStructuredValue
         return array_key_exists($propertyName, $propertiesDictionary) ? $propertiesDictionary[$propertyName] : null;
     }
 
+    /**
+     * @return IPropertyValue[]
+     */
     private function computePropertiesDictionary(): array
     {
         $propertiesDictionary = [];

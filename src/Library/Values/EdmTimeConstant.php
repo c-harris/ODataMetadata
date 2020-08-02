@@ -14,6 +14,9 @@ use DateTime;
 class EdmTimeConstant extends EdmValue implements ITimeConstantExpression
 {
     use ValueHelpers;
+    /**
+     * @var DateTime
+     */
     private $value;
 
     /**

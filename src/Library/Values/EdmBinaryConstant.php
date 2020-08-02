@@ -18,6 +18,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IBinaryTypeReference;
 class EdmBinaryConstant extends EdmValue implements IBinaryConstantExpression
 {
     use ValueHelpers;
+    /** @var array|string[] */
     private $value;
 
     /**

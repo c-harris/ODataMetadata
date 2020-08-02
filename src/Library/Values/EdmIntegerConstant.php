@@ -18,6 +18,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IPrimitiveTypeReference;
 class EdmIntegerConstant extends EdmValue implements IIntegerConstantExpression
 {
     use ValueHelpers;
+    /** @var int */
     private $value;
 
     /**

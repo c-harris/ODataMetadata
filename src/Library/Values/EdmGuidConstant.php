@@ -18,6 +18,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IPrimitiveTypeReference;
 class EdmGuidConstant extends EdmValue implements IGuidConstantExpression
 {
     use ValueHelpers;
+    /** @var string */
     private $value;
 
     /**

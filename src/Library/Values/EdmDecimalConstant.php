@@ -18,6 +18,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IPrimitiveTypeReference;
 class EdmDecimalConstant extends EdmValue implements IDecimalConstantExpression
 {
     use ValueHelpers;
+    /** @var float */
     private $value;
 
     /**
