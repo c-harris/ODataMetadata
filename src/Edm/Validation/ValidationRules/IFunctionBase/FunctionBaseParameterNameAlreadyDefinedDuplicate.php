@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 class FunctionBaseParameterNameAlreadyDefinedDuplicate extends FunctionBaseRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $edmFunction)
+    public function __invoke(ValidationContext $context, ?IEdmElement $edmFunction): void
     {
         assert($edmFunction instanceof IFunctionBase);
         $parameterList = new HashSetInternal();

@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class TemporalTypeReferencePrecisionOutOfRange extends TemporalTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof ITemporalTypeReference);
         if ($type->getPrecision() > EdmConstants::Max_Precision ||

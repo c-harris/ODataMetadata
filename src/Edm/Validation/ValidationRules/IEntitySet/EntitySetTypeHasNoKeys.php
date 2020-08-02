@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class EntitySetTypeHasNoKeys extends EntitySetRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $entitySet)
+    public function __invoke(ValidationContext $context, ?IEdmElement $entitySet): void
     {
         assert($entitySet instanceof IEntitySet);
         if ((

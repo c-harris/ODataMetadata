@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class EntityTypeEntityKeyMustNotBeBinaryBeforeV2 extends EntityTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $entityType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $entityType): void
     {
         assert($entityType instanceof IEntityType);
         $rawKey = $entityType->key();

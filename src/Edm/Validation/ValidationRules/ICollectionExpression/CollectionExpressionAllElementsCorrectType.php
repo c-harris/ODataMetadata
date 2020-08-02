@@ -16,7 +16,7 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class CollectionExpressionAllElementsCorrectType extends CollectionExpressionRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $expression)
+    public function __invoke(ValidationContext $context, ?IEdmElement $expression): void
     {
         assert($expression instanceof ICollectionExpression);
         if (null !== $expression->getDeclaredType() &&

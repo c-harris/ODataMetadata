@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class SchemaElementMustNotHaveKindOfNone extends SchemaElementRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $element)
+    public function __invoke(ValidationContext $context, ?IEdmElement $element): void
     {
         assert($element instanceof ISchemaElement);
         if ($element->getSchemaElementKind()->isNone() && !$context->checkIsBad($element)) {

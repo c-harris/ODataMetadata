@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class FunctionImportUnsupportedReturnTypeAfterV1 extends FunctionImportRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport)
+    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport): void
     {
         assert($functionImport instanceof IFunctionImport);
         if (null !== $functionImport->getReturnType()) {

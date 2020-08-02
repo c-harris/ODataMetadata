@@ -21,7 +21,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class ImmediateValueAnnotationElementAnnotationIsValid extends DirectValueAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof IDirectValueAnnotation);
         $stringValue = $annotation->getValue();

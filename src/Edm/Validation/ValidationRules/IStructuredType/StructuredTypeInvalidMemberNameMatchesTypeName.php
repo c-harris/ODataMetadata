@@ -20,7 +20,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StructuredTypeInvalidMemberNameMatchesTypeName extends StructuredTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType): void
     {
         assert($structuredType instanceof IStructuredType);
         $schemaType = $structuredType;

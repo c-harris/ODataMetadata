@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class ValueTermsNotSupportedBeforeV3 extends ValueTermsRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $valueTerm)
+    public function __invoke(ValidationContext $context, ?IEdmElement $valueTerm): void
     {
         assert($valueTerm instanceof IValueTerm);
         EdmUtil::checkArgumentNull($valueTerm->location(), 'valueTerm->Location');

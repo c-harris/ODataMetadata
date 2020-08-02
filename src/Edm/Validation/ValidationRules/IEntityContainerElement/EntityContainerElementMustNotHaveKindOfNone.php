@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class EntityContainerElementMustNotHaveKindOfNone extends EntityContainerRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $element)
+    public function __invoke(ValidationContext $context, ?IEdmElement $element): void
     {
         assert($element instanceof IEntityContainerElement);
         if ($element->getContainerElementKind()->isNone() && !$context->checkIsBad($element)) {

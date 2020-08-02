@@ -17,7 +17,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IStructuredType;
  */
 class StructuredTypeInaccessibleBaseType extends StructuredTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType): void
     {
         assert($structuredType instanceof IStructuredType);
         if ($structuredType instanceof ISchemaType && !$context->checkIsBad($structuredType)) {

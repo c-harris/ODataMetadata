@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class FunctionImportParametersCannotHaveModeOfNone extends FunctionImportRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $function)
+    public function __invoke(ValidationContext $context, ?IEdmElement $function): void
     {
         assert($function instanceof IFunctionImport);
         $parameters = $function->getParameters();

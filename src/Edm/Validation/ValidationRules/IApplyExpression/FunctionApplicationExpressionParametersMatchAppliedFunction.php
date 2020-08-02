@@ -20,7 +20,7 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class FunctionApplicationExpressionParametersMatchAppliedFunction extends ApplyExpressionRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $expression)
+    public function __invoke(ValidationContext $context, ?IEdmElement $expression): void
     {
         assert($expression instanceof IApplyExpression);
         $functionReference = $expression->getAppliedFunction();

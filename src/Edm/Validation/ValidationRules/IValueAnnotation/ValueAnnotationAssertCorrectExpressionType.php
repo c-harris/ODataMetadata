@@ -17,7 +17,7 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class ValueAnnotationAssertCorrectExpressionType extends ValueAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof IValueAnnotation);
         $errors = [];

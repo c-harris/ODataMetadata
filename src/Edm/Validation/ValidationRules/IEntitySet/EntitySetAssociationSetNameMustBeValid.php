@@ -16,7 +16,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IEntitySet;
  */
 class EntitySetAssociationSetNameMustBeValid extends EntitySetRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $set)
+    public function __invoke(ValidationContext $context, ?IEdmElement $set): void
     {
         assert($set instanceof IEntitySet);
         $mappings = $set->getNavigationTargets();

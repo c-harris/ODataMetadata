@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class BinaryTypeReferenceBinaryUnboundedNotValidForMaxLength extends BinaryTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IBinaryTypeReference);
         if (null !== $type->getMaxLength() && $type->isUnBounded()) {

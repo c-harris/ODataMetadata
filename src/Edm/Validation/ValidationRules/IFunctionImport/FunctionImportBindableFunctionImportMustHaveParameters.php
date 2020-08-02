@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class FunctionImportBindableFunctionImportMustHaveParameters extends FunctionImportRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport)
+    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport): void
     {
         assert($functionImport instanceof IFunctionImport);
         if ($functionImport->isBindable() && count($functionImport->getParameters()) === 0) {

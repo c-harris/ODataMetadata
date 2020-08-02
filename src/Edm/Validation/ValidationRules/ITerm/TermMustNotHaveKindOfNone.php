@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class TermMustNotHaveKindOfNone extends TermRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $term)
+    public function __invoke(ValidationContext $context, ?IEdmElement $term): void
     {
         assert($term instanceof ITerm);
         if ($term->getTermKind()->isNone() && !$context->checkIsBad($term)) {

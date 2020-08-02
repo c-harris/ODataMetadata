@@ -17,7 +17,7 @@ use AlgoWeb\ODataMetadata\Interfaces\ITypeReference;
  */
 class TypeReferenceInaccessibleSchemaType extends TypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $typeReference)
+    public function __invoke(ValidationContext $context, ?IEdmElement $typeReference): void
     {
         assert($typeReference instanceof ITypeReference);
         $schemaType = $typeReference->getDefinition();

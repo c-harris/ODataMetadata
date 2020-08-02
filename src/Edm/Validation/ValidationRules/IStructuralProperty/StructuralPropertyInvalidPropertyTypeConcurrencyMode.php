@@ -20,7 +20,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StructuralPropertyInvalidPropertyTypeConcurrencyMode extends StructuralPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $property)
+    public function __invoke(ValidationContext $context, ?IEdmElement $property): void
     {
         /* @var IStructuralProperty $property */
         assert($property instanceof IStructuralProperty);

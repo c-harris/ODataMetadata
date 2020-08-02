@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class ComposableFunctionImportMustHaveReturnType extends FunctionImportRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport)
+    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport): void
     {
         assert($functionImport instanceof IFunctionImport);
         if ($functionImport->isComposable() && null === $functionImport->getReturnType()) {

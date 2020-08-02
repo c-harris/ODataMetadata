@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class VocabularyAnnotationsNotSupportedBeforeV3 extends VocabularyAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $vocabularyAnnotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $vocabularyAnnotation): void
     {
         assert($vocabularyAnnotation instanceof IVocabularyAnnotation);
         EdmUtil::checkArgumentNull($vocabularyAnnotation->location(), 'vocabularyAnnotation->Location');

@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class ComplexTypeInvalidPolymorphicComplexType extends ComplexTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $edmComplexType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $edmComplexType): void
     {
         assert($edmComplexType instanceof IComplexType);
         if (null !== $edmComplexType->getBaseType()) {

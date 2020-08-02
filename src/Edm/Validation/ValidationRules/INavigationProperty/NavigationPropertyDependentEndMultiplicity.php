@@ -23,7 +23,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NavigationPropertyDependentEndMultiplicity extends NavigationPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $navigationProperty)
+    public function __invoke(ValidationContext $context, ?IEdmElement $navigationProperty): void
     {
         assert($navigationProperty instanceof INavigationProperty);
         EdmUtil::checkArgumentNull($navigationProperty->location(), 'navigationProperty->Location');

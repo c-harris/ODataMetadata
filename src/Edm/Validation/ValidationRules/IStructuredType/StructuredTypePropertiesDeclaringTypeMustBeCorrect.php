@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StructuredTypePropertiesDeclaringTypeMustBeCorrect extends StructuredTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType): void
     {
         assert($structuredType instanceof IStructuredType);
         $properties = $structuredType->getDeclaredProperties();

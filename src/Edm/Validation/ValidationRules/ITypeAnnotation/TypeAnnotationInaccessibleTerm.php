@@ -20,7 +20,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class TypeAnnotationInaccessibleTerm extends TypeAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof ITypeAnnotation);
         $term = $annotation->getTerm();

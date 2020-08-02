@@ -22,7 +22,7 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 class ModelDuplicateSchemaElementName extends ModelRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $model)
+    public function __invoke(ValidationContext $context, ?IEdmElement $model): void
     {
         assert($model instanceof IModel);
         $nonFunctionNameList = new HashSetInternal();

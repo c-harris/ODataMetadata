@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NavigationPropertyEndWithManyMultiplicityCannotHaveOperationsSpecified extends NavigationPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $end)
+    public function __invoke(ValidationContext $context, ?IEdmElement $end): void
     {
         assert($end instanceof INavigationProperty);
         // If an end has a multiplicity of many, it cannot have any operation behaviour

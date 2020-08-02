@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class ComplexTypeMustContainProperties extends ComplexTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $complexType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $complexType): void
     {
         assert($complexType instanceof IComplexType);
         $properties = iterable_to_array($complexType->properties());

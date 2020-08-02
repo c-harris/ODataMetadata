@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NamedElementNameIsTooLong extends NamedElementRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $item)
+    public function __invoke(ValidationContext $context, ?IEdmElement $item): void
     {
         assert($item instanceof INamedElement);
         if (!EdmUtil::isNullOrWhiteSpaceInternal($item->getName()) &&

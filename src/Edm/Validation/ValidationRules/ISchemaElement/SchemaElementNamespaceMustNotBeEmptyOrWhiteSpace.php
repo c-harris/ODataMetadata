@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class SchemaElementNamespaceMustNotBeEmptyOrWhiteSpace extends SchemaElementRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $item)
+    public function __invoke(ValidationContext $context, ?IEdmElement $item): void
     {
         assert($item instanceof ISchemaElement);
         if (EdmUtil::isNullOrWhiteSpaceInternal($item->getNamespace()) || mb_strlen($item->getNamespace()) === 0) {

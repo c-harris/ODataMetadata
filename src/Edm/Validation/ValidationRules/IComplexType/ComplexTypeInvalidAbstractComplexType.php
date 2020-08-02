@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class ComplexTypeInvalidAbstractComplexType extends ComplexTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $complexType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $complexType): void
     {
         assert($complexType instanceof IComplexType);
         if ($complexType->isAbstract()) {

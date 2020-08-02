@@ -20,7 +20,7 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 class ModelDuplicateEntityContainerName extends ModelRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $model)
+    public function __invoke(ValidationContext $context, ?IEdmElement $model): void
     {
         assert($model instanceof IModel);
         $entityContainerNameList = new HashSetInternal();

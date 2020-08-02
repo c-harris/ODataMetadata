@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class RowTypeMustContainProperties extends RowTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $rowType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $rowType): void
     {
         assert($rowType instanceof IRowType);
         $properties = iterable_to_array($rowType->properties());

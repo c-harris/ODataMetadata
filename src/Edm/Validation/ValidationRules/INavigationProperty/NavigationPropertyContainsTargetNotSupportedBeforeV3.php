@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NavigationPropertyContainsTargetNotSupportedBeforeV3 extends NavigationPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $property)
+    public function __invoke(ValidationContext $context, ?IEdmElement $property): void
     {
         assert($property instanceof INavigationProperty);
         if ($property->containsTarget() != CsdlConstants::Default_ContainsTarget) {
