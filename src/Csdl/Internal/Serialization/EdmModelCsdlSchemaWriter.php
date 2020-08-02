@@ -308,7 +308,7 @@ class EdmModelCsdlSchemaWriter implements IEdmModelCsdlSchemaWriter
             $this->xmlWriter->writeAttributeNs(
                 CsdlConstants::Prefix_ODataMetadata,
                 CsdlConstants::Attribute_IsDefaultEntityContainer,
-                null,
+                '',
                 'true'
             );
         }
@@ -316,7 +316,7 @@ class EdmModelCsdlSchemaWriter implements IEdmModelCsdlSchemaWriter
             $this->xmlWriter->writeAttributeNs(
                 CsdlConstants::Prefix_Annotations,
                 CsdlConstants::Attribute_LazyLoadingEnabled,
-                null,
+                '',
                 'true'
             );
         }
@@ -467,7 +467,12 @@ class EdmModelCsdlSchemaWriter implements IEdmModelCsdlSchemaWriter
             [EdmValueWriter::class, 'stringAsXml']
         );
         foreach ($mappings as $mappingKey => $mappingValue) {
-            $this->xmlWriter->writeAttributeNs(EdmConstants::XmlNamespacePrefix, $mappingKey, null, $mappingValue);
+            $this->xmlWriter->writeAttributeNs(
+                EdmConstants::XmlNamespacePrefix,
+                $mappingKey,
+                '',
+                $mappingValue
+            );
         }
     }
 

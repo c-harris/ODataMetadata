@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace AlgoWeb\ODataMetadata\Tests\Unit\Csdl\Internal\Serialization;
 
 use AlgoWeb\ODataMetadata\Csdl\Internal\Serialization\EdmModelCsdlSchemaWriter;
+use AlgoWeb\ODataMetadata\Csdl\Internal\Serialization\EdmSchema;
 use AlgoWeb\ODataMetadata\CsdlConstants;
 use AlgoWeb\ODataMetadata\Enums\ConcurrencyMode;
 use AlgoWeb\ODataMetadata\Enums\ExpressionKind;
@@ -28,6 +29,7 @@ use AlgoWeb\ODataMetadata\Interfaces\Expressions\IStringConstantExpression;
 use AlgoWeb\ODataMetadata\Interfaces\Expressions\ITimeConstantExpression;
 use AlgoWeb\ODataMetadata\Interfaces\IComplexType;
 use AlgoWeb\ODataMetadata\Interfaces\IDocumentation;
+use AlgoWeb\ODataMetadata\Interfaces\IEntityContainer;
 use AlgoWeb\ODataMetadata\Interfaces\IEntitySet;
 use AlgoWeb\ODataMetadata\Interfaces\IEnumMember;
 use AlgoWeb\ODataMetadata\Interfaces\IEnumType;
@@ -502,6 +504,54 @@ class EdmModelCsdlSchemaWriterTest extends TestCase
         $expected = '<?xml version="1.0"?>' . PHP_EOL . '<Key/>' . PHP_EOL;
 
         $foo->writeDeclaredKeyPropertiesElementHeader();
+
+        $writer->endElement();
+        $actual = $writer->outputMemory(true);
+        $this->assertXmlStringEqualsXmlString($expected, $actual);
+    }
+
+    /**
+     * @throws \ReflectionException
+     */
+    public function testWriteEntityContainerElementHeaderIsDefaultAndLazyLoadEnabled()
+    {
+        $writer = $this->getWriter();
+        $foo    = $this->getSchemaWriterWithMock($writer);
+
+        $container = m::mock(IEntityContainer::class);
+        $container->shouldReceive('getName')->andReturn('container');
+        $container->shouldReceive('isDefault')->andReturn(true)->once();
+        $container->shouldReceive('isLazyLoadEnabled')->andReturn(true)->once();
+
+        $expected = '<?xml version="1.0"?>' . PHP_EOL .
+                    '<EntityContainer Name="container" annotations:LazyLoadingEnabled="true" metadata:IsDefaultEntityContainer="true"/>' .
+                    PHP_EOL;
+
+        $foo->writeEntityContainerElementHeader($container);
+
+        $writer->endElement();
+        $actual = $writer->outputMemory(true);
+        $this->assertXmlStringEqualsXmlString($expected, $actual);
+    }
+
+    /**
+     * @throws \ReflectionException
+     */
+    public function testWriteSchemaElementHeaderWithTwoMappings()
+    {
+        $writer = $this->getWriter();
+        $foo    = $this->getSchemaWriterWithMock($writer);
+
+        $mappings = ['foo' => 'bar', 'around' => 'the world'];
+
+        $schema = m::mock(EdmSchema::class);
+        $schema->shouldReceive('getNamespace')->andReturn('namespace');
+
+        $expected = '<?xml version="1.0"?>' . PHP_EOL .
+                    '<Schema Namespace="namespace" xmlns:foo="bar" xmlns:around="the world"/>' .
+                    PHP_EOL;
+
+        $foo->writeSchemaElementHeader($schema, null, $mappings);
 
         $writer->endElement();
         $actual = $writer->outputMemory(true);
