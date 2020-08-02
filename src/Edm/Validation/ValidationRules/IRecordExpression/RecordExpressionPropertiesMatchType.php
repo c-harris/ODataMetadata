@@ -22,7 +22,7 @@ class RecordExpressionPropertiesMatchType extends RecordExpressionRule
         if (null !== $expression->getDeclaredType() &&
             !$context->checkIsBad($expression) &&
             !$context->checkIsBad($expression->getDeclaredType())) {
-            $discoveredErrors = null;
+            $discoveredErrors = [];
             ExpressionTypeChecker::tryAssertRecordAsType(
                 $expression,
                 $expression->getDeclaredType(),

@@ -20,7 +20,7 @@ class PrimitiveValueValidForType extends PrimitiveValueRule
     {
         assert($value instanceof IPrimitiveValue);
         if (null !== $value->getType() && !$context->checkIsBad($value) && !$context->checkIsBad($value->getType())) {
-            $discoveredErrors = null;
+            $discoveredErrors = [];
             ExpressionTypeChecker::tryAssertPrimitiveAsType($value, $value->getType(), $discoveredErrors);
             foreach ($discoveredErrors as $error) {
                 $context->addRawError($error);

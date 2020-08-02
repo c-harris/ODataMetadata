@@ -309,11 +309,19 @@ class XmlCharType
             return;
         }
         if (file_exists('XmlCharType.bin')) {
+            $loaded                 = false;
             $file                   = fopen('XmlCharType.bin', 'rb');
-            self::$m_CharProperties = fopen('php://memory', 'w+b');
-            stream_copy_to_stream($file, self::$m_CharProperties);
-            fclose($file);
-            return;
+            if (is_resource($file)) {
+                self::$m_CharProperties = fopen('php://memory', 'w+b');
+                if (is_resource(self::$m_CharProperties)) {
+                    stream_copy_to_stream($file, self::$m_CharProperties);
+                    $loaded = true;
+                }
+                fclose($file);
+                if ($loaded) {
+                    return;
+                }
+            }
         }
 
         $chProps                = [];
