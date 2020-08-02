@@ -537,7 +537,7 @@ abstract class ExpressionTypeChecker
     public static function tryAssertCollectionAsType(
         ICollectionExpression $expression,
         ITypeReference $type,
-        IType $context,
+        ?IType $context,
         bool $matchExactly,
         &$discoveredErrors
     ): bool {
