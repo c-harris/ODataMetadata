@@ -2,7 +2,12 @@
 
 declare(strict_types=1);
 if (!function_exists('mb_ord')) {
-    function mb_ord($s, $encoding = null)
+    /**
+     * @param string $s
+     * @param string|null $encoding
+     * @return int
+     */
+    function mb_ord(string $s, string $encoding = null)
     {
         $getEncoding = function ($encoding) {
             if (null === $encoding) {
@@ -49,6 +54,10 @@ if (!function_exists('mb_ord')) {
     }
 }
 if (!function_exists('iterable_to_array')) {
+    /**
+     * @param iterable<mixed>|null $it
+     * @return array<mixed>
+     */
     function iterable_to_array(?iterable $it): array
     {
         if (null === $it) {
@@ -63,6 +72,10 @@ if (!function_exists('iterable_to_array')) {
     }
 }
 if (!function_exists('iterable_to_traversable')) {
+    /**
+     * @param iterable<mixed>|null $it
+     * @return Traversable<mixed>
+     */
     function iterable_to_traversable(?iterable $it): Traversable
     {
         if (null === $it) {

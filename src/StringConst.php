@@ -450,8 +450,12 @@ class StringConst
     protected const EdmToClr_CannotConvertEdmCollectionValueToClrType   = 'Conversion of an edm collection value to the PHP type \'%s\' is not supported.';
     protected const EdmToClr_TryCreateObjectInstanceReturnedWrongObject = 'The type \'%s\' of the object returned by the TryCreateObjectInstance delegate is not assignable to the expected type \'%s\'.';
 
-
-    public static function __callStatic($name, $arguments): string
+    /**
+     * @param string $name
+     * @param mixed $arguments
+     * @return string
+     */
+    public static function __callStatic(string $name, $arguments): string
     {
         $array = static::toArray();
         if (isset($array[$name])) {
@@ -462,6 +466,7 @@ class StringConst
 
     /**
      * Store existing constants in a static cache per object.
+     * @var array<array>
      */
     protected static $cache = [];
     /**
