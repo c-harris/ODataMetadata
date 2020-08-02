@@ -298,6 +298,9 @@ class XmlCharType
      */
     protected static $s_CharProperties = null;
 
+    /**
+     * @var resource|null
+     */
     protected static $m_CharProperties = null;
 
     public static function initInstance(): void
@@ -341,7 +344,8 @@ class XmlCharType
             }
         }
     }
-    protected static function generateFile()
+
+    protected static function generateFile(): void
     {
         $fileArray = [];
         for ($i = 0; $i < 65536; $i++) {
@@ -357,17 +361,27 @@ class XmlCharType
     }
     #endregion
 
+    /**
+     * @var XmlCharType|null
+     */
     private static $instance = null;
 
-    public static function instance()
+    public static function instance(): XmlCharType
     {
         self::initInstance();
         $umArray                                  = new UnmanagedByteArray(self::$m_CharProperties);
         return self::$instance ?? self::$instance = new self($umArray);
     }
 
+    /**
+     * @var array<mixed>|\ArrayAccess<mixed,mixed>|null
+     */
     private $charProperties = null;
 
+    /**
+     * XmlCharType constructor.
+     * @param array<mixed>|\ArrayAccess<mixed,mixed>|mixed $charProperties
+     */
     public function __construct(&$charProperties)
     {
         assert(is_array($charProperties) || $charProperties instanceof \ArrayAccess);

@@ -50,8 +50,14 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 abstract class ExpressionTypeChecker
 {
+    /**
+     * @var array<mixed, array<mixed, bool>>|null
+     */
     private static $promotionMap = null;
 
+    /**
+     * @return array<mixed, array<mixed, bool>>
+     */
     private static function getPromotionMap(): array
     {
         return self::$promotionMap ?? self::$promotionMap = [
@@ -132,7 +138,7 @@ abstract class ExpressionTypeChecker
      * @param  ITypeReference|null $type             the type to assert the expression as
      * @param  IType|null          $context          the context paths are to be evaluated in
      * @param  bool                $matchExactly     Must the expression must match the asserted type exactly, or simply be compatible?
-     * @param  iterable            $discoveredErrors errors produced if the expression does not match the specified type
+     * @param  iterable<EdmError>  $discoveredErrors errors produced if the expression does not match the specified type
      * @return bool                a value indicating whether the expression is valid for the given type or not
      */
     public static function tryAssertType(
@@ -299,6 +305,12 @@ abstract class ExpressionTypeChecker
         }
     }
 
+    /**
+     * @param IPrimitiveValue $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     public static function tryAssertPrimitiveAsType(
         IPrimitiveValue $expression,
         ITypeReference $type,
@@ -358,6 +370,12 @@ abstract class ExpressionTypeChecker
         }
     }
 
+    /**
+     * @param INullExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     protected static function tryAssertNullAsType(
         INullExpression $expression,
         ITypeReference $type,
@@ -378,6 +396,14 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IPathExpression $expression
+     * @param ITypeReference $type
+     * @param IType $context
+     * @param bool $matchExactly
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     protected static function tryAssertPathAsType(
         IPathExpression $expression,
         ITypeReference $type,
@@ -425,12 +451,20 @@ abstract class ExpressionTypeChecker
         );
     }
 
+    /**
+     * @param IIfExpression $expression
+     * @param ITypeReference $type
+     * @param IType $context
+     * @param bool $matchExactly
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     protected static function tryAssertIfAsType(
         IIfExpression $expression,
         ITypeReference $type,
         IType $context,
         bool $matchExactly,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         $ifTrueErrors  = [];
         $ifFalseErrors = [];
@@ -451,6 +485,14 @@ abstract class ExpressionTypeChecker
         return boolval($success);
     }
 
+    /**
+     * @param IRecordExpression $expression
+     * @param ITypeReference $type
+     * @param IType|null $context
+     * @param bool $matchExactly
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     public static function tryAssertRecordAsType(
         IRecordExpression $expression,
         ITypeReference $type,
@@ -534,12 +576,20 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param ICollectionExpression $expression
+     * @param ITypeReference $type
+     * @param IType|null $context
+     * @param bool $matchExactly
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     public static function tryAssertCollectionAsType(
         ICollectionExpression $expression,
         ITypeReference $type,
         ?IType $context,
         bool $matchExactly,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isCollection()) {
             $discoveredErrors = [
@@ -572,10 +622,16 @@ abstract class ExpressionTypeChecker
         return boolval($success);
     }
 
+    /**
+     * @param IGuidConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertGuidConstantAsType(
         IGuidConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isGuid()) {
             $discoveredErrors = [
@@ -592,10 +648,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IFloatingConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertFloatingConstantAsType(
         IFloatingConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isFloating()) {
             $discoveredErrors = [
@@ -612,10 +674,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IDecimalConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertDecimalConstantAsType(
         IDecimalConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isDecimal()) {
             $discoveredErrors = [
@@ -632,10 +700,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IDateTimeOffsetConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertDateTimeOffsetConstantAsType(
         IDateTimeOffsetConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isDateTimeOffset()) {
             $discoveredErrors = [
@@ -652,10 +726,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IDateTimeConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertDateTimeConstantAsType(
         IDateTimeConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isDateTime()) {
             $discoveredErrors = [
@@ -672,10 +752,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param ITimeConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertTimeConstantAsType(
         ITimeConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isTime()) {
             $discoveredErrors = [
@@ -692,10 +778,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IBooleanConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertBooleanConstantAsType(
         IBooleanConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isBoolean()) {
             $discoveredErrors = [
@@ -712,11 +804,17 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IStringConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertStringConstantAsType(
         IStringConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
-    ) {
+        iterable &$discoveredErrors
+    ): bool {
         if (!$type->isString()) {
             $discoveredErrors = [
                 new EdmError(
@@ -748,10 +846,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IIntegerConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertIntegerConstantAsType(
         IIntegerConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isIntegral()) {
             $discoveredErrors = [
@@ -812,11 +916,18 @@ abstract class ExpressionTypeChecker
         }
     }
 
+    /**
+     * @param IIntegerConstantExpression $expression
+     * @param int $min
+     * @param int $max
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertIntegerConstantInRange(
         IIntegerConstantExpression $expression,
         int $min,
         int $max,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if ($expression->getValue() < $min || $expression->getValue() > $max) {
             $discoveredErrors = [
@@ -833,10 +944,16 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param IBinaryConstantExpression $expression
+     * @param ITypeReference $type
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function tryAssertBinaryConstantAsType(
         IBinaryConstantExpression $expression,
         ITypeReference $type,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$type->isBinary()) {
             $discoveredErrors = [
@@ -869,12 +986,20 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param ITypeReference $expressionType
+     * @param ITypeReference $assertedType
+     * @param ILocation|null $location
+     * @param bool $matchExactly
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function testTypeReferenceMatch(
         ITypeReference $expressionType,
         ITypeReference $assertedType,
         ?ILocation $location,
         bool $matchExactly,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!self::testNullabilityMatch($expressionType, $assertedType, $location, $discoveredErrors)) {
             return false;
@@ -898,12 +1023,20 @@ abstract class ExpressionTypeChecker
         );
     }
 
+    /**
+     * @param IType $expressionType
+     * @param IType $assertedType
+     * @param ILocation|null $location
+     * @param bool $matchExactly
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function testTypeMatch(
         IType $expressionType,
         IType $assertedType,
         ?ILocation $location,
         bool $matchExactly,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if ($matchExactly) {
             if (!EdmElementComparer::isEquivalentTo($expressionType, $assertedType)) {
@@ -967,11 +1100,18 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param ITypeReference $expressionType
+     * @param ITypeReference $assertedType
+     * @param ILocation|null $location
+     * @param iterable<EdmError> $discoveredErrors
+     * @return bool
+     */
     private static function testNullabilityMatch(
         ITypeReference $expressionType,
         ITypeReference $assertedType,
         ?ILocation $location,
-        &$discoveredErrors
+        iterable &$discoveredErrors
     ): bool {
         if (!$assertedType->getNullable() && $expressionType->getNullable()) {
             $discoveredErrors = [
@@ -990,6 +1130,11 @@ abstract class ExpressionTypeChecker
         return true;
     }
 
+    /**
+     * @param PrimitiveTypeKind $startingKind
+     * @param PrimitiveTypeKind $target
+     * @return bool
+     */
     private static function promotesTo(PrimitiveTypeKind $startingKind, PrimitiveTypeKind $target): bool
     {
         $promotionMap = self::getPromotionMap();
