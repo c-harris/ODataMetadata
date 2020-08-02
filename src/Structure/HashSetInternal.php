@@ -6,10 +6,18 @@ namespace AlgoWeb\ODataMetadata\Structure;
 
 use Iterator;
 
+/**
+ * @implements \Iterator<string|int, mixed>
+ */
 class HashSetInternal implements Iterator, \Countable
 {
+    /** @var array<mixed> */
     private $wrappedDictionary = [];
 
+    /**
+     * HashSetInternal constructor.
+     * @param iterable<mixed>|null $wrappedDictionary
+     */
     public function __construct(iterable $wrappedDictionary = null)
     {
         if (null !== $wrappedDictionary) {
@@ -19,6 +27,10 @@ class HashSetInternal implements Iterator, \Countable
         }
     }
 
+    /**
+     * @param mixed $value
+     * @return bool
+     */
     public function add($value): bool
     {
         if (in_array($value, $this->wrappedDictionary)) {
@@ -28,13 +40,22 @@ class HashSetInternal implements Iterator, \Countable
         return true;
     }
 
+    /**
+     * @param mixed $value
+     * @return void
+     */
     public function remove($value): void
     {
         $index = array_search($value, $this->wrappedDictionary);
         unset($this->wrappedDictionary[$index]);
     }
 
-    public function tryGetValue($key, &$output)
+    /**
+     * @param string|int $key
+     * @param mixed|null $output
+     * @return bool
+     */
+    public function tryGetValue($key, &$output): bool
     {
         if (isset($this->wrappedDictionary[$key])) {
             $output = &$this->wrappedDictionary[$key];
@@ -43,6 +64,10 @@ class HashSetInternal implements Iterator, \Countable
         return false;
     }
 
+    /**
+     * @param mixed $item
+     * @return bool
+     */
     public function contains($item): bool
     {
         return in_array($item, $this->wrappedDictionary);
