@@ -203,7 +203,7 @@ trait ModelHelpers
      *
      * @param Version $version the version
      */
-    public function setEdmVersion(Version $version)
+    public function setEdmVersion(Version $version): void
     {
         /** @var IModel $this */
         $this->setAnnotationValue($this, EdmConstants::InternalUri, EdmConstants::EdmVersionAnnotation, $version);
@@ -218,7 +218,7 @@ trait ModelHelpers
      * @param string       $localName     name of the annotation within the namespace
      * @param mixed|object $value         value of the new annotation
      */
-    public function setAnnotationValue(IEdmElement $element, string $namespaceName, string $localName, $value)
+    public function setAnnotationValue(IEdmElement $element, string $namespaceName, string $localName, $value): void
     {
         $this->getDirectValueAnnotationsManager()->setAnnotationValue($element, $namespaceName, $localName, $value);
     }
