@@ -22,6 +22,9 @@ interface IModelHelpers
 {
     public function getAnnotationValue(string $typeof, IEdmElement $element, string $namespaceName = null, string $localName = null);
 
+    /**
+     * @return array<IEdmElement>
+     */
     public function getNamespaceAliases(): array;
 
     /**
@@ -33,7 +36,7 @@ interface IModelHelpers
      * @param string       $localName     name of the annotation within the namespace
      * @param mixed|object $value         value of the new annotation
      */
-    public function setAnnotationValue(IEdmElement $element, string $namespaceName, string $localName, $value);
+    public function setAnnotationValue(IEdmElement $element, string $namespaceName, string $localName, $value): void;
 
     /**
      * Searches for an entity container with the given name in this model and all referenced models and returns null
@@ -74,7 +77,7 @@ interface IModelHelpers
      *
      * @param Version $version the version
      */
-    public function setEdmVersion(Version $version);
+    public function setEdmVersion(Version $version): void;
 
     /**
      * Gets the value for the EDMX version of the model.

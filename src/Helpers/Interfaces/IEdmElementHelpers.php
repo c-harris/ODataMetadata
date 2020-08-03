@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AlgoWeb\ODataMetadata\Helpers\Interfaces;
 
+use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
 use AlgoWeb\ODataMetadata\Interfaces\ILocation;
 
 /**
@@ -19,5 +20,8 @@ interface IEdmElementHelpers
      */
     public function location(): ?ILocation;
 
+    /**
+     * @return iterable<EdmError>
+     */
     public function getErrors(): iterable;
 }
