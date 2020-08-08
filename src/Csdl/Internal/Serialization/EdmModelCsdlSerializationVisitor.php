@@ -1110,12 +1110,13 @@ class EdmModelCsdlSerializationVisitor extends EdmModelVisitor
      * @param  callable              $elementHeaderWriter
      * @param  callable              ...$additionalAttributeWriters
      * @throws NotSupportedException
+     * @return void
      */
     private function beginElement(
         IEdmElement $element,
         callable $elementHeaderWriter,
         callable ...$additionalAttributeWriters
-    ) {
+    ): void {
         $elementHeaderWriter($element);
         if ($additionalAttributeWriters != null) {
             foreach ($additionalAttributeWriters as $action) {

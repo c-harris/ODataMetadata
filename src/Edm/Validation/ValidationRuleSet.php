@@ -153,8 +153,9 @@ class ValidationRuleSet implements \IteratorAggregate
     /**
      * Gets the default validation ruleset for the given version.
      *
-     * @param  Version           $version $versionOrRuleset the EDM version being validated
-     * @return ValidationRuleSet the set of rules to validate that the model conforms to the given version
+     * @param  Version                           $version $versionOrRuleset the EDM version being validated
+     * @return ValidationRuleSet<ValidationRule> the set of rules to validate that the model conforms to
+     *                                           the given version
      */
     public static function getEdmModelRuleSet(Version $version): self
     {
@@ -195,6 +196,9 @@ class ValidationRuleSet implements \IteratorAggregate
         $this->rules[$typeName][] = $rule;
     }
 
+    /**
+     * @return ValidationRuleSet<ValidationRule>
+     */
     private static function getBaseRuleSet(): self
     {
         return new self([
@@ -294,6 +298,9 @@ class ValidationRuleSet implements \IteratorAggregate
         ]);
     }
 
+    /**
+     * @return ValidationRuleSet<ValidationRule>
+     */
     private static function getV1RuleSet(): self
     {
         return new self(
@@ -320,6 +327,9 @@ class ValidationRuleSet implements \IteratorAggregate
         );
     }
 
+    /**
+     * @return ValidationRuleSet<ValidationRule>
+     */
     private static function getV1point1RuleSet(): self
     {
         $filteredBase = [];
@@ -354,6 +364,9 @@ class ValidationRuleSet implements \IteratorAggregate
         );
     }
 
+    /**
+     * @return ValidationRuleSet<ValidationRule>
+     */
     private static function getV1point2RuleSet(): self
     {
         $filteredBase = [];
@@ -387,6 +400,9 @@ class ValidationRuleSet implements \IteratorAggregate
         );
     }
 
+    /**
+     * @return ValidationRuleSet<ValidationRule>
+     */
     private static function getV2RuleSet(): self
     {
         return new self(
@@ -409,6 +425,9 @@ class ValidationRuleSet implements \IteratorAggregate
         );
     }
 
+    /**
+     * @return ValidationRuleSet<ValidationRule>
+     */
     private static function getV3RuleSet(): self
     {
         return new self(
@@ -421,7 +440,7 @@ class ValidationRuleSet implements \IteratorAggregate
     }
     /**
      * Retrieve an external iterator.
-     * @return Traversable An instance of an object implementing <b>Iterator</b> or
+     * @return Traversable<ValidationRule> An instance of an object implementing <b>Iterator</b> or
      */
     public function getIterator(): Traversable
     {

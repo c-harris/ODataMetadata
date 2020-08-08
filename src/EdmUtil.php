@@ -43,6 +43,11 @@ class EdmUtil
         return null === $value || '' === trim($value);
     }
 
+    /**
+     * @param mixed|null $value
+     * @param string $parameterName
+     * @return mixed
+     */
     public static function checkArgumentNull($value, string $parameterName)
     {
         if (null === $value) {

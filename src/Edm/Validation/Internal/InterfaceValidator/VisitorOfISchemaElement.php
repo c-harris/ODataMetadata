@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 
+use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
 use AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Enums\SchemaElementKind;
 use AlgoWeb\ODataMetadata\Interfaces\IEntityContainer;
@@ -24,6 +25,12 @@ final class VisitorOfISchemaElement extends VisitorOfT
         $this->lookup[SchemaElementKind::EntityContainer()->getKey()] = IEntityContainer::class;
     }
 
+    /**
+     * @param $item
+     * @param array $followup
+     * @param array $references
+     * @return iterable<EdmError>
+     */
     protected function visitT($item, array &$followup, array &$references): iterable
     {
         assert($item instanceof ISchemaElement);

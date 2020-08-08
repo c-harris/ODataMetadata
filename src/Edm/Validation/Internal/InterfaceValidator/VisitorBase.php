@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 
+use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
+
 /**
  * The general shape of a validation visitor is
  *      Visit(IXYZInterface $item, array $followup, array $references): EdmError[]
@@ -13,5 +15,11 @@ namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
  */
 abstract class VisitorBase
 {
+    /**
+     * @param $item
+     * @param array $followup
+     * @param array $references
+     * @return iterable<EdmError>
+     */
     abstract public function visit($item, array &$followup, array &$references): iterable;
 }

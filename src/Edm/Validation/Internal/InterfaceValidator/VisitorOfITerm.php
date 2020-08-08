@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 
+use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
 use AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Enums\TermKind;
 use AlgoWeb\ODataMetadata\Interfaces\ISchemaType;
@@ -13,6 +14,12 @@ use AlgoWeb\ODataMetadata\Interfaces\IValueTerm;
 
 class VisitorOfITerm extends VisitorOfT
 {
+    /**
+     * @param $term
+     * @param array $followup
+     * @param array $references
+     * @return iterable<EdmError>
+     */
     protected function visitT($term, array &$followup, array &$references): iterable
     {
         assert($term instanceof ITerm);

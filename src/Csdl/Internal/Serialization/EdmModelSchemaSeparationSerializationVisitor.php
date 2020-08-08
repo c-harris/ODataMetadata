@@ -36,7 +36,9 @@ class EdmModelSchemaSeparationSerializationVisitor extends EdmModelVisitor
      */
     private $activeSchema;
 
-
+    /**
+     * @return EdmSchema[]
+     */
     public function getSchemas(): array
     {
         if (!$this->visitCompleted) {

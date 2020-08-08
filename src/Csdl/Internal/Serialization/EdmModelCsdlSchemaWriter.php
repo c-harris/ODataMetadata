@@ -782,7 +782,7 @@ class EdmModelCsdlSchemaWriter implements IEdmModelCsdlSchemaWriter
         $this->xmlWriter->endElement();
     }
 
-    public function writeReturnTypeElementHeader()
+    public function writeReturnTypeElementHeader(): void
     {
         $this->xmlWriter->startElement(CsdlConstants::Element_ReturnType);
     }
@@ -1080,8 +1080,9 @@ class EdmModelCsdlSchemaWriter implements IEdmModelCsdlSchemaWriter
     /**
      * @param  IRecordExpression    $expression
      * @throws \ReflectionException
+     * @return void
      */
-    public function writeRecordExpressionElementHeader(IRecordExpression $expression)
+    public function writeRecordExpressionElementHeader(IRecordExpression $expression): void
     {
         $this->xmlWriter->startElement(CsdlConstants::Element_Record);
         $this->writeOptionalAttribute(

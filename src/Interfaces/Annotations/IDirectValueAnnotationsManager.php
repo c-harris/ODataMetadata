@@ -57,7 +57,7 @@ interface IDirectValueAnnotationsManager
      * name exists for the given element.
      *
      * @param  IDirectValueAnnotationBinding[] $annotations The set of requested annotations
-     * @return array                           Returns values that correspond to the provided annotations. A value is null if no annotation with
+     * @return array<mixed>                    Returns values that correspond to the provided annotations. A value is null if no annotation with
      *                                                     the given name exists for the given element.
      */
     public function getAnnotationValues(array $annotations): ?iterable;

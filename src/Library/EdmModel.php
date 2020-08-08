@@ -117,8 +117,9 @@ class EdmModel extends EdmModelBase
      * Adds a vocabulary annotation to this model.
      *
      * @param IVocabularyAnnotation $annotation the annotation to be added
+     * @return void
      */
-    public function addVocabularyAnnotation(IVocabularyAnnotation $annotation)
+    public function addVocabularyAnnotation(IVocabularyAnnotation $annotation): void
     {
         if (null === $annotation->getTarget()) {
             throw new InvalidOperationException(StringConst::Constructable_VocabularyAnnotationMustHaveTarget());

@@ -4,11 +4,18 @@ declare(strict_types=1);
 
 namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 
+use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
 use AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Interfaces\Annotations\ITypeAnnotation;
 
 class VisitorOfITypeAnnotation extends VisitorOfT
 {
+    /**
+     * @param $annotation
+     * @param array $followup
+     * @param array $references
+     * @return iterable<EdmError>
+     */
     protected function visitT($annotation, array &$followup, array &$references): iterable
     {
         assert($annotation instanceof ITypeAnnotation);

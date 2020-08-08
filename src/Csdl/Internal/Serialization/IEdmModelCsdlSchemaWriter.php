@@ -123,7 +123,7 @@ interface IEdmModelCsdlSchemaWriter
 
     public function writeDefiningExpressionElement(string $expression): void;
 
-    public function writeReturnTypeElementHeader();
+    public function writeReturnTypeElementHeader(): void;
 
     public function writeFunctionImportElementHeader(IFunctionImport $functionImport): void;
 
@@ -141,7 +141,7 @@ interface IEdmModelCsdlSchemaWriter
 
     public function writePropertyValueElementHeader(IPropertyValueBinding $value, bool $isInline): void;
 
-    public function writeRecordExpressionElementHeader(IRecordExpression $expression);
+    public function writeRecordExpressionElementHeader(IRecordExpression $expression): void;
 
     public function writePropertyConstructorElementHeader(IPropertyConstructor $constructor, bool $isInline): void;
 

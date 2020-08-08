@@ -15,5 +15,8 @@ use AlgoWeb\ODataMetadata\Interfaces\Values\IBinaryValue;
  */
 interface IBinaryConstantExpression extends IExpression, IBinaryValue
 {
+    /**
+     * @return string[] gets the definition of this binary value
+     */
     public function getValue(): array;
 }

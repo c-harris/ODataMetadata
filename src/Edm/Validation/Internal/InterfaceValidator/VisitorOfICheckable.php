@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 
+use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
 use AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Interfaces\ICheckable;
 
@@ -13,7 +14,7 @@ final class VisitorOfICheckable extends VisitorOfT
      * @param  ICheckable $item
      * @param  array      $followup
      * @param  array      $references
-     * @return iterable
+     * @return iterable<EdmError>
      */
     protected function visitT($item, array &$followup, array &$references): iterable
     {

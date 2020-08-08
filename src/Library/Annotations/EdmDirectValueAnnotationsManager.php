@@ -125,7 +125,7 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
      * @param  IEdmElement $element       the annotated element
      * @param  string      $namespaceName namespace that the annotation belongs to
      * @param  string      $localName     local name of the annotation
-     * @return mixed       Returns the annotation value that corresponds to the provided name. Returns null if no
+     * @return mixed|null  Returns the annotation value that corresponds to the provided name. Returns null if no
      *                                   annotation with the given name exists for the given element.
      */
     public function getAnnotationValue(IEdmElement $element, string $namespaceName, string $localName)
@@ -157,7 +157,7 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
      * name exists for the given element.
      *
      * @param  IDirectValueAnnotationBinding[] $annotations The set of requested annotations
-     * @return array                           Returns values that correspond to the provided annotations. A value is null if no annotation with
+     * @return array<mixed>                    Returns values that correspond to the provided annotations. A value is null if no annotation with
      *                                                     the given name exists for the given element.
      */
     public function getAnnotationValues(array $annotations): ?iterable
@@ -175,8 +175,9 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
     /**
      * Retrieves the annotations that are directly attached to an element.
      *
-     * @param  IEdmElement   $element the element in question
-     * @return iterable|null the annotations that are directly attached to an element (outside the control of the manager)
+     * @param  IEdmElement          $element the element in question
+     * @return iterable<mixed>|null the annotations that are directly attached to an element
+     *                              (outside the control of the manager)
      */
     protected function getAttachedAnnotations(IEdmElement $element): ?iterable
     {
@@ -197,8 +198,16 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
         return $annotationsDictionary->offsetExists($element) ? $annotationsDictionary->offsetGet($element) : null;
     }
 
-    private static function removeTransientAnnotation(&$transientAnnotations, $namespaceName, string $localName)
-    {
+    /**
+     * @param $transientAnnotations
+     * @param string $namespaceName
+     * @param string $localName
+     */
+    private static function removeTransientAnnotation(
+        &$transientAnnotations,
+        string $namespaceName,
+        string $localName
+    ): void {
         if (null !== $transientAnnotations) {
             $singleAnnotation = $transientAnnotations;
             if ($singleAnnotation instanceof IDirectValueAnnotation) {
@@ -229,6 +238,11 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
             }
         }
     }
+
+    /**
+     * @param $transientAnnotations
+     * @return iterable<mixed>
+     */
     private static function transientAnnotations($transientAnnotations): iterable
     {
         if ($transientAnnotations == null) {
