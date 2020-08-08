@@ -28,7 +28,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class VocabularyAnnotationInaccessibleTarget extends VocabularyAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof IVocabularyAnnotation);
         $target      = $annotation->getTarget();

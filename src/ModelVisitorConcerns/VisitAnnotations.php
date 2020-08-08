@@ -43,6 +43,9 @@ trait VisitAnnotations
         $this->processImmediateValueAnnotation($annotation);
     }
 
+    /**
+     * @param IVocabularyAnnotation $annotation
+     */
     public function visitVocabularyAnnotation(IVocabularyAnnotation $annotation): void
     {
         /** @var EdmModelVisitor $this */

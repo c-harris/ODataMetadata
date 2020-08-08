@@ -116,7 +116,7 @@ class EdmSchema
         return $this;
     }
 
-    public function addVocabularyAnnotation(IVocabularyAnnotation $annotation)
+    public function addVocabularyAnnotation(IVocabularyAnnotation $annotation): self
     {
         if (!array_key_exists($annotation->targetString(), $this->annotations)) {
             $this->annotations[$annotation->targetString()] = [];

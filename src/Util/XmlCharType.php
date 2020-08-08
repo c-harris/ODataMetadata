@@ -298,6 +298,9 @@ class XmlCharType
      */
     protected static $s_CharProperties = null;
 
+    /**
+     * @var resource|null
+     */
     protected static $m_CharProperties = null;
 
     public static function initInstance(): void
@@ -306,11 +309,19 @@ class XmlCharType
             return;
         }
         if (file_exists('XmlCharType.bin')) {
+            $loaded                 = false;
             $file                   = fopen('XmlCharType.bin', 'rb');
-            self::$m_CharProperties = fopen('php://memory', 'w+b');
-            stream_copy_to_stream($file, self::$m_CharProperties);
-            fclose($file);
-            return;
+            if (is_resource($file)) {
+                self::$m_CharProperties = fopen('php://memory', 'w+b');
+                if (is_resource(self::$m_CharProperties)) {
+                    stream_copy_to_stream($file, self::$m_CharProperties);
+                    $loaded = true;
+                }
+                fclose($file);
+                if ($loaded) {
+                    return;
+                }
+            }
         }
 
         $chProps                = [];
@@ -341,7 +352,8 @@ class XmlCharType
             }
         }
     }
-    protected static function generateFile()
+
+    protected static function generateFile(): void
     {
         $fileArray = [];
         for ($i = 0; $i < 65536; $i++) {
@@ -357,17 +369,27 @@ class XmlCharType
     }
     #endregion
 
+    /**
+     * @var XmlCharType|null
+     */
     private static $instance = null;
 
-    public static function instance()
+    public static function instance(): XmlCharType
     {
         self::initInstance();
         $umArray                                  = new UnmanagedByteArray(self::$m_CharProperties);
         return self::$instance ?? self::$instance = new self($umArray);
     }
 
+    /**
+     * @var array<mixed>|\ArrayAccess<mixed,mixed>|null
+     */
     private $charProperties = null;
 
+    /**
+     * XmlCharType constructor.
+     * @param array<mixed>|\ArrayAccess<mixed,mixed>|mixed $charProperties
+     */
     public function __construct(&$charProperties)
     {
         assert(is_array($charProperties) || $charProperties instanceof \ArrayAccess);

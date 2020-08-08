@@ -143,8 +143,18 @@ class EdmxWriter
     {
         $this->writer->startElementNs(CsdlConstants::Prefix_Edmx, CsdlConstants::Element_Edmx, $this->getEdmxNamespace());
         $this->writer->writeAttribute(CsdlConstants::Prefix_Xml_Namespace, CsdlConstants::versionToEdmNamespace($this->edmxVersion));
-        $this->writer->writeAttributeNs(CsdlConstants::Prefix_Xml_Namespace, CsdlConstants::Prefix_ODataMetadata, null, CsdlConstants::ODataMetadataNamespace);
-        $this->writer->writeAttributeNs(CsdlConstants::Prefix_Xml_Namespace, CsdlConstants::Prefix_Annotations, null, CsdlConstants::AnnotationNamespace);
+        $this->writer->writeAttributeNs(
+            CsdlConstants::Prefix_Xml_Namespace,
+            CsdlConstants::Prefix_ODataMetadata,
+            '',
+            CsdlConstants::ODataMetadataNamespace
+        );
+        $this->writer->writeAttributeNs(
+            CsdlConstants::Prefix_Xml_Namespace,
+            CsdlConstants::Prefix_Annotations,
+            '',
+            CsdlConstants::AnnotationNamespace
+        );
 
         $this->writer->writeAttribute(CsdlConstants::Attribute_Version, /*Version::v1()->toString());*/ $this->edmxVersion->toString());
     }

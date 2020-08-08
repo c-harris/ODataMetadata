@@ -13,6 +13,7 @@ use AlgoWeb\ODataMetadata\Library\Values\EdmValue;
 class EdmNullExpression extends EdmValue implements INullExpression
 {
     use ValueHelpers;
+    /** @var self|null */
     private static $instance = null;
 
     /**

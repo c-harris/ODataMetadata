@@ -22,7 +22,7 @@ use AlgoWeb\ODataMetadata\Util\XmlConvert;
  */
 class DirectValueAnnotationHasXmlSerializableName extends DirectValueAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof IDirectValueAnnotation);
         $name = $annotation->getName();

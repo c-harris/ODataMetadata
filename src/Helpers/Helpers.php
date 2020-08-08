@@ -7,6 +7,7 @@ namespace AlgoWeb\ODataMetadata\Helpers;
 use AlgoWeb\ODataMetadata\CsdlConstants;
 use AlgoWeb\ODataMetadata\EdmConstants;
 use AlgoWeb\ODataMetadata\Exception\InvalidOperationException;
+use AlgoWeb\ODataMetadata\Interfaces\IEdmElement;
 use AlgoWeb\ODataMetadata\Interfaces\IEntityType;
 use AlgoWeb\ODataMetadata\Interfaces\IModel;
 use AlgoWeb\ODataMetadata\Interfaces\INavigationProperty;
@@ -21,10 +22,23 @@ abstract class Helpers
 
     public static function getPathSegmentEntityType(ITypeReference $segmentType): IEntityType
     {
-        return ($segmentType->isCollection() ? $segmentType->asCollection()->elementType() : $segmentType)->asEntity()->entityDefinition();
+        return ($segmentType->isCollection() ? $segmentType->asCollection()->elementType() : $segmentType)
+            ->asEntity()->entityDefinition();
     }
-    public static function findAcrossModels(IModel $model, string $qualifiedName, callable $finder, $ambiguousCreator)
-    {
+
+    /**
+     * @param IModel $model
+     * @param string $qualifiedName
+     * @param callable $finder
+     * @param callable $ambiguousCreator
+     * @return IEdmElement|null
+     */
+    public static function findAcrossModels(
+        IModel $model,
+        string $qualifiedName,
+        callable $finder,
+        callable $ambiguousCreator
+    ): ?IEdmElement {
         $candidate = $finder($model, $qualifiedName);
 
         foreach ($model->getReferencedModels() as $reference) {
@@ -51,7 +65,7 @@ abstract class Helpers
             } elseif ('string' === $typeOf) {
                 $isSpecificAnnotation = is_string($annotation);
             } elseif ('?string' === $typeOf) {
-                $isSpecificAnnotation = (null !== $annotation) || is_string($annotation);
+                $isSpecificAnnotation = is_string($annotation);
             } else {
                 $isSpecificAnnotation = is_a($annotation, $typeOf);
             }

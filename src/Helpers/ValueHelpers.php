@@ -16,6 +16,7 @@ use AlgoWeb\ODataMetadata\EdmConstants;
 use AlgoWeb\ODataMetadata\Exception\InvalidOperationException;
 use AlgoWeb\ODataMetadata\Interfaces\IEdmElement;
 use AlgoWeb\ODataMetadata\Interfaces\IModel;
+use AlgoWeb\ODataMetadata\Interfaces\Values\IValue;
 
 trait ValueHelpers
 {
@@ -26,9 +27,9 @@ trait ValueHelpers
      */
     public function setIsSerializedAsElement(IModel $model, bool $isSerializedAsElement): void
     {
-        /** @var IEdmElement $self */
+        /** @var IValue $self */
         $self = $this;
-        assert($self instanceof IEdmElement);
+        assert($self instanceof IValue);
         if ($isSerializedAsElement) {
             $error = null;
             if (!ValidationHelper::validateValueCanBeWrittenAsXmlElementAnnotation(

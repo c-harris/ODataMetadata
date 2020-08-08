@@ -18,10 +18,11 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class RowTypeMustContainProperties extends RowTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $rowType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $rowType): void
     {
         assert($rowType instanceof IRowType);
-        if (count($rowType->properties()) === 0) {
+        $properties = iterable_to_array($rowType->properties());
+        if (count($properties) === 0) {
             EdmUtil::checkArgumentNull($rowType->location(), 'rowType->Location');
             $context->addError(
                 $rowType->location(),

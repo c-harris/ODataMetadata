@@ -45,7 +45,7 @@ class EdmEntityContainer extends EdmElement implements IEntityContainer
      */
     private $entitySetDictionary = [];
     /**
-     * @var array<string, object>
+     * @var array<string, object|object[]>
      */
     private $functionImportDictionary = [];
     /**

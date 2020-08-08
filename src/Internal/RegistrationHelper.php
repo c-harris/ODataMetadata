@@ -37,14 +37,15 @@ abstract class RegistrationHelper
      * @param array<string, IValueTerm>       $valueTermDictionary
      * @param array<string, object>           $functionGroupDictionary
      * @param array<string, IEntityContainer> $containerDictionary
+     * @return void
      */
     public static function registerSchemaElement(
         ISchemaElement $element,
-        array $schemaTypeDictionary,
-        array $valueTermDictionary,
-        array $functionGroupDictionary,
-        array $containerDictionary
-    ) {
+        array &$schemaTypeDictionary,
+        array &$valueTermDictionary,
+        array &$functionGroupDictionary,
+        array &$containerDictionary
+    ): void {
         $qualifiedName = $element->fullName();
         switch ($element->getSchemaElementKind()) {
             case SchemaElementKind::Function():
@@ -100,8 +101,9 @@ abstract class RegistrationHelper
      * @param IProperty                $element
      * @param string                   $name
      * @param array<string, IProperty> $dictionary
+     * @return void
      */
-    public static function registerProperty(IProperty $element, string $name, array $dictionary)
+    public static function registerProperty(IProperty $element, string $name, array $dictionary): void
     {
         self::addElement($element, $name, $dictionary, [self::class, 'createAmbiguousPropertyBinding']);
     }
@@ -112,9 +114,14 @@ abstract class RegistrationHelper
      * @param string                                        $name
      * @param array<string, IEdmElement>                    $elementDictionary
      * @param callable(IEdmElement,IEdmElement):IEdmElement $ambiguityCreator
+     * @return void
      */
-    public static function addElement($element, string $name, array &$elementDictionary, callable $ambiguityCreator)
-    {
+    public static function addElement(
+        $element,
+        string $name,
+        array &$elementDictionary,
+        callable $ambiguityCreator
+    ): void {
         if (array_key_exists($name, $elementDictionary)) {
             $preexisting              = $elementDictionary[$name];
             $elementDictionary[$name] = $ambiguityCreator($preexisting, $element);
@@ -124,11 +131,12 @@ abstract class RegistrationHelper
     }
 
     /**
-     * @param IFunctionBase         $function
-     * @param string                $name
-     * @param array<string, object> $functionListDictionary
+     * @param IFunctionBase                  $function
+     * @param string                         $name
+     * @param array<string, object|object[]> $functionListDictionary
+     * @return void
      */
-    public static function addFunction(IFunctionBase $function, string $name, array &$functionListDictionary)
+    public static function addFunction(IFunctionBase $function, string $name, array &$functionListDictionary): void
     {
         if (array_key_exists($name, $functionListDictionary)) {
             $functionList = $functionListDictionary[$name];

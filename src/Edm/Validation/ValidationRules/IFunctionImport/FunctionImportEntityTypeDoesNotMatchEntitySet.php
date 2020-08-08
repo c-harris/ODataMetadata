@@ -22,7 +22,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class FunctionImportEntityTypeDoesNotMatchEntitySet extends FunctionImportRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport)
+    public function __invoke(ValidationContext $context, ?IEdmElement $functionImport): void
     {
         assert($functionImport instanceof IFunctionImport);
         EdmUtil::checkArgumentNull($functionImport->location(), 'functionImport->Location');

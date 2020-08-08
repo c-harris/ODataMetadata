@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace AlgoWeb\ODataMetadata\Library\Internal\Bad;
 
+use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
 use AlgoWeb\ODataMetadata\Enums\ContainerElementKind;
 use AlgoWeb\ODataMetadata\Interfaces\IEntityContainer;
 use AlgoWeb\ODataMetadata\Interfaces\IEntitySet;
@@ -31,7 +32,7 @@ class BadEntitySet extends BadElement implements IEntitySet
      * BadEntitySet constructor.
      * @param string|null      $name
      * @param IEntityContainer $container
-     * @param array            $errors
+     * @param EdmError[]       $errors
      */
     public function __construct(?string $name, IEntityContainer $container, array $errors)
     {

@@ -8,7 +8,9 @@ use AlgoWeb\ODataMetadata\Interfaces\IDocumentation;
 
 class EdmDocumentation implements IDocumentation
 {
+    /** @var string|null */
     private $summary;
+    /** @var string|null */
     private $description;
 
     /**

@@ -16,13 +16,13 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class RecordExpressionPropertiesMatchType extends RecordExpressionRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $expression)
+    public function __invoke(ValidationContext $context, ?IEdmElement $expression): void
     {
         assert($expression instanceof IRecordExpression);
         if (null !== $expression->getDeclaredType() &&
             !$context->checkIsBad($expression) &&
             !$context->checkIsBad($expression->getDeclaredType())) {
-            $discoveredErrors = null;
+            $discoveredErrors = [];
             ExpressionTypeChecker::tryAssertRecordAsType(
                 $expression,
                 $expression->getDeclaredType(),

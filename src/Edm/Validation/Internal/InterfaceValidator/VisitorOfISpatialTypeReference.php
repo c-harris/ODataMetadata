@@ -15,7 +15,7 @@ class VisitorOfISpatialTypeReference extends VisitorOfT
         assert($typeRef instanceof ISpatialTypeReference);
         $primitive = $typeRef->getDefinition();
         assert($primitive instanceof IPrimitiveType);
-        return null !== $typeRef->getDefinition() && !$primitive->getPrimitiveKind()->IsSpatial()
+        return null !== $typeRef->getDefinition() && !$primitive->getPrimitiveKind()->isSpatial()
             ? [ InterfaceValidator::createTypeRefInterfaceTypeKindValueMismatchError($typeRef) ] : null;
     }
 

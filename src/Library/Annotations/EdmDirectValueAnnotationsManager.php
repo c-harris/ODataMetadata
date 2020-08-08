@@ -34,11 +34,6 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
     private $annotationsDictionary;
 
     /**
-     * @var array elements for which normal comparison failed to produce a valid result, arbitrarily ordered to enable stable comparisons
-     */
-    private $unsortedElements = [];
-
-    /**
      * Initializes a new instance of the EdmDirectValueAnnotationsManager class.
      */
     public function __construct()
@@ -125,7 +120,7 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
      * @param  IEdmElement $element       the annotated element
      * @param  string      $namespaceName namespace that the annotation belongs to
      * @param  string      $localName     local name of the annotation
-     * @return mixed       Returns the annotation value that corresponds to the provided name. Returns null if no
+     * @return mixed|null  Returns the annotation value that corresponds to the provided name. Returns null if no
      *                                   annotation with the given name exists for the given element.
      */
     public function getAnnotationValue(IEdmElement $element, string $namespaceName, string $localName)
@@ -157,7 +152,7 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
      * name exists for the given element.
      *
      * @param  IDirectValueAnnotationBinding[] $annotations The set of requested annotations
-     * @return array                           Returns values that correspond to the provided annotations. A value is null if no annotation with
+     * @return array<mixed>                    Returns values that correspond to the provided annotations. A value is null if no annotation with
      *                                                     the given name exists for the given element.
      */
     public function getAnnotationValues(array $annotations): ?iterable
@@ -175,8 +170,9 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
     /**
      * Retrieves the annotations that are directly attached to an element.
      *
-     * @param  IEdmElement   $element the element in question
-     * @return iterable|null the annotations that are directly attached to an element (outside the control of the manager)
+     * @param  IEdmElement          $element the element in question
+     * @return iterable<mixed>|null the annotations that are directly attached to an element
+     *                              (outside the control of the manager)
      */
     protected function getAttachedAnnotations(IEdmElement $element): ?iterable
     {
@@ -197,8 +193,16 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
         return $annotationsDictionary->offsetExists($element) ? $annotationsDictionary->offsetGet($element) : null;
     }
 
-    private static function removeTransientAnnotation(&$transientAnnotations, $namespaceName, string $localName)
-    {
+    /**
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @param string $namespaceName
+     * @param string $localName
+     */
+    private static function removeTransientAnnotation(
+        &$transientAnnotations,
+        string $namespaceName,
+        string $localName
+    ): void {
         if (null !== $transientAnnotations) {
             $singleAnnotation = $transientAnnotations;
             if ($singleAnnotation instanceof IDirectValueAnnotation) {
@@ -229,6 +233,11 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
             }
         }
     }
+
+    /**
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @return iterable<mixed>
+     */
     private static function transientAnnotations($transientAnnotations): iterable
     {
         if ($transientAnnotations == null) {
@@ -254,11 +263,24 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
         }
     }
 
+    /**
+     * @param string $namespaceName
+     * @param string $localName
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @return bool
+     */
     private static function isDead(string $namespaceName, string $localName, $transientAnnotations): bool
     {
         return self::findTransientAnnotation($transientAnnotations, $namespaceName, $localName) != null;
     }
 
+    /**
+     * @param iterable<mixed>|null $immutableAnnotations
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @param string $namespaceName
+     * @param string $localName
+     * @param mixed|null $value
+     */
     private static function setAnnotation(?iterable $immutableAnnotations, &$transientAnnotations, string $namespaceName, string $localName, $value): void
     {
         $needTombstone = false;
@@ -324,7 +346,12 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
         $transientAnnotations = $annotationsList;
     }
 
-
+    /**
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @param string $namespaceName
+     * @param string $localName
+     * @return IDirectValueAnnotation|null
+     */
     private static function findTransientAnnotation($transientAnnotations, string $namespaceName, string $localName): ?IDirectValueAnnotation
     {
         if (null !== $transientAnnotations) {

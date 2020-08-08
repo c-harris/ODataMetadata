@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StringTypeReferenceStringUnboundedNotValidForMaxLength extends StringTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IStringTypeReference);
         if (null !== $type->getMaxLength() && $type->isUnbounded()) {

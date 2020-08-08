@@ -26,18 +26,7 @@ class VisitorOfIPropertyReferenceExpression extends VisitorOfT
             );
         }
 
-        // TODO: Whether if condition is always true is ambiguous
-        if (null !== $expression->getReferencedProperty()) {
-            $references[] = $expression->getReferencedProperty();
-        } else {
-            InterfaceValidator::collectErrors(
-                InterfaceValidator::createPropertyMustNotBeNullError(
-                    $expression,
-                    'ReferencedProperty'
-                ),
-                $errors
-            );
-        }
+        $references[] = $expression->getReferencedProperty();
 
         return $errors;
     }

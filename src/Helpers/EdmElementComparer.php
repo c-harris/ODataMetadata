@@ -245,7 +245,7 @@ abstract class EdmElementComparer
             PrimitiveTypeKind::DateTime(),
             PrimitiveTypeKind::DateTimeOffset()
         ) ||
-            $thisTypePrimitiveKind->IsSpatial()) {
+            $thisTypePrimitiveKind->isSpatial()) {
             return $thisType->getNullable() === $otherType->getNullable() &&
                 self::isEquivalentTo($thisType->getDefinition(), $otherType->getDefinition());
         }

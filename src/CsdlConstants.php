@@ -280,11 +280,14 @@ class CsdlConstants
     public const  Element_Runtime          = 'Runtime';
     public const  Element_DataServices     = 'DataServices';
 
-
+    /**
+     * @return Version[]
+     */
     public static function getSupportedVersions(): array
     {
         return [Version::v1(), Version::v1point1(), Version::v2(), Version::v3()];
     }
+
     public static function versionToEdmxNamespace(Version $version): ?string
     {
         switch ($version->getMajor()) {
@@ -313,6 +316,11 @@ class CsdlConstants
         }
         return null;
     }
+
+    /**
+     * @param Version $edm
+     * @return Version
+     */
     public static function edmToEdmxVersions(Version $edm)
     {
         switch ($edm) {

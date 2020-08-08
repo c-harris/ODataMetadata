@@ -23,8 +23,11 @@ class BadEntityContainer extends BadElement implements IEntityContainer
     use EntityContainerHelpers;
     use SchemaElementHelpers;
 
+    /** @var string */
     private $namespaceName;
+    /** @var string */
     private $name;
+
     public function __construct(?string $qualifiedName, array $errors)
     {
         parent::__construct($errors);

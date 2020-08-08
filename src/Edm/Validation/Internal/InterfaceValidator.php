@@ -33,6 +33,9 @@ class InterfaceValidator
 
     private static $concreteTypeInterfaceVisitors = [];
 
+    /**
+     * @return iterable<string, VisitorBase>|array<string, VisitorBase>
+     */
     private static function getInterfaceVisitors(): iterable
     {
         return self::$interfaceVisitors ?? self::$interfaceVisitors = self::createInterfaceVisitorsMap();
@@ -139,7 +142,7 @@ class InterfaceValidator
     }
 
     /**
-     * @return iterable|array<string, VisitorBase>
+     * @return iterable<string, VisitorBase>|array<string, VisitorBase>
      */
     private static function createInterfaceVisitorsMap(): iterable
     {
@@ -183,6 +186,10 @@ class InterfaceValidator
         return $visitors;
     }
 
+    /**
+     * @param string $objectType
+     * @return iterable<string, VisitorBase>|array<string, VisitorBase>
+     */
     private function getInterfaceVisitorsForObject(string $objectType): iterable
     {
         $visitors = [];

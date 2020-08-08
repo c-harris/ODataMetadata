@@ -37,10 +37,13 @@ trait ModelHelpers
 {
     use ModelHelpersVocabularyAnnotation;
 
+    /**
+     * @return array<mixed>
+     */
     public function getNamespaceAliases(): array
     {
         /** @var IModel $this */
-        /** @var array|null $result */
+        /** @var array<mixed>|null $result */
         $result = $this->getAnnotationValue(
             'array',
             $this,
@@ -54,6 +57,13 @@ trait ModelHelpers
     // process. Otherwise, changes to the dictionary during serialization would result in an invalid or inconsistent
     // output.
 
+    /**
+     * @param string $typeof
+     * @param IEdmElement $element
+     * @param string|null $namespaceName
+     * @param string|null $localName
+     * @return mixed|null
+     */
     public function getAnnotationValue(
         string $typeof,
         IEdmElement $element,
@@ -92,6 +102,12 @@ trait ModelHelpers
         );
     }
 
+    /**
+     * @param string $qualifiedName
+     * @param callable $finder
+     * @param callable $ambiguousCreator
+     * @return mixed
+     */
     private function findAcrossModels(string $qualifiedName, callable $finder, callable $ambiguousCreator)
     {
         $model = $this;
@@ -203,7 +219,7 @@ trait ModelHelpers
      *
      * @param Version $version the version
      */
-    public function setEdmVersion(Version $version)
+    public function setEdmVersion(Version $version): void
     {
         /** @var IModel $this */
         $this->setAnnotationValue($this, EdmConstants::InternalUri, EdmConstants::EdmVersionAnnotation, $version);
@@ -218,7 +234,7 @@ trait ModelHelpers
      * @param string       $localName     name of the annotation within the namespace
      * @param mixed|object $value         value of the new annotation
      */
-    public function setAnnotationValue(IEdmElement $element, string $namespaceName, string $localName, $value)
+    public function setAnnotationValue(IEdmElement $element, string $namespaceName, string $localName, $value): void
     {
         $this->getDirectValueAnnotationsManager()->setAnnotationValue($element, $namespaceName, $localName, $value);
     }
@@ -307,7 +323,7 @@ trait ModelHelpers
     /**
      * Sets an annotation on the IEdmModel to notify the serializer of preferred prefix mappings for xml namespaces.
      *
-     * @param array $mappings xmlNamespaceManage containing mappings between namespace prefixes and xml namespaces
+     * @param array<mixed> $mappings xmlNamespaceManage containing mappings between namespace prefixes and xml namespaces
      */
     public function setNamespacePrefixMappings(array $mappings): void
     {
@@ -323,12 +339,12 @@ trait ModelHelpers
     /**
      * Gets the preferred prefix mappings for xml namespaces from an IEdmModel.
      *
-     * @return array namespace prefixes that exist on the model
+     * @return array<mixed> namespace prefixes that exist on the model
      */
     public function getNamespacePrefixMappings(): array
     {
         /** @var IModel $this */
-        /** @var array|null $result */
+        /** @var array<mixed>|null $result */
         $result = $this->getAnnotationValue(
             'array',
             $this,
@@ -405,7 +421,7 @@ trait ModelHelpers
             EdmConstants::InternalUri,
             CsdlConstants::AssociationNamespaceAnnotation
         );
-        if ($associationNamespace == null) {
+        if (null === $associationNamespace) {
             $associationNamespace = $property->getPrimary()->declaringEntityType()->getNamespace();
         }
 
@@ -430,10 +446,11 @@ trait ModelHelpers
             EdmConstants::InternalUri,
             CsdlConstants::AssociationNameAnnotation
         );
-        if ($associationName == null) {
+        if (null === $associationName) {
             $fromPrincipal = $property->getPrimary();
             $toPrincipal   = $fromPrincipal->getPartner();
 
+            /** @var string $associationName */
             $associationName =
                 Helpers::getQualifiedAndEscapedPropertyName($toPrincipal) .
                 Helpers::AssociationNameEscapeChar .
@@ -446,13 +463,17 @@ trait ModelHelpers
     public function findType(string $qualifiedName): ?ISchemaType
     {
         $findTypeMethod = self::findTypec();
-        /** @var IModel $this */
-        return Helpers::findAcrossModels(
-            $this,
+        /** @var IModel $self */
+        $self = $this;
+        /** @var ISchemaType|null $result */
+        $result = Helpers::findAcrossModels(
+            $self,
             $qualifiedName,
             $findTypeMethod,
             [RegistrationHelper::class, 'CreateAmbiguousTypeBinding']
         );
+
+        return $result;
     }
 
     private static function findTypec(): callable
@@ -566,9 +587,9 @@ trait ModelHelpers
      *
      * @param IEntitySet          $entitySet       the entity set
      * @param INavigationProperty $property        the navigation property
-     * @param iterable            $annotations     the association set annotations
-     * @param iterable            $end1Annotations the annotations for association set end 1
-     * @param iterable            $end2Annotations the annotations for association set end 2
+     * @param iterable<mixed>     $annotations     the association set annotations
+     * @param iterable<mixed>     $end1Annotations the annotations for association set end 1
+     * @param iterable<mixed>     $end2Annotations the annotations for association set end 2
      */
     public function getAssociationSetAnnotations(
         IEntitySet $entitySet,
@@ -602,10 +623,11 @@ trait ModelHelpers
      * Gets the annotations associated with the association serialized for a navigation property.
      *
      * @param INavigationProperty $property              the navigation property
-     * @param iterable            $annotations           the association annotations
-     * @param iterable            $end1Annotations       the annotations for association end 1
-     * @param iterable            $end2Annotations       the annotations for association end 2
-     * @param iterable            $constraintAnnotations the annotations for the referential constraint
+     * @param iterable<mixed>     $annotations           the association annotations
+     * @param iterable<mixed>     $end1Annotations       the annotations for association end 1
+     * @param iterable<mixed>     $end2Annotations       the annotations for association end 2
+     * @param iterable<mixed>     $constraintAnnotations the annotations for the referential constraint
+     * @return void
      */
     public function getAssociationAnnotations(
         INavigationProperty $property,
@@ -613,7 +635,7 @@ trait ModelHelpers
         iterable &$end1Annotations = [],
         iterable &$end2Annotations = [],
         iterable &$constraintAnnotations = []
-    ) {
+    ):void {
         $property->populateCaches();
         $associationAnnotations = $this->getAnnotationValue(
             AssociationAnnotations::class,
@@ -638,8 +660,8 @@ trait ModelHelpers
     /**
      * Finds a list of types that derive from the supplied type directly or indirectly, and across models.
      *
-     * @param  IStructuredType $baseType the base type that derived types are being searched for
-     * @return array           a list of types that derive from the type
+     * @param  IStructuredType $baseType               the base type that derived types are being searched for
+     * @return array<IStructuredType|IModel>           a list of types that derive from the type
      */
     public function findAllDerivedTypes(IStructuredType $baseType): array
     {
@@ -651,6 +673,11 @@ trait ModelHelpers
         return $result;
     }
 
+    /**
+     * @param IStructuredType $baseType
+     * @param SplObjectStorage $visited
+     * @param IStructuredType[]|IModel[] $derivedTypes
+     */
     private function derivedFrom(IStructuredType $baseType, SplObjectStorage $visited, array &$derivedTypes): void
     {
         if (!$visited->offsetExists($this)) {

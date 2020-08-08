@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class SpatialTypeReferencesNotSupportedBeforeV3 extends PrimitiveTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IPrimitiveTypeReference);
         if ($type->isSpatial()) {

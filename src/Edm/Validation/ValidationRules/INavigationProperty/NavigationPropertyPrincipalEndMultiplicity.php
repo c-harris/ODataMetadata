@@ -22,7 +22,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NavigationPropertyPrincipalEndMultiplicity extends NavigationPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $navigationProperty)
+    public function __invoke(ValidationContext $context, ?IEdmElement $navigationProperty): void
     {
         assert($navigationProperty instanceof INavigationProperty);
         /*

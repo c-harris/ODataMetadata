@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 class ElementDirectValueAnnotationFullNameMustBeUnique extends EdmElementRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $item)
+    public function __invoke(ValidationContext $context, ?IEdmElement $item): void
     {
         EdmUtil::checkArgumentNull($item, 'item');
         $annotationNameSet = new HashSetInternal();

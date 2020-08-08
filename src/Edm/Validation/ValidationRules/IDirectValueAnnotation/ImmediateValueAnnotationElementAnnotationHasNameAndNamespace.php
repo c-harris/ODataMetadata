@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\Interfaces\Values\IStringValue;
  */
 class ImmediateValueAnnotationElementAnnotationHasNameAndNamespace extends DirectValueAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof IDirectValueAnnotation);
         $stringValue = $annotation->getValue();

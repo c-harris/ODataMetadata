@@ -48,6 +48,7 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
 {
     use ModelHelpers;
 
+    /** @var self|null */
     private static $instance = null;
 
     public static function getInstance(): EdmCoreModel
@@ -66,7 +67,7 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
      */
     private $primitiveTypeKinds = [];
     /**
-     * @var array<PrimitiveTypeKind, EdmValidCoreModelPrimitiveType>
+     * @var array<string, EdmValidCoreModelPrimitiveType>
      */
     private $primitiveTypesByKind = [];
     /**
@@ -293,8 +294,9 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
 
     private function getCoreModelPrimitiveType(PrimitiveTypeKind $kind): ?EdmValidCoreModelPrimitiveType
     {
-        return array_key_exists(strval($kind), $this->primitiveTypesByKind) ?
-            $this->primitiveTypesByKind[strval($kind)] : null;
+        $key = strval($kind);
+        return array_key_exists($key, $this->primitiveTypesByKind) ?
+            $this->primitiveTypesByKind[$key] : null;
     }
 
     /**
@@ -533,7 +535,7 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
      */
     public function getSpatial(PrimitiveTypeKind $kind, ?int $spatialReferenceIdentifier, bool $isNullable): ISpatialTypeReference
     {
-        if ($kind->IsSpatial()) {
+        if ($kind->isSpatial()) {
             return new EdmSpatialTypeReference($this->getCoreModelPrimitiveType($kind), $isNullable, $spatialReferenceIdentifier);
         }
         throw new InvalidOperationException(StringConst::EdmPrimitive_UnexpectedKind());

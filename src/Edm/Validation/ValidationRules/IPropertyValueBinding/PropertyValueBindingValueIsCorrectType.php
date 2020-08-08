@@ -16,7 +16,7 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class PropertyValueBindingValueIsCorrectType extends PropertyValueBindingRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $binding)
+    public function __invoke(ValidationContext $context, ?IEdmElement $binding): void
     {
         assert($binding instanceof IPropertyValueBinding);
         $errors = [];

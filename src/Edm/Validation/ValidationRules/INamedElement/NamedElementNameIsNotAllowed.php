@@ -20,7 +20,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NamedElementNameIsNotAllowed extends NamedElementRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $item)
+    public function __invoke(ValidationContext $context, ?IEdmElement $item): void
     {
         assert($item instanceof INamedElement);
         // Don't run this rule for IDirectValueAnnotation,

@@ -17,7 +17,7 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class IfExpressionAssertCorrectTestType extends IfExpressionRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $expression)
+    public function __invoke(ValidationContext $context, ?IEdmElement $expression): void
     {
         assert($expression instanceof IIfExpression);
 

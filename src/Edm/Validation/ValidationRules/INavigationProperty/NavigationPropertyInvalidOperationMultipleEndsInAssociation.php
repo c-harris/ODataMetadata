@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NavigationPropertyInvalidOperationMultipleEndsInAssociation extends NavigationPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $navigationProperty)
+    public function __invoke(ValidationContext $context, ?IEdmElement $navigationProperty): void
     {
         assert($navigationProperty instanceof INavigationProperty);
         if (!$navigationProperty->getOnDelete()->isNone() &&

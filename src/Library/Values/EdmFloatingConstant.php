@@ -13,6 +13,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IPrimitiveTypeReference;
 class EdmFloatingConstant extends EdmValue implements IFloatingConstantExpression
 {
     use ValueHelpers;
+    /** @var float */
     private $value;
 
     /**

@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StructuralPropertyNullableComplexType extends StructuralPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $property)
+    public function __invoke(ValidationContext $context, ?IEdmElement $property): void
     {
         assert($property instanceof IStructuralProperty);
         if ($property->getType()->isComplex() && $property->getType()->getNullable()) {

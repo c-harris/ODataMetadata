@@ -16,14 +16,20 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class CollectionExpressionAllElementsCorrectType extends CollectionExpressionRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $expression)
+    public function __invoke(ValidationContext $context, ?IEdmElement $expression): void
     {
         assert($expression instanceof ICollectionExpression);
         if (null !== $expression->getDeclaredType() &&
             !$context->checkIsBad($expression) &&
             !$context->checkIsBad($expression->getDeclaredType())) {
-            $discoveredErrors = null;
-            ExpressionTypeChecker::tryAssertCollectionAsType($expression, $expression->getDeclaredType(), null, false, $discoveredErrors);
+            $discoveredErrors = [];
+            ExpressionTypeChecker::tryAssertCollectionAsType(
+                $expression,
+                $expression->getDeclaredType(),
+                null,
+                false,
+                $discoveredErrors
+            );
             foreach ($discoveredErrors as $error) {
                 $context->addRawError($error);
             }

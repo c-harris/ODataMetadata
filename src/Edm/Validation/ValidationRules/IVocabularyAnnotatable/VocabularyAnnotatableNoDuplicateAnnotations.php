@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 class VocabularyAnnotatableNoDuplicateAnnotations extends VocabularyAnnotatableRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotatable)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotatable): void
     {
         assert($annotatable instanceof IVocabularyAnnotatable);
         $annotationSet = new HashSetInternal();

@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class EnumTypeEnumsNotSupportedBeforeV3 extends EnumTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $enumType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $enumType): void
     {
         assert($enumType instanceof IEnumType);
         EdmUtil::checkArgumentNull($enumType->location(), 'enumType->Location');

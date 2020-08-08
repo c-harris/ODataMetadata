@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 class EntitySetNavigationPropertyMappingsMustBeUnique extends EntitySetRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $set)
+    public function __invoke(ValidationContext $context, ?IEdmElement $set): void
     {
         assert($set instanceof IEntitySet);
         $mappedPropertySet = new HashSetInternal();

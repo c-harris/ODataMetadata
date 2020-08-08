@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class PropertyMustNotHaveKindOfNone extends PropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $property)
+    public function __invoke(ValidationContext $context, ?IEdmElement $property): void
     {
         assert($property instanceof IProperty);
         if ($property->getPropertyKind()->isNone() && !$context->checkIsBad($property)) {

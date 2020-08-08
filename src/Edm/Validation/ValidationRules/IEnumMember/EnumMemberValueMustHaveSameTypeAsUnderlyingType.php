@@ -20,7 +20,7 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class EnumMemberValueMustHaveSameTypeAsUnderlyingType extends EnumMemberRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $enumMember)
+    public function __invoke(ValidationContext $context, ?IEdmElement $enumMember): void
     {
         assert($enumMember instanceof IEnumMember);
         $discoveredErrors = [];

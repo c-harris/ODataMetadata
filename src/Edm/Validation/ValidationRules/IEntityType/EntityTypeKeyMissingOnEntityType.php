@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class EntityTypeKeyMissingOnEntityType extends EntityTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $entityType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $entityType): void
     {
         assert($entityType instanceof IEntityType);
         if ((null === $entityType->key() || count($entityType->key()) == 0) && null === $entityType->getBaseType()) {

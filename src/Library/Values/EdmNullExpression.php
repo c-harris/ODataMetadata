@@ -14,7 +14,9 @@ use InvalidArgumentException;
 class EdmNullExpression extends EdmValue implements INullExpression
 {
     use ValueHelpers;
+    /** @var EdmNullExpression|null */
     private static $instance       = null;
+    /** @var bool */
     private static $allowConstruct = false;
     /**
      * Singleton EdmNullExpression instance.
@@ -28,6 +30,7 @@ class EdmNullExpression extends EdmValue implements INullExpression
         self::$allowConstruct = false;
         return self::$instance;
     }
+
     public function __construct()
     {
         if (!self::$allowConstruct) {

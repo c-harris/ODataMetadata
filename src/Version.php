@@ -65,7 +65,7 @@ class Version
         return self::$fixedVersion[12];
     }
 
-    private static function fillVersions()
+    private static function fillVersions(): void
     {
         if (null === self::$fixedVersion) {
             self::$fixedVersion = [

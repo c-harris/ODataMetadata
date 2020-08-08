@@ -6,7 +6,9 @@ namespace AlgoWeb\ODataMetadata\Structure;
 
 class Tuple
 {
+    /** @var mixed */
     private $item1;
+    /** @var mixed */
     private $item2;
 
     /**

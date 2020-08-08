@@ -16,6 +16,9 @@ use AlgoWeb\ODataMetadata\Interfaces\INamedElement;
 
 trait ProcessAnnotations
 {
+    /**
+     * @param IVocabularyAnnotation $annotation
+     */
     protected function processVocabularyAnnotation(IVocabularyAnnotation $annotation): void
     {
         /** @var EdmModelVisitor $this */
@@ -24,6 +27,9 @@ trait ProcessAnnotations
         $this->endElement($annotation, __METHOD__);
     }
 
+    /**
+     * @param IDirectValueAnnotation $annotation
+     */
     protected function processImmediateValueAnnotation(IDirectValueAnnotation $annotation): void
     {
         /** @var EdmModelVisitor $this */
@@ -32,6 +38,9 @@ trait ProcessAnnotations
         $this->endElement($annotation, __METHOD__);
     }
 
+    /**
+     * @param IValueAnnotation $annotation
+     */
     protected function processValueAnnotation(IValueAnnotation $annotation): void
     {
         /** @var EdmModelVisitor $this */
@@ -41,6 +50,9 @@ trait ProcessAnnotations
         $this->endElement($annotation, __METHOD__);
     }
 
+    /**
+     * @param ITypeAnnotation $annotation
+     */
     protected function processTypeAnnotation(ITypeAnnotation $annotation): void
     {
         /** @var EdmModelVisitor $this */
@@ -50,6 +62,9 @@ trait ProcessAnnotations
         $this->endElement($annotation, __METHOD__);
     }
 
+    /**
+     * @param IPropertyValueBinding $binding
+     */
     protected function processPropertyValueBinding(IPropertyValueBinding $binding): void
     {
         /** @var EdmModelVisitor $this */

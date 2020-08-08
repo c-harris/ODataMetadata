@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StructuralPropertyInvalidPropertyType extends StructuralPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $property)
+    public function __invoke(ValidationContext $context, ?IEdmElement $property): void
     {
         assert($property instanceof IStructuralProperty);
         if ($property->getDeclaringType()->getTypeKind()->isRow()) {

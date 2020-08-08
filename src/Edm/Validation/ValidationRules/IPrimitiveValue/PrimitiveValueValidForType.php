@@ -16,11 +16,11 @@ use AlgoWeb\ODataMetadata\Util\ExpressionTypeChecker;
  */
 class PrimitiveValueValidForType extends PrimitiveValueRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $value)
+    public function __invoke(ValidationContext $context, ?IEdmElement $value): void
     {
         assert($value instanceof IPrimitiveValue);
         if (null !== $value->getType() && !$context->checkIsBad($value) && !$context->checkIsBad($value->getType())) {
-            $discoveredErrors = null;
+            $discoveredErrors = [];
             ExpressionTypeChecker::tryAssertPrimitiveAsType($value, $value->getType(), $discoveredErrors);
             foreach ($discoveredErrors as $error) {
                 $context->addRawError($error);

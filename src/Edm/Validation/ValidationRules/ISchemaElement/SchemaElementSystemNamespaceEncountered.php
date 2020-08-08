@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class SchemaElementSystemNamespaceEncountered extends SchemaElementRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $element)
+    public function __invoke(ValidationContext $context, ?IEdmElement $element): void
     {
         assert($element instanceof ISchemaElement);
         EdmUtil::checkArgumentNull($element->getNamespace(), 'element->getNamespace');

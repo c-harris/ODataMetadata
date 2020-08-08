@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class ValueAnnotationInaccessibleTerm extends ValueAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof IValueAnnotation);
         // An unbound term is not treated as a semantic error, and looking up its name would fail.

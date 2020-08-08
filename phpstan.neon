@@ -1,0 +1,12 @@
+parameters:
+	level: 6
+	paths:
+		- src
+	excludes_analyse:
+	    - src/Edm/Validation/ValidationRules/IDecimalTypeReference/DecimalTypeReferencePrecisionOutOfRange.php
+	    - src/Edm/Validation/ValidationRules/ITemporalTypeReference/TemporalTypeReferencePrecisionOutOfRange.php
+	ignoreErrors:
+	    - '#Unexpected token "EdmModel_Validator_Semantic_IntegerConstantValueOutOfRange"#'
+	    - '#Parameter \#4 \$ambiguityCreator of static method AlgoWeb\\ODataMetadata\\Internal\\RegistrationHelper::addElement\(\) expects callable#'
+	    - '#Parameter \#1 ...\$ruleSets of class AlgoWeb\\ODataMetadata\\Edm\\Validation\\ValidationRuleSet constructor expects iterable<array#'
+	    - '#Parameter \#2 ...\$ruleSets of class AlgoWeb\\ODataMetadata\\Edm\\Validation\\ValidationRuleSet constructor expects iterable<array#'

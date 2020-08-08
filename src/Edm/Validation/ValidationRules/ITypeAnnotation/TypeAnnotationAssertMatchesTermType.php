@@ -21,7 +21,7 @@ use AlgoWeb\ODataMetadata\Structure\HashSetInternal;
  */
 class TypeAnnotationAssertMatchesTermType extends TypeAnnotationRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $annotation)
+    public function __invoke(ValidationContext $context, ?IEdmElement $annotation): void
     {
         assert($annotation instanceof ITypeAnnotation);
         $type = $annotation->getTerm();

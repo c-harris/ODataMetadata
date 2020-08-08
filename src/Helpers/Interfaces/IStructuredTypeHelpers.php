@@ -36,5 +36,5 @@ interface IStructuredTypeHelpers
      */
     public function structuralProperties();
 
-    public function inheritsFrom(IStructuredType $potentialBaseType);
+    public function inheritsFrom(IStructuredType $potentialBaseType): bool;
 }

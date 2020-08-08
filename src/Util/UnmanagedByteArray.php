@@ -7,13 +7,25 @@ namespace AlgoWeb\ODataMetadata\Util;
 use AlgoWeb\ODataMetadata\Exception\ArgumentException;
 use AlgoWeb\ODataMetadata\Exception\InvalidOperationException;
 
+/**
+ * @implements \IteratorAggregate<int, int>
+ * @implements \ArrayAccess<int, int>
+ */
 class UnmanagedByteArray implements \ArrayAccess, \IteratorAggregate, \Countable
 {
+    /** @var resource */
     private $memoryStream;
+    /** @var int */
     private $length;
+    /** @var bool */
     private $readonly;
 
-    public function __construct(&$stream, $readonly = true)
+    /**
+     * UnmanagedByteArray constructor.
+     * @param resource $stream
+     * @param bool $readonly
+     */
+    public function __construct(&$stream, bool $readonly = true)
     {
         assert(is_resource($stream));
         $stat               = fstat($stream);

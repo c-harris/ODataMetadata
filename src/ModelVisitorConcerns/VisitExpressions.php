@@ -43,6 +43,9 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 trait VisitExpressions
 {
+    /**
+     * @param IExpression[] $expressions
+     */
     public function visitExpressions(array $expressions): void
     {
         /** @var EdmModelVisitor $this */

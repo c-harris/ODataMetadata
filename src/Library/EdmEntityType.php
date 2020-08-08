@@ -104,7 +104,7 @@ class EdmEntityType extends EdmStructuredType implements IEntityType
     /**
      * Adds the keyProperties to the key of this entity type.
      *
-     * @param array ...$keyProperties
+     * @param array<IStructuralProperty|IStructuralProperty[]> $keyProperties
      */
     public function addKeys(array ...$keyProperties): void
     {
@@ -161,11 +161,11 @@ class EdmEntityType extends EdmStructuredType implements IEntityType
      * Whenever this method applies new values to partnerInfo, it will return a copy of it (thus won't modify the original).
      * If partnerInfo is null, a new info object will be produced.
      *
-     * @param  EdmNavigationPropertyInfo $propertyInfo primary navigation property info
-     * @param  EdmNavigationPropertyInfo $partnerInfo  Partner navigation property info. May be null.
-     * @return EdmNavigationPropertyInfo Partner info
+     * @param  EdmNavigationPropertyInfo      $propertyInfo primary navigation property info
+     * @param  EdmNavigationPropertyInfo|null $partnerInfo  Partner navigation property info. May be null.
+     * @return EdmNavigationPropertyInfo      Partner info
      */
-    private function fixUpDefaultPartnerInfo(EdmNavigationPropertyInfo $propertyInfo, EdmNavigationPropertyInfo $partnerInfo): EdmNavigationPropertyInfo
+    private function fixUpDefaultPartnerInfo(EdmNavigationPropertyInfo $propertyInfo, ?EdmNavigationPropertyInfo $partnerInfo): EdmNavigationPropertyInfo
     {
         $partnerInfoOverride = null;
 

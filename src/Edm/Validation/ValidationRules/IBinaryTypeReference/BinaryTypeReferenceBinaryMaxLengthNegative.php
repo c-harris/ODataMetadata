@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class BinaryTypeReferenceBinaryMaxLengthNegative extends BinaryTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IBinaryTypeReference);
         if ($type->getMaxLength() < 0) {

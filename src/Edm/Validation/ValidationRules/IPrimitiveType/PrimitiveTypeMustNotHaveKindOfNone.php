@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class PrimitiveTypeMustNotHaveKindOfNone extends PrimitiveTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IPrimitiveType);
         if ($type->getPrimitiveKind()->isNone() && !$context->checkIsBad($type)) {

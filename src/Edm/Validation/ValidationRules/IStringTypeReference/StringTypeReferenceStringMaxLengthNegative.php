@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StringTypeReferenceStringMaxLengthNegative extends StringTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IStringTypeReference);
         if ($type->getMaxLength() < 0) {

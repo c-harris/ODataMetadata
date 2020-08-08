@@ -18,6 +18,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IPrimitiveTypeReference;
 class EdmStringConstant extends EdmValue implements IStringConstantExpression
 {
     use ValueHelpers;
+    /** @var string */
     private $value;
 
     /**

@@ -17,7 +17,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IEntityReferenceType;
  */
 class EntityReferenceTypeInaccessibleEntityType extends EntityReferenceTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $entityReferenceType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $entityReferenceType): void
     {
         assert($entityReferenceType instanceof IEntityReferenceType);
         $entityType = $entityReferenceType->getEntityType();

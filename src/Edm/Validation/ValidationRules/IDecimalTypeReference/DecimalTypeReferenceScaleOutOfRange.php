@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class DecimalTypeReferenceScaleOutOfRange extends DecimalTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IDecimalTypeReference);
         if ($type->getScale() > $type->getPrecision() || $type->getScale() < 0) {

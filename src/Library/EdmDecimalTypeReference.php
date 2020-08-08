@@ -9,7 +9,9 @@ use AlgoWeb\ODataMetadata\Interfaces\IPrimitiveType;
 
 class EdmDecimalTypeReference extends EdmPrimitiveTypeReference implements IDecimalTypeReference
 {
+    /** @var int|null */
     private $precision;
+    /** @var int|null */
     private $scale;
 
     /**

@@ -37,7 +37,7 @@ trait ModelHelpersVocabularyAnnotation
         string $type = null
     ): iterable {
         assert(
-            null === $term || $term instanceof ITerm || is_string($term),
+            null === $term || $term instanceof ITerm || is_string($term),  /** @phpstan-ignore-line */
             '$term should be a string or instanceof iTerm'
         );
         if (null === $term) {
@@ -126,7 +126,7 @@ trait ModelHelpersVocabularyAnnotation
      * @param  ITerm                  $term
      * @param  string                 $qualifier
      * @param  string                 $type
-     * @return array
+     * @return IVocabularyAnnotation[]
      */
     protected function processTermVocabularyAnnotationTerm(
         IVocabularyAnnotatable $element,

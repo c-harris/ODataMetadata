@@ -164,7 +164,7 @@ use ReflectionException;
  * @method static string EdmModel_Validator_Semantic_IncorrectNumberOfArguments(int|void $count, string $FullName, int|void $count1)
  * @method static string EdmModel_Validator_Semantic_DuplicateAnnotation(string|null $FullyQualifiedName, string $FullName, string $getQualifier)
  * @method static string RuleSet_DuplicateRulesExistInRuleSet()
- * @method static string UnknownEnumVal_ExpressionKind($getKey)
+ * @method static string UnknownEnumVal_ExpressionKind(string $getKey)
  * @method static string EdmModel_Validator_Semantic_IntegerConstantValueOutOfRange()
  */
 class StringConst
@@ -450,8 +450,12 @@ class StringConst
     protected const EdmToClr_CannotConvertEdmCollectionValueToClrType   = 'Conversion of an edm collection value to the PHP type \'%s\' is not supported.';
     protected const EdmToClr_TryCreateObjectInstanceReturnedWrongObject = 'The type \'%s\' of the object returned by the TryCreateObjectInstance delegate is not assignable to the expected type \'%s\'.';
 
-
-    public static function __callStatic($name, $arguments): string
+    /**
+     * @param string $name
+     * @param mixed $arguments
+     * @return string
+     */
+    public static function __callStatic(string $name, $arguments): string
     {
         $array = static::toArray();
         if (isset($array[$name])) {
@@ -462,6 +466,7 @@ class StringConst
 
     /**
      * Store existing constants in a static cache per object.
+     * @var array<array>
      */
     protected static $cache = [];
     /**

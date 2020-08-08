@@ -14,6 +14,7 @@ use AlgoWeb\ODataMetadata\Interfaces\Values\IPrimitiveValue;
 class EdmEnumValue extends EdmValue implements IEnumValue
 {
     use ValueHelpers;
+    /** @var IEnumMember|IPrimitiveValue */
     private $value;
 
     /**

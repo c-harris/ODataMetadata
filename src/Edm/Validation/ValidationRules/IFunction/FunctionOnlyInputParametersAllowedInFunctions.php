@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class FunctionOnlyInputParametersAllowedInFunctions extends FunctionRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $function)
+    public function __invoke(ValidationContext $context, ?IEdmElement $function): void
     {
         assert($function instanceof IFunction);
         $parameters = $function->getParameters();

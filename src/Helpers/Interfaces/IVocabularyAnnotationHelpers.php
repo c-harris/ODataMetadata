@@ -11,7 +11,7 @@ interface IVocabularyAnnotationHelpers
 {
     public function isInline(IModel $model): bool;
 
-    public function targetString(): string;
+    public function targetString(): ?string;
 
     /**
      * Sets the location an annotation should be serialized in.

@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class StructuredTypeBaseTypeMustBeSameKindAsDerivedKind extends StructuredTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $structuredType): void
     {
         assert($structuredType instanceof IStructuredType);
         // We can either have 2 rules (entity and complex) or have one rule and exclude row type. I'm choosing

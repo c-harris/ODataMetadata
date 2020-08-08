@@ -21,7 +21,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class NavigationPropertyWithRecursiveContainmentTargetMustBeOptional extends NavigationPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $property)
+    public function __invoke(ValidationContext $context, ?IEdmElement $property): void
     {
         assert($property instanceof INavigationProperty);
         if ($property->containsTarget() &&

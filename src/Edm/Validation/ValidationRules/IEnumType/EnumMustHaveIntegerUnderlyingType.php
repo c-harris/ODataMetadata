@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class EnumMustHaveIntegerUnderlyingType extends EnumTypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $enumType)
+    public function __invoke(ValidationContext $context, ?IEdmElement $enumType): void
     {
         assert($enumType instanceof IEnumType);
         if (!$enumType->getUnderlyingType()->getPrimitiveKind()->isIntegral() && !$context->checkIsBad($enumType->getUnderlyingType())) {

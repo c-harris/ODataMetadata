@@ -21,7 +21,7 @@ abstract class SerializationValidator
     /**
      * @param  IModel               $root
      * @throws \ReflectionException
-     * @return array
+     * @return EdmError[]
      */
     public static function getSerializationErrors(IModel $root): array
     {

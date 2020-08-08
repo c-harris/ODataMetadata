@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class TypeMustNotHaveKindOfNone extends TypeRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IType);
         if ($type->getTypeKind()->isNone() && !$context->checkIsBad($type)) {

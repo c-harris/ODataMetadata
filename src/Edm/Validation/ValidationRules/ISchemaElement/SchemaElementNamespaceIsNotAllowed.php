@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class SchemaElementNamespaceIsNotAllowed extends SchemaElementRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $item)
+    public function __invoke(ValidationContext $context, ?IEdmElement $item): void
     {
         assert($item instanceof ISchemaElement);
         EdmUtil::checkArgumentNull($item->getNamespace(), 'item->getNamespace');

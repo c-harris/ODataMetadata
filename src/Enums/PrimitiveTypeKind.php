@@ -123,7 +123,7 @@ class PrimitiveTypeKind extends Enum
      *
      * @return bool this kind refers to a spatial type
      */
-    public function IsSpatial(): bool
+    public function isSpatial(): bool
     {
         $spatialTypes = [
             self::Geography,

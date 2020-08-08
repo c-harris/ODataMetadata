@@ -57,7 +57,7 @@ trait StructuredTypeHelpers
         });
     }
 
-    public function inheritsFrom(IStructuredType $potentialBaseType)
+    public function inheritsFrom(IStructuredType $potentialBaseType): bool
     {
         $type = $this;
         do {

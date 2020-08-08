@@ -38,6 +38,7 @@ final class EdmNavigationPropertyInfo
      */
     public $containsTarget;
 
+    /** @var mixed */
     public $onDelete;
 
     public function clone(): EdmNavigationPropertyInfo

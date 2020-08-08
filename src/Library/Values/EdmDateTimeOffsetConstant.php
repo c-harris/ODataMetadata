@@ -19,6 +19,7 @@ use DateTime;
 class EdmDateTimeOffsetConstant extends EdmValue implements IDateTimeOffsetConstantExpression
 {
     use ValueHelpers;
+    /** @var DateTime */
     private $value;
 
     /**

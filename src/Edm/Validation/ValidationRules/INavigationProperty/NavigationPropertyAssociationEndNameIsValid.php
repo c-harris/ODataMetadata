@@ -16,7 +16,7 @@ use AlgoWeb\ODataMetadata\Interfaces\INavigationProperty;
  */
 class NavigationPropertyAssociationEndNameIsValid extends NavigationPropertyRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $property)
+    public function __invoke(ValidationContext $context, ?IEdmElement $property): void
     {
         assert($property instanceof INavigationProperty);
         Helpers::checkForNameError(

@@ -18,7 +18,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class FunctionsNotSupportedBeforeV2 extends FunctionRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $function)
+    public function __invoke(ValidationContext $context, ?IEdmElement $function): void
     {
         assert($function instanceof IFunction);
         EdmUtil::checkArgumentNull($function->location(), 'function->Location');

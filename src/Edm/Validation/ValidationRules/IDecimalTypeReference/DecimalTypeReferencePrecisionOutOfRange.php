@@ -19,7 +19,7 @@ use AlgoWeb\ODataMetadata\StringConst;
  */
 class DecimalTypeReferencePrecisionOutOfRange extends DecimalTypeReferenceRule
 {
-    public function __invoke(ValidationContext $context, ?IEdmElement $type)
+    public function __invoke(ValidationContext $context, ?IEdmElement $type): void
     {
         assert($type instanceof IDecimalTypeReference);
         if ($type->getPrecision() > EdmConstants::Max_Precision ||
