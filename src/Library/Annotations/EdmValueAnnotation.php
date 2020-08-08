@@ -22,6 +22,7 @@ class EdmValueAnnotation extends EdmVocabularyAnnotation implements IValueAnnota
 {
     use ValueAnnotationHelpers;
 
+    /** @var IExpression */
     private $value;
 
     /**

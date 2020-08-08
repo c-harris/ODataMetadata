@@ -104,7 +104,7 @@ class EdmEntityType extends EdmStructuredType implements IEntityType
     /**
      * Adds the keyProperties to the key of this entity type.
      *
-     * @param array ...$keyProperties
+     * @param array<IStructuralProperty|IStructuralProperty[]> $keyProperties
      */
     public function addKeys(array ...$keyProperties): void
     {

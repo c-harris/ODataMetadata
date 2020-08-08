@@ -30,6 +30,7 @@ class EdmEntitySet extends EdmNamedElement implements IEntitySet
      */
     private $navigationPropertyMappings = [];
 
+    /** @var Cache|null */
     private $navigationTargetsCache = null;
 
     /**

@@ -40,6 +40,14 @@ class EdmNavigationProperty extends EdmProperty implements INavigationProperty
      */
     private $dependentProperties;
 
+    /**
+     * @param IEntityType $declaringType
+     * @param string $name
+     * @param ITypeReference $type
+     * @param array<IStructuralProperty>|null $dependentProperties
+     * @param bool|null $containsTarget
+     * @param OnDeleteAction|null $onDelete
+     */
     public function __construct(
         IEntityType $declaringType,
         string $name,

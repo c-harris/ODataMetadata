@@ -48,6 +48,7 @@ class EdmCoreModel extends EdmElement implements IModel, IEdmValidCoreModelEleme
 {
     use ModelHelpers;
 
+    /** @var self|null */
     private static $instance = null;
 
     public static function getInstance(): EdmCoreModel

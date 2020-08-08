@@ -18,7 +18,9 @@ abstract class EdmTypeReference extends EdmElement implements ITypeReference
 {
     use TypeReferenceHelpers;
 
+    /** @var IType|null */
     private $definition;
+    /** @var bool */
     private $isNullable;
 
     /**

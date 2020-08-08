@@ -199,7 +199,7 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
     }
 
     /**
-     * @param $transientAnnotations
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
      * @param string $namespaceName
      * @param string $localName
      */
@@ -240,7 +240,7 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
     }
 
     /**
-     * @param $transientAnnotations
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
      * @return iterable<mixed>
      */
     private static function transientAnnotations($transientAnnotations): iterable
@@ -268,11 +268,24 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
         }
     }
 
+    /**
+     * @param string $namespaceName
+     * @param string $localName
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @return bool
+     */
     private static function isDead(string $namespaceName, string $localName, $transientAnnotations): bool
     {
         return self::findTransientAnnotation($transientAnnotations, $namespaceName, $localName) != null;
     }
 
+    /**
+     * @param iterable<mixed>|null $immutableAnnotations
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @param string $namespaceName
+     * @param string $localName
+     * @param mixed|null $value
+     */
     private static function setAnnotation(?iterable $immutableAnnotations, &$transientAnnotations, string $namespaceName, string $localName, $value): void
     {
         $needTombstone = false;
@@ -338,7 +351,12 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
         $transientAnnotations = $annotationsList;
     }
 
-
+    /**
+     * @param iterable<IDirectValueAnnotation>|IDirectValueAnnotation|null $transientAnnotations
+     * @param string $namespaceName
+     * @param string $localName
+     * @return IDirectValueAnnotation|null
+     */
     private static function findTransientAnnotation($transientAnnotations, string $namespaceName, string $localName): ?IDirectValueAnnotation
     {
         if (null !== $transientAnnotations) {
