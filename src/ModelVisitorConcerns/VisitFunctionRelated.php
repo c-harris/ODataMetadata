@@ -14,7 +14,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IFunctionParameter;
 trait VisitFunctionRelated
 {
     /**
-     * @param IFunctionParameter[] $parameters
+     * @param IFunctionParameter[]|null $parameters
      */
     public function visitFunctionParameters(?array $parameters): void
     {
