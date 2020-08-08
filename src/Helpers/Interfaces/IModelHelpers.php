@@ -8,6 +8,7 @@ use AlgoWeb\ODataMetadata\Interfaces\IEdmElement;
 use AlgoWeb\ODataMetadata\Interfaces\IEntityContainer;
 use AlgoWeb\ODataMetadata\Interfaces\IEntitySet;
 use AlgoWeb\ODataMetadata\Interfaces\IFunction;
+use AlgoWeb\ODataMetadata\Interfaces\IModel;
 use AlgoWeb\ODataMetadata\Interfaces\INavigationProperty;
 use AlgoWeb\ODataMetadata\Interfaces\ISchemaType;
 use AlgoWeb\ODataMetadata\Interfaces\IStructuredType;
@@ -20,7 +21,19 @@ use AlgoWeb\ODataMetadata\Version;
  */
 interface IModelHelpers
 {
-    public function getAnnotationValue(string $typeof, IEdmElement $element, string $namespaceName = null, string $localName = null);
+    /**
+     * @param string $typeof
+     * @param IEdmElement $element
+     * @param string|null $namespaceName
+     * @param string|null $localName
+     * @return mixed
+     */
+    public function getAnnotationValue(
+        string $typeof,
+        IEdmElement $element,
+        string $namespaceName = null,
+        string $localName = null
+    );
 
     /**
      * @return array<IEdmElement>
@@ -124,14 +137,15 @@ interface IModelHelpers
     /**
      * Sets an annotation on the IEdmModel to notify the serializer of preferred prefix mappings for xml namespaces.
      *
-     * @param array $mappings xmlNamespaceManage containing mappings between namespace prefixes and xml namespaces
+     * @param array<mixed> $mappings xmlNamespaceManage containing mappings between namespace prefixes
+     *                               and xml namespaces
      */
     public function setNamespacePrefixMappings(array $mappings): void;
 
     /**
      * Gets the preferred prefix mappings for xml namespaces from an IEdmModel.
      *
-     * @return array namespace prefixes that exist on the model
+     * @return array<mixed> namespace prefixes that exist on the model
      */
     public function getNamespacePrefixMappings(): array;
 
@@ -216,28 +230,41 @@ interface IModelHelpers
      *
      * @param IEntitySet          $entitySet       the entity set
      * @param INavigationProperty $property        the navigation property
-     * @param iterable            $annotations     the association set annotations
-     * @param iterable            $end1Annotations the annotations for association set end 1
-     * @param iterable            $end2Annotations the annotations for association set end 2
+     * @param iterable<mixed>     $annotations     the association set annotations
+     * @param iterable<mixed>     $end1Annotations the annotations for association set end 1
+     * @param iterable<mixed>     $end2Annotations the annotations for association set end 2
      */
-    public function getAssociationSetAnnotations(IEntitySet $entitySet, INavigationProperty $property, iterable &$annotations = [], iterable &$end1Annotations = [], iterable &$end2Annotations = []): void;
+    public function getAssociationSetAnnotations(
+        IEntitySet $entitySet,
+        INavigationProperty $property,
+        iterable &$annotations = [],
+        iterable &$end1Annotations = [],
+        iterable &$end2Annotations = []
+    ): void;
 
     /**
      * Gets the annotations associated with the association serialized for a navigation property.
      *
      * @param INavigationProperty $property              the navigation property
-     * @param iterable            $annotations           the association annotations
-     * @param iterable            $end1Annotations       the annotations for association end 1
-     * @param iterable            $end2Annotations       the annotations for association end 2
-     * @param iterable            $constraintAnnotations the annotations for the referential constraint
+     * @param iterable<mixed>     $annotations           the association annotations
+     * @param iterable<mixed>     $end1Annotations       the annotations for association end 1
+     * @param iterable<mixed>     $end2Annotations       the annotations for association end 2
+     * @param iterable<mixed>     $constraintAnnotations the annotations for the referential constraint
+     * @return void
      */
-    public function getAssociationAnnotations(INavigationProperty $property, iterable &$annotations = [], iterable &$end1Annotations = [], iterable &$end2Annotations = [], iterable &$constraintAnnotations = []);
+    public function getAssociationAnnotations(
+        INavigationProperty $property,
+        iterable &$annotations = [],
+        iterable &$end1Annotations = [],
+        iterable &$end2Annotations = [],
+        iterable &$constraintAnnotations = []
+    ): void;
 
     /**
      * Finds a list of types that derive from the supplied type directly or indirectly, and across models.
      *
-     * @param  IStructuredType $baseType the base type that derived types are being searched for
-     * @return array           a list of types that derive from the type
+     * @param  IStructuredType $baseType               the base type that derived types are being searched for
+     * @return array<IStructuredType|IModel>           a list of types that derive from the type
      */
     public function findAllDerivedTypes(IStructuredType $baseType): array;
 }

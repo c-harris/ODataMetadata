@@ -126,7 +126,7 @@ trait ModelHelpersVocabularyAnnotation
      * @param  ITerm                  $term
      * @param  string                 $qualifier
      * @param  string                 $type
-     * @return array
+     * @return IVocabularyAnnotation[]
      */
     protected function processTermVocabularyAnnotationTerm(
         IVocabularyAnnotatable $element,
