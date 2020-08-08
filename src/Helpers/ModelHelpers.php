@@ -450,6 +450,7 @@ trait ModelHelpers
             $fromPrincipal = $property->getPrimary();
             $toPrincipal   = $fromPrincipal->getPartner();
 
+            /** @var string $associationName */
             $associationName =
                 Helpers::getQualifiedAndEscapedPropertyName($toPrincipal) .
                 Helpers::AssociationNameEscapeChar .

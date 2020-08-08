@@ -58,7 +58,7 @@ class HashSetInternal implements Iterator, \Countable
     public function tryGetValue($key, &$output): bool
     {
         if (isset($this->wrappedDictionary[$key])) {
-            $output = &$this->wrappedDictionary[$key];
+            $output = $this->wrappedDictionary[$key];
             return true;
         }
         return false;

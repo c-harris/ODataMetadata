@@ -8,6 +8,10 @@ use BadMethodCallException;
 
 abstract class Enum extends \MyCLabs\Enum\Enum
 {
+    /**
+     * @param mixed $flag
+     * @return bool
+     */
     protected function isFlag($flag): bool
     {
         return $this->value === $flag;

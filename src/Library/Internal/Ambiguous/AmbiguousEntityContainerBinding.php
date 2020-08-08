@@ -17,7 +17,7 @@ class AmbiguousEntityContainerBinding extends AmbiguousBinding implements IEntit
     use SchemaElementHelpers;
     use EntityContainerHelpers;
 
-    /** @var string|null */
+    /** @var string */
     private $namespaceName;
 
     public function __construct(IEntityContainer $first, IEntityContainer $second)
