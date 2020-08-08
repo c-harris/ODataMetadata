@@ -24,6 +24,7 @@ use AlgoWeb\ODataMetadata\Interfaces\Values\IValue;
 
 class VisitorOfIValue extends VisitorOfT
 {
+    /** @var array<int, string> */
     protected $lookup = [];
 
     public function __construct()

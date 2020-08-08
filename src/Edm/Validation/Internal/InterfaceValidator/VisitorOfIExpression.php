@@ -36,6 +36,7 @@ use AlgoWeb\ODataMetadata\Interfaces\Expressions\IValueTermReferenceExpression;
 
 class VisitorOfIExpression extends VisitorOfT
 {
+    /** @var array<int, string> */
     protected $lookup = [];
 
     public function __construct()

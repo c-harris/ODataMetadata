@@ -7,14 +7,18 @@ namespace AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Edm\Validation\EdmError;
 use AlgoWeb\ODataMetadata\Edm\Validation\Internal\InterfaceValidator;
 use AlgoWeb\ODataMetadata\Enums\SchemaElementKind;
+use AlgoWeb\ODataMetadata\Interfaces\Expressions\IExpression;
+use AlgoWeb\ODataMetadata\Interfaces\IEdmElement;
 use AlgoWeb\ODataMetadata\Interfaces\IEntityContainer;
 use AlgoWeb\ODataMetadata\Interfaces\IFunction;
 use AlgoWeb\ODataMetadata\Interfaces\ISchemaElement;
 use AlgoWeb\ODataMetadata\Interfaces\ISchemaType;
+use AlgoWeb\ODataMetadata\Interfaces\ITypeReference;
 use AlgoWeb\ODataMetadata\Interfaces\IValueTerm;
 
 final class VisitorOfISchemaElement extends VisitorOfT
 {
+    /** @var array<string, string> */
     protected $lookup = [];
 
     public function __construct()
@@ -26,9 +30,9 @@ final class VisitorOfISchemaElement extends VisitorOfT
     }
 
     /**
-     * @param $item
-     * @param array $followup
-     * @param array $references
+     * @param IEdmElement $item
+     * @param IExpression[] $followup
+     * @param ITypeReference[] $references
      * @return iterable<EdmError>
      */
     protected function visitT($item, array &$followup, array &$references): iterable
