@@ -34,11 +34,6 @@ class EdmDirectValueAnnotationsManager implements IDirectValueAnnotationsManager
     private $annotationsDictionary;
 
     /**
-     * @var array elements for which normal comparison failed to produce a valid result, arbitrarily ordered to enable stable comparisons
-     */
-    private $unsortedElements = [];
-
-    /**
      * Initializes a new instance of the EdmDirectValueAnnotationsManager class.
      */
     public function __construct()
